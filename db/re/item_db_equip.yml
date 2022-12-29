@@ -144854,6 +144854,14 @@ Body:
       bonus2 bMagicAddRace,RC_Player_Human,-10;
       bonus2 bMagicAddRace,RC_Player_Doram,-10;
       bonus bDelayrate,-5;
+  - Id: 400355
+    AegisName: C_Balloon_Hat_Classical
+    Name: Costume Classical Balloon Hat    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2313
   - Id: 400359
     AegisName: aegis_400359
     Name: Level 1 Hat    # !todo check english name
@@ -147215,7 +147223,7 @@ Body:
     ArmorLevel: 2
     View: 3
   - Id: 410210
-    AegisName: aegis_410210 
+    AegisName: aegis_410210
     Name: Little Abyss Dragon
     Type: Armor
     Weight: 100
@@ -154402,7 +154410,7 @@ Body:
     ArmorLevel: 2
     Refineable: true
   - Id: 450251
-    AegisName: aegis_450251 
+    AegisName: aegis_450251
     Name: Assault Suits
     Type: Armor
     Weight: 1000
@@ -163201,7 +163209,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 2
   - Id: 490290
-    AegisName: aegis_490290 
+    AegisName: aegis_490290
     Name: Ameretat
     Type: Armor
     Weight: 100
@@ -164932,6 +164940,63 @@ Body:
     Gradable: true
     Flags:
       DropEffect: CLIENT
+  - Id: 500056
+    AegisName: F_Ein_1HSWORD
+    Name: Flush Safety Saber
+    Type: Weapon
+    SubType: 1hSword
+    Weight: 1250
+    Attack: 230
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,10;
+      bonus2 bSkillAtk,"BO_MAYHEMIC_THORNS",20;
+      bonus2 bSkillAtk,"GN_CARTCANNON",20;
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         bonus bBaseAtk,70;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,15;
+            bonus2 bSkillAtk,"BO_MAYHEMIC_THORNS",10;
+            bonus2 bSkillAtk,"GN_CARTCANNON",15;
+            bonus2 bSkillUseSP,"BO_MAYHEMIC_THORNS",-25;
+            bonus2 bSkillUseSP,"GN_CARTCANNON",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"BO_MAYHEMIC_THORNS",10;
+               bonus2 bSkillAtk,"GN_CARTCANNON",10;
+               bonus2 bSkillUseSP,"BO_MAYHEMIC_THORNS",-25;
+               bonus2 bSkillUseSP,"GN_CARTCANNON",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"BO_MAYHEMIC_THORNS",10;
+            bonus2 bSkillAtk,"GN_CARTCANNON",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"BO_MAYHEMIC_THORNS",10;
+                  bonus2 bSkillAtk,"GN_CARTCANNON",10;
+               }
+            }
+         }
+      }
   - Id: 500057
     AegisName: aegis_500057
     Name: Heroria Crusader Sword    # !todo check english name
@@ -165425,6 +165490,53 @@ Body:
                bonus2 bMagicAddRace,RC_All,10;
                if (.@g>=ENCHANTGRADE_A) {
                   bonus2 bMagicAddEle,Ele_All,10;
+               }
+            }
+         }
+      }
+  - Id: 500074
+    AegisName: Mocadas_G_Sword
+    Name: Muqaddas Sasyiir
+    Type: Weapon
+    SubType: 1hSword
+    Weight: 1500
+    Attack: 100
+    MagicAttack: 230
+    Range: 1
+    Slots: 2
+    Jobs:
+      Crusader: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatkRate,5;
+      bonus2 bSkillAtk,"IG_CROSS_RAIN",10;
+      if (.@r>=7) {
+         bonus2 bSkillCooldown,"LG_RAYOFGENESIS",-1000;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"IG_CROSS_RAIN",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"IG_CROSS_RAIN",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bMagicAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillCooldown,"LG_RAYOFGENESIS",-500;
+                  bonus bSMatk,5;
                }
             }
          }
@@ -167182,6 +167294,67 @@ Body:
     Gradable: true
     Flags:
       DropEffect: CLIENT
+  - Id: 510077
+    AegisName: F_Ein_1HMAGGER
+    Name: Flush Jewel Detector Mk47
+    Type: Weapon
+    SubType: Dagger
+    Weight: 1250
+    Attack: 200
+    MagicAttack: 200
+    Range: 1
+    Slots: 2
+    Jobs:
+      Rogue: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatkRate,10;
+      bonus2 bMagicAtkEle,Ele_Neutral,20;
+      bonus2 bMagicAtkEle,Ele_Fire,20;
+      bonus2 bSkillAtk,"ABC_ABYSS_SQUARE",20;
+      if (.@r>=7) {
+         bonus bAspdRate,10;
+         bonus bMatk,70;
+         if (.@r>=9) {
+            bonus2 bMagicAtkEle,Ele_Neutral,15;
+            bonus2 bMagicAtkEle,Ele_Fire,15;
+            bonus2 bSkillAtk,"ABC_ABYSS_SQUARE",10;
+            bonus2 bMagicAddSize,Size_All,15;
+            bonus2 bSkillUseSP,"ABC_ABYSS_SQUARE",-25;
+            if (.@r>=11) {
+               bonus2 bMagicAtkEle,Ele_Neutral,10;
+               bonus2 bMagicAtkEle,Ele_Fire,10;
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"ABC_ABYSS_SQUARE",10;
+               bonus2 bSkillUseSP,"ABC_ABYSS_SQUARE",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bSMatk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAtkEle,Ele_Neutral,10;
+            bonus2 bMagicAtkEle,Ele_Fire,10;
+            bonus2 bSkillAtk,"ABC_ABYSS_SQUARE",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bMagicAtkEle,Ele_Neutral,10;
+                  bonus2 bMagicAtkEle,Ele_Fire,10;
+                  bonus2 bSkillAtk,"ABC_ABYSS_SQUARE",10;
+               }
+            }
+         }
+      }
   - Id: 510079
     AegisName: aegis_510079
     Name: Heroria Alchemic Dagger    # !todo check english name
@@ -167660,6 +167833,153 @@ Body:
     Locations:
       Right_Hand: true
     WeaponLevel: 5
+    Refineable: true
+  - Id: 510102
+    AegisName: Mocadas_C_Sword
+    Name: Muqaddas Tasyiribatiy
+    Type: Weapon
+    SubType: Dagger
+    Weight: 1250
+    Attack: 215
+    Range: 1
+    Slots: 2
+    Jobs:
+      Rogue: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"ABC_DEFT_STAB",10;
+      if (.@r>=7) {
+         bonus bShortAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"ABC_DEFT_STAB",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"ABC_DEFT_STAB",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
+  - Id: 510103
+    AegisName: Mocadas_Knife
+    Name: Muqaddas Nazar
+    Type: Weapon
+    SubType: Dagger
+    Weight: 1500
+    Attack: 200
+    Range: 1
+    Slots: 2
+    Jobs:
+      KagerouOboro: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
+  - Id: 510104
+    AegisName: Mocadas_Degger
+    Name: Muqaddas Kanjar
+    Type: Weapon
+    SubType: Dagger
+    Weight: 1500
+    Attack: 150
+    Range: 1
+    Jobs:
+      KagerouOboro: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+  - Id: 510105
+    AegisName: F_Ein_1HDAGGER
+    Name: Flush Metal Detector Mk47
+    Type: Weapon
+    SubType: Dagger
+    Weight: 1250
+    Attack: 200
+    Range: 1
+    Slots: 2
+    Jobs:
+      Assassin: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"SHC_SHADOW_STAB",10;
+            bonus2 bSkillAtk,"GC_CROSSIMPACT",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"SHC_SHADOW_STAB",10;
+                  bonus2 bSkillAtk,"GC_CROSSIMPACT",10;
+               }
+            }
+         }
+      }
+  - Id: 510106
+    AegisName: F_Ein_1HDAGGER2
+    Name: Flush Metal Detector Mk47-2
+    Type: Weapon
+    SubType: Dagger
+    Weight: 1250
+    Attack: 200
+    Range: 1
+    Jobs:
+      Assassin: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
     Refineable: true
   - Id: 520000
     AegisName: Boost_Axe
@@ -168149,6 +168469,52 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 520031
+    AegisName: Mocadas_Axe
+    Name: Muqaddas Tabar
+    Type: Weapon
+    SubType: 1hAxe
+    Weight: 6000
+    Attack: 250
+    Range: 1
+    Slots: 2
+    Jobs:
+      Blacksmith: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bUnbreakableWeapon;
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"MT_TRIPLE_LASER",10;
+      if (.@r>=7) {
+         bonus bLongAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"MT_TRIPLE_LASER",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"MT_TRIPLE_LASER",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
   - Id: 530000
     AegisName: Boost_Spear
     Name: Booster Spear
@@ -168823,6 +169189,63 @@ Body:
     Gradable: true
     Flags:
       DropEffect: CLIENT
+  - Id: 530035
+    AegisName: F_Ein_1HSPEAR
+    Name: Flush Blocking Spear
+    Type: Weapon
+    SubType: 1hSpear
+    Weight: 1250
+    Attack: 230
+    Range: 3
+    Slots: 2
+    Jobs:
+      Crusader: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,10;
+      bonus2 bSkillAtk,"IG_SHIELD_SHOOTING",20;
+      bonus2 bSkillAtk,"LG_BANISHINGPOINT",20;
+      if (.@r>=7) {
+         bonus bAspdRate,10;
+         bonus bBaseAtk,70;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,15;
+            bonus2 bSkillAtk,"IG_SHIELD_SHOOTING",10;
+            bonus2 bSkillAtk,"LG_BANISHINGPOINT",15;
+            bonus2 bSkillUseSP,"IG_SHIELD_SHOOTING",-20;
+            bonus2 bSkillUseSP,"LG_BANISHINGPOINT",-20;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"IG_SHIELD_SHOOTING",10;
+               bonus2 bSkillAtk,"LG_BANISHINGPOINT",10;
+               bonus2 bSkillUseSP,"IG_SHIELD_SHOOTING",-20;
+               bonus2 bSkillUseSP,"LG_BANISHINGPOINT",-20;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"IG_SHIELD_SHOOTING",10;
+            bonus2 bSkillAtk,"LG_BANISHINGPOINT",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"IG_SHIELD_SHOOTING",10;
+                  bonus2 bSkillAtk,"LG_BANISHINGPOINT",10;
+               }
+            }
+         }
+      }
   - Id: 530036
     AegisName: aegis_530036
     Name: Heroria Spear    # !todo check english name
@@ -170799,6 +171222,59 @@ Body:
       bonus2 bSkillAtk,"MG_COLDBOLT",25*.@r;
       bonus2 bSkillAtk,"MG_LIGHTNINGBOLT",25*.@r;
       bonus2 bSkillAtk,"WZ_EARTHSPIKE",25*.@r;
+  - Id: 540058
+    AegisName: F_Ein_1HBOOK
+    Name: Flush Safety Manual
+    Type: Weapon
+    SubType: Book
+    Weight: 700
+    Attack: 220
+    Range: 1
+    Slots: 2
+    Jobs:
+      StarGladiator: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,5;
+      bonus bAtkRate,10;
+      bonus2 bSkillAtk,"SKE_NOON_BLAST",20;
+      if (.@r>=7) {
+         bonus bAspdRate,10;
+         bonus bBaseAtk,70;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,15;
+            bonus bCritAtkRate,15;
+            bonus2 bSkillAtk,"SKE_NOON_BLAST",10;
+            bonus2 bSkillUseSP,"SKE_NOON_BLAST",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus bCritical,10;
+               bonus2 bSkillAtk,"SKE_NOON_BLAST",10;
+               bonus2 bSkillUseSP,"SKE_NOON_BLAST",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"SKE_NOON_BLAST",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"SKE_NOON_BLAST",10;
+               }
+            }
+         }
+      }
   - Id: 540059
     AegisName: Doom_Bible
     Name: Doom Bible
@@ -171125,6 +171601,104 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 540074
+    AegisName: Mocadas_Spellbooks
+    Name: Muqaddas Kitab
+    Type: Weapon
+    SubType: Book
+    Weight: 800
+    Attack: 60
+    MagicAttack: 230
+    Range: 1
+    Slots: 2
+    Jobs:
+      Sage: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatkRate,5;
+      bonus2 bSkillAtk,"EM_DIAMOND_STORM",10;
+      bonus2 bSkillAtk,"EM_LIGHTNING_LAND",10;
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_Water,10;
+         bonus2 bMagicAtkEle,Ele_Wind,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"EM_DIAMOND_STORM",10;
+            bonus2 bSkillAtk,"EM_LIGHTNING_LAND",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"EM_DIAMOND_STORM",10;
+               bonus2 bSkillAtk,"EM_LIGHTNING_LAND",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bMagicAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bSMatk,5;
+               }
+            }
+         }
+      }
+  - Id: 540075
+    AegisName: Mocadas_Book
+    Name: Muqaddas Kajuza
+    Type: Weapon
+    SubType: Book
+    Weight: 1200
+    Attack: 210
+    Range: 1
+    Slots: 2
+    Jobs:
+      StarGladiator: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",10;
+      bonus2 bSkillAtk,"SKE_DAWN_BREAK",10;
+      if (.@r>=7) {
+         bonus bShortAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",10;
+            bonus2 bSkillAtk,"SKE_DAWN_BREAK",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",10;
+               bonus2 bSkillAtk,"SKE_DAWN_BREAK",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
   - Id: 550001
     AegisName: Boost_Soul_Rod
     Name: Booster Rod
@@ -173985,6 +174559,136 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bUnbreakableWeapon;
+  - Id: 550091
+    AegisName: F_Ein_1H_Foxtail
+    Name: Flush Safety Foxtail
+    Type: Weapon
+    SubType: Staff
+    Weight: 1250
+    Attack: 320
+    Range: 1
+    Slots: 2
+    Jobs:
+      Summoner: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatk,370;
+      bonus bUnbreakableWeapon;
+      bonus bMatkRate,10;
+      bonus bAtkRate,10;
+      bonus2 bSkillAtk,"SH_HYUN_ROKS_BREEZE",20;
+      bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",20;
+      bonus2 bSkillAtk,"SU_CN_METEOR",20;
+      bonus2 bSkillAtk,"SU_PICKYPECK",20;
+      if (.@r>=7) {
+         bonus bAspdRate,10;
+         bonus bVariableCastrate,-10;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,15;
+            bonus2 bMagicAddSize,Size_All,15;
+            bonus2 bSkillAtk,"SH_HYUN_ROKS_BREEZE",10;
+            bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",10;
+            bonus2 bSkillAtk,"SU_CN_METEOR",20;
+            bonus2 bSkillAtk,"SU_PICKYPECK",20;
+            bonus2 bSkillUseSP,"SH_HYUN_ROKS_BREEZE",-25;
+            bonus2 bSkillUseSP,"SH_HOGOGONG_STRIKE",-25;
+            bonus2 bSkillUseSP,"SU_CN_METEOR",-25;
+            bonus2 bSkillUseSP,"SU_PICKYPECK",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"SH_HYUN_ROKS_BREEZE",10;
+               bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",10;
+               bonus2 bSkillAtk,"SU_CN_METEOR",10;
+               bonus2 bSkillAtk,"SU_PICKYPECK",10;
+               bonus2 bSkillUseSP,"SH_HYUN_ROKS_BREEZE",-25;
+               bonus2 bSkillUseSP,"SH_HOGOGONG_STRIKE",-25;
+               bonus2 bSkillUseSP,"SU_CN_METEOR",-25;
+               bonus2 bSkillUseSP,"SU_PICKYPECK",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bSMatk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"SH_HYUN_ROKS_BREEZE",10;
+            bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",10;
+            bonus2 bSkillAtk,"SU_CN_METEOR",10;
+            bonus2 bSkillAtk,"SU_PICKYPECK",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddEle,Ele_All,10;
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"SH_HYUN_ROKS_BREEZE",10;
+                  bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",10;
+                  bonus2 bSkillAtk,"SU_CN_METEOR",10;
+                  bonus2 bSkillAtk,"SU_PICKYPECK",10;
+               }
+            }
+         }
+      }
+  - Id: 550092
+    AegisName: F_Ein_1HWAND
+    Name: Flush Welding Wand
+    Type: Weapon
+    SubType: Staff
+    Weight: 1200
+    Attack: 160
+    Range: 1
+    Slots: 2
+    Jobs:
+      SoulLinker: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatk,220;
+      bonus bUnbreakableWeapon;
+      bonus bMatkRate,10;
+      bonus2 bMagicAtkEle,Ele_All,10;
+      bonus2 bSkillAtk,"SOA_EXORCISM_OF_MALICIOUS_SOUL",20;
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         bonus bMatk,70;
+         if (.@r>=9) {
+            bonus2 bMagicAddEle,Ele_All,15;
+            bonus2 bMagicAtkEle,Ele_All,15;
+            bonus2 bSkillAtk,"SOA_EXORCISM_OF_MALICIOUS_SOUL",10;
+            bonus2 bSkillUseSP,"SOA_EXORCISM_OF_MALICIOUS_SOUL",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"SOA_EXORCISM_OF_MALICIOUS_SOUL",10;
+               bonus2 bSkillUseSP,"SOA_EXORCISM_OF_MALICIOUS_SOUL",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bSMatk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"SOA_EXORCISM_OF_MALICIOUS_SOUL",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"SOA_EXORCISM_OF_MALICIOUS_SOUL",10;
+               }
+            }
+         }
+      }
   - Id: 550093
     AegisName: Soul_Harvest
     Name: Soul Harvest
@@ -174628,6 +175332,152 @@ Body:
                bonus2 bAddSize,Size_All,10;
                if (.@g>=ENCHANTGRADE_A) {
                   bonus2 bAddEle,Ele_All,10;
+               }
+            }
+         }
+      }
+  - Id: 550117
+    AegisName: Mocadas_Rod
+    Name: Muqaddas Baru
+    Type: Weapon
+    SubType: Staff
+    Weight: 1250
+    Attack: 70
+    MagicAttack: 230
+    Range: 1
+    Slots: 2
+    Jobs:
+      Priest: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bUnbreakableWeapon;
+      bonus bMatkRate,5;
+      bonus2 bSkillAtk,"CD_FRAMEN",10;
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_Holy,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"CD_FRAMEN",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"CD_FRAMEN",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bMagicAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bSMatk,5;
+               }
+            }
+         }
+      }
+  - Id: 550118
+    AegisName: Mocadas_Foxtail
+    Name: Muqaddas Sharman
+    Type: Weapon
+    SubType: Staff
+    Weight: 1250
+    Attack: 290
+    MagicAttack: 340
+    Range: 1
+    Slots: 2
+    Jobs:
+      Summoner: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bUnbreakableWeapon;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+      bonus2 bSkillAtk,"SH_CHUL_HO_SONIC_CLAW",10;
+      bonus2 bSkillAtk,"SH_HYUN_ROK_CANNON",10;
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_All,10;
+         bonus bLongAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"SH_CHUL_HO_SONIC_CLAW",10;
+            bonus2 bSkillAtk,"SH_HYUN_ROK_CANNON",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"SH_CHUL_HO_SONIC_CLAW",10;
+               bonus2 bSkillAtk,"SH_HYUN_ROK_CANNON",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         if (.@g>=ENCHANTGRADE_C) {
+            if (.@g>=ENCHANTGRADE_B) {
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bSMatk,5;
+               }
+            }
+         }
+      }
+  - Id: 550119
+    AegisName: Mocadas_Wand
+    Name: Muqaddas Kharawasu
+    Type: Weapon
+    SubType: Staff
+    Weight: 1100
+    Attack: 90
+    MagicAttack: 230
+    Range: 1
+    Slots: 2
+    Jobs:
+      SoulLinker: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bUnbreakableWeapon;
+      bonus bMatkRate,5;
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_RED_PHOENIX",10;
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_BLACK_TORTOISE",10;
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_All,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"SOA_TALISMAN_OF_RED_PHOENIX",10;
+            bonus2 bSkillAtk,"SOA_TALISMAN_OF_BLACK_TORTOISE",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"SOA_TALISMAN_OF_RED_PHOENIX",10;
+               bonus2 bSkillAtk,"SOA_TALISMAN_OF_BLACK_TORTOISE",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bMagicAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bSMatk,5;
                }
             }
          }
@@ -175675,6 +176525,63 @@ Body:
     Gradable: true
     Flags:
       DropEffect: CLIENT
+  - Id: 560038
+    AegisName: F_Ein_1HKNUCK
+    Name: Flush Safety Knuckle
+    Type: Weapon
+    SubType: Knuckle
+    Weight: 1800
+    Attack: 240
+    Range: 1
+    Slots: 2
+    Jobs:
+      Monk: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,10;
+      bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",20;
+      bonus2 bSkillAtk,"SR_KNUCKLEARROW",20;
+      if (.@r>=7) {
+         bonus bAspdRate,10;
+         bonus bBaseAtk,70;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,15;
+            bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",10;
+            bonus2 bSkillAtk,"SR_KNUCKLEARROW",15;
+            bonus2 bSkillUseSP,"IQ_EXPOSION_BLASTER",-25;
+            bonus2 bSkillUseSP,"SR_KNUCKLEARROW",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",10;
+               bonus2 bSkillAtk,"SR_KNUCKLEARROW",10;
+               bonus2 bSkillUseSP,"IQ_EXPOSION_BLASTER",-25;
+               bonus2 bSkillUseSP,"SR_KNUCKLEARROW",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",10;
+            bonus2 bSkillAtk,"SR_KNUCKLEARROW",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",10;
+                  bonus2 bSkillAtk,"SR_KNUCKLEARROW",10;
+               }
+            }
+         }
+      }
   - Id: 560039
     AegisName: aegis_560039
     Name: Heroria Knuckles    # !todo check english name
@@ -175795,6 +176702,51 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 560048
+    AegisName: Mocadas_Knuckle
+    Name: Muqaddas Mashts
+    Type: Weapon
+    SubType: Knuckle
+    Weight: 2000
+    Attack: 220
+    Range: 1
+    Slots: 2
+    Jobs:
+      Monk: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHPrate,10;
+      bonus2 bSkillAtk,"IQ_THIRD_FLAME_BOMB",10;
+      if (.@r>=7) {
+         bonus bShortAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"IQ_THIRD_FLAME_BOMB",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"IQ_THIRD_FLAME_BOMB",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
   - Id: 570000
     AegisName: Boost_Guitar
     Name: Booster Guitar
@@ -176661,6 +177613,65 @@ Body:
     Gradable: true
     Flags:
       DropEffect: CLIENT
+  - Id: 570033
+    AegisName: F_Ein_1HLUTE
+    Name: Flush Safety Lute
+    Type: Weapon
+    SubType: Musical
+    Weight: 1400
+    Attack: 200
+    Range: 1
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Classes:
+      Fourth: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bLongAtkRate,10;
+      bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",20;
+      bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",20;
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         bonus bBaseAtk,70;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,15;
+            bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",10;
+            bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",15;
+            bonus2 bSkillUseSP,"TR_ROSEBLOSSOM_ATK",-25;
+            bonus2 bSkillUseSP,"WM_SEVERE_RAINSTORM",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillCooldown,"WM_SEVERE_RAINSTORM",-2000;
+               bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",10;
+               bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",10;
+               bonus2 bSkillUseSP,"TR_ROSEBLOSSOM_ATK",-25;
+               bonus2 bSkillUseSP,"WM_SEVERE_RAINSTORM",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",10;
+            bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",10;
+                  bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",10;
+               }
+            }
+         }
+      }
   - Id: 570034
     AegisName: aegis_570034
     Name: Heroria Violin    # !todo check english name
@@ -176896,6 +177907,53 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 570045
+    AegisName: Mocadas_Instrument
+    Name: Muqaddas Saz
+    Type: Weapon
+    SubType: Musical
+    Weight: 1100
+    Attack: 120
+    MagicAttack: 230
+    Range: 1
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Classes:
+      Fourth: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatkRate,5;
+      bonus2 bSkillAtk,"TR_METALIC_FURY",10;
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_All,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"TR_METALIC_FURY",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"TR_METALIC_FURY",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bMagicAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bSMatk,5;
+               }
+            }
+         }
+      }
   - Id: 580000
     AegisName: Boost_Whip
     Name: Booster Whip
@@ -177762,6 +178820,65 @@ Body:
     Gradable: true
     Flags:
       DropEffect: CLIENT
+  - Id: 580034
+    AegisName: F_Ein_1HWHIP
+    Name: Flush Safety Whip
+    Type: Weapon
+    SubType: Whip
+    Weight: 1400
+    Attack: 200
+    Range: 2
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Classes:
+      Fourth: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bLongAtkRate,10;
+      bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",20;
+      bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",20;
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         bonus bBaseAtk,70;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,15;
+            bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",10;
+            bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",15;
+            bonus2 bSkillUseSP,"TR_ROSEBLOSSOM_ATK",-25;
+            bonus2 bSkillUseSP,"WM_SEVERE_RAINSTORM",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillCooldown,"WM_SEVERE_RAINSTORM",-2000;
+               bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",10;
+               bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",10;
+               bonus2 bSkillUseSP,"TR_ROSEBLOSSOM_ATK",-25;
+               bonus2 bSkillUseSP,"WM_SEVERE_RAINSTORM",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",10;
+            bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",10;
+                  bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",10;
+               }
+            }
+         }
+      }
   - Id: 580035
     AegisName: aegis_580035
     Name: Heroria Rope    # !todo check english name
@@ -178018,6 +179135,53 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 580046
+    AegisName: Mocadas_Whip
+    Name: Muqaddas Syaraq
+    Type: Weapon
+    SubType: Whip
+    Weight: 1100
+    Attack: 100
+    MagicAttack: 230
+    Range: 2
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Classes:
+      Fourth: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatkRate,5;
+      bonus2 bSkillAtk,"TR_METALIC_FURY",10;
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_All,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"TR_METALIC_FURY",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"TR_METALIC_FURY",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bMagicAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bSMatk,5;
+               }
+            }
+         }
+      }
   - Id: 590000
     AegisName: Boost_Hall
     Name: Booster Mace
@@ -179342,6 +180506,66 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bUnbreakableWeapon;
+  - Id: 590049
+    AegisName: F_Ein_1HHAMMER
+    Name: Flush Rubber Hammer
+    Type: Weapon
+    SubType: Mace
+    Weight: 1900
+    Attack: 170
+    Range: 1
+    Slots: 2
+    Jobs:
+      Priest: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatk,210;
+      bonus bUnbreakableWeapon;
+      bonus bMatkRate,10;
+      bonus bHealPower,15;
+      bonus2 bSkillAtk,"CD_ARBITRIUM_ATK",20;
+      bonus2 bSkillAtk,"AB_ADORAMUS",20;
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_Holy,10;
+         bonus bVariableCastrate,-10;
+         if (.@r>=9) {
+            bonus2 bMagicAddSize,Size_All,15;
+            bonus2 bSkillAtk,"CD_ARBITRIUM_ATK",10;
+            bonus2 bSkillAtk,"AB_ADORAMUS",15;
+            bonus2 bSkillUseSP,"CD_ARBITRIUM_ATK",-25;
+            bonus2 bSkillUseSP,"AB_ADORAMUS",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"CD_ARBITRIUM_ATK",10;
+               bonus2 bSkillAtk,"AB_ADORAMUS",10;
+               bonus2 bSkillUseSP,"CD_ARBITRIUM_ATK",-25;
+               bonus2 bSkillUseSP,"AB_ADORAMUS",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bSMatk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"CD_ARBITRIUM_ATK",10;
+            bonus2 bSkillAtk,"AB_ADORAMUS",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"CD_ARBITRIUM_ATK",10;
+                  bonus2 bSkillAtk,"AB_ADORAMUS",10;
+               }
+            }
+         }
+      }
   - Id: 590050
     AegisName: aegis_590050
     Name: Heroria Smith Mace    # !todo check english name
@@ -179532,6 +180756,98 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 590062
+    AegisName: Mocadas_Judgement
+    Name: Muqaddas Daablunta
+    Type: Weapon
+    SubType: Mace
+    Weight: 1200
+    Attack: 220
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bUnbreakableWeapon;
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"BO_EXPLOSIVE_POWDER",10;
+      if (.@r>=7) {
+         bonus bShortAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"BO_EXPLOSIVE_POWDER",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"BO_EXPLOSIVE_POWDER",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
+  - Id: 590063
+    AegisName: Mocadas_Hall
+    Name: Muqaddas Ayyasy
+    Type: Weapon
+    SubType: Mace
+    Weight: 1500
+    Attack: 220
+    Range: 1
+    Slots: 2
+    Jobs:
+      SuperNovice: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bUnbreakableWeapon;
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"HN_MEGA_SONIC_BLOW",10;
+      if (.@r>=7) {
+         bonus bShortAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"HN_MEGA_SONIC_BLOW",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"HN_MEGA_SONIC_BLOW",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
   - Id: 600000
     AegisName: IDTest_bothhand
     Name: IDTest bothhand
@@ -180293,6 +181609,59 @@ Body:
     Gradable: true
     Flags:
       DropEffect: CLIENT
+  - Id: 600031
+    AegisName: F_Ein_BHSWORD
+    Name: Flush Claw Sword
+    Type: Weapon
+    SubType: 2hSword
+    Weight: 3500
+    Attack: 320
+    Range: 1
+    Slots: 2
+    Jobs:
+      Knight: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,10;
+      bonus bAtkRate,15;
+      bonus2 bSkillAtk,"DK_STORMSLASH",20;
+      if (.@r>=7) {
+         bonus bCritAtkRate,25;
+         bonus bAspdRate,15;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,20;
+            bonus bCritAtkRate,15;
+            bonus2 bSkillAtk,"DK_STORMSLASH",10;
+            bonus2 bSkillUseSP,"DK_STORMSLASH",-15;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus bCritical,10;
+               bonus2 bSkillAtk,"DK_STORMSLASH",10;
+               bonus2 bSkillUseSP,"DK_STORMSLASH",-15;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"DK_STORMSLASH",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"DK_STORMSLASH",10;
+               }
+            }
+         }
+      }
   - Id: 600032
     AegisName: aegis_600032
     Name: Heroria Zweihander    # !todo check english name
@@ -181470,6 +182839,63 @@ Body:
     Gradable: true
     Flags:
       DropEffect: CLIENT
+  - Id: 610042
+    AegisName: F_Ein_BHKATAR
+    Name: Flush Bolt Crusher
+    Type: Weapon
+    SubType: Katar
+    Weight: 2000
+    Attack: 340
+    Range: 1
+    Slots: 2
+    Jobs:
+      Assassin: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,15;
+      bonus2 bSkillAtk,"SHC_IMPACT_CRATER",20;
+      bonus2 bSkillAtk,"GC_ROLLINGCUTTER",20;
+      if (.@r>=7) {
+         bonus bAspdRate,15;
+         bonus bBaseAtk,90;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,20;
+            bonus2 bSkillAtk,"GC_ROLLINGCUTTER",15;
+            bonus2 bSkillAtk,"SHC_IMPACT_CRATER",10;
+            bonus2 bSkillUseSP,"GC_ROLLINGCUTTER",-2;
+            bonus2 bSkillUseSP,"SHC_IMPACT_CRATER",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"SHC_IMPACT_CRATER",10;
+               bonus2 bSkillAtk,"GC_ROLLINGCUTTER",10;
+               bonus2 bSkillUseSP,"GC_ROLLINGCUTTER",-2;
+               bonus2 bSkillUseSP,"SHC_IMPACT_CRATER",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"SHC_IMPACT_CRATER",10;
+            bonus2 bSkillAtk,"GC_ROLLINGCUTTER",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"SHC_IMPACT_CRATER",10;
+                  bonus2 bSkillAtk,"GC_ROLLINGCUTTER",10;
+               }
+            }
+         }
+      }
   - Id: 610043
     AegisName: aegis_610043
     Name: Heroria Katar    # !todo check english name
@@ -181671,6 +183097,51 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 610054
+    AegisName: Mocadas_Katar
+    Name: Muqaddas Dayats
+    Type: Weapon
+    SubType: Katar
+    Weight: 1250
+    Attack: 300
+    Range: 1
+    Slots: 2
+    Jobs:
+      Assassin: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",10;
+      if (.@r>=7) {
+         bonus bShortAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
   - Id: 620003
     AegisName: PT_B_Axe
     Name: Power Swing Booster Axe
@@ -182188,6 +183659,64 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bUnbreakableWeapon;
+  - Id: 620020
+    AegisName: F_Ein_BHAXE
+    Name: Flush Saw Axe
+    Type: Weapon
+    SubType: 2hAxe
+    Weight: 5000
+    Attack: 370
+    Range: 1
+    Slots: 2
+    Jobs:
+      Blacksmith: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,15;
+      bonus bUnbreakableWeapon;
+      bonus2 bSkillAtk,"MT_SPARK_BLASTER",20;
+      bonus2 bSkillAtk,"NC_ARMSCANNON",20;
+      if (.@r>=7) {
+         bonus bAspdRate,15;
+         bonus bBaseAtk,90;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,20;
+            bonus bLongAtkRate,15;
+            bonus2 bSkillAtk,"MT_SPARK_BLASTER",10;
+            bonus2 bSkillUseSP,"MT_SPARK_BLASTER",-25;
+            bonus2 bSkillUseSP,"NC_ARMSCANNON",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"MT_SPARK_BLASTER",10;
+               bonus2 bSkillAtk,"NC_ARMSCANNON",10;
+               bonus2 bSkillUseSP,"MT_SPARK_BLASTER",-25;
+               bonus2 bSkillUseSP,"NC_ARMSCANNON",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"MT_SPARK_BLASTER",10;
+            bonus2 bSkillAtk,"NC_ARMSCANNON",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"MT_SPARK_BLASTER",10;
+                  bonus2 bSkillAtk,"NC_ARMSCANNON",10;
+               }
+            }
+         }
+      }
   - Id: 620021
     AegisName: aegis_620021
     Name: Heroria Giant Axe    # !todo check english name
@@ -182939,6 +184468,51 @@ Body:
                bonus2 bAddSize,Size_All,10;
                if (.@g>=ENCHANTGRADE_A) {
                   bonus2 bAddEle,Ele_All,10;
+               }
+            }
+         }
+      }
+  - Id: 630028
+    AegisName: Mocadas_Spear
+    Name: Muqaddas Banjiiraa
+    Type: Weapon
+    SubType: 2hSpear
+    Weight: 5000
+    Attack: 310
+    Range: 3
+    Slots: 2
+    Jobs:
+      Knight: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"DK_MADNESS_CRUSHER",10;
+      if (.@r>=7) {
+         bonus bLongAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"DK_MADNESS_CRUSHER",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"DK_MADNESS_CRUSHER",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
                }
             }
          }
@@ -184017,6 +185591,79 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bUnbreakableWeapon;
+  - Id: 640035
+    AegisName: F_Ein_BHSTAFF
+    Name: Flush Detecting Staff
+    Type: Weapon
+    SubType: 2hStaff
+    Weight: 1200
+    Attack: 180
+    Range: 1
+    Slots: 2
+    Jobs:
+      Wizard: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatk,350;
+      bonus bUnbreakableWeapon;
+      bonus bMatkRate,10;
+      bonus2 bSkillAtk,"AG_DESTRUCTIVE_HURRICANE",20;
+      bonus2 bSkillAtk,"AG_CRIMSON_ARROW_ATK",20;
+      bonus2 bSkillAtk,"AG_STORM_CANNON",20;
+      bonus2 bSkillAtk,"AG_ALL_BLOOM",20;
+      if (.@r>=7) {
+         bonus bVariableCastrate,-15;
+         bonus bMatk,90;
+         if (.@r>=9) {
+            bonus2 bMagicAddSize,Size_All,20;
+            bonus2 bSkillAtk,"AG_DESTRUCTIVE_HURRICANE",10;
+            bonus2 bSkillAtk,"AG_CRIMSON_ARROW_ATK",10;
+            bonus2 bSkillAtk,"AG_STORM_CANNON",10;
+            bonus2 bSkillAtk,"AG_ALL_BLOOM",10;
+            bonus2 bSkillUseSP,"AG_DESTRUCTIVE_HURRICANE",-25;
+            bonus2 bSkillUseSP,"AG_CRIMSON_ARROW_ATK",-25;
+            bonus2 bSkillUseSP,"AG_STORM_CANNON",-25;
+            bonus2 bSkillUseSP,"AG_ALL_BLOOM",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"AG_DESTRUCTIVE_HURRICANE",10;
+               bonus2 bSkillAtk,"AG_CRIMSON_ARROW_ATK",10;
+               bonus2 bSkillAtk,"AG_STORM_CANNON",10;
+               bonus2 bSkillAtk,"AG_ALL_BLOOM",10;
+               bonus2 bSkillUseSP,"AG_DESTRUCTIVE_HURRICANE",-25;
+               bonus2 bSkillUseSP,"AG_CRIMSON_ARROW_ATK",-25;
+               bonus2 bSkillUseSP,"AG_STORM_CANNON",-25;
+               bonus2 bSkillUseSP,"AG_ALL_BLOOM",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bSMatk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"AG_DESTRUCTIVE_HURRICANE",10;
+            bonus2 bSkillAtk,"AG_CRIMSON_ARROW_ATK",10;
+            bonus2 bSkillAtk,"AG_STORM_CANNON",10;
+            bonus2 bSkillAtk,"AG_ALL_BLOOM",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"AG_DESTRUCTIVE_HURRICANE",10;
+                  bonus2 bSkillAtk,"AG_CRIMSON_ARROW_ATK",10;
+                  bonus2 bSkillAtk,"AG_STORM_CANNON",10;
+                  bonus2 bSkillAtk,"AG_ALL_BLOOM",10;
+               }
+            }
+         }
+      }
   - Id: 640036
     AegisName: Devil_Wing_Staff
     Name: Devil Wing Staff
@@ -184267,6 +185914,63 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 640046
+    AegisName: Mocadas_Stem
+    Name: Muqaddas Jaydukhar
+    Type: Weapon
+    SubType: 2hStaff
+    Weight: 2000
+    Attack: 80
+    MagicAttack: 300
+    Range: 1
+    Slots: 2
+    Jobs:
+      Wizard: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bUnbreakableWeapon;
+      bonus bMatkRate,5;
+      bonus2 bSkillAtk,"AG_VIOLENT_QUAKE",10;
+      bonus2 bSkillAtk,"AG_CRYSTAL_IMPACT_ATK",10;
+      bonus2 bSkillAtk,"AG_FROZEN_SLASH",10;
+      bonus2 bSkillAtk,"AG_ROCK_DOWN",10;
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_Water,10;
+         bonus2 bMagicAtkEle,Ele_Earth,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"AG_VIOLENT_QUAKE",10;
+            bonus2 bSkillAtk,"AG_CRYSTAL_IMPACT_ATK",10;
+            bonus2 bSkillAtk,"AG_FROZEN_SLASH",10;
+            bonus2 bSkillAtk,"AG_ROCK_DOWN",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"AG_VIOLENT_QUAKE",10;
+               bonus2 bSkillAtk,"AG_CRYSTAL_IMPACT_ATK",10;
+               bonus2 bSkillAtk,"AG_FROZEN_SLASH",10;
+               bonus2 bSkillAtk,"AG_ROCK_DOWN",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bMagicAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bSMatk,5;
+               }
+            }
+         }
+      }
   - Id: 650003
     AegisName: Ep172_Bh_Huuma
     Name: Wrath Wheel
@@ -184934,6 +186638,65 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bUnbreakableWeapon;
+  - Id: 650029
+    AegisName: F_Ein_BHHuuma
+    Name: Flush Grinder Huuma Shuriken
+    Type: Weapon
+    SubType: Huuma
+    Weight: 1800
+    Attack: 300
+    Range: 1
+    Slots: 2
+    Jobs:
+      KagerouOboro: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,15;
+      bonus bUnbreakableWeapon;
+      bonus2 bSkillAtk,"SS_FUUMAKOUCHIKU",20;
+      bonus2 bSkillAtk,"KO_HUUMARANKA",20;
+      if (.@r>=7) {
+         bonus bVariableCastrate,-15;
+         bonus bBaseAtk,90;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,20;
+            bonus2 bSkillAtk,"SS_FUUMAKOUCHIKU",10;
+            bonus2 bSkillAtk,"KO_HUUMARANKA",20;
+            bonus2 bSkillUseSP,"SS_FUUMAKOUCHIKU",-25;
+            bonus2 bSkillUseSP,"KO_HUUMARANKA",-25;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillCooldown,"KO_HUUMARANKA",-1000;
+               bonus2 bSkillAtk,"SS_FUUMAKOUCHIKU",10;
+               bonus2 bSkillAtk,"KO_HUUMARANKA",10;
+               bonus2 bSkillUseSP,"SS_FUUMAKOUCHIKU",-25;
+               bonus2 bSkillUseSP,"KO_HUUMARANKA",-25;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"SS_FUUMAKOUCHIKU",10;
+            bonus2 bSkillAtk,"KO_HUUMARANKA",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"SS_FUUMAKOUCHIKU",10;
+                  bonus2 bSkillAtk,"KO_HUUMARANKA",10;
+               }
+            }
+         }
+      }
   - Id: 650030
     AegisName: aegis_650030
     Name: Heroria Fuma Shuriken    # !todo check english name
@@ -186762,6 +188525,64 @@ Body:
     Gradable: true
     Flags:
       DropEffect: CLIENT
+  - Id: 700060
+    AegisName: F_Ein_BHBOW
+    Name: Flush Bolt Shooter
+    Type: Weapon
+    SubType: Bow
+    Weight: 1700
+    Attack: 240
+    Range: 5
+    Slots: 2
+    Jobs:
+      Hunter: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,15;
+      bonus bUnbreakableWeapon;
+      bonus2 bSkillAtk,"WH_GALESTORM",20;
+      bonus2 bSkillAtk,"RA_AIMEDBOLT",20;
+      if (.@r>=7) {
+         bonus bVariableCastrate,-15;
+         bonus bBaseAtk,90;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,20;
+            bonus2 bSkillAtk,"WH_GALESTORM",10;
+            bonus2 bSkillAtk,"RA_AIMEDBOLT",15;
+            bonus2 bSkillUseSP,"WH_GALESTORM",-20;
+            bonus2 bSkillUseSP,"RA_AIMEDBOLT",-20;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"WH_GALESTORM",10;
+               bonus2 bSkillAtk,"RA_AIMEDBOLT",10;
+               bonus2 bSkillUseSP,"WH_GALESTORM",-20;
+               bonus2 bSkillUseSP,"RA_AIMEDBOLT",-20;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"WH_GALESTORM",10;
+            bonus2 bSkillAtk,"RA_AIMEDBOLT",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"WH_GALESTORM",10;
+                  bonus2 bSkillAtk,"RA_AIMEDBOLT",10;
+               }
+            }
+         }
+      }
   - Id: 700061
     AegisName: aegis_700061
     Name: Heroria Log Bow    # !todo check english name
@@ -187066,6 +188887,51 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 700076
+    AegisName: Mocadas_Bow
+    Name: Muqaddas Kahassu
+    Type: Weapon
+    SubType: Bow
+    Weight: 1500
+    Attack: 300
+    Range: 5
+    Slots: 2
+    Jobs:
+      Hunter: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"WH_HAWKRUSH",10;
+      if (.@r>=7) {
+         bonus5 bAutoSpell,"SN_SHARPSHOOTING",max(getskilllv("SN_SHARPSHOOTING"),1),150,BF_LONG|BF_WEAPON,1;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"WH_HAWKRUSH",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"WH_HAWKRUSH",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
   - Id: 800000
     AegisName: IDTest_gun
     Name: IDTest gun
@@ -187563,6 +189429,63 @@ Body:
     Gradable: true
     Flags:
       DropEffect: CLIENT
+  - Id: 800016
+    AegisName: F_Ein_1HGUN
+    Name: Flush Bolt Revolver
+    Type: Weapon
+    SubType: Revolver
+    Weight: 1800
+    Attack: 220
+    Range: 7
+    Slots: 2
+    Jobs:
+      Rebellion: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bLongAtkRate,15;
+      bonus2 bSkillAtk,"NW_ONLY_ONE_BULLET",20;
+      bonus2 bSkillAtk,"RL_FIREDANCE",20;
+      if (.@r>=7) {
+         bonus bAspdRate,15;
+         bonus bBaseAtk,90;
+         if (.@r>=9) {
+            bonus2 bAddSize,Size_All,20;
+            bonus2 bSkillAtk,"NW_ONLY_ONE_BULLET",10;
+            bonus2 bSkillAtk,"RL_FIREDANCE",20;
+            bonus2 bSkillUseSP,"NW_ONLY_ONE_BULLET",-20;
+            bonus2 bSkillUseSP,"RL_FIREDANCE",-20;
+            if (.@r>=11) {
+               bonus bDelayrate,-15;
+               bonus2 bSkillAtk,"NW_ONLY_ONE_BULLET",10;
+               bonus2 bSkillAtk,"RL_FIREDANCE",10;
+               bonus2 bSkillUseSP,"NW_ONLY_ONE_BULLET",-20;
+               bonus2 bSkillUseSP,"RL_FIREDANCE",-20;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"NW_ONLY_ONE_BULLET",10;
+            bonus2 bSkillAtk,"RL_FIREDANCE",10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bSkillAtk,"NW_ONLY_ONE_BULLET",10;
+                  bonus2 bSkillAtk,"RL_FIREDANCE",10;
+               }
+            }
+         }
+      }
   - Id: 800017
     AegisName: aegis_800017
     Name: Heroria Revolver    # !todo check english name
@@ -188415,6 +190338,51 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 810034
+    AegisName: Mocadas_Rifle
+    Name: Muqaddas Tabanji
+    Type: Weapon
+    SubType: Rifle
+    Weight: 2200
+    Attack: 275
+    Range: 9
+    Slots: 2
+    Jobs:
+      Rebellion: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"NW_ONLY_ONE_BULLET",10;
+      if (.@r>=7) {
+         bonus bLongAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"NW_ONLY_ONE_BULLET",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"NW_ONLY_ONE_BULLET",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
   - Id: 820000
     AegisName: Ep172_1h_Shotgun
     Name: Lust Shatter
@@ -188959,6 +190927,52 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 820028
+    AegisName: Mocadas_Shotgun
+    Name: Muqaddas Saka
+    Type: Weapon
+    SubType: Shotgun
+    Weight: 2500
+    Attack: 290
+    Range: 9
+    Slots: 2
+    Jobs:
+      Rebellion: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bSplashRange,1;
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"NW_WILD_FIRE",10;
+      if (.@r>=7) {
+         bonus bLongAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"NW_WILD_FIRE",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"NW_WILD_FIRE",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
   - Id: 830000
     AegisName: Boost_Gatling
     Name: Booster Gatling
@@ -189653,6 +191667,51 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 830033
+    AegisName: Mocadas_Gatling
+    Name: Muqaddas Taliin
+    Type: Weapon
+    SubType: Gatling
+    Weight: 3200
+    Attack: 305
+    Range: 9
+    Slots: 2
+    Jobs:
+      Rebellion: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"NW_THE_VIGILANTE_AT_NIGHT",10;
+      if (.@r>=7) {
+         bonus bLongAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"NW_THE_VIGILANTE_AT_NIGHT",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"NW_THE_VIGILANTE_AT_NIGHT",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
   - Id: 840000
     AegisName: Ep172_1h_Grenade
     Name: Lust Boom
@@ -190234,3 +192293,48 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+  - Id: 840028
+    AegisName: Mocadas_Launcher
+    Name: Muqaddas Naranzak
+    Type: Weapon
+    SubType: Grenade
+    Weight: 2500
+    Attack: 340
+    Range: 9
+    Slots: 2
+    Jobs:
+      Rebellion: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bAtkRate,5;
+      bonus2 bSkillAtk,"NW_SPIRAL_SHOOTING",10;
+      if (.@r>=7) {
+         bonus bLongAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"NW_SPIRAL_SHOOTING",10;
+            if (.@r>=11) {
+               bonus2 bSkillAtk,"NW_SPIRAL_SHOOTING",10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bAddSize,Size_Small,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_Medium,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bAddSize,Size_Large,15;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
