@@ -70782,8 +70782,8 @@ Body:
       }
       if (getskilllv("WL_RECOGNIZEDSPELL") >= 5)
          bonus2 bSubClass,Class_Boss,20;
-      bonus bMagicHPGainValue,30;
-      bonus bMagicSPGainValue,3;
+      bonus bMagicHPGainValue,30*.@r;
+      bonus bMagicSPGainValue,3*.@r;
       if (.@r >= 7) {
          bonus bVit,7;
          bonus bInt,7;
