@@ -113,7 +113,7 @@ Body:
       Thief: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 4 
+    WeaponLevel: 4
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -88696,7 +88696,7 @@ Body:
     Defense: 12
     Locations:
       Head_Top: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Refineable: true
     View: 565
     Script: |
@@ -104047,7 +104047,7 @@ Body:
     Defense: 25
     Locations:
       Garment: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -108674,7 +108674,7 @@ Body:
     Defense: 25
     Locations:
       Shoes: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -121559,6 +121559,916 @@ Body:
     Locations:
       Shadow_Left_Accessory: true
     Refineable: true
+  - Id: 24792
+    AegisName: S_Master_Weapon
+    Name: Master Weapon Shadow    # !todo check english name
+    Type: ShadowGear
+    Locations:
+      Shadow_Weapon: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMatkRate,2;
+      bonus bAtkRate,2;
+      bonus bShortAtkRate,(.@r/2);
+      bonus bLongAtkRate,(.@r/2);
+      bonus2 bMagicAtkEle,Ele_All,(.@r/2);
+      if (.@r>=7) {
+         bonus bMaxHPrate,3;
+         bonus bMaxSPrate,3;
+         if (.@r>=9) {
+            bonus bPAtk,2;
+            bonus bSMatk,2;
+         }
+      }
+  - Id: 24793
+    AegisName: S_Master_Shield
+    Name: Master Shield Shadow    # !todo check english name
+    Type: ShadowGear
+    Locations:
+      Shadow_Shield: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMatkRate,2;
+      bonus bAtkRate,2;
+      bonus bShortAtkRate,(.@r/2);
+      bonus bLongAtkRate,(.@r/2);
+      bonus2 bMagicAtkEle,Ele_All,(.@r/2);
+      if (.@r>=7) {
+         bonus bMaxHPrate,3;
+         bonus bMaxSPrate,3;
+         if (.@r>=9) {
+            bonus bPAtk,2;
+            bonus bSMatk,2;
+         }
+      }
+  - Id: 24800
+    AegisName: S_DK_Armor
+    Name: M.Dragon Knight Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Knight: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24801
+    AegisName: S_DK_Shoes
+    Name: M.Dragon Night Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Knight: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24802
+    AegisName: S_DK_Earring
+    Name: M.Dragon Night Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Knight: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24803
+    AegisName: S_DK_Pendant
+    Name: M.Dragon Knight Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Knight: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24804
+    AegisName: S_IG_Armor
+    Name: M.Imperial Guard Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Crusader: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24805
+    AegisName: S_IG_Shoes
+    Name: M.Imperial Guard Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Crusader: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24806
+    AegisName: S_IG_Earring
+    Name: M.Imperial Guard Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Crusader: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24807
+    AegisName: S_IG_Pendant
+    Name: M.Imperial Guard Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Crusader: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24808
+    AegisName: S_SHC_Armor
+    Name: M.Shadow Cross Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Assassin: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24809
+    AegisName: S_SHC_Shoes
+    Name: M.Shadow Cross Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Assassin: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24810
+    AegisName: S_SHC_Earring
+    Name: M.Shadow Cross Earrings Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Assassin: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24811
+    AegisName: S_SHC_Pendant
+    Name: M.Shadow Cross Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Assassin: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24812
+    AegisName: S_ABC_Armor
+    Name: M.Abyss Chaser Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Rogue: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24813
+    AegisName: S_ABC_Shoes
+    Name: M.Abyss Chaser Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Rogue: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24814
+    AegisName: S_ABC_Earring
+    Name: M.Abyss Chaser Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Rogue: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24815
+    AegisName: S_ABC_Pendant
+    Name: M.Abyss Chaser Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Rogue: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24816
+    AegisName: S_CD_Armor
+    Name: M.Cardinal Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Priest: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24817
+    AegisName: S_CD_Shoes
+    Name: M.Cardinal Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Priest: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24818
+    AegisName: S_CD_Earring
+    Name: M.Cardinal Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Priest: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24819
+    AegisName: S_CD_Pendant
+    Name: M.Cardinal Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Priest: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24820
+    AegisName: S_IQ_Armor
+    Name: M.Inquisitor Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Monk: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24821
+    AegisName: S_IQ_Shoes
+    Name: M.Inquisitor Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Monk: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24822
+    AegisName: S_IQ_Earring
+    Name: M.Inquisitor Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Monk: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24823
+    AegisName: S_IQ_Pendant
+    Name: M.Inquisitor Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Monk: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24824
+    AegisName: S_MT_Armor
+    Name: M.Meister Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Blacksmith: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24825
+    AegisName: S_MT_Shoes
+    Name: M.Meister Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Blacksmith: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24826
+    AegisName: S_MT_Earring
+    Name: M.Meister Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Blacksmith: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24827
+    AegisName: S_MT_Pendant
+    Name: M.Meister Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Blacksmith: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24828
+    AegisName: S_BO_Armor
+    Name: M.Biolo Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Alchemist: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24829
+    AegisName: S_BO_Shoes
+    Name: M.Biolo Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Alchemist: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24830
+    AegisName: S_BO_Earring
+    Name: M.Biolo Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Alchemist: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24831
+    AegisName: S_BO_Pendant
+    Name: M.Biolo Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Alchemist: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24832
+    AegisName: S_WH_Armor
+    Name: M.Windhawk Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Hunter: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24833
+    AegisName: S_WH_Shoes
+    Name: M.Windhawk Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Hunter: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24834
+    AegisName: S_WH_Earring
+    Name: M.Windhawk Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Hunter: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24835
+    AegisName: S_WH_Pendant
+    Name: M.Windhawk Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Hunter: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24836
+    AegisName: S_TR_Armor
+    Name: M.Troubadour & Trouber Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      BardDancer: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24837
+    AegisName: S_TR_Shoes
+    Name: M.Troubadour & Trouber Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      BardDancer: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24838
+    AegisName: S_TR_Earring
+    Name: M.Troubadour & Trouber Earrings Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      BardDancer: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24839
+    AegisName: S_TR_Pendant
+    Name: M.Troubadour & Trouver Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      BardDancer: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24840
+    AegisName: S_AG_Armor
+    Name: M.Arch Mage Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Wizard: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24841
+    AegisName: S_AG_Shoes
+    Name: M.Arch Mage Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Wizard: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24842
+    AegisName: S_AG_Earring
+    Name: M.Arch Mage Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Wizard: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24843
+    AegisName: S_AG_Pendant
+    Name: M.Arch Mage Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Wizard: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24844
+    AegisName: S_EM_Armor
+    Name: M.Elemental Master Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Sage: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24845
+    AegisName: S_EM_Shoes
+    Name: M.Elemental Master Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Sage: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24846
+    AegisName: S_EM_Earring
+    Name: M.Elemental Master Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Sage: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24847
+    AegisName: S_EM_Pendant
+    Name: M.Elemental Master Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Sage: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24848
+    AegisName: S_NW_Armor
+    Name: M.Night Watch Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Rebellion: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24849
+    AegisName: S_NW_Shoes
+    Name: M.Night Watch Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Rebellion: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24850
+    AegisName: S_NW_Earring
+    Name: M.Night Watch Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Rebellion: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24851
+    AegisName: S_NW_Pendant
+    Name: M.Night Watch Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Rebellion: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24852
+    AegisName: S_SH_Armor
+    Name: M.Spirit Spirit Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Summoner: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24853
+    AegisName: S_SH_Shoes
+    Name: M.Spirit Spirit Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Summoner: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24854
+    AegisName: S_SH_Earring
+    Name: M.Spirit Spirit Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Summoner: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24855
+    AegisName: S_SH_Pendant
+    Name: M.Spirit Spirit Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      Summoner: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24856
+    AegisName: S_SS_Armor
+    Name: M.Shinkiro & Shiranui Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      KagerouOboro: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24857
+    AegisName: S_SS_Shoes
+    Name: M.Shinkiro & Shiranui Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      KagerouOboro: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24858
+    AegisName: S_SS_Earring
+    Name: M.Shinkiro & Shiranui Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      KagerouOboro: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24859
+    AegisName: S_SS_Pendant
+    Name: M.Shinkiro & Shiranui Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      KagerouOboro: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24860
+    AegisName: S_SKE_Armor
+    Name: M.Celestial Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      StarGladiator: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24861
+    AegisName: S_SKE_Shoes
+    Name: M.Cloth shoe shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      StarGladiator: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24862
+    AegisName: S_SKE_Earring
+    Name: M.Cheonje Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      StarGladiator: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24863
+    AegisName: S_SKE_Pendant
+    Name: M.Celestial Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      StarGladiator: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24864
+    AegisName: S_SOA_Armor
+    Name: M.Spirit Guide Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      SoulLinker: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24865
+    AegisName: S_SOA_Shoes
+    Name: M.Young Dosa Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      SoulLinker: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24866
+    AegisName: S_SOA_Earring
+    Name: M.Youngdosa Earring Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      SoulLinker: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24867
+    AegisName: S_SOA_Pendant
+    Name: M.Spirit Guide Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      SoulLinker: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24868
+    AegisName: S_HN_Armor
+    Name: M.Hyper Novice Armor Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      SuperNovice: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24869
+    AegisName: S_HN_Shoes
+    Name: M.Hyper Novice Shoes Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      SuperNovice: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24870
+    AegisName: S_HN_Earring
+    Name: M.Hyper novice earring shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      SuperNovice: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+  - Id: 24871
+    AegisName: S_HN_Pendant
+    Name: M.Hyper Novice Pendant Shadow    # !todo check english name
+    Type: ShadowGear
+    Jobs:
+      SuperNovice: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
   - Id: 26001
     AegisName: Toughen_Metal_Lance
     Name: Enhanced Metal Lance
@@ -122908,10 +123818,10 @@ Body:
     AegisName: Aquarius_Staff_J
     Name: Aquarius Staff
     Type: Weapon
-    SubType: Staff 
+    SubType: Staff
     Buy: 20
     Weight: 300
-    MagicAttack: 10 
+    MagicAttack: 10
     Range: 1
     Slots: 1
     Jobs:
@@ -142085,7 +142995,7 @@ Body:
     Name: Cancer Ring
     Type: Armor
     Buy: 20
-    Weight: 100 
+    Weight: 100
     Locations:
       Both_Accessory: true
     ArmorLevel: 1
@@ -143098,7 +144008,7 @@ Body:
     Defense: 12
     Locations:
       Head_Top: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Refineable: true
     View: 622
     Script: |
@@ -148545,6 +149455,14 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2286
+  - Id: 400407
+    AegisName: C_Black_Rabbit_Ear
+    Name: Costume Black Rabbit Ears    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2348
   - Id: 410005
     AegisName: C_Magic_Heir_TW
     Name: Costume Magic Heir
@@ -149089,7 +150007,7 @@ Body:
     EquipLevelMin: 100
     View: 2127
     Script: |
-      bonus bAllStats,10;      
+      bonus bAllStats,10;
   - Id: 410072
     AegisName: C_Demons_Familiar
     Name: Costume Demons Familia    # !todo check english name
@@ -149854,6 +150772,38 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2336
+  - Id: 410221
+    AegisName: aegis_410221
+    Name: Costume Baekseolgi    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2341
+  - Id: 410222
+    AegisName: aegis_410222
+    Name: Costume black sesame    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2342
+  - Id: 410223
+    AegisName: aegis_410223
+    Name: Costume bean    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2343
+  - Id: 410226
+    AegisName: C_Black_Rabbit
+    Name: Costume black rabbit    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2349
   - Id: 420000
     AegisName: Isabella_Carrot
     Name: Isabella Carrot
@@ -155127,7 +156077,7 @@ Body:
     Slots: 1
     Locations:
       Armor: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -158543,7 +159493,7 @@ Body:
     Defense: 25
     Locations:
       Shoes: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -158721,7 +159671,7 @@ Body:
     Defense: 25
     Locations:
       Shoes: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -161211,7 +162161,7 @@ Body:
     Defense: 25
     Locations:
       Garment: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -161240,7 +162190,7 @@ Body:
     Defense: 25
     Locations:
       Garment: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -161301,7 +162251,7 @@ Body:
     Defense: 25
     Locations:
       Garment: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Refineable: true
     Script: |
       .@r = getrefine;
@@ -163686,7 +164636,7 @@ Body:
     Weight: 100
     Locations:
       Both_Accessory: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Script: |
       bonus bFlee2,10;
       bonus bMaxSP,100;
@@ -163955,7 +164905,7 @@ Body:
     Weight: 100
     Locations:
       Both_Accessory: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Script: |
       bonus bAspdRate,5;
       bonus bMaxSP,100;
@@ -164018,7 +164968,7 @@ Body:
     Weight: 100
     Locations:
       Both_Accessory: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Script: |
       bonus bHit,50;
       bonus bMaxSP,100;
@@ -164051,10 +165001,10 @@ Body:
     Name: Pisces Ring
     Type: Armor
     Buy: 20
-    Weight: 100 
+    Weight: 100
     Locations:
       Both_Accessory: true
-    ArmorLevel: 1 
+    ArmorLevel: 1
     Script: |
       bonus bMaxSP,100;
       bonus bDelayrate,-5;
@@ -165032,7 +165982,7 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 150
     Script: |
-      bonus bMatkRate,15;         
+      bonus bMatkRate,15;
   - Id: 490106
     AegisName: Gray_W_Pendant
     Name: Gray Wolf Pendant
@@ -166998,7 +167948,7 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 200
     Script: |
-      bonus bMaxSPrate,10;      
+      bonus bMaxSPrate,10;
   - Id: 490286
     AegisName: aegis_490286
     Name: Level 1 Clip    # !todo check english name
@@ -180869,7 +181819,7 @@ Body:
     AegisName: Gemini_Violin_J
     Name: Gemini Violin
     Type: Weapon
-    SubType: Musical 
+    SubType: Musical
     Buy: 20
     Weight: 500
     Attack: 10
@@ -188685,7 +189635,7 @@ Body:
       Priest: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 4 
+    WeaponLevel: 4
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -188781,7 +189731,7 @@ Body:
     Type: Weapon
     SubType: 2hStaff
     Buy: 20
-    Weight: 300 
+    Weight: 300
     MagicAttack: 10
     Range: 1
     Slots: 1
@@ -188797,7 +189747,7 @@ Body:
       Wizard: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 4 
+    WeaponLevel: 4
     Refineable: true
     Script: |
       .@r = getrefine();
