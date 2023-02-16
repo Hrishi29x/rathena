@@ -121561,7 +121561,7 @@ Body:
     Refineable: true
   - Id: 24792
     AegisName: S_Master_Weapon
-    Name: Master Weapon Shadow    # !todo check english name
+    Name: Master Shadow Weapon
     Type: ShadowGear
     Locations:
       Shadow_Weapon: true
@@ -121584,7 +121584,7 @@ Body:
       }
   - Id: 24793
     AegisName: S_Master_Shield
-    Name: Master Shield Shadow    # !todo check english name
+    Name: Master Shadow Shield
     Type: ShadowGear
     Locations:
       Shadow_Shield: true
@@ -121607,7 +121607,7 @@ Body:
       }
   - Id: 24800
     AegisName: S_DK_Armor
-    Name: M.Dragon Knight Armor Shadow    # !todo check english name
+    Name: M. Dragon Knight Shadow Armor
     Type: ShadowGear
     Jobs:
       Knight: true
@@ -121619,7 +121619,7 @@ Body:
     Refineable: true
   - Id: 24801
     AegisName: S_DK_Shoes
-    Name: M.Dragon Night Shoes Shadow    # !todo check english name
+    Name: M. Dragon Knight Shadow Shoes
     Type: ShadowGear
     Jobs:
       Knight: true
@@ -121631,7 +121631,7 @@ Body:
     Refineable: true
   - Id: 24802
     AegisName: S_DK_Earring
-    Name: M.Dragon Night Earring Shadow    # !todo check english name
+    Name: M. Dragon Knight Shadow Earring
     Type: ShadowGear
     Jobs:
       Knight: true
@@ -121643,7 +121643,7 @@ Body:
     Refineable: true
   - Id: 24803
     AegisName: S_DK_Pendant
-    Name: M.Dragon Knight Pendant Shadow    # !todo check english name
+    Name: M. Dragon Knight Shadow Pendant
     Type: ShadowGear
     Jobs:
       Knight: true
@@ -121655,7 +121655,7 @@ Body:
     Refineable: true
   - Id: 24804
     AegisName: S_IG_Armor
-    Name: M.Imperial Guard Armor Shadow    # !todo check english name
+    Name: M. Imperial Guard Shadow Armor
     Type: ShadowGear
     Jobs:
       Crusader: true
@@ -121667,7 +121667,7 @@ Body:
     Refineable: true
   - Id: 24805
     AegisName: S_IG_Shoes
-    Name: M.Imperial Guard Shoes Shadow    # !todo check english name
+    Name: M. Imperial Guard Shadow Shoes
     Type: ShadowGear
     Jobs:
       Crusader: true
@@ -121679,7 +121679,7 @@ Body:
     Refineable: true
   - Id: 24806
     AegisName: S_IG_Earring
-    Name: M.Imperial Guard Earring Shadow    # !todo check english name
+    Name: M. Imperial Guard Shadow Earring
     Type: ShadowGear
     Jobs:
       Crusader: true
@@ -121691,7 +121691,7 @@ Body:
     Refineable: true
   - Id: 24807
     AegisName: S_IG_Pendant
-    Name: M.Imperial Guard Pendant Shadow    # !todo check english name
+    Name: M. Imperial Guard Shadow Pendant
     Type: ShadowGear
     Jobs:
       Crusader: true
@@ -121703,7 +121703,7 @@ Body:
     Refineable: true
   - Id: 24808
     AegisName: S_SHC_Armor
-    Name: M.Shadow Cross Armor Shadow    # !todo check english name
+    Name: M. Shadow Cross Shadow Armor
     Type: ShadowGear
     Jobs:
       Assassin: true
@@ -121715,7 +121715,7 @@ Body:
     Refineable: true
   - Id: 24809
     AegisName: S_SHC_Shoes
-    Name: M.Shadow Cross Shoes Shadow    # !todo check english name
+    Name: M. Shadow Cross Shadow Shoes
     Type: ShadowGear
     Jobs:
       Assassin: true
@@ -121727,7 +121727,7 @@ Body:
     Refineable: true
   - Id: 24810
     AegisName: S_SHC_Earring
-    Name: M.Shadow Cross Earrings Shadow    # !todo check english name
+    Name: M. Shadow Cross Shadow Earring
     Type: ShadowGear
     Jobs:
       Assassin: true
@@ -121739,7 +121739,7 @@ Body:
     Refineable: true
   - Id: 24811
     AegisName: S_SHC_Pendant
-    Name: M.Shadow Cross Pendant Shadow    # !todo check english name
+    Name: M. Shadow Cross Shadow Pendant
     Type: ShadowGear
     Jobs:
       Assassin: true
@@ -121751,7 +121751,7 @@ Body:
     Refineable: true
   - Id: 24812
     AegisName: S_ABC_Armor
-    Name: M.Abyss Chaser Armor Shadow    # !todo check english name
+    Name: M. Abyss Chaser Shadow Armor
     Type: ShadowGear
     Jobs:
       Rogue: true
@@ -121763,7 +121763,7 @@ Body:
     Refineable: true
   - Id: 24813
     AegisName: S_ABC_Shoes
-    Name: M.Abyss Chaser Shoes Shadow    # !todo check english name
+    Name: M. Abyss Chaser Shadow Shoes
     Type: ShadowGear
     Jobs:
       Rogue: true
@@ -121775,7 +121775,7 @@ Body:
     Refineable: true
   - Id: 24814
     AegisName: S_ABC_Earring
-    Name: M.Abyss Chaser Earring Shadow    # !todo check english name
+    Name: M. Abyss Chaser Shadow Earring
     Type: ShadowGear
     Jobs:
       Rogue: true
@@ -121787,7 +121787,7 @@ Body:
     Refineable: true
   - Id: 24815
     AegisName: S_ABC_Pendant
-    Name: M.Abyss Chaser Pendant Shadow    # !todo check english name
+    Name: M. Abyss Chaser Shadow Pendant
     Type: ShadowGear
     Jobs:
       Rogue: true
@@ -121799,7 +121799,7 @@ Body:
     Refineable: true
   - Id: 24816
     AegisName: S_CD_Armor
-    Name: M.Cardinal Armor Shadow    # !todo check english name
+    Name: M. Cardinal Shadow Armor
     Type: ShadowGear
     Jobs:
       Priest: true
@@ -121811,7 +121811,7 @@ Body:
     Refineable: true
   - Id: 24817
     AegisName: S_CD_Shoes
-    Name: M.Cardinal Shoes Shadow    # !todo check english name
+    Name: M. Cardinal Shadow Shoes
     Type: ShadowGear
     Jobs:
       Priest: true
@@ -121823,7 +121823,7 @@ Body:
     Refineable: true
   - Id: 24818
     AegisName: S_CD_Earring
-    Name: M.Cardinal Earring Shadow    # !todo check english name
+    Name: M. Cardinal Shadow Earring
     Type: ShadowGear
     Jobs:
       Priest: true
@@ -121835,7 +121835,7 @@ Body:
     Refineable: true
   - Id: 24819
     AegisName: S_CD_Pendant
-    Name: M.Cardinal Pendant Shadow    # !todo check english name
+    Name: M. Cardinal Shadow Pendant
     Type: ShadowGear
     Jobs:
       Priest: true
@@ -121847,7 +121847,7 @@ Body:
     Refineable: true
   - Id: 24820
     AegisName: S_IQ_Armor
-    Name: M.Inquisitor Armor Shadow    # !todo check english name
+    Name: M. Inquisitor Shadow Armor
     Type: ShadowGear
     Jobs:
       Monk: true
@@ -121859,7 +121859,7 @@ Body:
     Refineable: true
   - Id: 24821
     AegisName: S_IQ_Shoes
-    Name: M.Inquisitor Shoes Shadow    # !todo check english name
+    Name: M. Inquisitor Shadow Shoes
     Type: ShadowGear
     Jobs:
       Monk: true
@@ -121871,7 +121871,7 @@ Body:
     Refineable: true
   - Id: 24822
     AegisName: S_IQ_Earring
-    Name: M.Inquisitor Earring Shadow    # !todo check english name
+    Name: M. Inquisitor Shadow Earring
     Type: ShadowGear
     Jobs:
       Monk: true
@@ -121883,7 +121883,7 @@ Body:
     Refineable: true
   - Id: 24823
     AegisName: S_IQ_Pendant
-    Name: M.Inquisitor Pendant Shadow    # !todo check english name
+    Name: M. Inquisitor Shadow Pendant
     Type: ShadowGear
     Jobs:
       Monk: true
@@ -121895,7 +121895,7 @@ Body:
     Refineable: true
   - Id: 24824
     AegisName: S_MT_Armor
-    Name: M.Meister Armor Shadow    # !todo check english name
+    Name: M. Meister Shadow Armor
     Type: ShadowGear
     Jobs:
       Blacksmith: true
@@ -121907,7 +121907,7 @@ Body:
     Refineable: true
   - Id: 24825
     AegisName: S_MT_Shoes
-    Name: M.Meister Shoes Shadow    # !todo check english name
+    Name: M. Meister Shadow Shoes
     Type: ShadowGear
     Jobs:
       Blacksmith: true
@@ -121919,7 +121919,7 @@ Body:
     Refineable: true
   - Id: 24826
     AegisName: S_MT_Earring
-    Name: M.Meister Earring Shadow    # !todo check english name
+    Name: M. Meister Shadow Earring
     Type: ShadowGear
     Jobs:
       Blacksmith: true
@@ -121931,7 +121931,7 @@ Body:
     Refineable: true
   - Id: 24827
     AegisName: S_MT_Pendant
-    Name: M.Meister Pendant Shadow    # !todo check english name
+    Name: M. Meister Shadow Pendant
     Type: ShadowGear
     Jobs:
       Blacksmith: true
@@ -121943,7 +121943,7 @@ Body:
     Refineable: true
   - Id: 24828
     AegisName: S_BO_Armor
-    Name: M.Biolo Armor Shadow    # !todo check english name
+    Name: M. Biolo Shadow Armor
     Type: ShadowGear
     Jobs:
       Alchemist: true
@@ -121955,7 +121955,7 @@ Body:
     Refineable: true
   - Id: 24829
     AegisName: S_BO_Shoes
-    Name: M.Biolo Shoes Shadow    # !todo check english name
+    Name: M. Biolo Shadow Shoes
     Type: ShadowGear
     Jobs:
       Alchemist: true
@@ -121967,7 +121967,7 @@ Body:
     Refineable: true
   - Id: 24830
     AegisName: S_BO_Earring
-    Name: M.Biolo Earring Shadow    # !todo check english name
+    Name: M. Biolo Shadow Earring
     Type: ShadowGear
     Jobs:
       Alchemist: true
@@ -121979,7 +121979,7 @@ Body:
     Refineable: true
   - Id: 24831
     AegisName: S_BO_Pendant
-    Name: M.Biolo Pendant Shadow    # !todo check english name
+    Name: M. Biolo Shadow Pendant
     Type: ShadowGear
     Jobs:
       Alchemist: true
@@ -121991,7 +121991,7 @@ Body:
     Refineable: true
   - Id: 24832
     AegisName: S_WH_Armor
-    Name: M.Windhawk Armor Shadow    # !todo check english name
+    Name: M. Windhawk Shadow Armor
     Type: ShadowGear
     Jobs:
       Hunter: true
@@ -122003,7 +122003,7 @@ Body:
     Refineable: true
   - Id: 24833
     AegisName: S_WH_Shoes
-    Name: M.Windhawk Shoes Shadow    # !todo check english name
+    Name: M. Windhawk Shadow Shoes
     Type: ShadowGear
     Jobs:
       Hunter: true
@@ -122015,7 +122015,7 @@ Body:
     Refineable: true
   - Id: 24834
     AegisName: S_WH_Earring
-    Name: M.Windhawk Earring Shadow    # !todo check english name
+    Name: M. Windhawk Shadow Earring
     Type: ShadowGear
     Jobs:
       Hunter: true
@@ -122027,7 +122027,7 @@ Body:
     Refineable: true
   - Id: 24835
     AegisName: S_WH_Pendant
-    Name: M.Windhawk Pendant Shadow    # !todo check english name
+    Name: M. Windhawk Shadow Pendant
     Type: ShadowGear
     Jobs:
       Hunter: true
@@ -122039,7 +122039,7 @@ Body:
     Refineable: true
   - Id: 24836
     AegisName: S_TR_Armor
-    Name: M.Troubadour & Trouber Armor Shadow    # !todo check english name
+    Name: M. Troubadour & Trouvere Shadow Armor
     Type: ShadowGear
     Jobs:
       BardDancer: true
@@ -122051,7 +122051,7 @@ Body:
     Refineable: true
   - Id: 24837
     AegisName: S_TR_Shoes
-    Name: M.Troubadour & Trouber Shoes Shadow    # !todo check english name
+    Name: M. Troubadour & Trouvere Shadow Shoes
     Type: ShadowGear
     Jobs:
       BardDancer: true
@@ -122063,7 +122063,7 @@ Body:
     Refineable: true
   - Id: 24838
     AegisName: S_TR_Earring
-    Name: M.Troubadour & Trouber Earrings Shadow    # !todo check english name
+    Name: M. Troubadour & Trouvere Shadow Earring
     Type: ShadowGear
     Jobs:
       BardDancer: true
@@ -122075,7 +122075,7 @@ Body:
     Refineable: true
   - Id: 24839
     AegisName: S_TR_Pendant
-    Name: M.Troubadour & Trouver Pendant Shadow    # !todo check english name
+    Name: M. Troubadour & Trouvere Shadow Pendant
     Type: ShadowGear
     Jobs:
       BardDancer: true
@@ -122087,7 +122087,7 @@ Body:
     Refineable: true
   - Id: 24840
     AegisName: S_AG_Armor
-    Name: M.Arch Mage Armor Shadow    # !todo check english name
+    Name: M. Arch Mage Shadow Armor
     Type: ShadowGear
     Jobs:
       Wizard: true
@@ -122099,7 +122099,7 @@ Body:
     Refineable: true
   - Id: 24841
     AegisName: S_AG_Shoes
-    Name: M.Arch Mage Shoes Shadow    # !todo check english name
+    Name: M. Arch Mage Shadow Shoes
     Type: ShadowGear
     Jobs:
       Wizard: true
@@ -122111,7 +122111,7 @@ Body:
     Refineable: true
   - Id: 24842
     AegisName: S_AG_Earring
-    Name: M.Arch Mage Earring Shadow    # !todo check english name
+    Name: M. Arch Mage Shadow Earring
     Type: ShadowGear
     Jobs:
       Wizard: true
@@ -122123,7 +122123,7 @@ Body:
     Refineable: true
   - Id: 24843
     AegisName: S_AG_Pendant
-    Name: M.Arch Mage Pendant Shadow    # !todo check english name
+    Name: M. Arch Mage Shadow Pendant
     Type: ShadowGear
     Jobs:
       Wizard: true
@@ -122135,7 +122135,7 @@ Body:
     Refineable: true
   - Id: 24844
     AegisName: S_EM_Armor
-    Name: M.Elemental Master Armor Shadow    # !todo check english name
+    Name: M. Elemental Master Shadow Armor
     Type: ShadowGear
     Jobs:
       Sage: true
@@ -122147,7 +122147,7 @@ Body:
     Refineable: true
   - Id: 24845
     AegisName: S_EM_Shoes
-    Name: M.Elemental Master Shoes Shadow    # !todo check english name
+    Name: M. Elemental Master Shadow Shoes
     Type: ShadowGear
     Jobs:
       Sage: true
@@ -122159,7 +122159,7 @@ Body:
     Refineable: true
   - Id: 24846
     AegisName: S_EM_Earring
-    Name: M.Elemental Master Earring Shadow    # !todo check english name
+    Name: M. Elemental Master Shadow Earring
     Type: ShadowGear
     Jobs:
       Sage: true
@@ -122171,7 +122171,7 @@ Body:
     Refineable: true
   - Id: 24847
     AegisName: S_EM_Pendant
-    Name: M.Elemental Master Pendant Shadow    # !todo check english name
+    Name: M. Elemental Master Shadow Pendant
     Type: ShadowGear
     Jobs:
       Sage: true
@@ -122183,7 +122183,7 @@ Body:
     Refineable: true
   - Id: 24848
     AegisName: S_NW_Armor
-    Name: M.Night Watch Armor Shadow    # !todo check english name
+    Name: M. Night Watch Shadow Armor
     Type: ShadowGear
     Jobs:
       Rebellion: true
@@ -122195,7 +122195,7 @@ Body:
     Refineable: true
   - Id: 24849
     AegisName: S_NW_Shoes
-    Name: M.Night Watch Shoes Shadow    # !todo check english name
+    Name: M. Night Watch Shadow Shoes
     Type: ShadowGear
     Jobs:
       Rebellion: true
@@ -122207,7 +122207,7 @@ Body:
     Refineable: true
   - Id: 24850
     AegisName: S_NW_Earring
-    Name: M.Night Watch Earring Shadow    # !todo check english name
+    Name: M. Night Watch Shadow Earring
     Type: ShadowGear
     Jobs:
       Rebellion: true
@@ -122219,7 +122219,7 @@ Body:
     Refineable: true
   - Id: 24851
     AegisName: S_NW_Pendant
-    Name: M.Night Watch Pendant Shadow    # !todo check english name
+    Name: M. Night Watch Shadow Pendant
     Type: ShadowGear
     Jobs:
       Rebellion: true
@@ -122231,7 +122231,7 @@ Body:
     Refineable: true
   - Id: 24852
     AegisName: S_SH_Armor
-    Name: M.Spirit Spirit Armor Shadow    # !todo check english name
+    Name: M. Spirit Handler Shadow Armor
     Type: ShadowGear
     Jobs:
       Summoner: true
@@ -122243,7 +122243,7 @@ Body:
     Refineable: true
   - Id: 24853
     AegisName: S_SH_Shoes
-    Name: M.Spirit Spirit Shoes Shadow    # !todo check english name
+    Name: M. Spirit Handler Shadow Shoes
     Type: ShadowGear
     Jobs:
       Summoner: true
@@ -122255,7 +122255,7 @@ Body:
     Refineable: true
   - Id: 24854
     AegisName: S_SH_Earring
-    Name: M.Spirit Spirit Earring Shadow    # !todo check english name
+    Name: M. Spirit Handler Shadow Earring
     Type: ShadowGear
     Jobs:
       Summoner: true
@@ -122267,7 +122267,7 @@ Body:
     Refineable: true
   - Id: 24855
     AegisName: S_SH_Pendant
-    Name: M.Spirit Spirit Pendant Shadow    # !todo check english name
+    Name: M. Spirit Handler Shadow Pendant
     Type: ShadowGear
     Jobs:
       Summoner: true
@@ -122279,7 +122279,7 @@ Body:
     Refineable: true
   - Id: 24856
     AegisName: S_SS_Armor
-    Name: M.Shinkiro & Shiranui Armor Shadow    # !todo check english name
+    Name: M. Shinkiro & Shiranui Shadow Armor
     Type: ShadowGear
     Jobs:
       KagerouOboro: true
@@ -122291,7 +122291,7 @@ Body:
     Refineable: true
   - Id: 24857
     AegisName: S_SS_Shoes
-    Name: M.Shinkiro & Shiranui Shoes Shadow    # !todo check english name
+    Name: M. Shinkiro & Shiranui Shadow Shoes
     Type: ShadowGear
     Jobs:
       KagerouOboro: true
@@ -122303,7 +122303,7 @@ Body:
     Refineable: true
   - Id: 24858
     AegisName: S_SS_Earring
-    Name: M.Shinkiro & Shiranui Earring Shadow    # !todo check english name
+    Name: M. Shinkiro & Shiranui Shadow Earring
     Type: ShadowGear
     Jobs:
       KagerouOboro: true
@@ -122315,7 +122315,7 @@ Body:
     Refineable: true
   - Id: 24859
     AegisName: S_SS_Pendant
-    Name: M.Shinkiro & Shiranui Pendant Shadow    # !todo check english name
+    Name: M. Shinkiro & Shiranui Shadow Pendant
     Type: ShadowGear
     Jobs:
       KagerouOboro: true
@@ -122327,7 +122327,7 @@ Body:
     Refineable: true
   - Id: 24860
     AegisName: S_SKE_Armor
-    Name: M.Celestial Armor Shadow    # !todo check english name
+    Name: M. Sky Emperor Shadow Armor
     Type: ShadowGear
     Jobs:
       StarGladiator: true
@@ -122339,7 +122339,7 @@ Body:
     Refineable: true
   - Id: 24861
     AegisName: S_SKE_Shoes
-    Name: M.Cloth shoe shadow    # !todo check english name
+    Name: M. Sky Emperor Shadow Shoes
     Type: ShadowGear
     Jobs:
       StarGladiator: true
@@ -122351,7 +122351,7 @@ Body:
     Refineable: true
   - Id: 24862
     AegisName: S_SKE_Earring
-    Name: M.Cheonje Earring Shadow    # !todo check english name
+    Name: M. Sky Emperor Shadow Earring
     Type: ShadowGear
     Jobs:
       StarGladiator: true
@@ -122363,7 +122363,7 @@ Body:
     Refineable: true
   - Id: 24863
     AegisName: S_SKE_Pendant
-    Name: M.Celestial Pendant Shadow    # !todo check english name
+    Name: M. Sky Emperor Shadow Pendant
     Type: ShadowGear
     Jobs:
       StarGladiator: true
@@ -122375,7 +122375,7 @@ Body:
     Refineable: true
   - Id: 24864
     AegisName: S_SOA_Armor
-    Name: M.Spirit Guide Armor Shadow    # !todo check english name
+    Name: M. Soul Ascetic Shadow Armor
     Type: ShadowGear
     Jobs:
       SoulLinker: true
@@ -122387,7 +122387,7 @@ Body:
     Refineable: true
   - Id: 24865
     AegisName: S_SOA_Shoes
-    Name: M.Young Dosa Shoes Shadow    # !todo check english name
+    Name: M. Soul Ascetic Shadow Shoes
     Type: ShadowGear
     Jobs:
       SoulLinker: true
@@ -122399,7 +122399,7 @@ Body:
     Refineable: true
   - Id: 24866
     AegisName: S_SOA_Earring
-    Name: M.Youngdosa Earring Shadow    # !todo check english name
+    Name: M. Soul Ascetic Shadow Earring
     Type: ShadowGear
     Jobs:
       SoulLinker: true
@@ -122411,7 +122411,7 @@ Body:
     Refineable: true
   - Id: 24867
     AegisName: S_SOA_Pendant
-    Name: M.Spirit Guide Pendant Shadow    # !todo check english name
+    Name: M. Soul Ascetic Shadow Pendant
     Type: ShadowGear
     Jobs:
       SoulLinker: true
@@ -122423,7 +122423,7 @@ Body:
     Refineable: true
   - Id: 24868
     AegisName: S_HN_Armor
-    Name: M.Hyper Novice Armor Shadow    # !todo check english name
+    Name: M. Hyper Novice Shadow Armor
     Type: ShadowGear
     Jobs:
       SuperNovice: true
@@ -122435,7 +122435,7 @@ Body:
     Refineable: true
   - Id: 24869
     AegisName: S_HN_Shoes
-    Name: M.Hyper Novice Shoes Shadow    # !todo check english name
+    Name: M. Hyper Novice Shadow Shoes
     Type: ShadowGear
     Jobs:
       SuperNovice: true
@@ -122447,7 +122447,7 @@ Body:
     Refineable: true
   - Id: 24870
     AegisName: S_HN_Earring
-    Name: M.Hyper novice earring shadow    # !todo check english name
+    Name: M. Hyper Novice Shadow Earring
     Type: ShadowGear
     Jobs:
       SuperNovice: true
@@ -122459,7 +122459,7 @@ Body:
     Refineable: true
   - Id: 24871
     AegisName: S_HN_Pendant
-    Name: M.Hyper Novice Pendant Shadow    # !todo check english name
+    Name: M. Hyper Novice Shadow Pendant
     Type: ShadowGear
     Jobs:
       SuperNovice: true
@@ -150773,7 +150773,7 @@ Body:
     ArmorLevel: 1
     View: 2336
   - Id: 410221
-    AegisName: aegis_410221
+    AegisName: C_white_tteok
     Name: Costume Baekseolgi    # !todo check english name
     Type: Armor
     Locations:
@@ -150781,7 +150781,7 @@ Body:
     ArmorLevel: 1
     View: 2341
   - Id: 410222
-    AegisName: aegis_410222
+    AegisName: C_blacksesame_tteok
     Name: Costume black sesame    # !todo check english name
     Type: Armor
     Locations:
@@ -150789,7 +150789,7 @@ Body:
     ArmorLevel: 1
     View: 2342
   - Id: 410223
-    AegisName: aegis_410223
+    AegisName: C_bean_tteok
     Name: Costume bean    # !todo check english name
     Type: Armor
     Locations:
