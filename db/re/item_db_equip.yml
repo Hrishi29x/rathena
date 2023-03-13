@@ -56675,6 +56675,18 @@ Body:
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
+  - Id: 9145
+    AegisName: aegis_9145
+    Name: Copo's Egg    # !todo check english name
+    Type: PetEgg
+  - Id: 9146
+    AegisName: aegis_9146
+    Name: Gray Icewind Egg    # !todo check english name
+    Type: PetEgg
+  - Id: 9147
+    AegisName: aegis_9147
+    Name: Icewind Egg    # !todo check english name
+    Type: PetEgg
   - Id: 10001
     AegisName: Skull_Helm
     Name: Skull Helm
@@ -98122,6 +98134,14 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 828
+  - Id: 20336
+    AegisName: C_Sugared_Fruit_S
+    Name: Classic Underneath Cyclone 2 Week Rental Box
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 855
   - Id: 20338
     AegisName: C_Colorful_Dancing_Octopus
     Name: Costume Colorful Dancing Octopus
@@ -150303,6 +150323,30 @@ Body:
       bonus2 bSubClass,Class_Normal,20;
       bonus2 bAddEle,Ele_All,3*.@r;
       bonus2 bMagicAddEle,Ele_All,3*.@r;
+  - Id: 400414
+    AegisName: aegis_400414
+    Name: Costume strong copo    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2356
+  - Id: 400415
+    AegisName: aegis_400415
+    Name: Fashionable Copo    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2357
+  - Id: 400428
+    AegisName: aegis_400428
+    Name: Costume Rabbit Ear Egg    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2364
   - Id: 410005
     AegisName: C_Magic_Heir_TW
     Name: Costume Magic Heir
@@ -151363,6 +151407,14 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 800
+  - Id: 410182
+    AegisName: aegis_410182
+    Name: Costume Traveler's Lantern    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2280
   - Id: 410185
     AegisName: aegis_410185
     Name: Rebellion Pocket Watch
@@ -151644,6 +151696,35 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2349
+  - Id: 410229
+    AegisName: aegis_410229
+    Name: Costume Snake God's Crystal    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2355
+  - Id: 410232
+    AegisName: aegis_410232
+    Name: Gambler's Seal    # !todo check english name
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 150
+    View: 1202
+  - Id: 410233
+    AegisName: Gambler_Seal_KR_
+    Name: Gambler's Seal    # !todo check english name
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 150
+    View: 1202
   - Id: 420000
     AegisName: Isabella_Carrot
     Name: Isabella Carrot
@@ -152783,6 +152864,14 @@ Body:
          bonus2 bSkillCooldown,"RA_UNLIMIT",-60000;
     UnEquipScript: |
       sc_end SC_UNLIMIT;
+  - Id: 420165
+    AegisName: aegis_420165
+    Name: Costume Tent    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2279
   - Id: 420169
     AegisName: aegis_420169
     Name: Costume Jiraiya's Kiseru    # !todo check english name
@@ -152954,6 +153043,32 @@ Body:
          bonus2 bSkillCooldown,"SR_RAMPAGEBLASTER",-200;
       if (getskilllv("SR_RAISINGDRAGON") == 10)
          bonus2 bAddSize,Size_All,15;
+  - Id: 420201
+    AegisName: aegis_420201
+    Name: Costume Baeksayo Wig    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2354
+  - Id: 420204
+    AegisName: aegis_420204
+    Name: Costume Yunkea Wig    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2361
+  - Id: 420210
+    AegisName: Heart_Ace_Melee
+    Name: Ace of Hearts in Mouth (Melee Physics)    # !todo check english name
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 150
+    View: 1679
   - Id: 430005
     AegisName: C_White_Tiger_Glass
     Name: Costume white tiger glasses    # !todo check english name
@@ -159230,6 +159345,286 @@ Body:
          bonus2 bSkillAtk,"WM_METALICSOUND",50;
       if (.@r>=7)
          bonus2 bSkillAtk,"WM_METALICSOUND",50;
+  - Id: 450264
+    AegisName: Glacier_Armor
+    Name: Glaceon Armor    # !todo check english name
+    Type: Armor
+    Weight: 2400
+    Defense: 168
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bBaseAtk,120+15*(.@r/2);
+      bonus bDef,15*(.@r/2);
+      if (.@r>=7) {
+         bonus bLongAtkRate,5;
+         bonus bShortAtkRate,5;
+         bonus bAspdRate,10;
+         if (.@r>=9) {
+            bonus bAspdRate,5;
+            bonus bPAtk,3;
+            if (.@r>=10) {
+               bonus bDelayrate,-5;
+               bonus bDef,100;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bDelayrate,-5;
+         bonus bPow,3;
+         bonus bCon,3;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bPAtk,2;
+            bonus bAtkRate,3;
+         }
+      }
+  - Id: 450265
+    AegisName: Glacier_Robe
+    Name: Glaceon Robe    # !todo check english name
+    Type: Armor
+    Weight: 1200
+    MagicAttack: 120
+    Defense: 120
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatk,15*(.@r/2);
+      bonus bDef,15*(.@r/2);
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_All,5;
+         bonus bVariableCastrate,-10;
+         if (.@r>=9) {
+            bonus bVariableCastrate,-5;
+            bonus bSMatk,3;
+            if (.@r>=10) {
+               bonus bDelayrate,-5;
+               bonus bDef,100;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bDelayrate,-5;
+         bonus bSpl,3;
+         bonus bCon,3;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bSMatk,2;
+            bonus bMatkRate,3;
+         }
+      }
+  - Id: 450266
+    AegisName: Glacier_Manteau
+    Name: Glaceon Cloak    # !todo check english name
+    Type: Armor
+    Weight: 1600
+    Defense: 112
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHP,2500+200*(.@r/2);
+      bonus bMaxSP,500+50*(.@r/2);
+      if (.@r>=7) {
+         bonus bAspdRate,7;
+         if (.@r>=9) {
+            bonus bPow,3;
+            if (.@r>=10) {
+               bonus bVariableCastrate,-5;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,2;
+         bonus bAtkRate,3;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bVariableCastrate,-10;
+         }
+      }
+  - Id: 450267
+    AegisName: Glacier_Muffler
+    Name: Glacia Muffler    # !todo check english name
+    Type: Armor
+    Weight: 800
+    Defense: 80
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHP,2000+150*(.@r/2);
+      bonus bMaxSP,1000+100*(.@r/2);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-7;
+         if (.@r>=9) {
+            bonus bSpl,3;
+            if (.@r>=10) {
+               bonus bAspdRate,5;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bSMatk,2;
+         bonus bMatkRate,3;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bAspdRate,10;
+         }
+      }
+  - Id: 450268
+    AegisName: Glacier_Shoes
+    Name: Glaceon Shoes    # !todo check english name
+    Type: Armor
+    Weight: 1000
+    Defense: 70
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHPrate,6;
+      bonus bMaxSPrate,6+(.@r/2);
+      bonus bDef,15*(.@r/2);
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_All,7;
+         if (.@r>=9) {
+            bonus bSMatk,3;
+            if (.@r>=10) {
+               bonus bVariableCastrate,-7;
+               bonus bDef,100;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,25;
+         bonus bRes,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bSMatk,2;
+            bonus bSpl,2;
+            bonus bCon,2;
+         }
+      }
+  - Id: 450270
+    AegisName: D_Glacier_Armor
+    Name: Dim Glaceon Armor    # !todo check english name
+    Type: Armor
+    Weight: 2400
+    Defense: 203
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bBaseAtk,140;
+      bonus bPow,(.@r/2);
+      bonus bCon,(.@r/2);
+      if (.@r>=7) {
+         bonus bPAtk,2;
+         bonus bAtkRate,3;
+         if (.@r>=9) {
+            bonus bDelayrate,-5;
+            bonus bVariableCastrate,-5;
+            if (.@r>=11) {
+               bonus bLongAtkRate,10;
+               bonus bShortAtkRate,10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bAtkRate,5;
+         bonus bPow,5;
+         bonus bCon,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bLongAtkRate,10;
+            bonus bShortAtkRate,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bAtkRate,1;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bAtkRate,2;
+               }
+            }
+         }
+      }
+  - Id: 450271
+    AegisName: D_Glacier_Robe
+    Name: Dim Glaceon Robe    # !todo check english name
+    Type: Armor
+    Weight: 1200
+    MagicAttack: 140
+    Defense: 145
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bSpl,(.@r/2);
+      bonus bCon,(.@r/2);
+      if (.@r>=7) {
+         bonus bSMatk,2;
+         bonus bMatkRate,3;
+         if (.@r>=9) {
+            bonus bDelayrate,-5;
+            bonus bVariableCastrate,-5;
+            if (.@r>=11) {
+               bonus2 bMagicAtkEle,Ele_All,10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMatkRate,5;
+         bonus bSpl,5;
+         bonus bCon,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAtkEle,Ele_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bMatkRate,1;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bMatkRate,2;
+               }
+            }
+         }
+      }
   - Id: 460002
     AegisName: Aries_Shield_J
     Name: Aries Shield
@@ -159582,6 +159977,45 @@ Body:
       bonus bBaseAtk,20;
       bonus2 bSubRace,RC_Player_Human,6-6;
       bonus2 bSubRace,RC_Player_Doram,6-6;
+  - Id: 460040
+    AegisName: Glacier_Guard
+    Name: Glaceon Guard    # !todo check english name
+    Type: Armor
+    Weight: 3500
+    Defense: 220
+    Slots: 1
+    Locations:
+      Left_Hand: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    View: 1
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMRes,15;
+      bonus bRes,15;
+      bonus bMdef,2*(.@r/2);
+      bonus bDef,10*(.@r/2);
+      if (.@r>=7) {
+         bonus bAspdRate,15;
+         if (.@r>=9) {
+            bonus bVariableCastrate,-10;
+            if (.@r>=10) {
+               bonus bMdef,10;
+               bonus bDef,50;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,10;
+         bonus bRes,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bPAtk,2;
+            bonus bSMatk,2;
+         }
+      }
   - Id: 460046
     AegisName: aegis_460046
     Name: Black Mythril Guard
@@ -162507,6 +162941,132 @@ Body:
          bonus bMaxSPrate,10;
          bonus bDelayrate,-10;
       }
+  - Id: 470196
+    AegisName: Glacier_Boots
+    Name: Glaceon Boots    # !todo check english name
+    Type: Armor
+    Weight: 2000
+    Defense: 98
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHPrate,8;
+      bonus bMaxSPrate,4+(.@r/2);
+      bonus bDef,15*(.@r/2);
+      if (.@r>=7) {
+         bonus bLongAtkRate,7;
+         bonus bShortAtkRate,7;
+         if (.@r>=9) {
+            bonus bPAtk,3;
+            if (.@r>=10) {
+               bonus bAspdRate,7;
+               bonus bDef,100;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,25;
+         bonus bRes,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bPAtk,2;
+            bonus bPow,2;
+            bonus bCon,2;
+         }
+      }
+  - Id: 470197
+    AegisName: D_Glacier_Boots
+    Name: Dim Glacia Boots    # !todo check english name
+    Type: Armor
+    Weight: 2000
+    Defense: 126
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bPow,2;
+      bonus bCon,2;
+      if (.@r>=7) {
+         bonus bPAtk,2;
+         bonus bAtkRate,5;
+         if (.@r>=9) {
+            bonus bVariableCastrate,-10;
+            if (.@r>=11) {
+               bonus bLongAtkRate,10;
+               bonus bShortAtkRate,10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bAtkRate,2;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bFixedCast,-1000;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,2;
+               bonus bAtkRate,1;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bAtkRate,2;
+               }
+            }
+         }
+      }
+  - Id: 470198
+    AegisName: D_Glacier_Shoes
+    Name: Dim Glaceon Shoes    # !todo check english name
+    Type: Armor
+    Weight: 1000
+    Defense: 90
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bSpl,2;
+      bonus bCon,2;
+      if (.@r>=7) {
+         bonus bSMatk,2;
+         bonus bMatkRate,5;
+         if (.@r>=9) {
+            bonus bVariableCastrate,-10;
+            if (.@r>=11) {
+               bonus2 bMagicAtkEle,Ele_All,10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMatkRate,2;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bFixedCast,-1000;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bSMatk,2;
+               bonus bMatkRate,1;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bMatkRate,2;
+               }
+            }
+         }
+      }
   - Id: 480000
     AegisName: Atker_Manteau
     Name: Attacker Booster Manteau
@@ -164962,6 +165522,14 @@ Body:
          bonus bAtkRate,7;
       if (.@r >= 9)
          bonus bVariableCastrate,-10;
+  - Id: 480207
+    AegisName: aegis_480207
+    Name: Costume Traveler's Universal Bag    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 137
   - Id: 480215
     AegisName: Hs_Manteau
     Name: Heroria Cloak    # !todo check english name
@@ -165498,6 +166066,103 @@ Body:
       }
       if (.@r>=11)
          autobonus "{ bonus2 bMagicAtkEle,Ele_Neutral,20; bonus2 bMagicAtkEle,Ele_Holy,20; }",1,10000,BF_WEAPON;
+  - Id: 480283
+    AegisName: D_Glacier_Manteau
+    Name: Dim Glaceon Cloak    # !todo check english name
+    Type: Armor
+    Weight: 1600
+    Defense: 147
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bPow,1;
+      bonus bCon,1;
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         if (.@r>=9) {
+            bonus bLongAtkRate,10;
+            bonus bShortAtkRate,10;
+            if (.@r>=11) {
+               bonus bDelayrate,-10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bAtkRate,3;
+         bonus bPow,5;
+         bonus bCon,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bLongAtkRate,5;
+            bonus bShortAtkRate,5;
+            bonus bPAtk,2;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,1;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bAtkRate,2;
+               }
+            }
+         }
+      }
+  - Id: 480284
+    AegisName: D_Glacier_Muffler
+    Name: Dim Glacia Muffler    # !todo check english name
+    Type: Armor
+    Weight: 800
+    Defense: 105
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bSpl,1;
+      bonus bCon,1;
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         if (.@r>=9) {
+            bonus2 bMagicAtkEle,Ele_All,10;
+            if (.@r>=11) {
+               bonus bDelayrate,-10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMatkRate,3;
+         bonus bSpl,5;
+         bonus bCon,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAtkEle,Ele_All,5;
+            bonus bSMatk,2;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bSMatk,1;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bMatkRate,2;
+               }
+            }
+         }
+      }
+  - Id: 480286
+    AegisName: aegis_480286
+    Name: Phantom of the Costume Snake God    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
   - Id: 490004
     AegisName: Atker_Ring
     Name: Attacker Booster Ring
@@ -168508,6 +169173,14 @@ Body:
       bonus bDelayrate,-5;
       bonus bAtkRate,3*(getskilllv("MC_MAMMONITE")/2);
       bonus bMatkRate,3*(getskilllv("MC_MAMMONITE")/2);
+  - Id: 490242
+    AegisName: aegis_490242
+    Name: Costume Valkyrie Hair    # !todo check english name
+    Type: Armor
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    View: 2311
   - Id: 490243
     AegisName: aegis_490243
     Name: Ring of Silver Claw
@@ -169135,6 +169808,58 @@ Body:
       bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",BaseLevel/2;
       bonus2 bSkillAtk,"RK_DRAGONBREATH",BaseLevel/2;
       bonus2 bSkillAtk,"RK_HUNDREDSPEAR",3*(BaseLevel/2);
+  - Id: 490327
+    AegisName: Glacier_Ring
+    Name: Glaceon Ring    # !todo check english name
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Left_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Script: |
+      bonus bAtkRate,8;
+      bonus bMaxSPrate,7;
+  - Id: 490328
+    AegisName: Glacier_Pendant
+    Name: Glaceon Pendant    # !todo check english name
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Right_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Script: |
+      bonus bAtkRate,8;
+      bonus bMaxHPrate,7;
+  - Id: 490329
+    AegisName: Glacier_Earring
+    Name: Glaceon Earrings    # !todo check english name
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Left_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Script: |
+      bonus bMatkRate,8;
+      bonus bMaxSPrate,7;
+  - Id: 490330
+    AegisName: Glacier_Necklace
+    Name: Glaceon Necklace    # !todo check english name
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Right_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Script: |
+      bonus bMatkRate,8;
+      bonus bMaxHPrate,7;
   - Id: 500000
     AegisName: IDTest_weapon
     Name: IDTest weapon
