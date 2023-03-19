@@ -56677,15 +56677,15 @@ Body:
       NoAuction: true
   - Id: 9145
     AegisName: aegis_9145
-    Name: Copo's Egg    # !todo check english name
+    Name: Copo Egg
     Type: PetEgg
   - Id: 9146
     AegisName: aegis_9146
-    Name: Gray Icewind Egg    # !todo check english name
+    Name: Gray Icewind Egg
     Type: PetEgg
   - Id: 9147
     AegisName: aegis_9147
-    Name: Icewind Egg    # !todo check english name
+    Name: Icewind Egg
     Type: PetEgg
   - Id: 10001
     AegisName: Skull_Helm
@@ -84049,7 +84049,7 @@ Body:
       bonus2 bSubRace,RC_Demon,10;
   - Id: 19014
     AegisName: Gravekeeper_Blinker
-    Name: Black Blood Blinker    # !todo check english name
+    Name: Gravekeeper Blinkers
     Type: Armor
     Weight: 200
     Defense: 1
@@ -84169,7 +84169,7 @@ Body:
       }
   - Id: 19025
     AegisName: Puppy_Ears_Hat_Jp
-    Name: Puppy Ears Hat    # !todo check english name
+    Name: Puppy Ears Hat
     Type: Armor
     Weight: 200
     Defense: 3
@@ -84217,7 +84217,7 @@ Body:
       bonus2 bSubRace,RC_Brute,5;
   - Id: 19028
     AegisName: Minions_Of_Devil
-    Name: Minions Of Devil    # !todo check english name
+    Name: Devil's Minion
     Type: Armor
     Weight: 200
     Locations:
@@ -151706,7 +151706,7 @@ Body:
     View: 2355
   - Id: 410232
     AegisName: aegis_410232
-    Name: Gambler's Seal    # !todo check english name
+    Name: Gambler's Seal
     Type: Armor
     Weight: 100
     Locations:
@@ -151716,7 +151716,7 @@ Body:
     View: 1202
   - Id: 410233
     AegisName: Gambler_Seal_KR_
-    Name: Gambler's Seal    # !todo check english name
+    Name: Gambler's Seal
     Type: Armor
     Weight: 100
     Slots: 1
@@ -153061,7 +153061,7 @@ Body:
     View: 2361
   - Id: 420210
     AegisName: Heart_Ace_Melee
-    Name: Ace of Hearts in Mouth (Melee Physics)    # !todo check english name
+    Name: Ace of Hearts in Mouth (Melee Physical)
     Type: Armor
     Weight: 100
     Locations:
@@ -159347,7 +159347,7 @@ Body:
          bonus2 bSkillAtk,"WM_METALICSOUND",50;
   - Id: 450264
     AegisName: Glacier_Armor
-    Name: Glaceon Armor    # !todo check english name
+    Name: Glacier Armor
     Type: Armor
     Weight: 2400
     Defense: 168
@@ -159387,7 +159387,7 @@ Body:
       }
   - Id: 450265
     AegisName: Glacier_Robe
-    Name: Glaceon Robe    # !todo check english name
+    Name: Glacier Robe
     Type: Armor
     Weight: 1200
     MagicAttack: 120
@@ -159427,7 +159427,7 @@ Body:
       }
   - Id: 450266
     AegisName: Glacier_Manteau
-    Name: Glaceon Cloak    # !todo check english name
+    Name: Glacier Manteau
     Type: Armor
     Weight: 1600
     Defense: 112
@@ -159461,7 +159461,7 @@ Body:
       }
   - Id: 450267
     AegisName: Glacier_Muffler
-    Name: Glacia Muffler    # !todo check english name
+    Name: Glacier Muffler
     Type: Armor
     Weight: 800
     Defense: 80
@@ -159495,7 +159495,7 @@ Body:
       }
   - Id: 450268
     AegisName: Glacier_Shoes
-    Name: Glaceon Shoes    # !todo check english name
+    Name: Glacier Shoes
     Type: Armor
     Weight: 1000
     Defense: 70
@@ -159533,7 +159533,7 @@ Body:
       }
   - Id: 450270
     AegisName: D_Glacier_Armor
-    Name: Dim Glaceon Armor    # !todo check english name
+    Name: Dim Glacier Armor
     Type: Armor
     Weight: 2400
     Defense: 203
@@ -159581,7 +159581,7 @@ Body:
       }
   - Id: 450271
     AegisName: D_Glacier_Robe
-    Name: Dim Glaceon Robe    # !todo check english name
+    Name: Dim Glacier Robe
     Type: Armor
     Weight: 1200
     MagicAttack: 140
@@ -159979,7 +159979,7 @@ Body:
       bonus2 bSubRace,RC_Player_Doram,6-6;
   - Id: 460040
     AegisName: Glacier_Guard
-    Name: Glaceon Guard    # !todo check english name
+    Name: Glacier Guard
     Type: Armor
     Weight: 3500
     Defense: 220
@@ -162943,7 +162943,7 @@ Body:
       }
   - Id: 470196
     AegisName: Glacier_Boots
-    Name: Glaceon Boots    # !todo check english name
+    Name: Glacier Boots
     Type: Armor
     Weight: 2000
     Defense: 98
@@ -162982,7 +162982,7 @@ Body:
       }
   - Id: 470197
     AegisName: D_Glacier_Boots
-    Name: Dim Glacia Boots    # !todo check english name
+    Name: Dim Glacier Boots
     Type: Armor
     Weight: 2000
     Defense: 126
@@ -163026,7 +163026,7 @@ Body:
       }
   - Id: 470198
     AegisName: D_Glacier_Shoes
-    Name: Dim Glaceon Shoes    # !todo check english name
+    Name: Dim Glacier Shoes
     Type: Armor
     Weight: 1000
     Defense: 90
@@ -166068,7 +166068,7 @@ Body:
          autobonus "{ bonus2 bMagicAtkEle,Ele_Neutral,20; bonus2 bMagicAtkEle,Ele_Holy,20; }",1,10000,BF_WEAPON;
   - Id: 480283
     AegisName: D_Glacier_Manteau
-    Name: Dim Glaceon Cloak    # !todo check english name
+    Name: Dim Glacier Manteau
     Type: Armor
     Weight: 1600
     Defense: 147
@@ -166114,7 +166114,7 @@ Body:
       }
   - Id: 480284
     AegisName: D_Glacier_Muffler
-    Name: Dim Glacia Muffler    # !todo check english name
+    Name: Dim Glacier Muffler
     Type: Armor
     Weight: 800
     Defense: 105
@@ -169810,7 +169810,7 @@ Body:
       bonus2 bSkillAtk,"RK_HUNDREDSPEAR",3*(BaseLevel/2);
   - Id: 490327
     AegisName: Glacier_Ring
-    Name: Glaceon Ring    # !todo check english name
+    Name: Glacier Ring
     Type: Armor
     Weight: 100
     Slots: 1
@@ -169823,7 +169823,7 @@ Body:
       bonus bMaxSPrate,7;
   - Id: 490328
     AegisName: Glacier_Pendant
-    Name: Glaceon Pendant    # !todo check english name
+    Name: Glacier Pendant
     Type: Armor
     Weight: 100
     Slots: 1
@@ -169836,7 +169836,7 @@ Body:
       bonus bMaxHPrate,7;
   - Id: 490329
     AegisName: Glacier_Earring
-    Name: Glaceon Earrings    # !todo check english name
+    Name: Glacier Earring
     Type: Armor
     Weight: 100
     Slots: 1
@@ -169849,7 +169849,7 @@ Body:
       bonus bMaxSPrate,7;
   - Id: 490330
     AegisName: Glacier_Necklace
-    Name: Glaceon Necklace    # !todo check english name
+    Name: Glacier Necklace
     Type: Armor
     Weight: 100
     Slots: 1
