@@ -6045,6 +6045,30 @@ Body:
       bonus2 bSkillAtk,"NC_AXETORNADO",(100+.@val);
       bonus2 bSkillAtk,"NC_AXEBOOMERANG",(100+.@val);
       bonus2 bSkillAtk,"GN_CART_TORNADO",(75+.@val);
+  - Id: 1327
+    AegisName: Axe_Z
+    Name: Axe
+    Type: Weapon
+    SubType: 1hAxe
+    Weight: 800
+    Attack: 38
+    Range: 1
+    Slots: 4
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Novice: true
+      SuperNovice: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 3
+    Refineable: true
   - Id: 1328
     AegisName: Blut_Axe
     Name: Brute Cleaver
@@ -6082,6 +6106,44 @@ Body:
       if (.@r>=10) {
          bonus bMaxHPrate,15;
          bonus bMaxSPrate,15;
+      }
+  - Id: 1329
+    AegisName: Woe_One_Hand_Axe1_Z
+    Name: Lesser Guild Member's Cleaver
+    Type: Weapon
+    SubType: 1hAxe
+    Weight: 1000
+    Attack: 110
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus4 bAutoSpellOnSkill,"MC_MAMMONITE","NPC_CRITICALWOUND",1,100;
+         bonus4 bAutoSpellOnSkill,"AM_ACIDTERROR","NPC_CRITICALWOUND",1,100;
       }
   - Id: 1331
     AegisName: Variant_Axe
@@ -16259,7 +16321,7 @@ Body:
     EquipLevelMin: 70
     Refineable: true
     Script: |
-      bonus3 bAutoSpell,"AC_DOUBLE",GetSkillLv("AC_DOUBLE"),10;
+      bonus3 bAutoSpell,"AC_DOUBLE",getskilllv("AC_DOUBLE"),10;
   - Id: 1737
     AegisName: Ixion_Wing
     Name: Ixion Wings
@@ -17792,6 +17854,40 @@ Body:
       bonus bAspdRate,10;
       if (getrefine()>=7) {
          bonus2 bSkillAtk,"SR_TIGERCANNON",15;
+      }
+  - Id: 1859
+    AegisName: Woe_Pist1_Z
+    Name: Lesser Guild Member's Fist
+    Type: Weapon
+    SubType: Knuckle
+    Weight: 300
+    Attack: 40
+    Range: 1
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,25+.@r;
+      bonus2 bAddRace,RC_Player_Doram,25+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus2 bFixedCastrate,"MO_EXTREMITYFIST",-30;
+         autobonus3 "{ .@r = getrefine(); bonus bBaseAtk,30+(.@r-10); }",1000,20000,"MO_EXPLOSIONSPIRITS";
       }
   - Id: 1861
     AegisName: Variant_Claw
@@ -21928,10 +22024,10 @@ Body:
       }
   - Id: 2052
     AegisName: Woe_T_Staff1_Z
-    Name: Lesser Guild Destruction Staff
+    Name: Lesser Guild Member's Destruction Staff
     Type: Weapon
     SubType: 2hStaff
-    Weight: 80
+    Weight: 800
     Attack: 70
     MagicAttack: 180
     Range: 1
@@ -21945,14 +22041,13 @@ Body:
     Refineable: true
     Script: |
       .@r = getrefine();
-      bonus bUnbreakableWeapon;
       bonus2 bMagicAddRace,RC_Player_Human,15+.@r;
       bonus2 bMagicAddRace,RC_Player_Doram,15+.@r;
       bonus2 bIgnoreMdefRaceRate,RC_Player_Human,10;
       bonus2 bIgnoreMdefRaceRate,RC_Player_Doram,10;
       bonus2 bSkillAtk,"WZ_METEOR",3*.@r;
       bonus2 bSkillAtk,"WZ_STORMGUST",3*.@r;
-      bonus bMatkRate,-2*.@r;
+      bonus bMaxHPrate,-2*.@r;
       bonus bMatk,5*(.@r/2);
       if (.@r>=7) {
         bonus2 bIgnoreMdefRaceRate,RC_Player_Human,10;
@@ -65488,6 +65583,37 @@ Body:
       if (.@r>=11) {
          bonus2 bSkillAtk,"GN_CARTCANNON",15;
       }
+  - Id: 13490
+    AegisName: Woe_Onehand_Sword1_Z
+    Name: Lesser Guild Member's Flamberge
+    Type: Weapon
+    SubType: 1hSword
+    Weight: 700
+    Attack: 110
+    Range: 1
+    Jobs:
+      Crusader: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10)
+         autobonus3 "{ .@r = getrefine(); bonus bMaxHP,1000+((.@r-10)*50); }",1000,30000,"CR_DEVOTION";
   - Id: 13492
     AegisName: Variant_Blade
     Name: Abyss Blade
@@ -69376,6 +69502,91 @@ Body:
     Script: |
       bonus bUnbreakableArmor;
       bonus bVit,min(getrefine(),10);
+  - Id: 15216
+    AegisName: Siege_Robe_1Tier
+    Name: Lesser Guild Member's Robe
+    Type: Armor
+    Weight: 500
+    Defense: 25
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Novice: true
+      Priest: true
+      Sage: true
+      SoulLinker: true
+      SuperNovice: true
+      Wizard: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMaxHP,700;
+      bonus bMaxSP,50;
+      bonus bMdef,5;
+      bonus2 bSubRace,RC_Player_Human,2;
+      bonus2 bSubRace,RC_Player_Doram,2;
+  - Id: 15217
+    AegisName: Siege_Suits_1Tier
+    Name: Lesser Guild Member's Suit
+    Type: Armor
+    Weight: 1500
+    Defense: 30
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMaxHP,800;
+      bonus bMdef,5;
+      bonus2 bSubRace,RC_Player_Doram,3;
+      bonus2 bSubRace,RC_Player_Human,3;
+  - Id: 15218
+    AegisName: Siege_Plate_1Tier
+    Name: Lesser Guild Member's Plate
+    Type: Armor
+    Weight: 2500
+    Defense: 50
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      StarGladiator: true
+      Swordman: true
+      Taekwon: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMaxHP,900;
+      bonus2 bSubRace,RC_Player_Doram,4;
+      bonus2 bSubRace,RC_Player_Human,4;
   - Id: 15246
     AegisName: True_Hunting_Mail
     Name: True Hunting Mail
@@ -73172,6 +73383,47 @@ Body:
       if (getrefine()>=7) {
          bonus bCritAtkRate,7;
       }
+  - Id: 16085
+    AegisName: Woe_Club_1_Z
+    Name: Lesser Guild Member's Morning Star
+    Type: Weapon
+    SubType: Mace
+    Weight: 900
+    Attack: 110
+    Range: 1
+    Jobs:
+      Acolyte: true
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Monk: true
+      Priest: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus2 bAddEff,Eff_Stun,200*getskilllv("PR_MACEMASTERY");
+         bonus bAspdRate,10;
+      }
   - Id: 16087
     AegisName: Variant_Mace
     Name: Abyss Mace
@@ -74902,6 +75154,43 @@ Body:
                bonus2 bAddRace,RC_Player_Doram,30;
             }
          }
+      }
+  - Id: 18175
+    AegisName: Woe_Bow1_Z
+    Name: Lesser Guild Member's Hunter Bow
+    Type: Weapon
+    SubType: Bow
+    Weight: 500
+    Attack: 90
+    Range: 5
+    Jobs:
+      Archer: true
+      BardDancer: true
+      Hunter: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus bHit,20+(.@r-10);
+         autobonus3 "{ .@r = getrefine(); bonus2 bSkillAtk,\"AC_DOUBLE\",20+(.@r-10); }",1000,10000,"AC_CONCENTRATION";
       }
   - Id: 18177
     AegisName: Variant_Wing
@@ -86262,6 +86551,26 @@ Body:
     View: 856
     Script: |
       bonus bDelayrate,-5;
+  - Id: 19185
+    AegisName: Blackhand_Of_Fate
+    Name: Dark Hand
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    View: 1310
+    Script: |
+      .@r = getrefine();
+      bonus bAllStats,10;
+      bonus bUseSPrate,-20;
+      bonus2 bSubRace,RC_DemiHuman,5;
+      bonus bAtkRate,.@r;
+      bonus bMatkRate,.@r;
   - Id: 19189
     AegisName: Racing_C_Mecha
     Name: Racing Cap (Mechanic)
@@ -102957,6 +103266,44 @@ Body:
          bonus bLongAtkRate,readparam(bDex)/60;
       if (.@r>=7)
          bonus bLongAtkRate,readparam(bDex)/10;
+  - Id: 20864
+    AegisName: Siege_Manteau_1Tier
+    Name: Lesser Guild Member's Manteau
+    Type: Armor
+    Weight: 300
+    Defense: 16
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMaxHP,250;
+      bonus2 bSubRace,RC_Player_Human,2;
+      bonus2 bSubRace,RC_Player_Doram,2;
+      bonus bMdef,1;
+  - Id: 20865
+    AegisName: Siege_Muffler_1Tier
+    Name: Lesser Guild Member's Muffler
+    Type: Armor
+    Weight: 150
+    Defense: 7
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMaxHP,150;
+      bonus2 bSubRace,RC_Player_Human,1;
+      bonus2 bSubRace,RC_Player_Doram,1;
+      bonus bMdef,1;
   - Id: 20866
     AegisName: Golden_Angel_Wing_TW
     Name: Golden Angel Wing
@@ -105310,6 +105657,38 @@ Body:
          bonus bCritAtkRate,10;
       if (.@r>=9)
          bonus bUnbreakableWeapon;
+  - Id: 21044
+    AegisName: Woe_Twohand_Sword1_Z
+    Name: Lesser Guild Member's Craymore
+    Type: Weapon
+    SubType: 2hSword
+    Weight: 1300
+    Attack: 175
+    Range: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,25+.@r;
+      bonus2 bAddRace,RC_Player_Doram,25+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10)
+         autobonus "{ .@r = getrefine(); bonus2 bIgnoreDefRaceRate,RC_Player_Human,10+(.@r-10); bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10+(.@r-10); }",100,7000,BF_WEAPON;
   - Id: 21046
     AegisName: Variant_Claymore
     Name: Abyss Claymore
@@ -108205,6 +108584,91 @@ Body:
       bonus2 bFixedCastrate,"CH_SOULCOLLECT",-.@c*10;
       bonus bAspdRate,2*getskilllv("SR_GENTLETOUCH_CHANGE");
       bonus bAtkRate,4*getskilllv("SR_GENTLETOUCH_QUIET");
+  - Id: 22146
+    AegisName: Siege_Shoes_1Tier
+    Name: Lesser Guild Member's Shoes
+    Type: Armor
+    Weight: 200
+    Defense: 7
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Novice: true
+      Priest: true
+      Sage: true
+      SoulLinker: true
+      SuperNovice: true
+      Wizard: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMaxHP,250;
+      bonus bMdef,5;
+      bonus2 bSubRace,RC_Player_Human,1;
+      bonus2 bSubRace,RC_Player_Doram,1;
+  - Id: 22147
+    AegisName: Siege_Boots_1Tier
+    Name: Lesser Guild Member's Boots
+    Type: Armor
+    Weight: 500
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMaxHP,400;
+      bonus bMdef,3;
+      bonus2 bSubRace,RC_Player_Human,2;
+      bonus2 bSubRace,RC_Player_Doram,2;
+  - Id: 22148
+    AegisName: Siege_Greave_1Tier
+    Name: Lesser Guild Member's Greaves
+    Type: Armor
+    Weight: 800
+    Defense: 15
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      StarGladiator: true
+      Swordman: true
+      Taekwon: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMaxHP,500;
+      bonus2 bSubRace,RC_Player_Human,3;
+      bonus2 bSubRace,RC_Player_Doram,3;
+      bonus bMdef,1;
   - Id: 22167
     AegisName: Astraea_Shoes
     Name: Asteria's Boots
@@ -123028,7 +123492,7 @@ Body:
     Buy: 50000
     Weight: 1000
     Attack: 205
-    Range: 1
+    Range: 3
     Slots: 2
     Jobs:
       Crusader: true
@@ -123050,6 +123514,41 @@ Body:
          bonus bAtkRate,5;
       if (.@r>=9)
          bonus2 bAddRace,RC_All,15;
+  - Id: 26019
+    AegisName: Woe_T_Lance1_Z
+    Name: Lesser Guild Member's Lance
+    Type: Weapon
+    SubType: 2hSpear
+    Weight: 1300
+    Attack: 220
+    Range: 3
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,25+.@r;
+      bonus2 bAddRace,RC_Player_Doram,25+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+          bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus3 bAddEffOnSkill,"KN_PIERCE",Eff_Stun,1000+((.@r-10)*100);
+         bonus3 bAddEffOnSkill,"CR_HOLYCROSS",Eff_Silence,1000+((.@r-10)*100);
+      }
   - Id: 26021
     AegisName: Variant_Lance
     Name: Abyss Lance
@@ -123671,6 +124170,82 @@ Body:
          bonus bBaseAtk,30;
          bonus bHit,5;
          bonus bMatkRate,4;
+      }
+  - Id: 26146
+    AegisName: Woe_Healstaff1_Z
+    Name: Lesser Guild Member's Healing Staff
+    Type: Weapon
+    SubType: Staff
+    Weight: 500
+    Attack: 70
+    MagicAttack: 125
+    Range: 1
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Priest: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bHealPower,10+.@r;
+      bonus bDelayrate,-5;
+      bonus2 bSkillUseSPrate,"AL_INCAGI",2+.@r;
+      bonus2 bSkillUseSPrate,"AL_BLESSING",2+.@r;
+      if (.@r>=7)
+         bonus bHealPower,5;
+      if (.@r>=9)
+         bonus bHealPower,10;
+      if (.@r>=10)
+         autobonus3 "{ .@r = getrefine(); bonus bHealPower,25+(.@r-10); }",100,20000,"AL_HEAL";
+  - Id: 26147
+    AegisName: Woe_Wand1_Z
+    Name: Lesser Guild Member's Arc Wand
+    Type: Weapon
+    SubType: Staff
+    Weight: 500
+    Attack: 60
+    MagicAttack: 115
+    Range: 1
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Priest: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMatk,5*(.@r/2);
+      bonus2 bMagicAddRace,RC_Player_Human,15+.@r;
+      bonus2 bMagicAddRace,RC_Player_Doram,15+.@r;
+      bonus2 bIgnoreMdefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreMdefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreMdefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreMdefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bMagicAddRace,RC_Player_Human,5;
+         bonus2 bMagicAddRace,RC_Player_Doram,5;
+      }
+      if (.@r>=10) {
+         bonus2 bVariableCastrate,"SA_LANDPROTECTOR",-30;
+         autobonus3 "{ bonus bNoGemStone; }",1000,10000,"SA_DELUGE";
+         autobonus3 "{ bonus bNoGemStone; }",1000,10000,"SA_VIOLENTGALE";
+         autobonus3 "{ bonus bNoGemStone; }",1000,10000,"SA_VOLCANO";
       }
   - Id: 26149
     AegisName: Variant_Wand
@@ -124520,6 +125095,41 @@ Body:
          bonus2 bSkillAtk,"CG_ARROWVULCAN",50;
          bonus2 bSubRace,RC_DemiHuman,5;
       }
+  - Id: 26210
+    AegisName: Woe_Whip1_Z
+    Name: Lesser Guild Member's Lariat
+    Type: Weapon
+    SubType: Whip
+    Weight: 400
+    Attack: 70
+    Range: 2
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,15+.@r;
+      bonus2 bAddRace,RC_Player_Doram,15+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus bHit,20+(.@r-10);
+         bonus bVariableCastrate,-30;
+         autobonus3 "{ .@r = getrefine(); bonus2 bSkillAtk,\"DC_THROWARROW\",30+(.@r-10); }",1000,60000,"BD_ADAPTATION";
+      }
   - Id: 26212
     AegisName: Heart_Whip
     Name: Heart Whip
@@ -125141,6 +125751,37 @@ Body:
       if (getrefine()>=7) {
          bonus bCritAtkRate,7;
       }
+  - Id: 28036
+    AegisName: Woe_Katar1_Z
+    Name: Lesser Guild Member's Jamadhar
+    Type: Weapon
+    SubType: Katar
+    Weight: 600
+    Attack: 125
+    Range: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10)
+         autobonus "{ .@r = getrefine(); bonus bCritAtkRate,20+((.@r-10)*2); }",100,7000,BF_WEAPON;
   - Id: 28037
     AegisName: Variant_Katar
     Name: Abyss Katar
@@ -126071,6 +126712,41 @@ Body:
       if (.@r>=11) {
          bonus2 bAddSize,Size_All,15;
       }
+  - Id: 28133
+    AegisName: Woe_Twohand_Axe1_Z
+    Name: Lesser Guild Member's Two-Handed Axe
+    Type: Weapon
+    SubType: 2hAxe
+    Weight: 1500
+    Attack: 175
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,25+.@r;
+      bonus2 bAddRace,RC_Player_Doram,25+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+         bonus3 bAutoSpell,"NPC_CRITICALWOUND",1,100;
+         bonus bAspdRate,10;
+      }
+      if (.@r>=10)
+         autobonus3 "{ bonus bBreakWeaponRate,10000; }",10+(.@r-10),20000,"BS_OVERTHRUST";
   - Id: 28135
     AegisName: Variant_Twohand_Axe
     Name: Abyss Two Hand Axe
@@ -127719,6 +128395,18 @@ Body:
     Script: |
       bonus bDex,1;
       bonus bUseSPrate,-5;
+  - Id: 28323
+    AegisName: Exorcist_Gloves
+    Name: Divine Gloves
+    Type: Armor
+    Weight: 1000
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Script: |
+      bonus3 bAutoSpellWhenHit,"PR_TURNUNDEAD",1,30;
   - Id: 28324
     AegisName: Steam_Starter_Ring
     Name: Steam Starter Ring
@@ -128562,6 +129250,39 @@ Body:
       if (BaseClass == Job_Gunslinger || BaseJob == Job_Novice || BaseJob == Job_SuperNovice || BaseClass == Job_Ninja || BaseClass == Job_Taekwon) {
          bonus bVariableCastrate,-30;
       }
+  - Id: 28427
+    AegisName: Blue_4leaf_Necklace
+    Name: Blue Clover Necklace
+    Type: Armor
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bMdef,5;
+      bonus bMatkRate,5;
+      bonus2 bSubEle,Ele_Water,20;
+      bonus3 bAutoSpellWhenHit,"WZ_STORMGUST",1,25;
+  - Id: 28428
+    AegisName: 4SeasonsClover
+    Name: Four Seasons Clover Necklace
+    Type: Armor
+    Weight: 100
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bMdef,5;
+      bonus bAllStats,1;
+      bonus bMaxHPrate,3;
+      bonus bMaxSPrate,3;
+      bonus bAtkRate,3;
+      bonus bMatkRate,3;
+      bonus2 bAddRace,RC_All,2;
+      bonus2 bMagicAddRace,RC_All,2;
+      bonus2 bSubRace,RC_All,5;
+      skill "HW_NAPALMVULCAN",3;
   - Id: 28429
     AegisName: Arquien's_Necklace
     Name: Arquien's Necklace
@@ -128600,6 +129321,48 @@ Body:
       bonus bUseSPrate,-5;
       bonus bHealPower,15;
       bonus bAddItemHealRate,15;
+  - Id: 28431
+    AegisName: Sprint_Ring_
+    Name: Sprint Ring
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Script: |
+      bonus bVariableCastrate,-10;
+      bonus bDelayrate,5;
+  - Id: 28432
+    AegisName: Spiritual_Ring_
+    Name: Spiritual Ring
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    Script: |
+      bonus bInt,2;
+      bonus bDex,1;
   - Id: 28433
     AegisName: Luminous_Blue_Stone
     Name: Luminous Blue Stone
@@ -128639,6 +129402,32 @@ Body:
       skill "MO_ABSORBSPIRITS",1;
       if (readparam(bStr)>99)
          bonus2 bAddRace,RC_All,5;
+  - Id: 28435
+    AegisName: Secret_Scroll_Of_Ninja
+    Name: Shinobi Secret Scroll
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Slots: 1
+    Jobs:
+      KagerouOboro: true
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bAgi,5;
+      bonus bMaxHPrate,5;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Kagerou) {
+         skill "AS_CLOAKING",getskilllv("KG_KAGEMUSYA");
+         skill "RG_TUNNELDRIVE",getskilllv("KG_KAGEMUSYA");
+      }
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Oboro) {
+         bonus4 bAutoSpellOnSkill,"KO_MAKIBISHI","NPC_CURSEATTACK",5,1000;
+         bonus4 bAutoSpellOnSkill,"KO_MAKIBISHI","NPC_POISON",5,1000;
+      }
   - Id: 28436
     AegisName: Elvira_Pendant
     Name: Elvira Pendant
@@ -131181,6 +131970,35 @@ Body:
       if (getrefine()>=7) {
          bonus2 bSkillAtk,"AB_ADORAMUS",15;
       }
+  - Id: 28617
+    AegisName: Demon_Hunting_Bible_BR
+    Name: Holy Bible
+    Type: Weapon
+    SubType: Book
+    Weight: 500
+    Attack: 30
+    MagicAttack: 170
+    Range: 1
+    Slots: 2
+    Jobs:
+      Priest: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 110
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bInt,2;
+      bonus bDex,2;
+      bonus bHealPower2,10;
+      bonus bAddItemHealRate,10;
+      bonus2 bSkillAtk,"PR_MAGNUS",40+(2*(readparam(bInt)/3));
+      if (.@r>=1)
+         autobonus2 "{ bonus2 bIgnoreDefClassRate,Class_Normal,100; bonus2 bIgnoreDefClassRate,Class_Boss,100; }",50,1000*(.@r/2),BF_WEAPON;
   - Id: 28618
     AegisName: Time_Kamiji
     Name: Book of the Sun God
@@ -132404,6 +133222,56 @@ Body:
                bonus2 bAddEle,Ele_All,20;
             }
          }
+      }
+  - Id: 28751
+    AegisName: Woe_Knife1_Z
+    Name: Lesser Guild Member's Gladius
+    Type: Weapon
+    SubType: Dagger
+    Weight: 300
+    Attack: 90
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,15+.@r;
+      bonus2 bAddRace,RC_Player_Doram,15+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus bHit,30;
+         autobonus3 "{ bonus2 bSkillAtk,\"RG_RAID\",50; }",1000,20000,"TF_HIDING";
       }
   - Id: 28753
     AegisName: Variant_Dagger
@@ -142630,6 +143498,43 @@ Body:
          bonus bMaxHPrate,15;
          bonus bMaxSPrate,15;
       }
+  - Id: 32015
+    AegisName: Woe_Onehand_Spear1_Z
+    Name: Lesser Guild Member's Pike
+    Type: Weapon
+    SubType: 1hSpear
+    Weight: 900
+    Attack: 110
+    Range: 3
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      .@a = getskilllv("KN_SPEARMASTERY");
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+          bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         autobonus3 "{ bonus2 bSkillAtk,\"KN_PIERCE\",20+" + .@a + "; }",1000,10000,"SM_PROVOKE";
+         bonus3 bAddEffOnSkill,"KN_PIERCE",Eff_Stun,1000+(.@a*200);
+         bonus3 bAddEffOnSkill,"KN_PIERCE",Eff_Blind,1000+(.@a*200);
+      }
   - Id: 32017
     AegisName: Variant_Spear
     Name: Abyss Spear
@@ -143062,6 +143967,41 @@ Body:
       if (.@r>=11) {
          bonus2 bSkillAtk,"LG_CANNONSPEAR",20;
          bonus2 bSkillAtk,"LG_BANISHINGPOINT",20;
+      }
+  - Id: 32103
+    AegisName: Woe_Instrument1_Z
+    Name: Lesser Guild Member's Guitar
+    Type: Weapon
+    SubType: Musical
+    Weight: 400
+    Attack: 70
+    Range: 1
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,15+.@r;
+      bonus2 bAddRace,RC_Player_Doram,15+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus bHit,20+(.@r-10);
+         bonus bVariableCastrate,-30;
+         autobonus3 "{ .@r = getrefine(); bonus2 bSkillAtk,\"BA_MUSICALSTRIKE\",30+(.@r-10); }",1000,60000,"BD_ADAPTATION";
       }
   - Id: 32105
     AegisName: Variant_Viollin
@@ -152811,6 +153751,19 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
     View: 2261
+  - Id: 420158
+    AegisName: aegis_420158
+    Name: Yesterday Once More
+    Type: Armor
+    Weight: 500
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    View: 2264
+    Script: |
+      bonus bMdef,5;
+      bonus bAspdRate,10;
   - Id: 420160
     AegisName: aegis_420160
     Name: Tyrant of Earth
@@ -153578,6 +154531,101 @@ Body:
          bonus bMaxSPrate,10;
          if (.@r>=8)
             bonus bUseSPrate,-20;
+      }
+  - Id: 450012
+    AegisName: Siege_Robe_2Tier
+    Name: Intermediate Guild Member's Robe
+    Type: Armor
+    Weight: 500
+    Defense: 25
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Novice: true
+      Priest: true
+      Sage: true
+      SuperNovice: true
+      Wizard: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,1050;
+      bonus bMaxSP,150;
+      bonus bMdef,5;
+      bonus2 bSubRace,RC_Player_Human,3;
+      bonus2 bSubRace,RC_Player_Doram,3;
+      if (.@r>=7)
+         bonus bMatkRate,5;
+  - Id: 450013
+    AegisName: Siege_Suits_2Tier
+    Name: Intermediate Guild Member's Suit
+    Type: Armor
+    Weight: 1500
+    Defense: 30
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,1150;
+      bonus bMaxSP,100;
+      bonus bMdef,5;
+      bonus2 bSubRace,RC_Player_Doram,4;
+      bonus2 bSubRace,RC_Player_Human,4;
+      if (.@r>=7)
+         bonus bAtkRate,5;
+  - Id: 450014
+    AegisName: Siege_Plate_2Tier
+    Name: Intermediate Guild Member's Plate
+    Type: Armor
+    Weight: 2500
+    Defense: 50
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,1250;
+      bonus bMaxSP,50;
+      bonus2 bSubRace,RC_Player_Doram,5;
+      bonus2 bSubRace,RC_Player_Human,5;
+      if (.@r>=7) {
+         bonus2 bSubRace,RC_Player_Doram,2;
+         bonus2 bSubRace,RC_Player_Human,2;
       }
   - Id: 450015
     AegisName: Virgo_Mail_J
@@ -160410,6 +161458,106 @@ Body:
          if (.@r>=8)
             skill "TK_JUMPKICK",7;
       }
+  - Id: 470011
+    AegisName: Siege_Shoes_2Tier
+    Name: Intermediate Guild Member's Shoes
+    Type: Armor
+    Weight: 200
+    Defense: 7
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Novice: true
+      Priest: true
+      Sage: true
+      SuperNovice: true
+      Wizard: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,350;
+      bonus bMdef,7;
+      bonus2 bSubRace,RC_Player_Human,1;
+      bonus2 bSubRace,RC_Player_Doram,1;
+      if (.@r>=7) {
+         bonus bMaxHPrate,10;
+         bonus2 bSubRace,RC_Player_Human,1;
+         bonus2 bSubRace,RC_Player_Doram,1;
+      }
+  - Id: 470012
+    AegisName: Siege_Boots_2Tier
+    Name: Intermediate Guild Member's Boots
+    Type: Armor
+    Weight: 500
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,550;
+      bonus bMdef,4;
+      bonus2 bSubRace,RC_Player_Human,2;
+      bonus2 bSubRace,RC_Player_Doram,2;
+      if (.@r>=7) {
+         bonus bMaxHPrate,10;
+         bonus2 bSubRace,RC_Player_Human,1;
+         bonus2 bSubRace,RC_Player_Doram,1;
+      }
+  - Id: 470013
+    AegisName: Siege_Greave_2Tier
+    Name: Intermediate Guild Member's Greaves
+    Type: Armor
+    Weight: 800
+    Defense: 15
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,750;
+      bonus2 bSubRace,RC_Player_Human,3;
+      bonus2 bSubRace,RC_Player_Doram,3;
+      bonus bMdef,2;
+      if (.@r>=7) {
+         bonus bMaxHPrate,10;
+         bonus2 bSubRace,RC_Player_Human,1;
+         bonus2 bSubRace,RC_Player_Doram,1;
+      }
   - Id: 470014
     AegisName: Virgo_Shoes_J
     Name: Virgo Shoes
@@ -162141,6 +163289,83 @@ Body:
          bonus2 bAddRace,RC_All,15;
          bonus bDefRatioAtkClass,Class_All;
       }
+  - Id: 470105
+    AegisName: Shoes_Of_Judex
+    Name: Shoes of Purge
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 15
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bUnbreakableShoes;
+      bonus bMdef,15+(10*(getskilllv("AB_LAUDAAGNUS")+getskilllv("AB_LAUDARAMUS")));
+      bonus bHealPower,8*(getskilllv("AB_LAUDAAGNUS")+getskilllv("AB_LAUDARAMUS"));
+      bonus bMaxHPrate,3;
+      bonus bMaxSPrate,3;
+      bonus2 bSkillCooldown,"AB_HIGHNESSHEAL",-1000;
+      if (getskilllv("AB_ORATIO") == 10) {
+         bonus bVariableCastrate,-50;
+         bonus bDelayrate,-50;
+      }
+      if (getskilllv("AB_CLEARANCE") == 5) {
+         bonus2 bMagicAddEle,Ele_All,25;
+         autobonus3 "{ bonus2 bSkillAtk,\"AB_JUDEX\",BaseLevel; }",1000,15000,"AB_OFFERTORIUM";
+      }
+      if (.@r>=5) {
+         bonus bMaxHPrate,7;
+         bonus bMaxSPrate,7;
+         bonus bDelayrate,-10;
+      }
+      if (.@r>=7) {
+         bonus bMaxHPrate,10;
+         bonus bMaxSPrate,10;
+         bonus bDelayrate,-10;
+      }
+  - Id: 470106
+    AegisName: Shoes_Of_Judex_
+    Name: Shoes of Purge
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 15
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bUnbreakableShoes;
+      bonus bMdef,15+(10*(getskilllv("AB_LAUDAAGNUS")+getskilllv("AB_LAUDARAMUS")));
+      bonus bHealPower,8*(getskilllv("AB_LAUDAAGNUS")+getskilllv("AB_LAUDARAMUS"));
+      bonus bMaxHPrate,3;
+      bonus bMaxSPrate,3;
+      bonus2 bSkillCooldown,"AB_HIGHNESSHEAL",-1000;
+      if (getskilllv("AB_ORATIO") == 10) {
+         bonus bVariableCastrate,-50;
+         bonus bDelayrate,-50;
+      }
+      if (getskilllv("AB_CLEARANCE") == 5) {
+         bonus2 bMagicAddEle,Ele_All,25;
+         autobonus3 "{ bonus2 bSkillAtk,\"AB_JUDEX\",BaseLevel; }",1000,15000,"AB_OFFERTORIUM";
+      }
+      if (.@r>=5) {
+         bonus bMaxHPrate,7;
+         bonus bMaxSPrate,7;
+         bonus bDelayrate,-10;
+      }
+      if (.@r>=7) {
+         bonus bMaxHPrate,10;
+         bonus bMaxSPrate,10;
+         bonus bDelayrate,-10;
+      }
   - Id: 470107
     AegisName: Barmund_Greave
     Name: Varmundt Rune Greaves
@@ -162653,6 +163878,310 @@ Body:
       bonus bMdef,3;
       bonus bDelayrate,-8;
       bonus bVariableCastrate,10;
+  - Id: 470158
+    AegisName: aegis_470158
+    Name: Temporal Boots Dex
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDex,3+(3*(.@r/3));
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bDex) >= 99) {
+         bonus bFixedCast,-200;
+         bonus bLongAtkRate,3;
+      }
+  - Id: 470159
+    AegisName: aegis_470159
+    Name: Temporal Boots Str
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bStr,3;
+      bonus bBaseAtk,5*(.@r/3);
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bStr) >= 99)
+         bonus bBaseAtk,30;
+  - Id: 470160
+    AegisName: aegis_470160
+    Name: Temporal Boots Int
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bInt,3;
+      bonus bMatk,5*(.@r/3);
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bInt) >= 99)
+         bonus bMatk,30;
+  - Id: 470161
+    AegisName: aegis_470161
+    Name: Temporal Boots Agi
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAgi,3;
+      bonus bAspdRate,2*(.@r/3);
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bAgi) >= 99)
+         bonus bAspd,1;
+  - Id: 470162
+    AegisName: aegis_470162
+    Name: Temporal Boots Vit
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bVit,3;
+      bonus bDef,5*(.@r/3);
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bVit) >= 99)
+         bonus bMaxHPrate,5;
+  - Id: 470163
+    AegisName: aegis_470163
+    Name: Temporal Boots Luk
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bLuk,3;
+      bonus bCritAtkRate,.@r/3;
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bLuk) >= 99)
+         bonus bCritAtkRate,20;
+  - Id: 470164
+    AegisName: aegis_470164
+    Name: Temporal Boots Agi
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAgi,3;
+      bonus bAspdRate,2*(.@r/3);
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bAgi) >= 99)
+         bonus bAspd,1;
+  - Id: 470165
+    AegisName: aegis_470165
+    Name: Temporal Boots Vit
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bVit,3;
+      bonus bDef,5*(.@r/3);
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bVit) >= 99)
+         bonus bMaxHPrate,5;
+  - Id: 470166
+    AegisName: aegis_470166
+    Name: Temporal Boots Dex
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDex,3+(3*(.@r/3));
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bDex) >= 99) {
+         bonus bFixedCast,-200;
+         bonus bLongAtkRate,3;
+      }
+  - Id: 470167
+    AegisName: aegis_470167
+    Name: Temporal Boots Str
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bStr,3;
+      bonus bBaseAtk,5*(.@r/3);
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bStr) >= 99)
+         bonus bBaseAtk,30;
+  - Id: 470168
+    AegisName: aegis_470168
+    Name: Temporal Boots Int
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bInt,3;
+      bonus bMatk,5*(.@r/3);
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bInt) >= 99)
+         bonus bMatk,30;
+  - Id: 470169
+    AegisName: aegis_470169
+    Name: Temporal Boots Luk
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bLuk,3;
+      bonus bCritAtkRate,.@r/3;
+      bonus bMdef,5;
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+      if (readparam(bLuk) >= 99)
+         bonus bCritAtkRate,20;
+  - Id: 470170
+    AegisName: aegis_470170
+    Name: Temporal Boots
+    Type: Armor
+    Weight: 500
+    Defense: 20
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,200+(50*(.@r/3));
+      bonus bMaxSP,20+(5*(.@r/3));
+  - Id: 470171
+    AegisName: ROZ_FV_Cassock_Boots
+    Name: Shining Priest's Boots
+    Type: Armor
+    Weight: 400
+    Defense: 32
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 150
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,350;
+      bonus bMaxSP,150;
+      bonus bHit,3*(.@r/2);
+      bonus2 bMagicAtkEle,Ele_Holy,4*(.@r/3);
+      if (.@r>=9)
+         autobonus2 "{ bonus bFlee2,30; }",50,2000,BF_MAGIC|BF_WEAPON;
+  - Id: 470172
+    AegisName: ROZ_FV_Rachel_Boots
+    Name: Frost Ice Snow Boots
+    Type: Armor
+    Weight: 250
+    Defense: 35
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 150
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAtkRate,10;
+      bonus bMaxHPrate,5;
+      bonus bMaxSPrate,5;
+      if (.@r>=6)
+         bonus2 bSubRace,RC_DemiHuman,5;
+      if (.@r>=9)
+         bonus2 bIgnoreDefClassRate,Class_Normal,10;
   - Id: 470173
     AegisName: Flame_Rune_Boots
     Name: Rune Boots of Flame
@@ -163227,6 +164756,50 @@ Body:
          bonus bMaxSPrate,10;
          if (.@r>=8)
             bonus bFlee2,30;
+      }
+  - Id: 480007
+    AegisName: Siege_Muffler_2Tier
+    Name: Intermediate Guild Member's Muffler
+    Type: Armor
+    Weight: 150
+    Defense: 7
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,250;
+      bonus2 bSubRace,RC_Player_Human,3;
+      bonus2 bSubRace,RC_Player_Doram,3;
+      bonus bMdef,2;
+      if (.@r>=7) {
+         bonus bBaseAtk,35;
+         bonus bMatk,35;
+      }
+  - Id: 480008
+    AegisName: Siege_Manteau_2Tier
+    Name: Intermediate Guild Member's Manteau
+    Type: Armor
+    Weight: 300
+    Defense: 16
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,350;
+      bonus2 bSubRace,RC_Player_Human,3;
+      bonus2 bSubRace,RC_Player_Doram,3;
+      bonus bMdef,2;
+      if (.@r>=7) {
+         bonus2 bSubRace,RC_Player_Human,3;
+         bonus2 bSubRace,RC_Player_Doram,3;
       }
   - Id: 480009
     AegisName: Virgo_Manteau_J
@@ -166336,6 +167909,21 @@ Body:
       bonus bAspdRate,3;
       bonus bVariableCastrate,-5;
       bonus2 bMagicAddEle,Ele_All,5;
+  - Id: 490016
+    AegisName: Bracelet_Of_Puppet
+    Name: Puppet Bracelet
+    Type: Armor
+    Buy: 20
+    Weight: 400
+    Defense: 5
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bAllStats,10;
+      bonus bMaxHPrate,10;
   - Id: 490017
     AegisName: Imperial_Attack_Ring
     Name: Imperial Attack Ring
@@ -169991,6 +171579,38 @@ Body:
       if (.@r>=11) {
          bonus bDelayrate,-10;
       }
+  - Id: 500006
+    AegisName: Woe_Onehand_Sword2_Z
+    Name: Intermediate Guild Member's Flamberge
+    Type: Weapon
+    SubType: 1hSword
+    Weight: 700
+    Attack: 130
+    Range: 1
+    Slots: 1
+    Jobs:
+      Crusader: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10)
+         autobonus3 "{ .@r = getrefine(); bonus bMaxHP,1000+((.@r-10)*50); }",1000,30000,"CR_DEVOTION";
   - Id: 500007
     AegisName: Ep172_1h_Sword
     Name: Hypocrisy Machine
@@ -172170,6 +173790,57 @@ Body:
       if (.@r>=9) {
          bonus2 bAddSize,Size_All,10;
          bonus2 bMagicAddSize,Size_All,10;
+      }
+  - Id: 510005
+    AegisName: Woe_Knife2_Z
+    Name: Intermediate Guild Member's Gladius
+    Type: Weapon
+    SubType: Dagger
+    Weight: 300
+    Attack: 110
+    Range: 1
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,15+.@r;
+      bonus2 bAddRace,RC_Player_Doram,15+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus bHit,30;
+         autobonus3 "{ bonus2 bSkillAtk,\"RG_RAID\",50; }",1000,20000,"TF_HIDING";
       }
   - Id: 510006
     AegisName: Fatalist
@@ -174607,6 +176278,45 @@ Body:
          bonus bBaseAtk,getskilllv("BS_WEAPONRESEARCH")*3;
       if (.@r>=9)
          bonus2 bAddSize,Size_All,15;
+  - Id: 520001
+    AegisName: Woe_One_Hand_Axe2_Z
+    Name: Intermediate Guild Member's Cleaver
+    Type: Weapon
+    SubType: 1hAxe
+    Weight: 1000
+    Attack: 130
+    Range: 1
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus4 bAutoSpellOnSkill,"MC_MAMMONITE","NPC_CRITICALWOUND",1,100;
+         bonus4 bAutoSpellOnSkill,"AM_ACIDTERROR","NPC_CRITICALWOUND",1,100;
+      }
   - Id: 520002
     AegisName: Ep172_1h_Axe
     Name: Pride Steel
@@ -175150,6 +176860,44 @@ Body:
       }
       if (.@r>=9) {
          bonus bLongAtkRate,10;
+      }
+  - Id: 530001
+    AegisName: Woe_Onehand_Spear2_Z
+    Name: Intermediate Guild Member's Pike
+    Type: Weapon
+    SubType: 1hSpear
+    Weight: 900
+    Attack: 130
+    Range: 3
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      .@a = getskilllv("KN_SPEARMASTERY");
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+          bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         autobonus3 "{ bonus2 bSkillAtk,\"KN_PIERCE\",20+" + .@a + "; }",1000,10000,"SM_PROVOKE";
+         bonus3 bAddEffOnSkill,"KN_PIERCE",Eff_Stun,1000+(.@a*200);
+         bonus3 bAddEffOnSkill,"KN_PIERCE",Eff_Blind,1000+(.@a*200);
       }
   - Id: 530002
     AegisName: Ep172_1h_Spear
@@ -178417,6 +180165,84 @@ Body:
       if (.@r>=9) {
          bonus2 bAddSize,Size_All,10;
          bonus2 bMagicAddSize,Size_All,10;
+      }
+  - Id: 550004
+    AegisName: Woe_Healstaff2_Z
+    Name: Intermediate Guild Member's Healing Staff
+    Type: Weapon
+    SubType: Staff
+    Weight: 500
+    Attack: 70
+    MagicAttack: 145
+    Range: 1
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Priest: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bHealPower,10+.@r;
+      bonus bDelayrate,-5;
+      bonus2 bSkillUseSPrate,"AL_INCAGI",2+.@r;
+      bonus2 bSkillUseSPrate,"AL_BLESSING",2+.@r;
+      if (.@r>=7)
+         bonus bHealPower,5;
+      if (.@r>=9)
+         bonus bHealPower,10;
+      if (.@r>=10)
+         autobonus3 "{ .@r = getrefine(); bonus bHealPower,25+(.@r-10); }",100,20000,"AL_HEAL";
+  - Id: 550005
+    AegisName: Woe_Wand2_Z
+    Name: Intermediate Guild Member's Arc Wand
+    Type: Weapon
+    SubType: Staff
+    Weight: 500
+    Attack: 60
+    MagicAttack: 140
+    Range: 1
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Priest: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMatk,5*(.@r/2);
+      bonus2 bMagicAddRace,RC_Player_Human,15+.@r;
+      bonus2 bMagicAddRace,RC_Player_Doram,15+.@r;
+      bonus2 bIgnoreMdefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreMdefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreMdefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreMdefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bMagicAddRace,RC_Player_Human,5;
+         bonus2 bMagicAddRace,RC_Player_Doram,5;
+      }
+      if (.@r>=10) {
+         bonus2 bVariableCastrate,"SA_LANDPROTECTOR",-30;
+         autobonus3 "{ bonus bNoGemStone; }",1000,10000,"SA_DELUGE";
+         autobonus3 "{ bonus bNoGemStone; }",1000,10000,"SA_VIOLENTGALE";
+         autobonus3 "{ bonus bNoGemStone; }",1000,10000,"SA_VOLCANO";
       }
   - Id: 550006
     AegisName: Ein_1H_Foxtail
@@ -182251,6 +184077,41 @@ Body:
       if (.@r>=11) {
          bonus2 bSkillCooldown,"SR_TIGERCANNON",-1000;
       }
+  - Id: 560003
+    AegisName: Woe_Pist2_Z
+    Name: Intermediate Guild Member's Fist
+    Type: Weapon
+    SubType: Knuckle
+    Weight: 300
+    Attack: 80
+    Range: 1
+    Slots: 1
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,25+.@r;
+      bonus2 bAddRace,RC_Player_Doram,25+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus2 bFixedCastrate,"MO_EXTREMITYFIST",-30;
+         autobonus3 "{ .@r = getrefine(); bonus bBaseAtk,30+(.@r-10); }",1000,20000,"MO_EXPLOSIONSPIRITS";
+      }
   - Id: 560004
     AegisName: Ep172_Bh_Knuck
     Name: Ira Fist
@@ -183529,6 +185390,42 @@ Body:
       if (.@r>=11) {
          bonus2 bSkillFixedCast,"WM_REVERBERATION",-500;
       }
+  - Id: 570003
+    AegisName: Woe_Instrument2_Z
+    Name: Intermediate Guild Member's Guitar
+    Type: Weapon
+    SubType: Musical
+    Weight: 400
+    Attack: 90
+    Range: 1
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,15+.@r;
+      bonus2 bAddRace,RC_Player_Doram,15+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus bHit,20+(.@r-10);
+         bonus bVariableCastrate,-30;
+         autobonus3 "{ .@r = getrefine(); bonus2 bSkillAtk,\"BA_MUSICALSTRIKE\",30+(.@r-10); }",1000,60000,"BD_ADAPTATION";
+      }
   - Id: 570004
     AegisName: Gemini_Violin_J
     Name: Gemini Violin
@@ -184771,6 +186668,42 @@ Body:
       }
       if (.@r>=11) {
          bonus2 bSkillFixedCast,"WM_REVERBERATION",-5000;
+      }
+  - Id: 580003
+    AegisName: Woe_Whip2_Z
+    Name: Intermediate Guild Member's Lariat
+    Type: Weapon
+    SubType: Whip
+    Weight: 400
+    Attack: 90
+    Range: 2
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,15+.@r;
+      bonus2 bAddRace,RC_Player_Doram,15+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus bHit,20+(.@r-10);
+         bonus bVariableCastrate,-30;
+         autobonus3 "{ .@r = getrefine(); bonus2 bSkillAtk,\"DC_THROWARROW\",30+(.@r-10); }",1000,60000,"BD_ADAPTATION";
       }
   - Id: 580004
     AegisName: Gemini_Rope_J
@@ -186065,6 +187998,48 @@ Body:
       }
       if (.@r>=11) {
          bonus2 bMagicAtkEle,Ele_Holy,10;
+      }
+  - Id: 590004
+    AegisName: Woe_Club_2_Z
+    Name: Intermediate Guild Member's Morning Star
+    Type: Weapon
+    SubType: Mace
+    Weight: 900
+    Attack: 130
+    Range: 1
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Monk: true
+      Priest: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus2 bAddEff,Eff_Stun,200*getskilllv("PR_MACEMASTERY");
+         bonus bAspdRate,10;
       }
   - Id: 590006
     AegisName: Ep172_1h_Hammer
@@ -187718,6 +189693,39 @@ Body:
       if (.@r>=11) {
          bonus bLongAtkRate,10;
       }
+  - Id: 600005
+    AegisName: Woe_Twohand_Sword2_Z
+    Name: Intermediate Guild Member's Craymore
+    Type: Weapon
+    SubType: 2hSword
+    Weight: 1300
+    Attack: 175
+    Range: 1
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,25+.@r;
+      bonus2 bAddRace,RC_Player_Doram,25+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10)
+         autobonus "{ .@r = getrefine(); bonus2 bIgnoreDefRaceRate,RC_Player_Human,10+(.@r-10); bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10+(.@r-10); }",100,7000,BF_WEAPON;
   - Id: 600008
     AegisName: Ep172_Bh_Sword
     Name: Hypocrisy Edge
@@ -188676,6 +190684,38 @@ Body:
       if (.@r>=11) {
          bonus bDelayrate,-7;
       }
+  - Id: 610004
+    AegisName: Woe_Katar2_Z
+    Name: Intermediate Guild Member's Jamadhar
+    Type: Weapon
+    SubType: Katar
+    Weight: 600
+    Attack: 145
+    Range: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10)
+         autobonus "{ .@r = getrefine(); bonus bCritAtkRate,20+((.@r-10)*2); }",100,7000,BF_WEAPON;
   - Id: 610006
     AegisName: Ep172_Bh_Katar
     Name: Avaritia Metal
@@ -189916,6 +191956,42 @@ Body:
             }
          }
       }
+  - Id: 620001
+    AegisName: Woe_Twohand_Axe2_Z
+    Name: Intermediate Guild Member's Two-Handed Axe
+    Type: Weapon
+    SubType: 2hAxe
+    Weight: 1500
+    Attack: 195
+    Range: 1
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,25+.@r;
+      bonus2 bAddRace,RC_Player_Doram,25+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+         bonus3 bAutoSpell,"NPC_CRITICALWOUND",1,100;
+         bonus bAspdRate,10;
+      }
+      if (.@r>=10)
+         autobonus3 "{ bonus bBreakWeaponRate,10000; }",10+(.@r-10),20000,"BS_OVERTHRUST";
   - Id: 620003
     AegisName: PT_B_Axe
     Name: Power Swing Booster Axe
@@ -190646,6 +192722,42 @@ Body:
       Both_Hand: true
     WeaponLevel: 4
     Refineable: true
+  - Id: 630001
+    AegisName: Woe_T_Lance2_Z
+    Name: Intermediate Guild Member's Lance
+    Type: Weapon
+    SubType: 2hSpear
+    Weight: 1300
+    Attack: 240
+    Range: 3
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,25+.@r;
+      bonus2 bAddRace,RC_Player_Doram,25+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+          bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus3 bAddEffOnSkill,"KN_PIERCE",Eff_Stun,1000+((.@r-10)*100);
+         bonus3 bAddEffOnSkill,"CR_HOLYCROSS",Eff_Silence,1000+((.@r-10)*100);
+      }
   - Id: 630003
     AegisName: Ep172_Bh_Spear
     Name: Luxuria Pierce
@@ -191332,6 +193444,42 @@ Body:
          bonus2 bMagicAtkEle,Ele_Ghost,10;
          bonus2 bMagicAtkEle,Ele_Wind,10;
          bonus2 bMagicAtkEle,Ele_Water,10;
+      }
+  - Id: 640001
+    AegisName: Woe_T_Staff2_Z
+    Name: Intermediate Guild Member's Destruction Staff
+    Type: Weapon
+    SubType: 2hStaff
+    Weight: 800
+    Attack: 70
+    MagicAttack: 200
+    Range: 1
+    Slots: 1
+    Jobs:
+      Priest: true
+      Wizard: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bMagicAddRace,RC_Player_Human,15+.@r;
+      bonus2 bMagicAddRace,RC_Player_Doram,15+.@r;
+      bonus2 bIgnoreMdefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreMdefRaceRate,RC_Player_Doram,10;
+      bonus2 bSkillAtk,"WZ_METEOR",3*.@r;
+      bonus2 bSkillAtk,"WZ_STORMGUST",3*.@r;
+      bonus bMaxHPrate,-2*.@r;
+      bonus bMatk,5*(.@r/2);
+      if (.@r>=7) {
+        bonus2 bIgnoreMdefRaceRate,RC_Player_Human,10;
+        bonus2 bIgnoreMdefRaceRate,RC_Player_Doram,10;
+      }
+      if (.@r>=9) {
+        bonus2 bMagicAddRace,RC_Player_Human,5;
+        bonus2 bMagicAddRace,RC_Player_Doram,5;
       }
   - Id: 640002
     AegisName: Virgo_Divine_Cross_J
@@ -192828,6 +194976,71 @@ Body:
             }
          }
       }
+  - Id: 650000
+    AegisName: Woe_Huuma1_Z
+    Name: Lesser Guild Member's Huuma Shuriken
+    Type: Weapon
+    SubType: Huuma
+    Weight: 1500
+    Attack: 175
+    Range: 1
+    Jobs:
+      KagerouOboro: true
+      Ninja: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,25+.@r;
+      bonus2 bAddRace,RC_Player_Doram,25+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10)
+         autobonus3 "{ .@r = getrefine(); bonus2 bIgnoreDefRaceRate,RC_Player_Human,10+(.@r-10); bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10+(.@r-10); }",1000,20000,"NJ_HUUMA";
+  - Id: 650001
+    AegisName: Woe_Huuma2_Z
+    Name: Intermediate Guild Member's Huuma Shuriken
+    Type: Weapon
+    SubType: Huuma
+    Weight: 1500
+    Attack: 175
+    Range: 1
+    Slots: 1
+    Jobs:
+      KagerouOboro: true
+      Ninja: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,25+.@r;
+      bonus2 bAddRace,RC_Player_Doram,25+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10)
+         autobonus3 "{ .@r = getrefine(); bonus2 bIgnoreDefRaceRate,RC_Player_Human,10+(.@r-10); bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10+(.@r-10); }",1000,20000,"NJ_HUUMA";
   - Id: 650003
     AegisName: Ep172_Bh_Huuma
     Name: Wrath Wheel
@@ -193895,6 +196108,44 @@ Body:
             bonus2 bIgnoreDefRaceRate,RC_All,.@val;
             bonus2 bIgnoreMDefRaceRate,RC_All,.@val;
          }
+      }
+  - Id: 700005
+    AegisName: Woe_Bow2_Z
+    Name: Intermediate Guild Member's Hunter Bow
+    Type: Weapon
+    SubType: Bow
+    Weight: 500
+    Attack: 110
+    Range: 5
+    Slots: 1
+    Jobs:
+      Archer: true
+      BardDancer: true
+      Hunter: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddRace,RC_Player_Human,20+.@r;
+      bonus2 bAddRace,RC_Player_Doram,20+.@r;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Human,10;
+      bonus2 bIgnoreDefRaceRate,RC_Player_Doram,10;
+      if (.@r>=7) {
+         bonus2 bIgnoreDefRaceRate,RC_Player_Human,5;
+         bonus2 bIgnoreDefRaceRate,RC_Player_Doram,5;
+      }
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_Player_Human,15;
+         bonus2 bAddRace,RC_Player_Doram,15;
+      }
+      if (.@r>=10) {
+         bonus bHit,20+(.@r-10);
+         autobonus3 "{ .@r = getrefine(); bonus2 bSkillAtk,\"AC_DOUBLE\",20+(.@r-10); }",1000,10000,"AC_CONCENTRATION";
       }
   - Id: 700007
     AegisName: Ep172_Bh_Bow
