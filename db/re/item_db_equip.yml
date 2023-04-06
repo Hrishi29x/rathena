@@ -159820,6 +159820,10 @@ Body:
             }
          }
       }
+      if (getpetinfo(PETINFO_EGGID) == 9111) {
+         bonus bAtkRate,7;
+         bonus bAspd,2;
+      }
       if (.@g>=ENCHANTGRADE_D) {
          bonus bAtkRate,5;
          bonus bBaseAtk,40;
@@ -161832,8 +161836,8 @@ Body:
       bonus2 bSkillCooldown,"RL_RICHS_COIN",-3000;
       bonus2 bFixedCastrate,"RL_BANISHING_BUSTER",-20*getskilllv("RL_BANISHING_BUSTER");
       bonus2 bSkillAtk,"RL_BANISHING_BUSTER",60*getskilllv("RL_BANISHING_BUSTER");
-      bonus2 bAddClass,Class_All,4*getskilllv("RL_FIREDANCE");
-      bonus2 bSkillAtk,"RL_FIREDANCE",50*getskilllv("RL_FIREDANCE");
+      bonus2 bAddClass,Class_All,4*getskilllv("RL_FIRE_RAIN");
+      bonus2 bSkillAtk,"RL_FIRE_RAIN",50*getskilllv("RL_FIRE_RAIN");
       bonus bDelayrate,-8*getskilllv("RL_H_MINE");
       bonus2 bSkillAtk,"RL_H_MINE",40*getskilllv("RL_H_MINE");
       if (getskilllv("RL_FALLEN_ANGEL") == 1) {
