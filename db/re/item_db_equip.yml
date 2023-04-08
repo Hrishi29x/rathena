@@ -71349,6 +71349,14 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2087
+  - Id: 15877
+    AegisName: C_P_blossom_Hairpin
+    Name: Costume Spring Flower Hairpin    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2085
   - Id: 15881
     AegisName: C_Rose_Crispinette
     Name: Costume Rose Crispinette
@@ -146634,6 +146642,285 @@ Body:
          bonus bAspdRate,15;
          bonus bFixedCastrate,-70;
       }
+  - Id: 400105
+    AegisName: Glacier_Helm_1
+    Name: Issgard Warrior Crown
+    Type: Armor
+    Weight: 300
+    Defense: 80
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    View: 1106
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bShortAtkRate,10;
+      bonus bAtkRate,3*(.@r/2);
+      bonus2 bAddSize,Size_All,4*(.@r/3);
+      if (.@r>=7) {
+         bonus bDelayrate,-8;
+         if (.@r>=9) {
+            bonus bShortAtkRate,10;
+            bonus bPAtk,10;
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bMdef,30;
+            bonus bDef,150;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPow,5;
+               bonus bCon,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bMRes,50;
+                  bonus bRes,50;
+               }
+            }
+         }
+      }
+  - Id: 400106
+    AegisName: Glacier_Helm_2
+    Name: Issgard Magician Crown
+    Type: Armor
+    Weight: 100
+    Defense: 20
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    View: 1107
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus2 bMagicAtkEle,Ele_All,10;
+      bonus bMatkRate,3*(.@r/2);
+      bonus2 bMagicAddSize,Size_All,4*(.@r/3);
+      if (.@r>=7) {
+         bonus bDelayrate,-8;
+         if (.@r>=9) {
+            bonus2 bMagicAtkEle,Ele_All,10;
+            bonus bSMatk,10;
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bSMatk,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bMdef,30;
+            bonus bDef,150;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bSpl,5;
+               bonus bCon,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bMRes,50;
+                  bonus bRes,50;
+               }
+            }
+         }
+      }
+  - Id: 400107
+    AegisName: Glacier_Helm_3
+    Name: Issgard Ranger Crown
+    Type: Armor
+    Weight: 200
+    Defense: 50
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 2
+    EquipLevelMin: 230
+    Refineable: true
+    Gradable: true
+    View: 1108
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bLongAtkRate,10;
+      bonus bAtkRate,3*(.@r/2);
+      bonus2 bAddSize,Size_All,4*(.@r/3);
+      if (.@r>=7) {
+         bonus bDelayrate,-8;
+         if (.@r>=9) {
+            bonus bLongAtkRate,10;
+            bonus bPAtk,10;
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bMdef,30;
+            bonus bDef,150;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPow,5;
+               bonus bCon,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bMRes,50;
+                  bonus bRes,50;
+               }
+            }
+         }
+      }
+  - Id: 400109
+    AegisName: aegis_400109
+    Name: Boitata Hat
+    Type: Armor
+    Weight: 400
+    Defense: 25
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 2
+    EquipLevelMin: 240
+    Refineable: true
+    Gradable: true
+    View: 808
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bHit,-25;
+      bonus bPow,5;
+      bonus bCrt,5;
+      bonus bAspdRate,10;
+      bonus bBaseAtk,20*(.@r/2);
+      bonus bDef,10*(.@r/2);
+      if (.@r>=7) {
+         bonus bShortAtkRate,15;
+         bonus bLongAtkRate,15;
+         if (.@r>=9) {
+            bonus bAtkRate,10;
+            bonus bBaseAtk,30;
+            if (.@r>=11) {
+               bonus bCritAtkRate,25;
+               bonus bPAtk,8;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bAtkRate,5;
+         bonus bPow,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bCRate,3;
+            bonus bCritical,15;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bFixedCast,-300;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bCritAtkRate,14*(.@r/3);
+                  bonus bCRate,(.@r/3);
+               }
+            }
+         }
+      }
+  - Id: 400110
+    AegisName: aegis_400110
+    Name: Crown of Beelzebub
+    Type: Armor
+    Weight: 400
+    Defense: 45
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 2
+    EquipLevelMin: 240
+    Refineable: true
+    Gradable: true
+    View: 1343
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,-15;
+      bonus bPow,5;
+      bonus bCon,5;
+      bonus bAspdRate,10;
+      bonus bBaseAtk,25*(.@r/2);
+      bonus bDef,15*(.@r/2);
+      if (.@r>=7) {
+         bonus bShortAtkRate,25;
+         bonus bLongAtkRate,25;
+         if (.@r>=9) {
+            bonus bAtkRate,10;
+            bonus bBaseAtk,40;
+            if (.@r>=11) {
+               bonus2 bAddEle,Ele_All,12;
+               bonus bPAtk,12;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bAtkRate,5;
+         bonus bPow,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_All,12;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bFixedCast,-300;
+               bonus bPAtk,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bAddRace,RC_All,3*(.@r/3);
+                  bonus2 bAddRace,RC_Player_Human,-3*(.@r/3);
+                  bonus2 bAddRace,RC_Player_Doram,-3*(.@r/3);
+                  bonus bPAtk,2*(.@r/3);
+               }
+            }
+         }
+      }
+  - Id: 400111
+    AegisName: aegis_400111
+    Name: Vesper Headgear
+    Type: Armor
+    Weight: 400
+    Defense: 15
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 2
+    EquipLevelMin: 240
+    Refineable: true
+    Gradable: true
+    View: 1827
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxSPrate,-10;
+      bonus bSpl,5;
+      bonus bCon,5;
+      bonus bVariableCastrate,-10;
+      bonus bMatk,25*(.@r/2);
+      bonus bDef,10*(.@r/2);
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_All,25;
+         if (.@r>=9) {
+            bonus bMatkRate,10;
+            bonus bMatk,40;
+            if (.@r>=11) {
+               bonus2 bMagicAddEle,Ele_All,12;
+               bonus bSMatk,12;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMatkRate,5;
+         bonus bSpl,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAddSize,Size_All,12;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bFixedCast,-500;
+               bonus bSMatk,2;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bMagicAddRace,RC_All,3*(.@r/3);
+                  bonus2 bMagicAddRace,RC_Player_Human,-3*(.@r/3);
+                  bonus2 bMagicAddRace,RC_Player_Doram,-3*(.@r/3);
+                  bonus bSMatk,2*(.@r/3);
+               }
+            }
+         }
+      }
   - Id: 400113
     AegisName: Victory_Ear_JP
     Name: Victory Wing Ear
@@ -151287,6 +151574,14 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2364
+  - Id: 400432
+    AegisName: aegis_400432
+    Name: Costume Heart Chiffon Rabbit    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2367
   - Id: 410005
     AegisName: C_Magic_Heir_TW
     Name: Costume Magic Heir
@@ -152644,6 +152939,13 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2355
+  - Id: 410231
+    AegisName: aegis_410231
+    Name: Costume Wonderland Tea Party    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
   - Id: 410232
     AegisName: aegis_410232
     Name: Gambler's Seal
@@ -154012,6 +154314,22 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
     View: 2361
+  - Id: 420208
+    AegisName: aegis_420208
+    Name: Costume Chocolat Rabbit Hair    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2369
+  - Id: 420209
+    AegisName: C_Cookie_PinkRibbon
+    Name: Costume Cookie Ribbon    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2370
   - Id: 420210
     AegisName: Heart_Ace_Melee
     Name: Ace of Hearts in Mouth (Melee Physical)
@@ -154022,6 +154340,16 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 150
     View: 1679
+  - Id: 420213
+    AegisName: Spade_Ace_Melee
+    Name: Ace of Spades in Mouth (Magical)
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 150
+    View: 2374
   - Id: 430005
     AegisName: C_White_Tiger_Glass
     Name: Costume white tiger glasses    # !todo check english name
@@ -164600,6 +164928,50 @@ Body:
             }
          }
       }
+  - Id: 470204
+    AegisName: aegis_470204
+    Name: Moan of Corruption
+    Type: Armor
+    Weight: 300
+    Defense: 16
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 240
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bSpl,5;
+      bonus bCon,3;
+      bonus bUseSPrate,15;
+      bonus bMatk,7*(.@r/3);
+      if (.@r>=7) {
+         bonus bSMatk,3;
+         bonus bMatkRate,5;
+         if (.@r>=9) {
+            bonus bVariableCastrate,-10;
+            if (.@r>=11) {
+               bonus2 bMagicAddSize,Size_Medium,15;
+               bonus2 bMagicAddSize,Size_Large,15;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMatkRate,5;
+         bonus bSpl,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bFixedCast,-1000;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bSMatk,7;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bSpl,8*(.@r/2);
+               }
+            }
+         }
+      }
   - Id: 480000
     AegisName: Atker_Manteau
     Name: Attacker Booster Manteau
@@ -167736,6 +168108,21 @@ Body:
   - Id: 480286
     AegisName: aegis_480286
     Name: Phantom of the Costume Snake God    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+  - Id: 480297
+    AegisName: aegis_480297
+    Name: Costume Rob Ear Rabbit Cloak    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 169
+  - Id: 480298
+    AegisName: C_MCircle_Wonderland
+    Name: Costume Magic Circle of Wonderland    # !todo check english name
     Type: Armor
     Locations:
       Costume_Garment: true
