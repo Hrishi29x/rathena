@@ -101640,7 +101640,7 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     EquipLevelMin: 1
-    View: 49
+    View: 1
   - Id: 20773
     AegisName: Excelion_Wing
     Name: Excelion Wing
