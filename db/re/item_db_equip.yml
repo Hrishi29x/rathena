@@ -92230,6 +92230,21 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 716
+  - Id: 19675
+    AegisName: C_Jumping_Poring
+    Name: Costume Jumping Poring
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 349
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 19676
     AegisName: C_Rainbow_Poring_Hat
     Name: Costume Rainbow Poring Hat
@@ -150164,6 +150179,14 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 206
+  - Id: 400351
+    AegisName: C_20Y_Anniv_Helmet
+    Name: Costume Poring Helmet    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2302
   - Id: 400354
     AegisName: aegis_400354
     Name: Costume Gold Helmet of Vanargand    # !todo check english name
@@ -151574,6 +151597,14 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2364
+  - Id: 400431
+    AegisName: aegis_400431
+    Name: Cherry Blossom Witch Hat    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2366
   - Id: 400432
     AegisName: aegis_400432
     Name: Costume Heart Chiffon Rabbit    # !todo check english name
@@ -151582,6 +151613,52 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2367
+  - Id: 400445
+    AegisName: Officer_Cap_LT
+    Name: Officer's Hat-LT
+    Type: Armor
+    Weight: 400
+    Defense: 35
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 2
+    EquipLevelMin: 100
+    Refineable: true
+    Gradable: true
+    View: 1759
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatk,10*(.@r/2);
+      bonus bBaseAtk,10*(.@r/2);
+      if (.@r>=7) {
+         bonus bMatkRate,5;
+         bonus bAtkRate,5;
+         if (.@r>=9) {
+            bonus2 bHPDrainRate,50,5;
+            bonus2 bSPDrainRate,10,3;
+            autobonus "{ bonus2 bHPRegenRate,300,1000; bonus2 bSPRegenRate,70,1000; }",40,4000,BF_MAGIC;
+            if (.@r>=11) {
+               bonus bAspdRate,10;
+               bonus bVariableCastrate,-10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bMagicAtkEle,Ele_All,5;
+         bonus bLongAtkRate,5;
+         bonus bShortAtkRate,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            if (.@r>=12) {
+               bonus bFixedCast,-500;
+            }
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,5;
+               bonus bSMatk,5;
+            }
+         }
+      }
   - Id: 410005
     AegisName: C_Magic_Heir_TW
     Name: Costume Magic Heir
@@ -152581,6 +152658,14 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2258
+  - Id: 410156
+    AegisName: C_Bouquet_Valletta
+    Name: Costume Bouquet Valletta
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2263
   - Id: 410157
     AegisName: C_Happening_Clover
     Name: Costume Happening Clover    # !todo check english name
@@ -152789,6 +152874,14 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2301
+  - Id: 410202
+    AegisName: C_ROROGO
+    Name: "Costume: ROROGO"
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2303
   - Id: 410205
     AegisName: C_Marlbron_Mini
     Name: "Costume: Marlbron Minimi"
@@ -153050,6 +153143,14 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
     View: 2027
+  - Id: 420015
+    AegisName: C_Onihime_Camellia
+    Name: Costume Camellia Demon Ribbon
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2026
   - Id: 420016
     AegisName: C_Katashiro_Flying
     Name: Costume Katashiro Flying
@@ -154277,6 +154378,14 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
     View: 2335
+  - Id: 420197
+    AegisName: aegis_420197
+    Name: Costume Twinkle Wave    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2346
   - Id: 420198
     AegisName: aegis_420198
     Name: Sanctus
@@ -154340,6 +154449,22 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 150
     View: 1679
+  - Id: 420211
+    AegisName: aegis_420211
+    Name: Garment Sheep Counting (Red)    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2277
+  - Id: 420212
+    AegisName: aegis_420212
+    Name: Costume Protect Cloth (Red)    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2227
   - Id: 420213
     AegisName: Spade_Ace_Melee
     Name: Ace of Spades in Mouth (Magical)
@@ -154350,6 +154475,24 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 150
     View: 2374
+  - Id: 420219
+    AegisName: aegis_420219
+    Name: Melon when clothes come    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2382
+  - Id: 420220
+    AegisName: Diamond_Ace_Range
+    Name: Ace of Diamonds in Mouth (Long Ranged Physical)
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 150
+    View: 2383
   - Id: 430005
     AegisName: C_White_Tiger_Glass
     Name: Costume white tiger glasses    # !todo check english name
@@ -161005,6 +161148,484 @@ Body:
             }
          }
       }
+  - Id: 450274
+    AegisName: Flame_E_R_Armor
+    Name: Fiery Earth Rune Armor
+    Type: Armor
+    Weight: 1000
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,-10;
+      bonus bBaseAtk,100+15*(.@r/2);
+      bonus bDef,30*(.@r/2);
+      if (.@r>=7) {
+         bonus bPAtk,2;
+         bonus bAtkRate,3;
+         bonus bMdef,25;
+         if (.@r>=9) {
+            bonus bPAtk,3;
+            bonus bMdef,25;
+            if (.@r>=11) {
+               bonus bShortAtkRate,5;
+               bonus bDelayrate,-10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bAtkRate,5;
+         bonus bBaseAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bShortAtkRate,3;
+            bonus bAtkRate,8;
+            bonus bBaseAtk,20;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bShortAtkRate,5;
+               bonus bAtkRate,11;
+               bonus bPow,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bShortAtkRate,7;
+                  bonus bAtkRate,14;
+                  bonus bCon,5;
+               }
+            }
+         }
+      }
+  - Id: 450279
+    AegisName: Ice_S_R_Suits
+    Name: Icy Storm Rune Suit
+    Type: Armor
+    Weight: 750
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,-10;
+      bonus bBaseAtk,100+15*(.@r/2);
+      bonus bDef,30*(.@r/2);
+      if (.@r>=7) {
+         bonus bPAtk,2;
+         bonus bAtkRate,3;
+         bonus bMdef,25;
+         if (.@r>=9) {
+            bonus bPAtk,3;
+            bonus bMdef,25;
+            if (.@r>=11) {
+               bonus bLongAtkRate,5;
+               bonus bDelayrate,-10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bAtkRate,5;
+         bonus bBaseAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bLongAtkRate,3;
+            bonus bAtkRate,8;
+            bonus bBaseAtk,20;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bLongAtkRate,5;
+               bonus bAtkRate,11;
+               bonus bPow,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bLongAtkRate,7;
+                  bonus bAtkRate,14;
+                  bonus bCon,5;
+               }
+            }
+         }
+      }
+  - Id: 450280
+    AegisName: Soul_P_R_Robe
+    Name: Soul Purifying Rune Robe
+    Type: Armor
+    Weight: 500
+    MagicAttack: 100
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bUseSPrate,10;
+      bonus bMatk,15*(.@r/2);
+      bonus bDef,30*(.@r/2);
+      if (.@r>=7) {
+         bonus bSMatk,2;
+         bonus bMatkRate,3;
+         bonus bMdef,25;
+         if (.@r>=9) {
+            bonus bSMatk,3;
+            bonus bMdef,25;
+            if (.@r>=11) {
+               bonus2 bMagicAtkEle,Ele_All,5;
+               bonus bDelayrate,-10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMatkRate,5;
+         bonus bMatk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAtkEle,Ele_All,3;
+            bonus bMatkRate,8;
+            bonus bMatk,20;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAtkEle,Ele_All,5;
+               bonus bMatkRate,11;
+               bonus bSpl,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bMagicAtkEle,Ele_All,7;
+                  bonus bMatkRate,14;
+                  bonus bCon,5;
+               }
+            }
+         }
+      }
+  - Id: 450281
+    AegisName: Corrupt_P_R_Cloth
+    Name: Corrupted Poison Rune Cloth
+    Type: Armor
+    Weight: 1000
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,5;
+      bonus bBaseAtk,70+12*(.@r/2);
+      bonus bDef,30*(.@r/2);
+      if (.@r>=7) {
+         bonus bPAtk,2;
+         bonus bAtkRate,3;
+         bonus bMdef,25;
+         if (.@r>=9) {
+            bonus bCRate,3;
+            bonus bMdef,25;
+            if (.@r>=11) {
+               bonus bCritAtkRate,5;
+               bonus bLongAtkRate,2;
+               bonus bShortAtkRate,2;
+               bonus bDelayrate,-10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bAtkRate,5;
+         bonus bBaseAtk,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bCritAtkRate,8;
+            bonus bAtkRate,8;
+            bonus bBaseAtk,20;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bLongAtkRate,5;
+               bonus bShortAtkRate,5;
+               bonus bAtkRate,11;
+               bonus bPow,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bLongAtkRate,7;
+                  bonus bShortAtkRate,7;
+                  bonus bAtkRate,14;
+                  bonus bCrt,5;
+               }
+            }
+         }
+      }
+  - Id: 450282
+    AegisName: Flame_E_R_Armor2
+    Name: Engraved Fiery Earth Rune Armor
+    Type: Armor
+    Defense: 200
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,-10;
+      bonus bPow,3;
+      bonus bCon,3;
+      bonus bBaseAtk,140+15*(.@r/2);
+      bonus bDef,30*(.@r/2);
+      if (.@r>=7) {
+         bonus bPAtk,2;
+         bonus bAtkRate,5;
+         bonus bMdef,25;
+         if (.@r>=9) {
+            bonus bPAtk,5;
+            bonus bMdef,25;
+            if (.@r>=11) {
+               bonus bShortAtkRate,15;
+               bonus bDelayrate,-10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bAtkRate,5;
+         bonus bBaseAtk,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bShortAtkRate,3;
+            bonus bAtkRate,8;
+            bonus bBaseAtk,45;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bShortAtkRate,5;
+               bonus bAtkRate,13;
+               bonus bPow,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bShortAtkRate,7;
+                  bonus bAtkRate,16;
+                  bonus bCon,10;
+               }
+            }
+         }
+      }
+  - Id: 450283
+    AegisName: Ice_S_R_Suits2
+    Name: Engraved Icy Storm Rune Suit
+    Type: Armor
+    Defense: 125
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,-10;
+      bonus bPow,3;
+      bonus bCon,3;
+      bonus bBaseAtk,140+15*(.@r/2);
+      bonus bDef,30*(.@r/2);
+      if (.@r>=7) {
+         bonus bPAtk,2;
+         bonus bAtkRate,5;
+         bonus bMdef,25;
+         if (.@r>=9) {
+            bonus bPAtk,5;
+            bonus bMdef,25;
+            if (.@r>=11) {
+               bonus bLongAtkRate,15;
+               bonus bDelayrate,-10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bAtkRate,5;
+         bonus bBaseAtk,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bLongAtkRate,3;
+            bonus bAtkRate,8;
+            bonus bBaseAtk,45;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bLongAtkRate,5;
+               bonus bAtkRate,13;
+               bonus bPow,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bLongAtkRate,7;
+                  bonus bAtkRate,16;
+                  bonus bCon,10;
+               }
+            }
+         }
+      }
+  - Id: 450284
+    AegisName: Soul_P_R_Robe2
+    Name: Engraved Soul Purifying Rune Robe
+    Type: Armor
+    MagicAttack: 140
+    Defense: 75
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bUseSPrate,10;
+      bonus bSpl,3;
+      bonus bCon,3;
+      bonus bMatk,15*(.@r/2);
+      bonus bDef,30*(.@r/2);
+      if (.@r>=7) {
+         bonus bSMatk,2;
+         bonus bMatkRate,5;
+         bonus bMdef,25;
+         if (.@r>=9) {
+            bonus bSMatk,5;
+            bonus bMdef,25;
+            if (.@r>=11) {
+               bonus2 bMagicAtkEle,Ele_All,15;
+               bonus bDelayrate,-10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMatkRate,5;
+         bonus bMatk,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAtkEle,Ele_All,3;
+            bonus bMatkRate,8;
+            bonus bMatk,45;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bMagicAtkEle,Ele_All,5;
+               bonus bMatkRate,13;
+               bonus bSpl,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bMagicAtkEle,Ele_All,7;
+                  bonus bMatkRate,16;
+                  bonus bCon,10;
+               }
+            }
+         }
+      }
+  - Id: 450285
+    AegisName: Corrupt_P_R_Cloth2
+    Name: Engraved Corrupted Poison Rune Cloth
+    Type: Armor
+    Defense: 150
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,10;
+      bonus bPow,3;
+      bonus bCrt,3;
+      bonus bBaseAtk,120+12*(.@r/2);
+      bonus bDef,30*(.@r/2);
+      if (.@r>=7) {
+         bonus bPAtk,2;
+         bonus bAtkRate,5;
+         bonus bMdef,25;
+         if (.@r>=9) {
+            bonus bCRate,7;
+            bonus bMdef,25;
+            if (.@r>=11) {
+               bonus bCritAtkRate,10;
+               bonus bLongAtkRate,5;
+               bonus bShortAtkRate,5;
+               bonus bDelayrate,-10;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bAtkRate,5;
+         bonus bBaseAtk,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bCritAtkRate,8;
+            bonus bAtkRate,8;
+            bonus bBaseAtk,45;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bLongAtkRate,5;
+               bonus bShortAtkRate,5;
+               bonus bAtkRate,13;
+               bonus bPow,10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bLongAtkRate,7;
+                  bonus bShortAtkRate,7;
+                  bonus bAtkRate,16;
+                  bonus bCrt,10;
+               }
+            }
+         }
+      }
   - Id: 460002
     AegisName: Aries_Shield_J
     Name: Aries Shield
@@ -167096,6 +167717,14 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     View: 124
+  - Id: 480168
+    AegisName: C_Melody_Wing
+    Name: Costume Melody Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 126
   - Id: 480169
     AegisName: C_Diabolic_Rock_Guitar
     Name: Costume Diabolic Rock Guitar
@@ -167198,6 +167827,14 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     View: 128
+  - Id: 480181
+    AegisName: C_Pitaya_G_Bag
+    Name: Costume Dragon Backpack
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 129
   - Id: 480182
     AegisName: aegis_480182
     Name: Bastawtozaq Heart
@@ -167325,6 +167962,14 @@ Body:
       if (.@r>=7) {
          bonus bVariableCastrate,-7;
       }
+  - Id: 480187
+    AegisName: C_Wedding_Ribbon
+    Name: Costume Wedding Ribbon
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 130
   - Id: 480188
     AegisName: aegis_480188
     Name: Valkyrie Curse Bright
@@ -168015,6 +168660,14 @@ Body:
       }
       if (.@r>=11)
          autobonus "{ bonus2 bMagicAtkEle,Ele_Neutral,20; bonus2 bMagicAtkEle,Ele_Holy,20; }",1,10000,BF_WEAPON;
+  - Id: 480279
+    AegisName: C_Poring_Syringe
+    Name: Costume Poring's Syringe    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 161
   - Id: 480283
     AegisName: D_Glacier_Manteau
     Name: Dim Glacier Manteau
@@ -171839,6 +172492,44 @@ Body:
     Script: |
       bonus bMatkRate,8;
       bonus bMaxHPrate,7;
+  - Id: 490374
+    AegisName: SeeOtter_Fan_LT
+    Name: Sea Otter Mini Fan-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Right_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 100
+    Script: |
+      bonus bAllStats,1;
+      bonus bAllTraitStats,1;
+      if (BaseLevel<175) {
+         bonus2 bExpAddRace,RC_All,10;
+      }
+      if (BaseLevel>=175) {
+         bonus2 bExpAddRace,RC_All,5;
+      }
+  - Id: 490375
+    AegisName: FurSeal_Fan_LT
+    Name: Fur Seal Mini Fan-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Left_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 100
+    Script: |
+      bonus bAllStats,1;
+      bonus bAllTraitStats,1;
+      if (BaseLevel<175) {
+         bonus2 bExpAddRace,RC_All,10;
+      }
+      if (BaseLevel>=175) {
+         bonus2 bExpAddRace,RC_All,5;
+      }
   - Id: 500000
     AegisName: IDTest_weapon
     Name: IDTest weapon
