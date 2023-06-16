@@ -85397,7 +85397,7 @@ Body:
          bonus2 bSubRace2,RC2_THANATOS,20;
          bonus2 bMagicAddRace2,RC2_THANATOS,20;
       }
-      /* skill 3044,1; */
+      skill "ALL_THANATOS_RECALL",1;
   - Id: 19104
     AegisName: YDragon_SkyWing
     Name: Dragon Emperor's Wing
