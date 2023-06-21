@@ -81214,7 +81214,7 @@ Body:
       bonus2 bSkillAtk,"MG_COLDBOLT",50;
       bonus bMdef,10;
       if (.@r>6)
-         bonus2 bSkillAtk,"SC_SPELLFIST",25;
+         bonus2 bSkillAtk,"SO_SPELLFIST",25;
       if (.@r>8)
          bonus bAspd,5;
   - Id: 18796
@@ -135157,7 +135157,7 @@ Body:
     Script: |
       .@r = getrefine();
       .@val = 10;
-      bonus2 bSkillAtk,"SC_STARTMARK",getskilllv("SC_MAELSTROM")*5;
+      bonus2 bSkillAtk,"SC_FATALMENACE",getskilllv("SC_MAELSTROM")*5;
       if (.@r>=7)
          bonus bAspd,2;
       if (.@r>=9) {
@@ -135192,7 +135192,7 @@ Body:
     Script: |
       .@r = getrefine();
       .@val = 10;
-      bonus2 bSkillAtk,"SC_STARTMARK",getskilllv("SC_MAELSTROM")*5;
+      bonus2 bSkillAtk,"SC_FATALMENACE",getskilllv("SC_MAELSTROM")*5;
       if (.@r>=7)
          bonus bAspd,2;
       if (.@r>=9) {
@@ -172983,7 +172983,7 @@ Body:
     Name: Costume Valkyrie Hair    # !todo check english name
     Type: Armor
     Locations:
-      Both_Accessory: true
+      Costume_Head_Low: true
     ArmorLevel: 1
     View: 2311
   - Id: 490243
