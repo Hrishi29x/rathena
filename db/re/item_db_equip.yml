@@ -919,7 +919,7 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Water;
       bonus2 bAddEff,Eff_Freeze,500;
-      bonus2 bAddEff2,Eff_Freeze,10;
+      bonus2 bAddEff2,Eff_Freeze,100;
       skill "MG_COLDBOLT",3;
       bonus3 bAutoSpell,"MG_COLDBOLT",3,100;
   - Id: 1132
@@ -28566,6 +28566,7 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 94
     Script: |
+      bonus bUnbreakableShoes;
       bonus bMdef,10;
       bonus bMaxHPrate,20;
       bonus bMaxSPrate,20;
@@ -56367,7 +56368,6 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 1
-    View: 1378
     Script: |
       hateffect HAT_EF_FLUTTER_BUTTERFLY,true;
     UnEquipScript: |
@@ -57045,7 +57045,6 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 1
-    View: 1380
     Script: |
       hateffect HAT_EF_ANGEL_FLUTTERING,true;
     UnEquipScript: |
@@ -75795,7 +75794,7 @@ Body:
       bonus bUnbreakableWeapon;
       bonus2 bAddEff,Eff_Stun,1500;
       bonus3 bAutoSpell,"SM_BASH",max(getskilllv("SM_BASH"),5),20;
-      bonus2 bAddEff2,Eff_Freeze,100;
+      bonus2 bAddEff2,Eff_Freezing,100;
       if (BaseLevel>99)
          bonus bBaseAtk,20;
   - Id: 16017
@@ -82679,9 +82678,14 @@ Body:
       Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 20
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
     View: 823
-    Script: |
-      bonus2 bAddRace,RC_Plant,2;
   - Id: 18678
     AegisName: Leek_In_Mouth
     Name: Leek In Mouth
@@ -91074,7 +91078,7 @@ Body:
       bonus bBaseAtk,10*(.@r/2);
       bonus bAspdRate,2*(.@r/3);
       if (.@r>=8)
-         bonus bCritAtkRate,10*getskilllv("TF_DOUBLE");
+         bonus bCritAtkRate,10*(getskilllv("TF_DOUBLE")/2);
       if (.@r>=11) {
          bonus bAspd,1;
          bonus bBaseAtk,20;
@@ -98505,8 +98509,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 717
-    Script: |
-      bonus bVariableCastrate,-10;
   - Id: 19904
     AegisName: C_Skull_Cap
     Name: Costume Skull cap
@@ -109674,7 +109676,6 @@ Body:
     Locations:
       Costume_Garment: true
     ArmorLevel: 1
-    View: 94
     Script: |
       hateffect HAT_EF_GEARWHEEL,true;
     UnEquipScript: |
@@ -143884,7 +143885,6 @@ Body:
     Name: Costume Bubbly Arc Angeling Hairband
     Type: Armor
     View: 1633
-    Weight: 10
     Locations:
       Costume_Head_Top: true
     ArmorLevel: 1
@@ -144418,7 +144418,6 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 1
-    View: 1665
     Script: |
       hateffect(HAT_EF_C_FLUTTERBUTTERFLY_BL,true);
     UnEquipScript: |
@@ -145573,7 +145572,7 @@ Body:
     Name: C Fluffy Heart Earmuffs
     Type: Armor
     Locations:
-      Costume_Head_Mid: true
+      Costume_Head_Top: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1707
@@ -147691,7 +147690,7 @@ Body:
     Name: C Mermaid Wig
     Type: Armor
     Locations:
-      Costume_Head_Top: true
+      Costume_Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1866
@@ -155169,6 +155168,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     ArmorLevel: 1
+    Script: |
+      hateffect(HAT_EF_BLACK_THUNDER,true);
+    UnEquipScript: |
+      hateffect(HAT_EF_BLACK_THUNDER,false);
   - Id: 400150
     AegisName: Thanos_Helm_4
     Name: Thanos Fighter Helmet
@@ -160199,7 +160202,7 @@ Body:
     ArmorLevel: 1
     View: 496
   - Id: 400462
-    AegisName: aegis_400462
+    AegisName: C_Sailor_Cap
     Name: Costume Sailor Cap
     Type: Armor
     Locations:
@@ -162533,6 +162536,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     ArmorLevel: 1
+    Script: |
+      hateffect(HAT_EF_alice_tea,true);
+    UnEquipScript: |
+      hateffect(HAT_EF_alice_tea,false);
   - Id: 410232
     AegisName: aegis_410232
     Name: Gambler's Seal
@@ -164389,7 +164396,7 @@ Body:
       bonus2 bAddSize,Size_All,15;
       bonus2 bMagicAddSize,Size_All,15;
   - Id: 420224
-    AegisName: aegis_420224
+    AegisName: C_Ocean_Color_Long
     Name: Costume Ocean Color Long
     Type: Armor
     Locations:
@@ -164682,6 +164689,7 @@ Body:
     Type: Armor
     Locations:
       Costume_Head_Top: true
+      Costume_Head_Mid: true
       Costume_Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 1
@@ -179010,7 +179018,6 @@ Body:
     Locations:
       Costume_Garment: true
     ArmorLevel: 1
-    View: 100
     Script: |
       hateffect HAT_EF_SNOW_POWDER,true;
     UnEquipScript: |
@@ -181589,6 +181596,10 @@ Body:
     Locations:
       Costume_Garment: true
     ArmorLevel: 1
+    Script: |
+      hateffect(HAT_EF_rabbit_aura,true);
+    UnEquipScript: |
+      hateffect(HAT_EF_rabbit_aura,false);
   - Id: 480310
     AegisName: C_Giant_Mad_Bunny
     Name: Costume Big Mad Bunny
@@ -181840,7 +181851,7 @@ Body:
          bonus2 bHPDrainRate,5,100;
       }
   - Id: 480320
-    AegisName: aegis_480320
+    AegisName: C_Aqua_Fin_Decoration
     Name: Costume Aqua Fin Decoration
     Type: Armor
     Locations:
@@ -181931,20 +181942,20 @@ Body:
          bonus bPAtk,5;
          bonus bSMatk,5;
          if (.@g>=ENCHANTGRADE_C) {
-            bonus2 bIgnoreDefRaceRate,RC_Angel,5;
-            bonus2 bIgnoreDefRaceRate,RC_Dragon,5;
-            bonus2 bIgnoreMdefRaceRate,RC_Angel,5;
-            bonus2 bIgnoreMdefRaceRate,RC_Dragon,5;
+            bonus2 bIgnoreResRaceRate,RC_Angel,5;
+            bonus2 bIgnoreResRaceRate,RC_Dragon,5;
+            bonus2 bIgnoreMResRaceRate,RC_Angel,5;
+            bonus2 bIgnoreMResRaceRate,RC_Dragon,5;
             if (.@g>=ENCHANTGRADE_B) {
-               bonus2 bIgnoreDefRaceRate,RC_Angel,5;
-               bonus2 bIgnoreDefRaceRate,RC_Dragon,5;
-               bonus2 bIgnoreMdefRaceRate,RC_Angel,5;
-               bonus2 bIgnoreMdefRaceRate,RC_Dragon,5;
+               bonus2 bIgnoreResRaceRate,RC_Angel,5;
+               bonus2 bIgnoreResRaceRate,RC_Dragon,5;
+               bonus2 bIgnoreMResRaceRate,RC_Angel,5;
+               bonus2 bIgnoreMResRaceRate,RC_Dragon,5;
                if (.@g>=ENCHANTGRADE_A) {
-                  bonus2 bIgnoreDefRaceRate,RC_Angel,5;
-                  bonus2 bIgnoreDefRaceRate,RC_Dragon,5;
-                  bonus2 bIgnoreMdefRaceRate,RC_Angel,5;
-                  bonus2 bIgnoreMdefRaceRate,RC_Dragon,5;
+                  bonus2 bIgnoreResRaceRate,RC_Angel,5;
+                  bonus2 bIgnoreResRaceRate,RC_Dragon,5;
+                  bonus2 bIgnoreMResRaceRate,RC_Angel,5;
+                  bonus2 bIgnoreMResRaceRate,RC_Dragon,5;
                }
             }
          }
