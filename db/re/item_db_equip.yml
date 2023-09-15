@@ -91748,47 +91748,47 @@ Body:
       bonus2 bAddRace2,RC2_CLOCKTOWER,.@a;
       bonus2 bMagicAddRace2,RC2_CLOCKTOWER,.@a;
       bonus2 bSubRace2,RC2_CLOCKTOWER,.@a;
-      bonus3 bAddClassDropItem,1061,1193,50;
-      bonus3 bAddClassDropItem,1061,1275,50;
-      bonus3 bAddClassDropItem,1061,2920,50;
-      bonus3 bAddClassDropItem,1061,1016,50;
-      bonus3 bAddClassDropItem,1061,1101,50;
-      bonus3 bAddClassDropItem,1061,1102,50;
-      bonus3 bAddClassDropItem,1061,2917,50;
-      bonus3 bAddClassDropItem,1061,2916,50;
-      bonus3 bAddClassDropItem,1061,1270,50;
-      bonus3 bAddClassDropItem,1061,1269,50;
-      bonus3 bAddClassDropItem,1061,1209,50;
-      bonus3 bAddClassDropItem,1061,1378,50;
-      bonus3 bAddClassDropItem,1061,1109,50;
-      bonus3 bAddClassDropItem,1061,1111,50;
-      bonus3 bAddClassDropItem,1061,1377,50;
-      bonus3 bAddClassDropItem,1061,1205,50;
-      bonus3 bAddClassDropItem,1061,1213,50;
-      bonus3 bAddClassDropItem,1061,1131,50;
-      bonus3 bAddClassDropItem,1061,1219,50;
-      bonus3 bAddClassDropItem,1061,1191,50;
-      bonus3 bAddClassDropItem,1061,1203,50;
-      bonus3 bAddClassDropItem,1061,2919,50;
-      bonus3 bAddClassDropItem,1061,2479,50;
-      bonus3 bAddClassDropItem,1061,2478,50;
-      bonus3 bAddClassDropItem,1061,1189,50;
-      bonus3 bAddClassDropItem,1061,1686,50;
-      bonus3 bAddClassDropItem,1061,1190,50;
-      bonus3 bAddClassDropItem,1061,1087,50;
-      bonus3 bAddClassDropItem,1061,1023,50;
-      bonus3 bAddClassDropItem,1061,2923,50;
-      bonus3 bAddClassDropItem,1061,2921,50;
-      bonus3 bAddClassDropItem,1061,1216,50;
-      bonus3 bAddClassDropItem,1061,1199,50;
-      bonus3 bAddClassDropItem,1061,1195,50;
-      bonus3 bAddClassDropItem,1061,1281,50;
-      bonus3 bAddClassDropItem,1061,1215,50;
-      bonus3 bAddClassDropItem,1061,1622,50;
-      bonus3 bAddClassDropItem,1061,2918,50;
-      bonus3 bAddClassDropItem,1061,3074,50;
-      bonus3 bAddClassDropItem,1061,1204,50;
-      bonus3 bAddClassDropItem,1061,1179,50;
+      bonus3 bAddMonsterIdDropItem,1061,1193,50;
+      bonus3 bAddMonsterIdDropItem,1061,1275,50;
+      bonus3 bAddMonsterIdDropItem,1061,2920,50;
+      bonus3 bAddMonsterIdDropItem,1061,1016,50;
+      bonus3 bAddMonsterIdDropItem,1061,1101,50;
+      bonus3 bAddMonsterIdDropItem,1061,1102,50;
+      bonus3 bAddMonsterIdDropItem,1061,2917,50;
+      bonus3 bAddMonsterIdDropItem,1061,2916,50;
+      bonus3 bAddMonsterIdDropItem,1061,1270,50;
+      bonus3 bAddMonsterIdDropItem,1061,1269,50;
+      bonus3 bAddMonsterIdDropItem,1061,1209,50;
+      bonus3 bAddMonsterIdDropItem,1061,1378,50;
+      bonus3 bAddMonsterIdDropItem,1061,1109,50;
+      bonus3 bAddMonsterIdDropItem,1061,1111,50;
+      bonus3 bAddMonsterIdDropItem,1061,1377,50;
+      bonus3 bAddMonsterIdDropItem,1061,1205,50;
+      bonus3 bAddMonsterIdDropItem,1061,1213,50;
+      bonus3 bAddMonsterIdDropItem,1061,1131,50;
+      bonus3 bAddMonsterIdDropItem,1061,1219,50;
+      bonus3 bAddMonsterIdDropItem,1061,1191,50;
+      bonus3 bAddMonsterIdDropItem,1061,1203,50;
+      bonus3 bAddMonsterIdDropItem,1061,2919,50;
+      bonus3 bAddMonsterIdDropItem,1061,2479,50;
+      bonus3 bAddMonsterIdDropItem,1061,2478,50;
+      bonus3 bAddMonsterIdDropItem,1061,1189,50;
+      bonus3 bAddMonsterIdDropItem,1061,1686,50;
+      bonus3 bAddMonsterIdDropItem,1061,1190,50;
+      bonus3 bAddMonsterIdDropItem,1061,1087,50;
+      bonus3 bAddMonsterIdDropItem,1061,1023,50;
+      bonus3 bAddMonsterIdDropItem,1061,2923,50;
+      bonus3 bAddMonsterIdDropItem,1061,2921,50;
+      bonus3 bAddMonsterIdDropItem,1061,1216,50;
+      bonus3 bAddMonsterIdDropItem,1061,1199,50;
+      bonus3 bAddMonsterIdDropItem,1061,1195,50;
+      bonus3 bAddMonsterIdDropItem,1061,1281,50;
+      bonus3 bAddMonsterIdDropItem,1061,1215,50;
+      bonus3 bAddMonsterIdDropItem,1061,1622,50;
+      bonus3 bAddMonsterIdDropItem,1061,2918,50;
+      bonus3 bAddMonsterIdDropItem,1061,3074,50;
+      bonus3 bAddMonsterIdDropItem,1061,1204,50;
+      bonus3 bAddMonsterIdDropItem,1061,1179,50;
   - Id: 19272
     AegisName: Garden_Of_Eden
     Name: Garden of Eden
@@ -160233,14 +160233,6 @@ Body:
          bonus bAtkRate,5;
       if (.@r>=11)
          bonus2 bAddSize,Size_All,5;
-  - Id: 400462
-    AegisName: aegis_400462
-    Name: Costume Sailor Cap
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2398
   - Id: 400465
     AegisName: Dolor_HatK_LT
     Name: Drooping Thanatos's Dolor-LT
@@ -174226,7 +174218,7 @@ Body:
       skill "SM_MAGNUM",3;
       bonus2 bSkillAtk,"NC_AXETORNADO",30*.@lvl;
       bonus2 bSkillAtk,"NC_AXEBOOMERANG",20*.@lvl;
-      bonus bIgnoreDefRace,20*getskilllv("NC_MAGMA_ERUPTION");
+      bonus2 bIgnoreDefRaceRate,RC_ALL,20*getskilllv("NC_MAGMA_ERUPTION");
       if (getskilllv("NC_MAGICDECOY") == 5) {
          bonus bAspdRate,10;
          bonus bMaxHP,150*BaseLevel;
