@@ -98294,6 +98294,14 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 502
+  - Id: 19868
+    AegisName: aegis_19868
+    Name: Costume Showy High Cap
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 830
   - Id: 19871
     AegisName: C_Music_Decoration
     Name: Costume Decoration of Music
@@ -120727,7 +120735,8 @@ Body:
     Refineable: true
     Script: |
       .@r = getrefine();
-      bonus bMaxHP,.@r*10;
+      bonus bBaseAtk,.@r;
+      bonus bMatk,.@r;
       bonus bAspdRate,5+.@r/2;
       if (.@r >= 7) {
          bonus bAspd,1;
@@ -136638,7 +136647,7 @@ Body:
     Weight: 10
     Slots: 1
     Locations:
-      Both_Accessory: true
+      Right_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 99
     Script: |
@@ -160373,6 +160382,37 @@ Body:
       bonus2 bAddRace,RC_DemiHuman,5;
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Rogue)
          bonus2 bSkillAtk,"RG_BACKSTAP",5*getrefine();
+  - Id: 400480
+    AegisName: aegis_400480
+    Name: Costume Cat Straw Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2413
+  - Id: 400481
+    AegisName: aegis_400481
+    Name: The Brandishing
+    Type: Armor
+    Weight: 500
+    Defense: 10
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    Refineable: true
+    View: 2415
+    Script: |
+      bonus bCrt,3+getrefine();
+      bonus2 bSubRace,RC_Player_Doram,13;
+      bonus2 bSubRace,RC_Player_Human,13;
+      bonus2 bSubClass,Class_Boss,20;
+      bonus2 bSubClass,Class_Normal,20;
+      bonus bAtkRate,40;
+      bonus2 bSkillAtk,"DK_SERVANT_W_PHANTOM",BaseLevel/10;
+      bonus2 bSkillAtk,"DK_SERVANT_W_DEMOL",BaseLevel/10;
+      bonus2 bSkillAtk,"DK_SERVANTWEAPON_ATK",BaseLevel/10;
   - Id: 400483
     AegisName: aegis_400483
     Name: Opened Illusion Cap
@@ -160419,37 +160459,6 @@ Body:
          bonus2 bMagicAtkEle,Ele_All,5;
       if (.@r>=11)
          bonus2 bMagicAddSize,Size_All,5;
-  - Id: 400480
-    AegisName: aegis_400480
-    Name: Costume Cat Straw Hat
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2413
-  - Id: 400481
-    AegisName: aegis_400481
-    Name: The Brandishing
-    Type: Armor
-    Weight: 500
-    Defense: 10
-    Slots: 1
-    Locations:
-      Head_Top: true
-    ArmorLevel: 1
-    EquipLevelMin: 200
-    Refineable: true
-    View: 2415
-    Script: |
-      bonus bCrt,3+getrefine();
-      bonus2 bSubRace,RC_Player_Doram,13;
-      bonus2 bSubRace,RC_Player_Human,13;
-      bonus2 bSubClass,Class_Boss,20;
-      bonus2 bSubClass,Class_Normal,20;
-      bonus bAtkRate,40;
-      bonus2 bSkillAtk,"DK_SERVANT_W_PHANTOM",BaseLevel/10;
-      bonus2 bSkillAtk,"DK_SERVANT_W_DEMOL",BaseLevel/10;
-      bonus2 bSkillAtk,"DK_SERVANTWEAPON_ATK",BaseLevel/10;
   - Id: 400490
     AegisName: aegis_400490
     Name: "[Not for Sale] Boxer Glove"
@@ -160482,6 +160491,14 @@ Body:
          bonus2 bSkillAtk,"CH_CHAINCRUSH",BaseLevel;
          bonus2 bSkillAtk,"MO_FINGEROFFENSIVE",JobLevel;
       }
+  - Id: 400504
+    AegisName: aegis_400504
+    Name: Autumn one piece costume    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2424
   - Id: 410001
     AegisName: Phalanx
     Name: Phalanx
@@ -164419,6 +164436,22 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     View: 2396
+  - Id: 420231
+    AegisName: MD_Hol_Protection
+    Name: Constellation’s Protection    # !todo check english name
+    Type: Armor
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 250
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 420232
     AegisName: aegis_420232
     Name: Costume Cheese Stick
@@ -173081,6 +173114,32 @@ Body:
          bonus bInt,10;
          bonus bDex,10;
       }
+  - Id: 460052
+    AegisName: aegis_460052
+    Name: Striking Gauntlet
+    Type: Armor
+    Weight: 400
+    Defense: 60
+    Slots: 1
+    Locations:
+      Left_Hand: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    View: 1
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,15;
+      bonus bMaxHPrate,3*.@r;
+      bonus bMaxSPrate,3*.@r;
+      if (.@r>=6) {
+         bonus bAgi,5;
+         bonus bDex,5;
+      }
+      if (.@r>=8) {
+         bonus bAgi,10;
+         bonus bDex,10;
+      }
   - Id: 460053
     AegisName: Feather_Shield_LT_TW
     Name: Holy Feather Shield-LT
@@ -173133,32 +173192,6 @@ Body:
              bonus2 bResEff,Eff_Stone,10000;
              bonus2 bResEff,Eff_Stun,10000;
          }
-      }
-  - Id: 460052
-    AegisName: aegis_460052
-    Name: Striking Gauntlet
-    Type: Armor
-    Weight: 400
-    Defense: 60
-    Slots: 1
-    Locations:
-      Left_Hand: true
-    ArmorLevel: 1
-    EquipLevelMin: 100
-    Refineable: true
-    View: 1
-    Script: |
-      .@r = getrefine();
-      bonus bMdef,15;
-      bonus bMaxHPrate,3*.@r;
-      bonus bMaxSPrate,3*.@r;
-      if (.@r>=6) {
-         bonus bAgi,5;
-         bonus bDex,5;
-      }
-      if (.@r>=8) {
-         bonus bAgi,10;
-         bonus bDex,10;
       }
   - Id: 470000
     AegisName: Atker_Greave
@@ -177585,6 +177618,151 @@ Body:
          bonus bRes,50;
          if (.@g>=ENCHANTGRADE_C) {
             bonus2 bAddSize,Size_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bSMatk,7;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bFixedCast,-500;
+               }
+            }
+         }
+      }
+  - Id: 470221
+    AegisName: FateSin_Boots_MT
+    Name: Boots of Good and Evil (Meister)    # !todo check english name
+    Type: Armor
+    Weight: 600
+    Defense: 20
+    Slots: 1
+    Jobs:
+      Blacksmith: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 210
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHP,500;
+      bonus bMaxSP,100;
+      bonus bMaxHPrate,(.@r/2);
+      bonus bMaxSPrate,(.@r/2);
+      if (.@r>=7) {
+         bonus bAtkRate,7;
+         if (.@r>=9) {
+            bonus bLongAtkRate,10;
+            bonus bShortAtkRate,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-500;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,50;
+         bonus bRes,50;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bSMatk,7;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bFixedCast,-500;
+               }
+            }
+         }
+      }
+  - Id: 470222
+    AegisName: FateSin_Boots_SHC
+    Name: Boots of Good and Evil (Shadow Cross)    # !todo check english name
+    Type: Armor
+    Weight: 600
+    Defense: 20
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 210
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHP,500;
+      bonus bMaxSP,100;
+      bonus bMaxHPrate,(.@r/2);
+      bonus bMaxSPrate,(.@r/2);
+      if (.@r>=7) {
+         bonus bAtkRate,7;
+         if (.@r>=9) {
+            bonus bShortAtkRate,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-500;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,50;
+         bonus bRes,50;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bSMatk,7;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bFixedCast,-500;
+               }
+            }
+         }
+      }
+  - Id: 470223
+    AegisName: FateSin_Boots_SS
+    Name: Boots of Good and Evil (Shinkiro & Shiranui)    # !todo check english name
+    Type: Armor
+    Weight: 600
+    Defense: 20
+    Slots: 1
+    Jobs:
+      KagerouOboro: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 210
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHP,500;
+      bonus bMaxSP,100;
+      bonus bMaxHPrate,(.@r/2);
+      bonus bMaxSPrate,(.@r/2);
+      if (.@r>=7) {
+         bonus bAtkRate,7;
+         bonus bMatkRate,7;
+         if (.@r>=9) {
+            bonus2 bMagicAtkEle,Ele_All,10;
+            bonus bLongAtkRate,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-500;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,50;
+         bonus bRes,50;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_All,10;
+            bonus2 bMagicAddSize,Size_All,10;
             if (.@g>=ENCHANTGRADE_B) {
                bonus bPAtk,7;
                bonus bSMatk,7;
@@ -182372,6 +182550,434 @@ Body:
          bonus bFlee,10;
          skill "TF_DOUBLE",10;
          skill "MO_TRIPLEATTACK",10;
+      }
+  - Id: 480345
+    AegisName: Season_Hood_Spring
+    Name: "Divine Beast's Cloak: Spring"    # !todo check english name
+    Type: Armor
+    Weight: 700
+    Defense: 80
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,-20;
+      bonus bPow,2;
+      bonus bCon,2;
+      bonus bBaseAtk,5*(.@r/2);
+      bonus bShortAtkRate,2*(.@r/3);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         if (.@r>=9) {
+            bonus bAspdRate,10;
+            if (.@r>=11) {
+               bonus bDelayrate,-10;
+               bonus bPAtk,2;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,25;
+         bonus bRes,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bShortAtkRate,7;
+            bonus bAtkRate,7;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,3;
+               bonus bDef,50;
+               bonus bPow,5;
+               bonus bCon,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bAddEle,Ele_All,5;
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
+  - Id: 480346
+    AegisName: Season_Hood_Summer
+    Name: "Divine Beast's Cloak: Summer"    # !todo check english name
+    Type: Armor
+    Weight: 700
+    Defense: 80
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,-20;
+      bonus bPow,2;
+      bonus bCon,2;
+      bonus bBaseAtk,5*(.@r/2);
+      bonus bLongAtkRate,2*(.@r/3);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         if (.@r>=9) {
+            bonus bAspdRate,10;
+            if (.@r>=11) {
+               bonus bDelayrate,-10;
+               bonus bPAtk,2;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,25;
+         bonus bRes,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bLongAtkRate,7;
+            bonus bAtkRate,7;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,3;
+               bonus bDef,50;
+               bonus bPow,5;
+               bonus bCon,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bAddEle,Ele_All,5;
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
+  - Id: 480347
+    AegisName: Season_Hood_Autumn
+    Name: "Divine Beast's Cloak: Autumn"    # !todo check english name
+    Type: Armor
+    Weight: 700
+    Defense: 80
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bSpl,2;
+      bonus bCon,2;
+      bonus bUseSPrate,15;
+      bonus bMatk,5*(.@r/2);
+      bonus2 bMagicAtkEle,Ele_All,2*(.@r/3);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         if (.@r>=9) {
+            bonus bAspdRate,5;
+            bonus bVariableCastrate,-5;
+            if (.@r>=11) {
+               bonus bDelayrate,-10;
+               bonus bSMatk,2;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,25;
+         bonus bRes,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAtkEle,Ele_All,7;
+            bonus bMatkRate,7;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bSMatk,3;
+               bonus bDef,50;
+               bonus bSpl,5;
+               bonus bCon,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bMagicAddEle,Ele_All,5;
+                  bonus bSMatk,5;
+               }
+            }
+         }
+      }
+  - Id: 480348
+    AegisName: Season_Hood_Winter
+    Name: "Divine Beast's Cloak: Winter"    # !todo check english name
+    Type: Armor
+    Weight: 700
+    Defense: 80
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,4;
+      bonus bPow,1;
+      bonus bCon,1;
+      bonus bBaseAtk,4*(.@r/2);
+      bonus bCritAtkRate,(.@r/3);
+      bonus bCrt,(.@r/3);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-5;
+         bonus bCRate,3;
+         if (.@r>=9) {
+            bonus bAspdRate,10;
+            if (.@r>=11) {
+               bonus bDelayrate,-10;
+               bonus bPAtk,2;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,25;
+         bonus bRes,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bShortAtkRate,7;
+            bonus bLongAtkRate,7;
+            bonus bCritical,7;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bCRate,1;
+               bonus bPow,5;
+               bonus bCon,5;
+               bonus bCrt,3;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bCritAtkRate,10;
+                  bonus bCRate,3;
+               }
+            }
+         }
+      }
+  - Id: 480349
+    AegisName: Circul_Of_Life_Spring
+    Name: "Cycle of Life: Spring"    # !todo check english name
+    Type: Armor
+    Weight: 700
+    Defense: 80
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,-20;
+      bonus bPow,4;
+      bonus bCon,4;
+      bonus bBaseAtk,10*(.@r/2);
+      bonus bShortAtkRate,2*(.@r/3);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         if (.@r>=9) {
+            bonus bAspdRate,10;
+            if (.@r>=11) {
+               bonus bDelayrate,-10;
+               bonus bPAtk,7;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,25;
+         bonus bRes,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bShortAtkRate,7;
+            bonus bAtkRate,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bDef,50;
+               bonus bPow,5;
+               bonus bCon,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bAddEle,Ele_All,7;
+                  bonus bPAtk,9;
+               }
+            }
+         }
+      }
+  - Id: 480350
+    AegisName: Circul_Of_Life_Summer
+    Name: "Cycle of Life: Summer"    # !todo check english name
+    Type: Armor
+    Weight: 700
+    Defense: 80
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,-20;
+      bonus bPow,4;
+      bonus bCon,4;
+      bonus bBaseAtk,10*(.@r/2);
+      bonus bLongAtkRate,2*(.@r/3);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         if (.@r>=9) {
+            bonus bAspdRate,10;
+            if (.@r>=11) {
+               bonus bDelayrate,-10;
+               bonus bPAtk,7;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,25;
+         bonus bRes,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bLongAtkRate,7;
+            bonus bAtkRate,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bDef,50;
+               bonus bPow,5;
+               bonus bCon,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bAddEle,Ele_All,7;
+                  bonus bPAtk,9;
+               }
+            }
+         }
+      }
+  - Id: 480351
+    AegisName: Circul_Of_Life_Autumn
+    Name: "Cycle of Life: Autumn"    # !todo check english name
+    Type: Armor
+    Weight: 700
+    Defense: 80
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bSpl,4;
+      bonus bCon,4;
+      bonus bUseSPrate,15;
+      bonus bMatk,10*(.@r/2);
+      bonus2 bMagicAtkEle,Ele_All,2*(.@r/3);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-10;
+         if (.@r>=9) {
+            bonus bAspdRate,5;
+            bonus bVariableCastrate,-5;
+            if (.@r>=11) {
+               bonus bDelayrate,-10;
+               bonus bSMatk,7;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,25;
+         bonus bRes,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAtkEle,Ele_All,7;
+            bonus bMatkRate,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bSMatk,7;
+               bonus bDef,50;
+               bonus bSpl,5;
+               bonus bCon,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bMagicAddEle,Ele_All,7;
+                  bonus bSMatk,9;
+               }
+            }
+         }
+      }
+  - Id: 480352
+    AegisName: Circul_Of_Life_Winter
+    Name: "Cycle of Life: Winter"    # !todo check english name
+    Type: Armor
+    Weight: 700
+    Defense: 80
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Refineable: true
+    Gradable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bCritical,4+(.@r/2);
+      bonus bPow,2;
+      bonus bCon,2;
+      bonus bBaseAtk,5*(.@r/2);
+      bonus bCritAtkRate,(.@r/3);
+      bonus bCrt,(.@r/3);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-5;
+         bonus bCRate,3;
+         if (.@r>=9) {
+            bonus bAspdRate,10;
+            if (.@r>=11) {
+               bonus bDelayrate,-10;
+               bonus bPAtk,7;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,25;
+         bonus bRes,25;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bShortAtkRate,7;
+            bonus bLongAtkRate,7;
+            bonus bCritical,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bCRate,5;
+               bonus bPow,5;
+               bonus bCon,5;
+               bonus bCrt,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bCritAtkRate,15;
+                  bonus bCRate,7;
+               }
+            }
+         }
       }
   - Id: 480358
     AegisName: aegis_480358
@@ -212607,7 +213213,7 @@ Body:
          if (.@r>=9) {
             bonus2 bSkillCooldown,"KO_JYUMONJIKIRI",-2000;
             if (.@r>=11) {
-               bonus2 bSkillAtk,"KO_JYUMONJIKIRI",20;
+               bonus2 bSkillAtk,"KO_JYUMONJIKIRI",25;
                if (.@r>=12) {
                   bonus bLongAtkRate,15;
                }
