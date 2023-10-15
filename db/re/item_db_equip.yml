@@ -94570,7 +94570,7 @@ Body:
       }
       if (getskilllv("GN_FIRE_EXPANSION") == 5)
          bonus2 bAddClass,Class_Boss,50;
-      if (getskilllv("GN_CRAZYWEED") == 5) {
+      if (getskilllv("GN_MANDRAGORA") == 5) {
          .@delay -= 25;
          bonus2 bSkillCooldown,"GN_CRAZYWEED",-4500;
       }
