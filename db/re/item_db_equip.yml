@@ -191227,9 +191227,9 @@ Body:
     EquipLevelMin: 100
     Script: |
       bonus bVariableCastrate,-10;
-      bonus2 bIgnoreMdefRaceRate,RC_All,10*(getskilllv(MG_SAFETYWALL)/2);
-      bonus2 bIgnoreMdefRaceRate,RC_Player_Human,-10*(getskilllv(MG_SAFETYWALL)/2);
-      bonus2 bIgnoreMdefRaceRate,RC_Player_Doram,-10*(getskilllv(MG_SAFETYWALL)/2);
+      bonus2 bIgnoreMdefRaceRate,RC_All,10*(getskilllv("MG_SAFETYWALL")/2);
+      bonus2 bIgnoreMdefRaceRate,RC_Player_Human,-10*(getskilllv("MG_SAFETYWALL")/2);
+      bonus2 bIgnoreMdefRaceRate,RC_Player_Doram,-10*(getskilllv("MG_SAFETYWALL")/2);
   - Id: 490289
     AegisName: aegis_490289
     Name: "[Not for Sale] Record of Mage"
@@ -191253,9 +191253,9 @@ Body:
     EquipLevelMin: 100
     Script: |
       bonus bVariableCastrate,-10;
-      bonus2 bIgnoreMdefRaceRate,RC_All,10*(getskilllv(MG_SAFETYWALL)/2);
-      bonus2 bIgnoreMdefRaceRate,RC_Player_Human,-10*(getskilllv(MG_SAFETYWALL)/2);
-      bonus2 bIgnoreMdefRaceRate,RC_Player_Doram,-10*(getskilllv(MG_SAFETYWALL)/2);
+      bonus2 bIgnoreMdefRaceRate,RC_All,10*(getskilllv("MG_SAFETYWALL")/2);
+      bonus2 bIgnoreMdefRaceRate,RC_Player_Human,-10*(getskilllv("MG_SAFETYWALL")/2);
+      bonus2 bIgnoreMdefRaceRate,RC_Player_Doram,-10*(getskilllv("MG_SAFETYWALL")/2);
   - Id: 490290
     AegisName: aegis_490290
     Name: Ameretat
