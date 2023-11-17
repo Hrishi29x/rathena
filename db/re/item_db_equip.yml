@@ -106141,6 +106141,22 @@ Body:
       NoAuction: true
     ArmorLevel: 1
     View: 183
+  - Id: 20626
+    AegisName: C_ROS2023_Cape_2
+    Name: 2023 ROS Figurine Cloak    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 198
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 20700
     AegisName: Egir_Manteau
     Name: Egir Manteau
@@ -130552,6 +130568,224 @@ Body:
     Refineable: true
     Script: |
       bonus bMaxHP,getrefine()*10;
+  - Id: 24872
+    AegisName: S_Full_Power_Armor
+    Name: Full Power Shadow Armor
+    Type: ShadowGear
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAtkRate,3;
+      bonus bLongAtkRate,(.@r/2);
+      bonus bShortAtkRate,(.@r/2);
+      if (.@r>=10) {
+         bonus bPAtk,2;
+      }
+  - Id: 24873
+    AegisName: S_Full_Power_Shoes
+    Name: Full Power Shadow Shoes
+    Type: ShadowGear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAtkRate,3;
+      bonus bLongAtkRate,(.@r/2);
+      bonus bShortAtkRate,(.@r/2);
+      if (.@r>=10) {
+         bonus bPAtk,2;
+      }
+  - Id: 24874
+    AegisName: S_Full_Rate_Armor
+    Name: Full Rate Shadow Armor
+    Type: ShadowGear
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bCritical,3;
+      bonus bCritAtkRate,(.@r/2);
+      if (.@r>=10) {
+         bonus bCRate,2;
+      }
+  - Id: 24875
+    AegisName: S_Full_Rate_Shoes
+    Name: Full Rate Shadow Shoes
+    Type: ShadowGear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bCritical,3;
+      bonus bCritAtkRate,(.@r/2);
+      if (.@r>=10) {
+         bonus bCRate,2;
+      }
+  - Id: 24876
+    AegisName: S_Focusing_Pendant
+    Name: Focusing Shadow Pendant
+    Type: ShadowGear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAtkRate,3;
+      bonus bVariableCastrate,-(.@r/2);
+      if (.@r>=10) {
+         bonus bPAtk,2;
+      }
+  - Id: 24877
+    AegisName: S_Focusing_Earring
+    Name: Focusing Shadow Earring
+    Type: ShadowGear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAtkRate,3;
+      bonus bVariableCastrate,-(.@r/2);
+      if (.@r>=10) {
+         bonus bPAtk,2;
+      }
+  - Id: 24878
+    AegisName: S_Stout_Pendant
+    Name: Stout Shadow Pendant
+    Type: ShadowGear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDef,30;
+      bonus bRes,3*(.@r/2);
+      if (.@r>=10) {
+         bonus bRes,15;
+      }
+  - Id: 24879
+    AegisName: S_Stout_Earring
+    Name: Stout Shadow Earring
+    Type: ShadowGear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDef,30;
+      bonus bRes,3*(.@r/2);
+      if (.@r>=10) {
+         bonus bRes,15;
+      }
+  - Id: 24883
+    AegisName: S_Full_Spell_Armor
+    Name: Full Spell Shadow Armor
+    Type: ShadowGear
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bMatkRate,3;
+      bonus2 bMagicAtkEle,Ele_All,(.@r/2);
+      if (.@r>=10) {
+         bonus bSMatk,2;
+      }
+  - Id: 24884
+    AegisName: S_Full_Spell_Shoes
+    Name: Full Spell Shadow Shoes
+    Type: ShadowGear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bMatkRate,3;
+      bonus2 bMagicAtkEle,Ele_All,(.@r/2);
+      if (.@r>=10) {
+         bonus bSMatk,2;
+      }
+  - Id: 24885
+    AegisName: S_Centering_Pendant
+    Name: Centering Shadow Pendant
+    Type: ShadowGear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bMatkRate,3;
+      bonus bVariableCastrate,-(.@r/2);
+      if (.@r>=10) {
+         bonus bSMatk,2;
+      }
+  - Id: 24886
+    AegisName: S_Centering_Earring
+    Name: Centering Shadow Earring
+    Type: ShadowGear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bMatkRate,3;
+      bonus bVariableCastrate,-(.@r/2);
+      if (.@r>=10) {
+         bonus bSMatk,2;
+      }
+  - Id: 24887
+    AegisName: S_Witty_Pendant
+    Name: Witty Shadow Pendant
+    Type: ShadowGear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bMdef,10;
+      bonus bMRes,3*(.@r/2);
+      if (.@r>=10) {
+         bonus bMRes,15;
+      }
+  - Id: 24888
+    AegisName: S_Witty_Earring
+    Name: Witty Shadow Earring
+    Type: ShadowGear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bMdef,10;
+      bonus bMRes,3*(.@r/2);
+      if (.@r>=10) {
+         bonus bMRes,15;
+      }
   - Id: 26001
     AegisName: Toughen_Metal_Lance
     Name: Enhanced Metal Lance
@@ -162390,7 +162624,7 @@ Body:
       bonus bHit,30;
       bonus2 bAddRace,RC_DemiHuman,5;
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Rogue)
-         bonus2 bSkillAtk,"RG_BACKSTAP",5*getrefine();         
+         bonus2 bSkillAtk,"RG_BACKSTAP",5*getrefine();
   - Id: 400480
     AegisName: aegis_400480
     Name: Costume Cat Straw Hat
@@ -162878,6 +163112,14 @@ Body:
       }
       /*Todo : After Using Transformation Scroll (Horn Scaraba) (22750)*/
       /*Physical and Magical Damage to All Race 5% for 5 Minute*/
+  - Id: 400557
+    AegisName: aegis_400557
+    Name: Costume Al Picky Doll    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 1001
   - Id: 410000
     AegisName: Resonate_Taego_J
     Name: Ancient Resonance
@@ -165378,6 +165620,22 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2378
+  - Id: 410238
+    AegisName: aegis_410238
+    Name: "Costume: Adventurer Pope Mini-Me"
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2384
+  - Id: 410239
+    AegisName: aegis_410239
+    Name: Costume Flying Tilby
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2386
   - Id: 410240
     AegisName: aegis_410240
     Name: Costume White Rabbit
@@ -165528,6 +165786,38 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2423
+  - Id: 410267
+    AegisName: C_Cinnamon
+    Name: Costume Cinnamoroll
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2427
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+  - Id: 410268
+    AegisName: C_Cinnamon2
+    Name: Costume Cinnamoroll in the Sky
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2427
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 420000
     AegisName: Isabella_Carrot
     Name: Isabella Carrot
@@ -167536,6 +167826,23 @@ Body:
     View: 571
     Script: |
       bonus2 bExpAddRace,RC_All,8;
+  - Id: 420242
+    AegisName: C_Fluttering_Haze
+    Name: Costume Long Stretching Fog    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+  - Id: 420269
+    AegisName: Clover_Ace_Defense
+    Name: Ace of Clovers in Mouth (Defense)
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 150
+    View: 2448
   - Id: 430002
     AegisName: Rachel_Helmet
     Name: Awakened Glacier Helm
@@ -181310,6 +181617,299 @@ Body:
             }
          }
       }
+  - Id: 470224
+    AegisName: FateSin_Boots_ABC
+    Name: Boots of Good and Evil (Abyss Chaser)
+    Type: Armor
+    Weight: 600
+    Defense: 20
+    Slots: 1
+    Jobs:
+      Rogue: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 210
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHP,500;
+      bonus bMaxSP,100;
+      bonus bMaxHPrate,(.@r/2);
+      bonus bMaxSPrate,(.@r/2);
+      if (.@r>=7) {
+         bonus bAtkRate,7;
+         if (.@r>=9) {
+            bonus bLongAtkRate,10;
+            bonus bShortAtkRate,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-500;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,50;
+         bonus bRes,50;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bSMatk,7;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bFixedCast,-500;
+               }
+            }
+         }
+      }
+  - Id: 470225
+    AegisName: FateSin_Boots_TR
+    Name: Boots of Good and Evil (Troubadour & Trouvere)
+    Type: Armor
+    Weight: 600
+    Defense: 20
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 210
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHP,500;
+      bonus bMaxSP,100;
+      bonus bMaxHPrate,(.@r/2);
+      bonus bMaxSPrate,(.@r/2);
+      if (.@r>=7) {
+         bonus bAtkRate,7;
+         bonus bMatkRate,7;
+         if (.@r>=9) {
+            bonus2 bMagicAtkEle,Ele_All,10;
+            bonus bLongAtkRate,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-500;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,50;
+         bonus bRes,50;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_All,10;
+            bonus2 bMagicAddSize,Size_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bSMatk,7;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bFixedCast,-500;
+               }
+            }
+         }
+      }
+  - Id: 470226
+    AegisName: FateSin_Boots_HN
+    Name: Boots of Good and Evil (Hyper Novice)
+    Type: Armor
+    Weight: 600
+    Defense: 20
+    Slots: 1
+    Jobs:
+      SuperNovice: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 210
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHP,500;
+      bonus bMaxSP,100;
+      bonus bMaxHPrate,(.@r/2);
+      bonus bMaxSPrate,(.@r/2);
+      if (.@r>=7) {
+         bonus bAtkRate,7;
+         bonus bMatkRate,7;
+         if (.@r>=9) {
+            bonus2 bMagicAtkEle,Ele_All,10;
+            bonus bLongAtkRate,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-500;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,50;
+         bonus bRes,50;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_All,10;
+            bonus2 bMagicAddSize,Size_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bSMatk,7;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bFixedCast,-500;
+               }
+            }
+         }
+      }
+  - Id: 470236
+    AegisName: FateSin_Boots_IG
+    Name: Boots of Good and Evil (Imperial Guard)
+    Type: Armor
+    Weight: 600
+    Defense: 20
+    Slots: 1
+    Jobs:
+      Crusader: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 210
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHP,500;
+      bonus bMaxSP,100;
+      bonus bMaxHPrate,(.@r/2);
+      bonus bMaxSPrate,(.@r/2);
+      if (.@r>=7) {
+         bonus bAtkRate,7;
+         bonus bMatkRate,7;
+         if (.@r>=9) {
+            bonus2 bMagicAtkEle,Ele_Holy,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-500;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,50;
+         bonus bRes,50;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_All,10;
+            bonus2 bMagicAddSize,Size_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bSMatk,7;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bFixedCast,-500;
+               }
+            }
+         }
+      }
+  - Id: 470237
+    AegisName: FateSin_Boots_AG
+    Name: Boots of Good and Evil (Arch Mage)
+    Type: Armor
+    Weight: 600
+    Defense: 20
+    Slots: 1
+    Jobs:
+      Wizard: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 210
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHP,500;
+      bonus bMaxSP,100;
+      bonus bMaxHPrate,(.@r/2);
+      bonus bMaxSPrate,(.@r/2);
+      if (.@r>=7) {
+         bonus bMatkRate,7;
+         if (.@r>=9) {
+            bonus2 bMagicAtkEle,Ele_Water,10;
+            bonus2 bMagicAtkEle,Ele_Ghost,10;
+            bonus2 bMagicAtkEle,Ele_Dark,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-500;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,50;
+         bonus bRes,50;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bMagicAddSize,Size_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bSMatk,7;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bFixedCast,-500;
+               }
+            }
+         }
+      }
+  - Id: 470238
+    AegisName: FateSin_Boots_NW
+    Name: Boots of Good and Evil (Night Watch)
+    Type: Armor
+    Weight: 600
+    Defense: 20
+    Slots: 1
+    Jobs:
+      Rebellion: true
+    Classes:
+      Fourth: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 210
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMaxHP,500;
+      bonus bMaxSP,100;
+      bonus bMaxHPrate,(.@r/2);
+      bonus bMaxSPrate,(.@r/2);
+      if (.@r>=7) {
+         bonus bAtkRate,7;
+         if (.@r>=9) {
+            bonus bLongAtkRate,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-500;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMRes,50;
+         bonus bRes,50;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bSMatk,7;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bFixedCast,-500;
+               }
+            }
+         }
+      }
   - Id: 480000
     AegisName: Atker_Manteau
     Name: Attacker Booster Manteau
@@ -186955,6 +187555,14 @@ Body:
          bonus bLongAtkRate,7;
       if (.@r>=11)
          bonus bDelayrate,-10;
+  - Id: 480362
+    AegisName: C_Ninetail_Tail_WH
+    Name: Costume White Nine-Tailed Fox's Tail    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 192
   - Id: 480363
     AegisName: aegis_480363
     Name: Costume Oversized Miss Rabbit
