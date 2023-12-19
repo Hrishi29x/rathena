@@ -56429,7 +56429,7 @@ Body:
     Name: Costume Imperial Feather
     Type: Armor
     Locations:
-      Costume_Head_Top: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     View: 935
   - Id: 5912
@@ -78239,37 +78239,6 @@ Body:
          bonus bBaseAtk,80;
          bonus bCritAtkRate,20;
       }
-  - Id: 19452
-    AegisName: Heavenly_Order_
-    Name: Heavenly Order
-    Type: Armor
-    View: 1093
-    Slots: 1
-    Locations:
-      Head_Mid: true
-    ArmorLevel: 1
-    EquipLevelMin: 100
-    Script: |
-      .@a = readparam(bStr)/18;
-      .@b = readparam(bAgi)/18;
-      .@c = readparam(bVit)/18;
-      .@d = readparam(bInt)/18;
-      .@e = readparam(bDex)/18;
-      .@f = readparam(bLuk)/18;
-      skill "MC_IDENTIFY",1,0;
-      bonus bHit,2*.@a;
-      bonus bMaxHPrate,2*.@a;
-      bonus bFlee,2*.@b;
-      bonus bAspdRate,.@b;
-      bonus bMdef,2*.@c;
-      bonus bVariableCastrate,-.@c;
-      bonus bMaxSPrate,2*.@d;
-      bonus bUseSPrate,-2*.@d;
-      bonus bCritical,2*.@e;
-      bonus bPerfectHitAddRate,2*.@e;
-      bonus bDef,20*.@f;
-      bonus bBaseAtk,10*.@f;
-      bonus bMatk,10*.@f;
   - Id: 16000
     AegisName: Erde
     Name: Erde
@@ -224145,6 +224114,7 @@ Body:
     Range: 1
     Slots: 2
     Jobs:
+      Alchemist: true
       Blacksmith: true
     Classes:
       All_Third: true
@@ -224181,7 +224151,6 @@ Body:
     Range: 1
     Jobs:
       Blacksmith: true
-      Crusader: true
     Locations:
       Both_Hand: true
     WeaponLevel: 3
