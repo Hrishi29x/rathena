@@ -100887,6 +100887,14 @@ Body:
       NoAuction: true
     Script: |
       bonus2 bExpAddRace,RC_All,10;
+  - Id: 19766
+    AegisName: C_Yggdrasil_Hat
+    Name: Costume Yggdrasil Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 997
   - Id: 19767
     AegisName: C_Home_Cherry_Blossom
     Name: Costume Home Cherry Blossom
@@ -100896,14 +100904,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 602
-  - Id: 19766
-    AegisName: C_Yggdrasil_Hat
-    Name: Costume Yggdrasil Hat
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 997
   - Id: 19768
     AegisName: C_Sakura_Coronet
     Name: Costume Sakura Coronet
@@ -169223,6 +169223,14 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 1001
+  - Id: 400558
+    AegisName: aegis_400558
+    Name: Costume Snowman Experience    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2486
   - Id: 400574
     AegisName: ROZ_Bijou_Hat_Str
     Name: Bijou's Hat (Strength)
@@ -169397,6 +169405,14 @@ Body:
              }
          }
       }
+  - Id: 400585
+    AegisName: aegis_400585
+    Name: Costume Snowman Hat    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2488
   - Id: 410000
     AegisName: Resonate_Taego_J
     Name: Ancient Resonance
@@ -169741,8 +169757,7 @@ Body:
     View: 876
     Slots: 1
     Locations:
-      Head_Top: true
-      Head_Low: true
+      Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 130
     Trade:
@@ -169762,8 +169777,7 @@ Body:
     View: 917
     Slots: 1
     Locations:
-      Head_Top: true
-      Head_Low: true
+      Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 130
     Trade:
@@ -169783,8 +169797,7 @@ Body:
     View: 906
     Slots: 1
     Locations:
-      Head_Top: true
-      Head_Low: true
+      Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 130
     Trade:
@@ -172422,6 +172435,13 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 1463
+  - Id: 410295
+    AegisName: aegis_410295
+    Name: Costume Bells on a Winter Night    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
   - Id: 420000
     AegisName: Isabella_Carrot
     Name: Isabella Carrot
@@ -174724,6 +174744,13 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 150
     View: 2448
+  - Id: 420304
+    AegisName: aegis_420304
+    Name: Costume Routier’s Night Sky    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
   - Id: 430001
     AegisName: C_Helm_Of_Ra
     Name: Costume Hat of the Sun God
@@ -188348,6 +188375,7 @@ Body:
          bonus bAtkRate,7;
          if (.@r>=9) {
             bonus bShortAtkRate,10;
+            bonus bLongAtkRate,10;
             if (.@r>=11) {
                bonus bFixedCast,-500;
             }
@@ -195089,6 +195117,14 @@ Body:
              }
          }
       }
+  - Id: 480405
+    AegisName: aegis_480405
+    Name: Costume Santa Teddy Bear Doll Bag    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 202
   - Id: 490004
     AegisName: Atker_Ring
     Name: Attacker Booster Ring
@@ -203309,7 +203345,7 @@ Body:
          }
       }
       if (.@g>=ENCHANTGRADE_D) {
-         bonus bShortAtkRate,5;
+         bonus bShortAtkRate,10;
          if (.@g>=ENCHANTGRADE_C) {
             bonus2 bAddSize,Size_All,10;
             if (.@g>=ENCHANTGRADE_B) {
