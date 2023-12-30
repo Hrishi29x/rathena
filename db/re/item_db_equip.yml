@@ -78196,7 +78196,7 @@ Body:
       .@d = readparam(bInt)/18;
       .@e = readparam(bDex)/18;
       .@f = readparam(bLuk)/18;
-      skill "MC_IDENTIFY",1,0;
+      skill "MC_IDENTIFY",1;
       bonus bHit,2*.@a;
       bonus bMaxHPrate,2*.@a;
       bonus bFlee,2*.@b;
@@ -96939,7 +96939,7 @@ Body:
     EquipLevelMin: 100
     View: 1093
     Script: |
-      skill "MC_IDENTIFY",1,0;
+      skill "MC_IDENTIFY",1;
       .@a = readparam(bStr);
       .@b = readparam(bAgi);
       .@c = readparam(bVit);
@@ -96971,7 +96971,7 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 100
     Script: |
-      skill "MC_IDENTIFY",1,0;
+      skill "MC_IDENTIFY",1;
       .@a = readparam(bStr);
       .@b = readparam(bAgi);
       .@c = readparam(bVit);
