@@ -40827,7 +40827,7 @@ Body:
       Assassin: true
       Priest: true
     Locations:
-      Head_Low: true
+      Head_Top: true
     ArmorLevel: 1
     EquipLevelMin: 70
     View: 180
@@ -48957,6 +48957,7 @@ Body:
     Weight: 500
     Defense: 5
     Locations:
+      Head_Low: true
       Head_Mid: true
       Head_Top: true
     ArmorLevel: 1
@@ -49901,7 +49902,6 @@ Body:
     Weight: 500
     Defense: 5
     Locations:
-      Head_Low: true
       Head_Mid: true
       Head_Top: true
     ArmorLevel: 1
@@ -49959,6 +49959,7 @@ Body:
     Type: Armor
     Defense: 5
     Locations:
+      Head_Mid: true
       Head_Top: true
     ArmorLevel: 1
     Refineable: true
@@ -64053,7 +64054,7 @@ Body:
       KagerouOboro: true
       Ninja: true
     Locations:
-      Right_Hand: true
+      Both_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 40
     Refineable: true
@@ -84118,6 +84119,7 @@ Body:
     Defense: 10
     Slots: 1
     Locations:
+      Head_Mid: true
       Head_Top: true
     ArmorLevel: 1
     EquipLevelMin: 70
@@ -98820,6 +98822,7 @@ Body:
     Type: Armor
     Locations:
       Costume_Head_Top: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 528
@@ -102407,8 +102410,6 @@ Body:
     Type: Armor
     Locations:
       Costume_Head_Top: true
-      Costume_Head_Mid: true
-      Costume_Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 636
@@ -103236,6 +103237,7 @@ Body:
     Type: Armor
     Locations:
       Costume_Head_Top: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 175
@@ -103669,7 +103671,7 @@ Body:
     Name: Costume Prayer Cherry Blossom
     Type: Armor
     Locations:
-      Costume_Head_Top: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1223
@@ -107006,6 +107008,7 @@ Body:
     Type: Armor
     Locations:
       Costume_Head_Top: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 634
@@ -107903,7 +107906,7 @@ Body:
     Name: Costume Unidentified Flying Poring
     Type: Armor
     Locations:
-      Costume_Head_Top: true
+      Costume_Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1017
@@ -108180,7 +108183,7 @@ Body:
     Name: Costume Blessings Of Soul
     Type: Armor
     Locations:
-      Costume_Head_Low: true
+      Costume_Garment: true
     ArmorLevel: 1
     EquipLevelMin: 1
     Script: |
@@ -147592,7 +147595,6 @@ Body:
     Type: Armor
     Locations:
       Costume_Head_Top: true
-      Costume_Head_Mid: true
       Costume_Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 1
@@ -148489,6 +148491,7 @@ Body:
     Type: Armor
     Locations:
       Costume_Head_Top: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 223
@@ -149039,7 +149042,7 @@ Body:
     Name: Costume War Princess Ribbon
     Type: Armor
     Locations:
-      Costume_Head_Top: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1583
@@ -154559,7 +154562,7 @@ Body:
     Name: Costume Savage Shoulder Bebe
     Type: Armor
     Locations:
-      Costume_Head_Top: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1915
@@ -172213,8 +172216,8 @@ Body:
     Trade:
       NoDrop: true
       NoTrade: true
+      NoSell: true
       NoCart: true
-      NoStorage: true
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
@@ -172229,8 +172232,8 @@ Body:
     Trade:
       NoDrop: true
       NoTrade: true
+      NoSell: true
       NoCart: true
-      NoStorage: true
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
@@ -174929,7 +174932,7 @@ Body:
     View: 666
     Weight: 100
     Locations:
-      Head_Top: true
+      Head_Low: true
       Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 99
@@ -174944,7 +174947,7 @@ Body:
     View: 693
     Weight: 100
     Locations:
-      Head_Top: true
+      Head_Low: true
       Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 99
@@ -174960,7 +174963,7 @@ Body:
     Weight: 100
     Defense: 3
     Locations:
-      Head_Top: true
+      Head_Low: true
       Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 99
@@ -174977,7 +174980,7 @@ Body:
     Defense: 3
     Slots: 1
     Locations:
-      Head_Top: true
+      Head_Low: true
       Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 99
@@ -174993,7 +174996,7 @@ Body:
     Weight: 100
     Slots: 1
     Locations:
-      Head_Top: true
+      Head_Low: true
       Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 99
@@ -175009,7 +175012,7 @@ Body:
     Weight: 100
     Slots: 1
     Locations:
-      Head_Top: true
+      Head_Low: true
       Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 99
@@ -225890,7 +225893,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Right_Hand: true
+      Both_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
