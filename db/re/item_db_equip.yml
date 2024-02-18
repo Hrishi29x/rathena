@@ -57882,6 +57882,17 @@ Body:
     AegisName: Dark_Lord_Egg
     Name: Dark Lord Egg
     Type: PetEgg
+  - Id: 9156
+    AegisName: Sonic_Chao_Egg
+    Name: Chao's Egg    # !todo check english name
+    Type: PetEgg
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 10001
     AegisName: Skull_Helm
     Name: Skull Helm
@@ -115621,6 +115632,16 @@ Body:
       Costume_Head_Top: true
       Costume_Head_Mid: true
     ArmorLevel: 1
+  - Id: 21400
+    AegisName: aegis_21400
+    Name: Costume Blue Dragon Statue    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+      Costume_Head_Mid: true
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2494
   - Id: 22000
     AegisName: Temporal_Str_Boots
     Name: Temporal Str Boots
@@ -160306,6 +160327,14 @@ Body:
       if (.@r>=11) {
          bonus2 bAddSize,Size_All,10;
       }
+  - Id: 400100
+    AegisName: aegis_400100
+    Name: Costume Leon Wig    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2373
   - Id: 400101
     AegisName: GatesofNetherworld
     Name: Gate of Netherworld
@@ -167787,6 +167816,21 @@ Body:
          bonus2 bSkillAtk,"WS_CARTTERMINATION",15;
       if (.@r>=7)
          bonus2 bSkillAtk,"WS_CARTTERMINATION",15;
+  - Id: 400502
+    AegisName: C_Sonic_Ring
+    Name: Costume ring    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2433
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 400503
     AegisName: C_Hosangto_Hat
     Name: Costume Bunny Ear Hat
@@ -169416,6 +169460,181 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2488
+  - Id: 400605
+    AegisName: C_VIP_Poring_Cake_Cap
+    Name: Costume Birthday Cake Hat    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 417
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+  - Id: 400608
+    AegisName: FuriousCirclet_WH
+    Name: Crown of Wrath (Windhawk)    # !todo check english name
+    Type: Armor
+    Weight: 300
+    Defense: 30
+    Slots: 1
+    Jobs:
+      Hunter: true
+    Classes:
+      Fourth: true
+    Locations:
+      Head_Top: true
+    ArmorLevel: 2
+    EquipLevelMin: 235
+    Refineable: true
+    Gradable: true
+    View: 2415
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bBaseAtk,10*(.@r/2);
+      bonus2 bSkillAtk,"WH_CRESCIVE_BOLT",4*(.@r/3);
+      bonus2 bSkillAtk,"WH_GALESTORM",4*(.@r/3);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-15;
+         if (.@r>=9) {
+            bonus bLongAtkRate,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-300;
+               bonus bAtkRate,5;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,3;
+         bonus bPow,5;
+         bonus bCon,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bLongAtkRate,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bFixedCast,-200;
+               bonus bAtkRate,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bCritAtkRate,15;
+                  bonus bCRate,5;
+               }
+            }
+         }
+      }
+  - Id: 400609
+    AegisName: FuriousCirclet_CD
+    Name: Crown of Wrath (Cardinal)    # !todo check english name
+    Type: Armor
+    Weight: 300
+    Defense: 30
+    Slots: 1
+    Jobs:
+      Priest: true
+    Classes:
+      Fourth: true
+    Locations:
+      Head_Top: true
+    ArmorLevel: 2
+    EquipLevelMin: 235
+    Refineable: true
+    Gradable: true
+    View: 2415
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bMatk,10*(.@r/2);
+      bonus bBaseAtk,10*(.@r/2);
+      bonus2 bSkillAtk,"CD_PETITIO",4*(.@r/3);
+      bonus2 bSkillAtk,"CD_FRAMEN",4*(.@r/3);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-15;
+         if (.@r>=9) {
+            bonus bShortAtkRate,10;
+            bonus2 bMagicAtkEle,Ele_All,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-300;
+               bonus bMatkRate,5;
+               bonus bAtkRate,5;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,3;
+         bonus bSMatk,3;
+         bonus bPow,5;
+         bonus bSpl,5;
+         bonus bCon,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bShortAtkRate,10;
+            bonus2 bMagicAtkEle,Ele_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bFixedCast,-200;
+               bonus bMatkRate,5;
+               bonus bAtkRate,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bMagicAtkEle,Ele_All,15;
+                  bonus bCritAtkRate,15;
+                  bonus bPAtk,5;
+                  bonus bSMatk,5;
+               }
+            }
+         }
+      }
+  - Id: 400610
+    AegisName: FuriousCirclet_SKE
+    Name: Crown of Wrath (Sky Emperor)    # !todo check english name
+    Type: Armor
+    Weight: 300
+    Defense: 30
+    Slots: 1
+    Jobs:
+      StarGladiator: true
+    Classes:
+      Fourth: true
+    Locations:
+      Head_Top: true
+    ArmorLevel: 2
+    EquipLevelMin: 235
+    Refineable: true
+    Gradable: true
+    View: 2415
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bBaseAtk,10*(.@r/2);
+      bonus2 bSkillAtk,"SKE_NOON_BLAST",4*(.@r/3);
+      bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",4*(.@r/3);
+      if (.@r>=7) {
+         bonus bVariableCastrate,-15;
+         if (.@r>=9) {
+            bonus bShortAtkRate,10;
+            if (.@r>=11) {
+               bonus bFixedCast,-300;
+               bonus bAtkRate,5;
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bPAtk,3;
+         bonus bPow,5;
+         bonus bCon,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bShortAtkRate,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bFixedCast,-200;
+               bonus bAtkRate,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bShortAtkRate,15;
+                  bonus bPAtk,5;
+               }
+            }
+         }
+      }
   - Id: 410000
     AegisName: Resonate_Taego_J
     Name: Ancient Resonance
@@ -172199,6 +172418,66 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2421
+  - Id: 410262
+    AegisName: C_Sonic_Mini
+    Name: Costume Sonic Mini Me    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2429
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+  - Id: 410263
+    AegisName: C_Super_Sonic_Mini
+    Name: Costume Super Sonic Mini Me    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2430
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+  - Id: 410264
+    AegisName: C_Tails_Mini
+    Name: Costume Tales Mini Me    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2431
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+  - Id: 410265
+    AegisName: C_S_Attack_Ring
+    Name: Costume Power Ring Drop    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2432
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 410266
     AegisName: C_H_N_Hat
     Name: Costume Miss Rabbit and Little Dog
@@ -174747,6 +175026,21 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 150
     View: 2448
+  - Id: 420303
+    AegisName: C_Chaos_Emerald
+    Name: Costume Chaos Emerald    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2485
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 420304
     AegisName: aegis_420304
     Name: Costume Routier’s Night Sky    # !todo check english name
@@ -175224,6 +175518,23 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
     View: 2147
+  - Id: 440012
+    AegisName: C_Dr_Eggman_Mask
+    Name: Costume Dr. Eggman Mask    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+      Costume_Head_Mid: true
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2434
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 450000
     AegisName: IDTest_armor
     Name: IDTest armor
@@ -189367,6 +189678,58 @@ Body:
              }
          }
       }
+  - Id: 470265
+    AegisName: FuriousBoots
+    Name: Boots of Wrath    # !todo check english name
+    Type: Armor
+    Weight: 1500
+    Defense: 30
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 2
+    EquipLevelMin: 220
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      if (BaseLevel>=230) {
+         bonus2 bAddClass,Class_Normal,5;
+         bonus2 bMagicAddClass,Class_Normal,5;
+         bonus2 bAddClass,Class_Boss,5;
+         bonus2 bMagicAddClass,Class_Boss,5;
+      }
+      if (.@r>=7) {
+         bonus bMatkRate,5;
+         bonus bAtkRate,5;
+         if (.@r>=9) {
+            bonus bVariableCastrate,-10;
+            if (.@r>=10) {
+               bonus bFixedCast,-700;
+               if (.@r>=11) {
+                  bonus2 bMagicAtkEle,Ele_All,10;
+                  bonus bShortAtkRate,10;
+                  bonus bLongAtkRate,10;
+               }
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bMatkRate,5;
+         bonus bAtkRate,5;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus bFixedCast,-300;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus bPAtk,5;
+               bonus bSMatk,5;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,2;
+                  bonus bSMatk,2;
+               }
+            }
+         }
+      }
   - Id: 480000
     AegisName: Atker_Manteau
     Name: Attacker Booster Manteau
@@ -195128,6 +195491,14 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     View: 202
+  - Id: 480408
+    AegisName: aegis_480408
+    Name: Costume Dragon Wings    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 204
   - Id: 490004
     AegisName: Atker_Ring
     Name: Attacker Booster Ring
@@ -201377,6 +201748,90 @@ Body:
       bonus bDelayrate,-3;
       bonus bAtkRate,6;
       bonus bMatkRate,6;
+  - Id: 490483
+    AegisName: Signet_Of_Spring
+    Name: "Seal of Circulation: Spring"    # !todo check english name
+    Type: Armor
+    Weight: 500
+    Defense: 10
+    Slots: 1
+    Locations:
+      Left_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus bShortAtkRate,10;
+      bonus bVariableCastrate,-10;
+  - Id: 490484
+    AegisName: Signet_Of_Summer
+    Name: "Seal of Circulation: Summer"    # !todo check english name
+    Type: Armor
+    Weight: 500
+    Defense: 10
+    Slots: 1
+    Locations:
+      Left_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus bLongAtkRate,10;
+      bonus bVariableCastrate,-10;
+  - Id: 490485
+    AegisName: Signet_Of_Autumn
+    Name: "Seal of Circulation: Autumn"    # !todo check english name
+    Type: Armor
+    Weight: 500
+    Defense: 10
+    Slots: 1
+    Locations:
+      Left_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus2 bMagicAtkEle,Ele_All,10;
+      bonus bVariableCastrate,-10;
+  - Id: 490486
+    AegisName: Signet_Of_Winter
+    Name: "Seal of Circulation: Winter"    # !todo check english name
+    Type: Armor
+    Weight: 500
+    Defense: 10
+    Slots: 1
+    Locations:
+      Left_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 250
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus bCritAtkRate,10;
+      bonus bVariableCastrate,-10;
   - Id: 500000
     AegisName: IDTest_weapon
     Name: IDTest weapon
@@ -210820,6 +211275,181 @@ Body:
             }
          }
       }
+  - Id: 540086
+    AegisName: SaintBook_Furious
+    Name: Bible of Wrath    # !todo check english name
+    Type: Weapon
+    SubType: Book
+    Weight: 1200
+    Attack: 175
+    MagicAttack: 145
+    Range: 1
+    Slots: 2
+    Jobs:
+      Priest: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 205
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus2 bSkillAtk,"CD_PETITIO",5;
+      if (BaseLevel>=210) {
+         bonus bAtkRate,4;
+         bonus bBaseAtk,40;
+      }
+      if (BaseLevel>=220) {
+         bonus2 bSkillAtk,"CD_PETITIO",5;
+      }
+      if (BaseLevel>=230) {
+         bonus2 bAddSize,Size_All,10;
+         bonus2 bMagicAddSize,Size_All,10;
+      }
+      if (.@r>=7) {
+         bonus bCritAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"CD_PETITIO",10;
+            if (.@r>=10) {
+               if (.@r>=11) {
+                  bonus2 bSkillAtk,"CD_PETITIO",10;
+               }
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bCritAtkRate,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"CD_PETITIO",5;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bSkillAtk,"CD_PETITIO",10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,3*(.@r/2);
+                  bonus bAtkRate,3*(.@r/2);
+               }
+            }
+         }
+      }
+  - Id: 540087
+    AegisName: SunBook_Furious
+    Name: Sunshine Book of Wrath    # !todo check english name
+    Type: Weapon
+    SubType: Book
+    Weight: 1400
+    Attack: 175
+    Range: 1
+    Slots: 2
+    Jobs:
+      StarGladiator: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 205
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus2 bSkillAtk,"SKE_NOON_BLAST",5;
+      if (BaseLevel>=210) {
+         bonus bAtkRate,4;
+         bonus bBaseAtk,40;
+      }
+      if (BaseLevel>=220) {
+         bonus2 bSkillAtk,"SKE_NOON_BLAST",5;
+      }
+      if (BaseLevel>=230) {
+         bonus2 bAddSize,Size_All,10;
+      }
+      if (.@r>=7) {
+         bonus bCritAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"SKE_NOON_BLAST",10;
+            if (.@r>=10) {
+               bonus bCritical,10;
+               if (.@r>=11) {
+                  bonus2 bSkillAtk,"SKE_NOON_BLAST",10;
+               }
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bCritAtkRate,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"SKE_NOON_BLAST",5;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bSkillAtk,"SKE_NOON_BLAST",10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,3*(.@r/2);
+                  bonus bAtkRate,3*(.@r/2);
+               }
+            }
+         }
+      }
+  - Id: 540088
+    AegisName: MoonBook_Furious
+    Name: Furious Moon Word    # !todo check english name
+    Type: Weapon
+    SubType: Book
+    Weight: 1200
+    Attack: 175
+    Range: 1
+    Slots: 2
+    Jobs:
+      StarGladiator: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 205
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",5;
+      if (BaseLevel>=210) {
+         bonus bAtkRate,4;
+         bonus bBaseAtk,40;
+      }
+      if (BaseLevel>=220) {
+         bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",5;
+      }
+      if (BaseLevel>=230) {
+         bonus2 bAddSize,Size_All,10;
+      }
+      if (.@r>=7) {
+         bonus bShortAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",10;
+            if (.@r>=10) {
+               bonus bVariableCastrate,-10;
+               if (.@r>=11) {
+                  bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",10;
+               }
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bShortAtkRate,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",5;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,3*(.@r/2);
+                  bonus bAtkRate,3*(.@r/2);
+               }
+            }
+         }
+      }
   - Id: 550001
     AegisName: Boost_Soul_Rod
     Name: Booster Rod
@@ -215206,6 +215836,66 @@ Body:
                bonus2 bMagicAtkEle,Ele_All,10;
                if (.@g>=ENCHANTGRADE_A) {
                   bonus bSMatk,3*(.@r/2);
+               }
+            }
+         }
+      }
+  - Id: 550141
+    AegisName: SaintWand_Furious
+    Name: Furious Saint Wand    # !todo check english name
+    Type: Weapon
+    SubType: Staff
+    Weight: 1400
+    Attack: 100
+    MagicAttack: 180
+    Range: 1
+    Slots: 2
+    Jobs:
+      Priest: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 205
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bUnbreakableWeapon;
+      bonus2 bSkillAtk,"CD_FRAMEN",5;
+      if (BaseLevel>=210) {
+         bonus bMatkRate,4;
+         bonus bMatk,40;
+      }
+      if (BaseLevel>=220) {
+         bonus2 bSkillAtk,"CD_FRAMEN",5;
+      }
+      if (BaseLevel>=230) {
+         bonus2 bMagicAddSize,Size_All,10;
+      }
+      if (.@r>=7) {
+         bonus2 bMagicAtkEle,Ele_Holy,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"CD_FRAMEN",10;
+            if (.@r>=10) {
+               bonus bVariableCastrate,-10;
+               if (.@r>=11) {
+                  bonus2 bSkillAtk,"CD_FRAMEN",10;
+               }
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus2 bMagicAtkEle,Ele_Holy,10;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"CD_FRAMEN",5;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bSkillAtk,"CD_FRAMEN",10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bSMatk,3*(.@r/2);
+                  bonus bMatkRate,3*(.@r/2);
                }
             }
          }
@@ -230736,6 +231426,122 @@ Body:
                bonus bLongAtkRate,10;
                if (.@g>=ENCHANTGRADE_A) {
                   bonus bPAtk,3*(.@r/2);
+               }
+            }
+         }
+      }
+  - Id: 700100
+    AegisName: StormBow_Furious
+    Name: Furious Storm Bow    # !todo check english name
+    Type: Weapon
+    SubType: Bow
+    Weight: 1800
+    Attack: 210
+    Range: 5
+    Slots: 2
+    Jobs:
+      Hunter: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 205
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus2 bSkillAtk,"WH_GALESTORM",5;
+      if (BaseLevel>=210) {
+         bonus bAtkRate,7;
+         bonus bBaseAtk,70;
+      }
+      if (BaseLevel>=220) {
+         bonus2 bSkillAtk,"WH_GALESTORM",5;
+      }
+      if (BaseLevel>=230) {
+         bonus2 bAddSize,Size_All,10;
+      }
+      if (.@r>=7) {
+         bonus bCritAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"WH_GALESTORM",10;
+            if (.@r>=10) {
+               bonus bCritical,10;
+               if (.@r>=11) {
+                  bonus2 bSkillAtk,"WH_GALESTORM",10;
+               }
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bCritAtkRate,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"WH_GALESTORM",5;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bSkillAtk,"WH_GALESTORM",10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,4*(.@r/2);
+                  bonus bAtkRate,4*(.@r/2);
+               }
+            }
+         }
+      }
+  - Id: 700101
+    AegisName: TornadoBow_Furious
+    Name: Wrath Gale Bow    # !todo check english name
+    Type: Weapon
+    SubType: Bow
+    Weight: 1800
+    Attack: 210
+    Range: 5
+    Slots: 2
+    Jobs:
+      Hunter: true
+    Classes:
+      Fourth: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 5
+    EquipLevelMin: 205
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus2 bSkillAtk,"WH_CRESCIVE_BOLT",5;
+      if (BaseLevel>=210) {
+         bonus bAtkRate,7;
+         bonus bBaseAtk,70;
+      }
+      if (BaseLevel>=220) {
+         bonus2 bSkillAtk,"WH_CRESCIVE_BOLT",5;
+      }
+      if (BaseLevel>=230) {
+         bonus2 bAddSize,Size_All,10;
+      }
+      if (.@r>=7) {
+         bonus bCritAtkRate,10;
+         if (.@r>=9) {
+            bonus2 bSkillAtk,"WH_CRESCIVE_BOLT",10;
+            if (.@r>=10) {
+               bonus bVariableCastrate,-10;
+               if (.@r>=11) {
+                  bonus2 bSkillAtk,"WH_CRESCIVE_BOLT",10;
+               }
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bCritAtkRate,15;
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bSkillAtk,"WH_CRESCIVE_BOLT",5;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bSkillAtk,"WH_CRESCIVE_BOLT",10;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus bPAtk,4*(.@r/2);
+                  bonus bAtkRate,4*(.@r/2);
                }
             }
          }
