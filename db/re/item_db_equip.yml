@@ -57884,7 +57884,7 @@ Body:
     Type: PetEgg
   - Id: 9156
     AegisName: Sonic_Chao_Egg
-    Name: Chao's Egg    # !todo check english name
+    Name: Chao Egg
     Type: PetEgg
     Trade:
       NoDrop: true
@@ -109241,7 +109241,7 @@ Body:
     View: 183
   - Id: 20626
     AegisName: C_ROS2023_Cape_2
-    Name: 2023 ROS Figurine Cloak    # !todo check english name
+    Name: 2023 ROS Winning Prize Manteau
     Type: Armor
     Locations:
       Costume_Garment: true
@@ -115634,7 +115634,7 @@ Body:
     ArmorLevel: 1
   - Id: 21400
     AegisName: aegis_21400
-    Name: Costume Blue Dragon Statue    # !todo check english name
+    Name: Costume Blue Dragon Statue
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -133200,7 +133200,7 @@ Body:
       bonus2 bExpAddRace,RC_All,(.@r/2);
   - Id: 24778
     AegisName: aegis_24778
-    Name: Level 1 Armor Shadow    # !todo check english name
+    Name: 1Lv Shadow Armor
     Type: ShadowGear
     Locations:
       Shadow_Armor: true
@@ -133209,7 +133209,7 @@ Body:
       bonus bMaxHP,getrefine()*10;
   - Id: 24779
     AegisName: aegis_24779
-    Name: Level 1 Weapon Shadow    # !todo check english name
+    Name: 1Lv Shadow Weapon
     Type: ShadowGear
     Locations:
       Shadow_Weapon: true
@@ -133220,7 +133220,7 @@ Body:
       bonus bMatk,.@r;
   - Id: 24780
     AegisName: aegis_24780
-    Name: Level 1 Shield Shadow    # !todo check english name
+    Name: 1Lv Shadow Shield
     Type: ShadowGear
     Locations:
       Shadow_Shield: true
@@ -133229,7 +133229,7 @@ Body:
       bonus bMaxHP,getrefine()*10;
   - Id: 24781
     AegisName: aegis_24781
-    Name: Level 1 Shoes Shadow    # !todo check english name
+    Name: 1Lv Shadow Shoes
     Type: ShadowGear
     Locations:
       Shadow_Shoes: true
@@ -133238,7 +133238,7 @@ Body:
       bonus bMaxHP,getrefine()*10;
   - Id: 24782
     AegisName: aegis_24782
-    Name: Level 1 Earring Shadow    # !todo check english name
+    Name: 1Lv Shadow Earring
     Type: ShadowGear
     Locations:
       Shadow_Right_Accessory: true
@@ -133247,7 +133247,7 @@ Body:
       bonus bMaxHP,getrefine()*10;
   - Id: 24783
     AegisName: aegis_24783
-    Name: Level 1 Pendant Shadow    # !todo check english name
+    Name: 1Lv Shadow Pendant
     Type: ShadowGear
     Locations:
       Shadow_Left_Accessory: true
@@ -148805,7 +148805,7 @@ Body:
     View: 1486
   - Id: 31159
     AegisName: C_Jormungandr_Hat
-    Name: Costume Jormungandr Hat    # !todo check english name
+    Name: Costume Jormungandr Head
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -152286,7 +152286,7 @@ Body:
     View: 1350
   - Id: 31537
     AegisName: C_Return_TW_2th_Hat
-    Name: Costume Return TW 2th Hat    # !todo check english name
+    Name: "Costume: 2nd Anniversary Hat"
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -160329,7 +160329,7 @@ Body:
       }
   - Id: 400100
     AegisName: aegis_400100
-    Name: Costume Leon Wig    # !todo check english name
+    Name: Costume Leon Wig
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -161284,7 +161284,7 @@ Body:
       }
   - Id: 400143
     AegisName: C_Asgard_Circlet_TW
-    Name: Costume Valkyrie Circlet    # !todo check english name
+    Name: Costume Crimson Valkyrie Circlet
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -161679,7 +161679,7 @@ Body:
       autobonus "{ bonus2 bMagicAtkEle,Ele_Fire,20; }",1,60000,BF_MAGIC;
   - Id: 400157
     AegisName: C_Astrologer_T_Hat
-    Name: Costume Astrologer T Hat    # !todo check english name
+    Name: Costume Astrologer's Cap
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -161711,7 +161711,7 @@ Body:
     View: 2138
   - Id: 400161
     AegisName: C_Hat_0f_King
-    Name: Costume Hat 0f King    # !todo check english name
+    Name: Costume Hat of King
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -161719,7 +161719,7 @@ Body:
     View: 374
   - Id: 400162
     AegisName: C_Red_Navy_Hat
-    Name: Costume Red Navy Hat    # !todo check english name
+    Name: Costume Red Navy Hat
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -162324,7 +162324,7 @@ Body:
       bonus bLongAtkRate,7*(.@r/4);
   - Id: 400193
     AegisName: C_Navy_Drooping_Kitty
-    Name: Costume indigo blue droopy cat    # !todo check english name
+    Name: Costume Navy Drooping Kitty
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -164185,7 +164185,7 @@ Body:
     View: 2283
   - Id: 400311
     AegisName: C_Reliance_Crown
-    Name: Costume Will coffin    # !todo check english name
+    Name: Costume Helmet of Light and Darkness
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -164397,7 +164397,7 @@ Body:
     View: 42
   - Id: 400343
     AegisName: C_Fox_Bamboo_Hat
-    Name: Costume Fox Ear Hat    # !todo check english name
+    Name: Costume Fox Bamboo Hat
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -164444,7 +164444,7 @@ Body:
       bonus bMaxSP,BaseLevel*2;
   - Id: 400347
     AegisName: aegis_400347
-    Name: Costume Necromancer's Hood (Upper)    # !todo check english name
+    Name: Costume Necromancer Hood (Upper)
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -164484,7 +164484,7 @@ Body:
     View: 2302
   - Id: 400354
     AegisName: C_Vanargandr_Helm_GL
-    Name: Costume Gold Helmet of Vanargand    # !todo check english name
+    Name: Costume Gold Helm of Vanagandr
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -164492,7 +164492,7 @@ Body:
     View: 2312
   - Id: 400355
     AegisName: C_Balloon_Hat_Classical
-    Name: Costume Classical Balloon Hat    # !todo check english name
+    Name: Costume Classical Balloon Hat
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -164500,7 +164500,7 @@ Body:
     View: 2313
   - Id: 400356
     AegisName: C_Ignis_Cap_BU
-    Name: Costume Denim Ignis Cap    # !todo check english name
+    Name: Costume Denim Ignis Cap
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -164524,7 +164524,7 @@ Body:
     View: 453
   - Id: 400359
     AegisName: aegis_400359
-    Name: Level 1 Hat    # !todo check english name
+    Name: 1Lv Hat
     Type: Armor
     Slots: 1
     Locations:
@@ -167818,7 +167818,7 @@ Body:
          bonus2 bSkillAtk,"WS_CARTTERMINATION",15;
   - Id: 400502
     AegisName: C_Sonic_Ring
-    Name: Costume ring    # !todo check english name
+    Name: Costume Ring
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -168070,7 +168070,7 @@ Body:
     View: 1800
   - Id: 400529
     AegisName: Time_DM_R_Crown_DK
-    Name: Time Dimensions Rune Crown (Dragon Knight)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Dragon Knight)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168133,7 +168133,7 @@ Body:
       }
   - Id: 400530
     AegisName: Time_DM_R_Crown_IG
-    Name: Time Dimensions Rune Crown (Imperial Guard)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Imperial Guard)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168203,7 +168203,7 @@ Body:
       }
   - Id: 400531
     AegisName: Time_DM_R_Crown_MT
-    Name: Time Dimensions Rune Crown (Meister)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Meister)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168266,7 +168266,7 @@ Body:
       }
   - Id: 400532
     AegisName: Time_DM_R_Crown_BO
-    Name: Time Dimensions Rune Crown (Violo)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Biolo)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168329,7 +168329,7 @@ Body:
       }
   - Id: 400533
     AegisName: Time_DM_R_Crown_SHC
-    Name: Time Dimensions Rune Crown (Shadow Cross)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Shadow Cross)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168389,7 +168389,7 @@ Body:
       }
   - Id: 400534
     AegisName: Time_DM_R_Crown_ABC
-    Name: Time Dimensions Rune Crown (Abyss Chaser)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Abyss Chaser)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168452,7 +168452,7 @@ Body:
       }
   - Id: 400535
     AegisName: Time_DM_R_Crown_AG
-    Name: Time Dimensions Rune Crown (Arch Mage)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Arch Mage)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168516,7 +168516,7 @@ Body:
       }
   - Id: 400536
     AegisName: Time_DM_R_Crown_EM
-    Name: Time Dimensions Rune Crown (Elemental Master)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Elemental Master)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168579,7 +168579,7 @@ Body:
       }
   - Id: 400537
     AegisName: Time_DM_R_Crown_CD
-    Name: Time Dimensions Rune Crown (Cardinal)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Cardinal)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168650,7 +168650,7 @@ Body:
       }
   - Id: 400538
     AegisName: Time_DM_R_Crown_IQ
-    Name: Time Dimensions Rune Crown (Inquisitor)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Inquisitor)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168713,7 +168713,7 @@ Body:
       }
   - Id: 400539
     AegisName: Time_DM_R_Crown_WH
-    Name: Time Dimensions Rune Crown (Windhawk)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Windhawk)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168774,7 +168774,7 @@ Body:
       }
   - Id: 400540
     AegisName: Time_DM_R_Crown_TR
-    Name: Time Dimensions Rune Crown (Troubadour & Trouver)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Troubadour & Trouvere)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168845,7 +168845,7 @@ Body:
       }
   - Id: 400541
     AegisName: Time_DM_R_Crown_SS
-    Name: Time Dimensions Rune Crown (Shinkiro & Shiranui)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Shinkiro & Shiranui)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168916,7 +168916,7 @@ Body:
       }
   - Id: 400542
     AegisName: Time_DM_R_Crown_NW
-    Name: Time Dimensions Rune Crown (Night’s Watch)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Night Watch)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -168977,7 +168977,7 @@ Body:
       }
   - Id: 400543
     AegisName: Time_DM_R_Crown_SKE
-    Name: Time Dimensions Rune Crown (Celestial)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Sky Emperor)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -169038,7 +169038,7 @@ Body:
       }
   - Id: 400544
     AegisName: Time_DM_R_Crown_SOA
-    Name: Time Dimensions Rune Crown (Youngdosa)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Soul Ascetic)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -169101,7 +169101,7 @@ Body:
       }
   - Id: 400545
     AegisName: Time_DM_R_Crown_HN
-    Name: Time Dimensions Rune Crown (Hyper Novice)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Hyper Novice)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -169172,7 +169172,7 @@ Body:
       }
   - Id: 400546
     AegisName: Time_DM_R_Crown_SH
-    Name: Time Dimensions Rune Crown (Spirits)    # !todo check english name
+    Name: Time Dimensions Rune Crown (Spirit Handler)
     Type: Armor
     Defense: 50
     Slots: 1
@@ -169264,7 +169264,7 @@ Body:
       bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",BaseLevel/10;
   - Id: 400557
     AegisName: aegis_400557
-    Name: Costume Al Picky Doll    # !todo check english name
+    Name: Costume Egg Picky Doll
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -169272,7 +169272,7 @@ Body:
     View: 1001
   - Id: 400558
     AegisName: aegis_400558
-    Name: Costume Snowman Experience    # !todo check english name
+    Name: Costume Snowman Experience
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -169454,7 +169454,7 @@ Body:
       }
   - Id: 400585
     AegisName: aegis_400585
-    Name: Costume Snowman Hat    # !todo check english name
+    Name: Costume Snowman Hat
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -169462,7 +169462,7 @@ Body:
     View: 2488
   - Id: 400605
     AegisName: C_VIP_Poring_Cake_Cap
-    Name: Costume Birthday Cake Hat    # !todo check english name
+    Name: Costume Birthday Cake Hat
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -169478,7 +169478,7 @@ Body:
       NoAuction: true
   - Id: 400608
     AegisName: FuriousCirclet_WH
-    Name: Crown of Wrath (Windhawk)    # !todo check english name
+    Name: Furious Crown (Windhawk)
     Type: Armor
     Weight: 300
     Defense: 30
@@ -169528,7 +169528,7 @@ Body:
       }
   - Id: 400609
     AegisName: FuriousCirclet_CD
-    Name: Crown of Wrath (Cardinal)    # !todo check english name
+    Name: Furious Crown (Cardinal)
     Type: Armor
     Weight: 300
     Defense: 30
@@ -169587,7 +169587,7 @@ Body:
       }
   - Id: 400610
     AegisName: FuriousCirclet_SKE
-    Name: Crown of Wrath (Sky Emperor)    # !todo check english name
+    Name: Furious Crown (Sky Emperor)
     Type: Armor
     Weight: 300
     Defense: 30
@@ -170939,7 +170939,7 @@ Body:
       hateffect HAT_EF_C_Released_Ground,false;
   - Id: 410082
     AegisName: C_BirthDay_Balloon_TW
-    Name: Costume Happy Birthday Balloon    # !todo check english name
+    Name: Costume Happy Carnival Balloon
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -171833,7 +171833,7 @@ Body:
     View: 2263
   - Id: 410157
     AegisName: C_Happening_Clover
-    Name: Costume Happening Clover    # !todo check english name
+    Name: Costume Happening Clover
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -171894,7 +171894,7 @@ Body:
     View: 1039
   - Id: 410169
     AegisName: aegis_410169
-    Name: Costume Lovely Fox    # !todo check english name
+    Name: Costume Fluffy Lovely Fox
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -171985,7 +171985,7 @@ Body:
          bonus bDelayrate,-15;
   - Id: 410187
     AegisName: C_Diving_Goggles
-    Name: Costume Diving Hunting Goggles    # !todo check english name
+    Name: Costume Diving Goggles
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -171993,7 +171993,7 @@ Body:
     View: 2116
   - Id: 410188
     AegisName: C_King_Mini
-    Name: Costume King Mini Me    # !todo check english name
+    Name: "Costume: King Mini-Me"
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -172001,7 +172001,7 @@ Body:
     View: 2290
   - Id: 410189
     AegisName: C_Angeling_Mini
-    Name: Costume Angelling Mini Me    # !todo check english name
+    Name: "Costume: Angeling Mini-Me"
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -172009,7 +172009,7 @@ Body:
     View: 2291
   - Id: 410190
     AegisName: C_Seyren_Mini
-    Name: Costume Siren Mini Me    # !todo check english name
+    Name: "Costume: Seyren Mini-Me"
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -172033,7 +172033,7 @@ Body:
     View: 2304
   - Id: 410193
     AegisName: C_Gulaling_Mini
-    Name: Costume Gullaring Mini Me    # !todo check english name
+    Name: "Costume: Gularing Mini-Me"
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -172130,7 +172130,7 @@ Body:
     View: 2171
   - Id: 410208
     AegisName: aegis_410208
-    Name: Level 1 Glasses    # !todo check english name
+    Name: 1Lv Glasses
     Type: Armor
     Slots: 1
     Locations:
@@ -172590,7 +172590,7 @@ Body:
     View: 2421
   - Id: 410262
     AegisName: C_Sonic_Mini
-    Name: Costume Sonic Mini Me    # !todo check english name
+    Name: Costume Sonic Mini-Me
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -172605,7 +172605,7 @@ Body:
       NoAuction: true
   - Id: 410263
     AegisName: C_Super_Sonic_Mini
-    Name: Costume Super Sonic Mini Me    # !todo check english name
+    Name: Costume Super Sonic Mini-Me
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -172620,7 +172620,7 @@ Body:
       NoAuction: true
   - Id: 410264
     AegisName: C_Tails_Mini
-    Name: Costume Tales Mini Me    # !todo check english name
+    Name: Costume Tails Mini-Me
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -172635,7 +172635,7 @@ Body:
       NoAuction: true
   - Id: 410265
     AegisName: C_S_Attack_Ring
-    Name: Costume Power Ring Drop    # !todo check english name
+    Name: Costume Power Ring Drop
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -172889,7 +172889,7 @@ Body:
     View: 1463
   - Id: 410295
     AegisName: aegis_410295
-    Name: Costume Bells on a Winter Night    # !todo check english name
+    Name: Costume Winter Night Bells
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -173609,7 +173609,7 @@ Body:
     View: 2164
   - Id: 420083
     AegisName: C_L_Ribbon_M_WH
-    Name: Costume Large Ribbon Muffler (White)    # !todo check english name
+    Name: Costume Large Ribbon Muffler (White)
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -174253,7 +174253,7 @@ Body:
       hateffect HAT_EF_FLUTTER_BUTTERFLY,false;
   - Id: 420150
     AegisName: C_Twinkle_Twin_B
-    Name: Costume Twinkle Twin (Blue)    # !todo check english name
+    Name: Costume Twinkle Twin (Blue)
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -174285,7 +174285,7 @@ Body:
     View: 2273
   - Id: 420153
     AegisName: Booster_Scarf_A
-    Name: Booster Scarf Type A    # !todo check english name
+    Name: Booster Scarf A-type
     Type: Armor
     Locations:
       Head_Low: true
@@ -174306,7 +174306,7 @@ Body:
       bonus bShortAtkRate,5;
   - Id: 420154
     AegisName: Booster_Scarf_B
-    Name: Booster Scarf Type B    # !todo check english name
+    Name: Booster Scarf B-type
     Type: Armor
     Locations:
       Head_Low: true
@@ -174326,7 +174326,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_All,5;
   - Id: 420155
     AegisName: Booster_Scarf_C
-    Name: Booster Scarf Type C    # !todo check english name
+    Name: Booster Scarf C-type
     Type: Armor
     Locations:
       Head_Low: true
@@ -174346,7 +174346,7 @@ Body:
       bonus bCritAtkRate,5;
   - Id: 420156
     AegisName: C_Flower_L_Knitting
-    Name: Costume Star Cluster Flower Loose Braid    # !todo check english name
+    Name: Costume Flower Knitting
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -174388,7 +174388,7 @@ Body:
       bonus2 bMagicAddSize,Size_All,BaseLevel/10;
   - Id: 420161
     AegisName: C_Starry_Long_Wave
-    Name: Costume Starry Sky Long Wave    # !todo check english name
+    Name: Costume Starry Long Wave
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -174396,7 +174396,7 @@ Body:
     View: 2271
   - Id: 420162
     AegisName: aegis_420162
-    Name: Costume Starry Sky Ribbon Twintails    # !todo check english name
+    Name: Costume Starry Ribbon Twin Tail
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -174461,7 +174461,7 @@ Body:
     View: 2295
   - Id: 420171
     AegisName: aegis_420171
-    Name: Costume Scarf of Thorns    # !todo check english name
+    Name: Costume Thorn Scarf
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -174499,7 +174499,7 @@ Body:
     View: 2311
   - Id: 420178
     AegisName: aegis_420178
-    Name: 1Lv Mask    # !todo check english name
+    Name: 1Lv Mask
     Type: Armor
     Locations:
       Head_Low: true
@@ -174755,7 +174755,7 @@ Body:
     View: 2365
   - Id: 420208
     AegisName: aegis_420208
-    Name: Costume Chocolat Rabbit Hair    # !todo check english name
+    Name: Costume Chocolate Rabbit Hair
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -174894,7 +174894,7 @@ Body:
     View: 2396
   - Id: 420231
     AegisName: MD_Hol_Protection
-    Name: Constellation’s Protection    # !todo check english name
+    Name: Constellation's Protection
     Type: Armor
     Locations:
       Head_Low: true
@@ -175198,7 +175198,7 @@ Body:
     View: 2448
   - Id: 420303
     AegisName: C_Chaos_Emerald
-    Name: Costume Chaos Emerald    # !todo check english name
+    Name: Costume Chaos Emerald
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -175213,7 +175213,7 @@ Body:
       NoAuction: true
   - Id: 420304
     AegisName: aegis_420304
-    Name: Costume Routier’s Night Sky    # !todo check english name
+    Name: Costume Night Sky of Lutie
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -175690,7 +175690,7 @@ Body:
     View: 2147
   - Id: 440012
     AegisName: C_Dr_Eggman_Mask
-    Name: Costume Dr. Eggman Mask    # !todo check english name
+    Name: Costume Dr. Eggman Mask
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -181497,7 +181497,7 @@ Body:
       }
   - Id: 450218
     AegisName: E_Auto_Armor_A
-    Name: Automatic Armor Type A (bind)    # !todo check english name
+    Name: Automatic Armor A-type (Bound)
     Type: Armor
     Defense: 135
     Slots: 1
@@ -181521,7 +181521,7 @@ Body:
       }
   - Id: 450219
     AegisName: E_Auto_Armor_B
-    Name: Automatic Armor Type B (bind)    # !todo check english name
+    Name: Automatic Armor B-type (Bound)
     Type: Armor
     MagicAttack: 125
     Defense: 135
@@ -181682,7 +181682,7 @@ Body:
       }
   - Id: 450229
     AegisName: Hs_Mail
-    Name: Heroria Mail    # !todo check english name
+    Name: Herosria Mail
     Type: Armor
     Weight: 2000
     Defense: 200
@@ -181700,7 +181700,7 @@ Body:
       bonus bShortAtkRate,5;
   - Id: 450230
     AegisName: aegis_450230
-    Name: Heroria Tides    # !todo check english name
+    Name: Herosria Tights
     Type: Armor
     Weight: 1400
     Defense: 100
@@ -181719,7 +181719,7 @@ Body:
       bonus bLongAtkRate,5;
   - Id: 450231
     AegisName: Hs_Suits
-    Name: Heroria Suits    # !todo check english name
+    Name: Herosria Suit
     Type: Armor
     Weight: 1900
     Defense: 120
@@ -181738,7 +181738,7 @@ Body:
       bonus bShortAtkRate,5;
   - Id: 450232
     AegisName: aegis_450232
-    Name: Heroria Magic Robe    # !todo check english name
+    Name: Herosria Magic Robe
     Type: Armor
     Weight: 1000
     Defense: 50
@@ -181757,7 +181757,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_All,5;
   - Id: 450233
     AegisName: Hs_Plate
-    Name: Heroria Full Plate    # !todo check english name
+    Name: Herosria Full Plate
     Type: Armor
     Weight: 3600
     Defense: 450
@@ -182025,7 +182025,7 @@ Body:
       }
   - Id: 450249
     AegisName: aegis_450249
-    Name: Level 1 Shirt    # !todo check english name
+    Name: 1Lv Shirts
     Type: Armor
     Slots: 1
     Locations:
@@ -184001,7 +184001,7 @@ Body:
       }
   - Id: 460034
     AegisName: aegis_460034
-    Name: Heroria Brutal Shield    # !todo check english name
+    Name: Herosria Brutal Shield
     Type: Armor
     Weight: 3000
     Defense: 140
@@ -184017,7 +184017,7 @@ Body:
       bonus2 bSubRace,RC_Player_Doram,10;
   - Id: 460035
     AegisName: aegis_460035
-    Name: Heroria Cranial Shield    # !todo check english name
+    Name: Herosria Cranial Shield
     Type: Armor
     Weight: 3000
     Defense: 140
@@ -184033,7 +184033,7 @@ Body:
       bonus2 bSubRace,RC_Player_Doram,-10;
   - Id: 460036
     AegisName: aegis_460036
-    Name: Heroria Brutal Guard    # !todo check english name
+    Name: Herosria Brutal Guard
     Type: Armor
     Weight: 1500
     Defense: 30
@@ -184051,7 +184051,7 @@ Body:
       bonus2 bSubRace,RC_Player_Doram,6;
   - Id: 460037
     AegisName: aegis_460037
-    Name: Heroria Cranial Guard    # !todo check english name
+    Name: Herosria Cranial Guard
     Type: Armor
     Weight: 1500
     Defense: 30
@@ -184134,7 +184134,7 @@ Body:
       }
   - Id: 460048
     AegisName: aegis_460048
-    Name: Level 1 Shield    # !todo check english name
+    Name: 1Lv Shield
     Type: Armor
     Slots: 1
     Locations:
@@ -187315,7 +187315,7 @@ Body:
       }
   - Id: 470153
     AegisName: Hs_Speed_Boots
-    Name: Heroria Speed ​​Boots    # !todo check english name
+    Name: Herosria Speed Boots
     Type: Armor
     Weight: 1000
     Defense: 20
@@ -187330,7 +187330,7 @@ Body:
       bonus bCritical,-10;
   - Id: 470154
     AegisName: Hs_Casting_Shoes
-    Name: Heroria Casting Shoes    # !todo check english name
+    Name: Herosria Casting Shoes
     Type: Armor
     Weight: 1000
     Defense: 20
@@ -187345,7 +187345,7 @@ Body:
       bonus bVariableCastrate,-8;
   - Id: 470155
     AegisName: Hs_Critical_Shoes
-    Name: Heroria Critical Shoes    # !todo check english name
+    Name: Herosria Critical Shoes
     Type: Armor
     Weight: 1000
     Defense: 20
@@ -187360,7 +187360,7 @@ Body:
       bonus bCritical,8;
   - Id: 470156
     AegisName: aegis_470156
-    Name: Heroria Fix Sandals    # !todo check english name
+    Name: Herosria Fix Sandals
     Type: Armor
     Weight: 1000
     Defense: 20
@@ -187375,7 +187375,7 @@ Body:
       bonus bDelayrate,10;
   - Id: 470157
     AegisName: aegis_470157
-    Name: Heroria Cool Sandals    # !todo check english name
+    Name: Herosria Cool Sandals
     Type: Armor
     Weight: 1000
     Defense: 20
@@ -187897,7 +187897,7 @@ Body:
          bonus2 bSubRace,RC_All,3;
   - Id: 470178
     AegisName: aegis_470178
-    Name: Level 1 Sandals    # !todo check english name
+    Name: 1Lv Sandals
     Type: Armor
     Slots: 1
     Locations:
@@ -189072,7 +189072,7 @@ Body:
       }
   - Id: 470221
     AegisName: FateSin_Boots_MT
-    Name: Boots of Good and Evil (Meister)    # !todo check english name
+    Name: Boots of Good and Evil (Meister)
     Type: Armor
     Weight: 600
     Defense: 20
@@ -189120,7 +189120,7 @@ Body:
       }
   - Id: 470222
     AegisName: FateSin_Boots_SHC
-    Name: Boots of Good and Evil (Shadow Cross)    # !todo check english name
+    Name: Boots of Good and Evil (Shadow Cross)
     Type: Armor
     Weight: 600
     Defense: 20
@@ -189167,7 +189167,7 @@ Body:
       }
   - Id: 470223
     AegisName: FateSin_Boots_SS
-    Name: Boots of Good and Evil (Shinkiro & Shiranui)    # !todo check english name
+    Name: Boots of Good and Evil (Shinkiro & Shiranui)
     Type: Armor
     Weight: 600
     Defense: 20
@@ -189850,7 +189850,7 @@ Body:
       }
   - Id: 470265
     AegisName: FuriousBoots
-    Name: Boots of Wrath    # !todo check english name
+    Name: Furious Boots
     Type: Armor
     Weight: 1500
     Defense: 30
@@ -191557,7 +191557,7 @@ Body:
     View: 114
   - Id: 480119
     AegisName: C_Niflheim_Key
-    Name: Costume Niflheim Key    # !todo check english name
+    Name: Costume Niflheim Key
     Type: Armor
     Locations:
       Costume_Garment: true
@@ -192569,7 +192569,7 @@ Body:
       }
   - Id: 480185
     AegisName: E_Auto_Engine_A
-    Name: Automatic Engine Wing Type A (Bundled)    # !todo check english name
+    Name: Automatic Engine wing A-type (Bound)
     Type: Armor
     Defense: 70
     Slots: 1
@@ -192593,7 +192593,7 @@ Body:
       }
   - Id: 480186
     AegisName: E_Auto_Engine_B
-    Name: Automatic Engine Wing Type B (Bundled)    # !todo check english name
+    Name: Automatic Engine wing B-type (Bound)
     Type: Armor
     Defense: 70
     Slots: 1
@@ -192864,7 +192864,7 @@ Body:
       }
   - Id: 480198
     AegisName: C_20th_Anniversary_Wing
-    Name: Costume 20th Anniversary Laurel Wings    # !todo check english name
+    Name: Costume 20th Anniversary Wings
     Type: Armor
     Locations:
       Costume_Garment: true
@@ -192880,7 +192880,7 @@ Body:
     View: 139
   - Id: 480200
     AegisName: C_Guardian_Wing
-    Name: Costume Guardian wing decoration    # !todo check english name
+    Name: Costume Guardian Angel Wing Ears
     Type: Armor
     Locations:
       Costume_Head_Mid: true
@@ -192888,7 +192888,7 @@ Body:
     View: 2282
   - Id: 480201
     AegisName: C_Guardian_Angelwing
-    Name: Costume Guardian Angel Wings    # !todo check english name
+    Name: Costume Guardian Angel Wings
     Type: Armor
     Locations:
       Costume_Garment: true
@@ -192896,7 +192896,7 @@ Body:
     View: 138
   - Id: 480202
     AegisName: C_Guardian_Butterwing
-    Name: Costume Guardian Butterfly Wings    # !todo check english name
+    Name: Costume 20th Anniversary Fairy Wing
     Type: Armor
     Locations:
       Costume_Garment: true
@@ -192923,7 +192923,7 @@ Body:
     View: 135
   - Id: 480205
     AegisName: C_Astra_Blessing
-    Name: Costume Astra's Protection    # !todo check english name
+    Name: Costume Astra Blessing
     Type: Armor
     Locations:
       Costume_Garment: true
@@ -192961,7 +192961,7 @@ Body:
          bonus bVariableCastrate,-10;
   - Id: 480207
     AegisName: aegis_480207
-    Name: Costume Traveler's Universal Bag    # !todo check english name
+    Name: Costume Traveler Bag
     Type: Armor
     Locations:
       Costume_Garment: true
@@ -192969,7 +192969,7 @@ Body:
     View: 137
   - Id: 480215
     AegisName: Hs_Manteau
-    Name: Heroria Cloak    # !todo check english name
+    Name: Herosria Manteau
     Type: Armor
     Weight: 1600
     Defense: 50
@@ -192987,7 +192987,7 @@ Body:
       bonus bShortAtkRate,3;
   - Id: 480216
     AegisName: Hs_Muffler
-    Name: Heroria Scarf    # !todo check english name
+    Name: Herosria Muffler
     Type: Armor
     Weight: 1000
     Defense: 30
@@ -193006,7 +193006,7 @@ Body:
       bonus bLongAtkRate,3;
   - Id: 480217
     AegisName: aegis_480217
-    Name: Heroria Clock    # !todo check english name
+    Name: Herosria Cloak
     Type: Armor
     Weight: 1200
     Defense: 10
@@ -193025,7 +193025,7 @@ Body:
       bonus bShortAtkRate,3;
   - Id: 480218
     AegisName: aegis_480218
-    Name: Heroria Hood    # !todo check english name
+    Name: Herosria Hood
     Type: Armor
     Weight: 600
     Defense: 20
@@ -193044,7 +193044,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_All,3;
   - Id: 480219
     AegisName: aegis_480219
-    Name: Heroria Foldrun    # !todo check english name
+    Name: Herosria Pauldron
     Type: Armor
     Weight: 2000
     Defense: 80
@@ -193608,7 +193608,7 @@ Body:
          bonus2 bExpAddRace,RC_All,10;
   - Id: 480249
     AegisName: aegis_480249
-    Name: Level 1 Hood    # !todo check english name
+    Name: 1Lv Hood
     Type: Armor
     Slots: 1
     Locations:
@@ -195045,7 +195045,7 @@ Body:
       }
   - Id: 480345
     AegisName: Season_Hood_Spring
-    Name: "Divine Beast's Cloak: Spring"    # !todo check english name
+    Name: "Manteau of Mystical Beast: Spring"
     Type: Armor
     Weight: 700
     Defense: 80
@@ -195094,7 +195094,7 @@ Body:
       }
   - Id: 480346
     AegisName: Season_Hood_Summer
-    Name: "Divine Beast's Cloak: Summer"    # !todo check english name
+    Name: "Manteau of Mystical Beast: Summer"
     Type: Armor
     Weight: 700
     Defense: 80
@@ -195143,7 +195143,7 @@ Body:
       }
   - Id: 480347
     AegisName: Season_Hood_Autumn
-    Name: "Divine Beast's Cloak: Autumn"    # !todo check english name
+    Name: "Manteau of Mystical Beast: Autumn"
     Type: Armor
     Weight: 700
     Defense: 80
@@ -195193,7 +195193,7 @@ Body:
       }
   - Id: 480348
     AegisName: Season_Hood_Winter
-    Name: "Divine Beast's Cloak: Winter"    # !todo check english name
+    Name: "Manteau of Mystical Beast: Winter"
     Type: Armor
     Weight: 700
     Defense: 80
@@ -195245,7 +195245,7 @@ Body:
       }
   - Id: 480349
     AegisName: Circul_Of_Life_Spring
-    Name: "Cycle of Life: Spring"    # !todo check english name
+    Name: "Circulation of Life: Spring"
     Type: Armor
     Weight: 700
     Defense: 80
@@ -195301,7 +195301,7 @@ Body:
       }
   - Id: 480350
     AegisName: Circul_Of_Life_Summer
-    Name: "Cycle of Life: Summer"    # !todo check english name
+    Name: "Circulation of Life: Summer"
     Type: Armor
     Weight: 700
     Defense: 80
@@ -195357,7 +195357,7 @@ Body:
       }
   - Id: 480351
     AegisName: Circul_Of_Life_Autumn
-    Name: "Cycle of Life: Autumn"    # !todo check english name
+    Name: "Circulation of Life: Autumn"
     Type: Armor
     Weight: 700
     Defense: 80
@@ -195414,7 +195414,7 @@ Body:
       }
   - Id: 480352
     AegisName: Circul_Of_Life_Winter
-    Name: "Cycle of Life: Winter"    # !todo check english name
+    Name: "Circulation of Life: Winter"
     Type: Armor
     Weight: 700
     Defense: 80
@@ -195655,7 +195655,7 @@ Body:
       }
   - Id: 480405
     AegisName: aegis_480405
-    Name: Costume Santa Teddy Bear Doll Bag    # !todo check english name
+    Name: Costume Santa Teddy Bear Doll Bag
     Type: Armor
     Locations:
       Costume_Garment: true
@@ -195663,7 +195663,7 @@ Body:
     View: 202
   - Id: 480408
     AegisName: aegis_480408
-    Name: Costume Dragon Wings    # !todo check english name
+    Name: Costume Dragon Wing
     Type: Armor
     Locations:
       Costume_Garment: true
@@ -198766,7 +198766,7 @@ Body:
       bonus bMatkRate,10;
   - Id: 490208
     AegisName: Palace_Ring
-    Name: The Lord of the Rings    # !todo check english name
+    Name: Palace Ring
     Type: Armor
     Weight: 100
     Slots: 1
@@ -198802,7 +198802,7 @@ Body:
       bonus bDelayrate,-2*getskilllv("WM_REVERBERATION");
   - Id: 490214
     AegisName: E_Auto_B_R
-    Name: Automatic Booster R (bind)    # !todo check english name
+    Name: Automatic Booster R (Bound)
     Type: Armor
     Slots: 1
     Locations:
@@ -198822,7 +198822,7 @@ Body:
       bonus bMaxHPrate,5;
   - Id: 490215
     AegisName: E_Auto_B_L
-    Name: Automatic Booster L (bind)    # !todo check english name
+    Name: Automatic Booster L (Bound)
     Type: Armor
     Slots: 1
     Locations:
@@ -198842,7 +198842,7 @@ Body:
       bonus bMaxSPrate,5;
   - Id: 490216
     AegisName: E_Auto_BC_R
-    Name: Automatic Battle Chip R (bind)    # !todo check english name
+    Name: Automatic Battle Chip R (Bound)
     Type: Armor
     Slots: 1
     Locations:
@@ -198862,7 +198862,7 @@ Body:
       bonus bMaxHPrate,5;
   - Id: 490217
     AegisName: E_Auto_BC_L
-    Name: Automatic Battle Chip L (bind)    # !todo check english name
+    Name: Automatic Battle chip L (Bound)
     Type: Armor
     Slots: 1
     Locations:
@@ -199313,7 +199313,7 @@ Body:
       bonus bCritAtkRate,.@b;
   - Id: 490251
     AegisName: aegis_490251
-    Name: Heroria Ring    # !todo check english name
+    Name: Herosria Ring
     Type: Armor
     Weight: 250
     Defense: 5
@@ -199326,7 +199326,7 @@ Body:
       bonus bCritical,-3;
   - Id: 490252
     AegisName: aegis_490252
-    Name: Heroria Earrings    # !todo check english name
+    Name: Herosria Earring
     Type: Armor
     Weight: 250
     Defense: 5
@@ -199339,7 +199339,7 @@ Body:
       bonus bVariableCastrate,-3;
   - Id: 490253
     AegisName: aegis_490253
-    Name: Heroria Necklace    # !todo check english name
+    Name: Herosria Necklace
     Type: Armor
     Weight: 250
     Defense: 5
@@ -199355,7 +199355,7 @@ Body:
       bonus bHealPower,3;
   - Id: 490254
     AegisName: aegis_490254
-    Name: Heroria Critical Ring    # !todo check english name
+    Name: Herosria Critical Ring
     Type: Armor
     Weight: 250
     Defense: 5
@@ -199368,7 +199368,7 @@ Body:
       bonus bCritical,3;
   - Id: 490255
     AegisName: aegis_490255
-    Name: Heroria Cool Time Earrings    # !todo check english name
+    Name: Herosria Cool Time Earring
     Type: Armor
     Weight: 250
     Defense: 5
@@ -199381,7 +199381,7 @@ Body:
       bonus bVariableCastrate,3;
   - Id: 490256
     AegisName: aegis_490256
-    Name: Heroria Defender Necklace    # !todo check english name
+    Name: Herosria Defender Necklace
     Type: Armor
     Weight: 250
     Defense: 5
@@ -199610,7 +199610,7 @@ Body:
       bonus bDef,2*readparam(bVit);
   - Id: 490273
     AegisName: Under_Seal_D_Key
-    Name: Sealed Dimensional Key    # !todo check english name
+    Name: Sealed Dimensional Key
     Type: Armor
     Weight: 200
     Locations:
@@ -199619,7 +199619,7 @@ Body:
     EquipLevelMin: 240
   - Id: 490274
     AegisName: Under_Seal_D_Padlock
-    Name: Sealed Dimensional Lock    # !todo check english name
+    Name: Sealed Dimensional Lock
     Type: Armor
     Weight: 200
     Locations:
@@ -199628,7 +199628,7 @@ Body:
     EquipLevelMin: 240
   - Id: 490275
     AegisName: Under_Seal_D_keyring
-    Name: Sealed Dimensional Keychain    # !todo check english name
+    Name: Sealed Dimensional Keyring
     Type: Armor
     Weight: 200
     Locations:
@@ -199637,7 +199637,7 @@ Body:
     EquipLevelMin: 240
   - Id: 490276
     AegisName: Dimmension_W_Key
-    Name: Dimensional Wanderer's Key    # !todo check english name
+    Name: Dimensional Wanderer's Key
     Type: Armor
     Weight: 200
     Slots: 1
@@ -199679,7 +199679,7 @@ Body:
       }
   - Id: 490277
     AegisName: Dimmension_W_Padlock
-    Name: Dimensional Wanderer's Lock    # !todo check english name
+    Name: Dimensional Wanderer's Lock
     Type: Armor
     Weight: 200
     Slots: 1
@@ -199721,7 +199721,7 @@ Body:
       }
   - Id: 490278
     AegisName: Dimmension_W_Keyring
-    Name: Dimensional Wanderer's Keychain    # !todo check english name
+    Name: Dimensional Wanderer's Keyring
     Type: Armor
     Weight: 200
     Slots: 1
@@ -199872,7 +199872,7 @@ Body:
       bonus bMaxSPrate,10;
   - Id: 490286
     AegisName: aegis_490286
-    Name: Level 1 Clip    # !todo check english name
+    Name: 1Lv Clip
     Type: Armor
     Slots: 1
     Locations:
@@ -201920,7 +201920,7 @@ Body:
       bonus bMatkRate,6;
   - Id: 490483
     AegisName: Signet_Of_Spring
-    Name: "Seal of Circulation: Spring"    # !todo check english name
+    Name: "Signet of Circulation: Spring"
     Type: Armor
     Weight: 500
     Defense: 10
@@ -201941,7 +201941,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 490484
     AegisName: Signet_Of_Summer
-    Name: "Seal of Circulation: Summer"    # !todo check english name
+    Name: "Signet of Circulation: Summer"
     Type: Armor
     Weight: 500
     Defense: 10
@@ -201962,7 +201962,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 490485
     AegisName: Signet_Of_Autumn
-    Name: "Seal of Circulation: Autumn"    # !todo check english name
+    Name: "Signet of Circulation: Autumn"
     Type: Armor
     Weight: 500
     Defense: 10
@@ -201983,7 +201983,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 490486
     AegisName: Signet_Of_Winter
-    Name: "Seal of Circulation: Winter"    # !todo check english name
+    Name: "Signet of Circulation: Winter"
     Type: Armor
     Weight: 500
     Defense: 10
@@ -203647,7 +203647,7 @@ Body:
       }
   - Id: 500057
     AegisName: aegis_500057
-    Name: Heroria Crusader Sword    # !todo check english name
+    Name: Herosria Crusader Sword
     Type: Weapon
     SubType: 1hSword
     Weight: 1500
@@ -203668,7 +203668,7 @@ Body:
       bonus bDef,-150;
   - Id: 500058
     AegisName: aegis_500058
-    Name: Heroria Guardian Sword    # !todo check english name
+    Name: Herosria Guardian Sword
     Type: Weapon
     SubType: 1hSword
     Weight: 1500
@@ -203694,7 +203694,7 @@ Body:
       bonus bDef,300;
   - Id: 500059
     AegisName: Hs_Am_Sword
-    Name: Heroria Alchemic Sword    # !todo check english name
+    Name: Herosria Alchemic Sword
     Type: Weapon
     SubType: 1hSword
     Weight: 1500
@@ -203714,7 +203714,7 @@ Body:
       bonus bDef,-150;
   - Id: 500060
     AegisName: aegis_500060
-    Name: Heroria Basic Sword    # !todo check english name
+    Name: Herosria Basic Sword
     Type: Weapon
     SubType: 1hSword
     Weight: 1500
@@ -203880,7 +203880,7 @@ Body:
       }
   - Id: 500065
     AegisName: Blood_Rapier
-    Name: Blood Rapier    # !todo check english name
+    Name: Blood Rapier
     Type: Weapon
     SubType: 1hSword
     Weight: 1500
@@ -203933,7 +203933,7 @@ Body:
       }
   - Id: 500066
     AegisName: Victory_Sword
-    Name: Victory Sword    # !todo check english name
+    Name: Victory Sword
     Type: Weapon
     SubType: 1hSword
     Weight: 1500
@@ -203986,7 +203986,7 @@ Body:
       }
   - Id: 500067
     AegisName: aegis_500067
-    Name: Level 1 One-Handed Sword    # !todo check english name
+    Name: 1Lv One-handed Swords
     Type: Weapon
     SubType: 1hSword
     Attack: 10
@@ -204014,7 +204014,7 @@ Body:
     Refineable: true
   - Id: 500068
     AegisName: aegis_500068
-    Name: Level 2 One-Handed Sword    # !todo check english name
+    Name: 2Lv One-handed Swords
     Type: Weapon
     SubType: 1hSword
     Attack: 10
@@ -204042,7 +204042,7 @@ Body:
     Refineable: true
   - Id: 500069
     AegisName: aegis_500069
-    Name: Level 3 One-Handed Sword    # !todo check english name
+    Name: 3Lv One-handed Swords
     Type: Weapon
     SubType: 1hSword
     Attack: 10
@@ -204070,7 +204070,7 @@ Body:
     Refineable: true
   - Id: 500070
     AegisName: aegis_500070
-    Name: Level 4 One-Handed Sword    # !todo check english name
+    Name: 4Lv One-handed Swords
     Type: Weapon
     SubType: 1hSword
     Attack: 10
@@ -204289,7 +204289,7 @@ Body:
          bonus bAtkRate,5;
   - Id: 500092
     AegisName: Dimen_IG_Sword
-    Name: Dimensions Imperial Sword    # !todo check english name
+    Name: Dimensions Imperial Sword
     Type: Weapon
     SubType: 1hSword
     Weight: 2300
@@ -204343,7 +204343,7 @@ Body:
       }
   - Id: 500093
     AegisName: Dimen_BO_Sword
-    Name: Dimensions Biological Sword    # !todo check english name
+    Name: Dimensions Biological Sword
     Type: Weapon
     SubType: 1hSword
     Weight: 1800
@@ -204393,7 +204393,7 @@ Body:
       }
   - Id: 500094
     AegisName: Dimen_HN_Sword
-    Name: Dimensions Hyper Sword    # !todo check english name
+    Name: Dimensions Hyper Sword
     Type: Weapon
     SubType: 1hSword
     Weight: 1800
@@ -206423,7 +206423,7 @@ Body:
       }
   - Id: 510079
     AegisName: aegis_510079
-    Name: Heroria Alchemic Dagger    # !todo check english name
+    Name: Herosria Alchemic Dagger
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206444,7 +206444,7 @@ Body:
       bonus bAtkRate,-3;
   - Id: 510080
     AegisName: aegis_510080
-    Name: Heroria Assassin Dagger I    # !todo check english name
+    Name: Herosria Assassin Dagger I
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206459,7 +206459,7 @@ Body:
     Refineable: true
   - Id: 510081
     AegisName: aegis_510081
-    Name: Heroria Assassin Dagger II    # !todo check english name
+    Name: Herosria Assassin Dagger II
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206474,7 +206474,7 @@ Body:
     Refineable: true
   - Id: 510082
     AegisName: aegis_510082
-    Name: Heroria Assassin Knife I    # !todo check english name
+    Name: Herosria Assassin Knife I
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206489,7 +206489,7 @@ Body:
     Refineable: true
   - Id: 510083
     AegisName: aegis_510083
-    Name: Heroria Assassin Knife Ⅱ    # !todo check english name
+    Name: Herosria Assassin Knife II
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206504,7 +206504,7 @@ Body:
     Refineable: true
   - Id: 510084
     AegisName: aegis_510084
-    Name: Heroria Log Knife    # !todo check english name
+    Name: Herosria Rogue Knife
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206524,7 +206524,7 @@ Body:
       bonus bBaseAtk,30;
   - Id: 510085
     AegisName: aegis_510085
-    Name: Heroria Log Dagger    # !todo check english name
+    Name: Herosria Rogue Dagger
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206545,7 +206545,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 510086
     AegisName: aegis_510086
-    Name: Heroria Hunter Knife    # !todo check english name
+    Name: Herosria Hunter Knife
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206566,7 +206566,7 @@ Body:
       bonus bHit,30;
   - Id: 510087
     AegisName: aegis_510087
-    Name: Heroria Ninja Dagger I    # !todo check english name
+    Name: Herosria Ninja Dagger I
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206582,7 +206582,7 @@ Body:
     Refineable: true
   - Id: 510088
     AegisName: aegis_510088
-    Name: Heroria Ninja Dagger II    # !todo check english name
+    Name: Herosria Ninja Dagger II
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206598,7 +206598,7 @@ Body:
     Refineable: true
   - Id: 510089
     AegisName: aegis_510089
-    Name: Heroria Ninjudo I    # !todo check english name
+    Name: Herosria Ninja Knife I
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206615,7 +206615,7 @@ Body:
     Refineable: true
   - Id: 510090
     AegisName: aegis_510090
-    Name: Heroria Ninjudo Ⅱ    # !todo check english name
+    Name: Herosria Ninja Knife II
     Type: Weapon
     SubType: Dagger
     Weight: 1500
@@ -206742,7 +206742,7 @@ Body:
       }
   - Id: 510096
     AegisName: aegis_510096
-    Name: Level 1 Dagger    # !todo check english name
+    Name: 1Lv Dagger
     Type: Weapon
     SubType: Dagger
     Attack: 10
@@ -206774,7 +206774,7 @@ Body:
     Refineable: true
   - Id: 510097
     AegisName: aegis_510097
-    Name: Level 2 Dagger    # !todo check english name
+    Name: 2Lv Dagger
     Type: Weapon
     SubType: Dagger
     Attack: 10
@@ -206806,7 +206806,7 @@ Body:
     Refineable: true
   - Id: 510098
     AegisName: aegis_510098
-    Name: Level 3 Dagger    # !todo check english name
+    Name: 3Lv Dagger
     Type: Weapon
     SubType: Dagger
     Attack: 10
@@ -206838,7 +206838,7 @@ Body:
     Refineable: true
   - Id: 510099
     AegisName: aegis_510099
-    Name: Level 4 Dagger    # !todo check english name
+    Name: 4Lv Dagger
     Type: Weapon
     SubType: Dagger
     Attack: 10
@@ -207113,7 +207113,7 @@ Body:
       }
   - Id: 510139
     AegisName: Dimen_ABC_Knife
-    Name: Dimensions Abyss Knife    # !todo check english name
+    Name: Dimensions Abyss Knife
     Type: Weapon
     SubType: Dagger
     Weight: 1800
@@ -207708,7 +207708,7 @@ Body:
       bonus bUnbreakableWeapon;
   - Id: 520022
     AegisName: Hs_Bs_Axe
-    Name: Heroria Axe    # !todo check english name
+    Name: Herosria Axe
     Type: Weapon
     SubType: 1hAxe
     Weight: 1500
@@ -207729,7 +207729,7 @@ Body:
       bonus bDef,-150;
   - Id: 520024
     AegisName: aegis_520024
-    Name: Level 1 Axe    # !todo check english name
+    Name: 1Lv One-handed Axe.
     Type: Weapon
     SubType: 1hAxe
     Attack: 10
@@ -207752,7 +207752,7 @@ Body:
     Refineable: true
   - Id: 520027
     AegisName: aegis_520027
-    Name: Level 2 Axe    # !todo check english name
+    Name: 2Lv One-handed Axe.
     Type: Weapon
     SubType: 1hAxe
     Attack: 10
@@ -207775,7 +207775,7 @@ Body:
     Refineable: true
   - Id: 520028
     AegisName: aegis_520028
-    Name: Level 3 Axe    # !todo check english name
+    Name: 3Lv One-handed Axe.
     Type: Weapon
     SubType: 1hAxe
     Attack: 10
@@ -207798,7 +207798,7 @@ Body:
     Refineable: true
   - Id: 520029
     AegisName: aegis_520029
-    Name: Level 4 Axe    # !todo check english name
+    Name: 4Lv One-handed Axe.
     Type: Weapon
     SubType: 1hAxe
     Attack: 10
@@ -208717,7 +208717,7 @@ Body:
       }
   - Id: 530036
     AegisName: Hs_Cr_Spear
-    Name: Heroria Spear    # !todo check english name
+    Name: Herosria Spear
     Type: Weapon
     SubType: 1hSpear
     Weight: 1500
@@ -208737,7 +208737,7 @@ Body:
       bonus bHit,30;
   - Id: 530040
     AegisName: aegis_530040
-    Name: Level 1 One-Handed Spear    # !todo check english name
+    Name: 1Lv One-handed Spear
     Type: Weapon
     SubType: 1hSpear
     Attack: 10
@@ -208757,7 +208757,7 @@ Body:
     Refineable: true
   - Id: 530041
     AegisName: aegis_530041
-    Name: Level 2 One-Handed Spear    # !todo check english name
+    Name: 2Lv One-handed Spear
     Type: Weapon
     SubType: 1hSpear
     Attack: 10
@@ -208777,7 +208777,7 @@ Body:
     Refineable: true
   - Id: 530042
     AegisName: aegis_530042
-    Name: Level 3 One-Handed Spear    # !todo check english name
+    Name: 3Lv One-handed Spear
     Type: Weapon
     SubType: 1hSpear
     Attack: 10
@@ -208797,7 +208797,7 @@ Body:
     Refineable: true
   - Id: 530043
     AegisName: aegis_530043
-    Name: Level 4 One-Handed Spear    # !todo check english name
+    Name: 4Lv One-handed Spear
     Type: Weapon
     SubType: 1hSpear
     Attack: 10
@@ -208926,7 +208926,7 @@ Body:
       }
   - Id: 530054
     AegisName: Dimen_IG_Spear
-    Name: Dimensions Imperial Spear    # !todo check english name
+    Name: Dimensions Imperial Spear
     Type: Weapon
     SubType: 1hSpear
     Weight: 2500
@@ -210998,7 +210998,7 @@ Body:
       }
   - Id: 540061
     AegisName: aegis_540061
-    Name: Heroria Elemental Book    # !todo check english name
+    Name: Herosria Elemental Book
     Type: Weapon
     SubType: Book
     Weight: 1500
@@ -211021,7 +211021,7 @@ Body:
       bonus bVariableCastrate,-15;
   - Id: 540062
     AegisName: aegis_540062
-    Name: Heroic Sorceric Book    # !todo check english name
+    Name: Herosria Sorceric Book
     Type: Weapon
     SubType: Book
     Weight: 1500
@@ -211044,7 +211044,7 @@ Body:
       bonus bMatkRate,5;
   - Id: 540063
     AegisName: aegis_540063
-    Name: Heroria Demonic Bible    # !todo check english name
+    Name: Herosria Demonic Book
     Type: Weapon
     SubType: Book
     Weight: 1500
@@ -211064,7 +211064,7 @@ Body:
       bonus bCritical,-5;
   - Id: 540064
     AegisName: aegis_540064
-    Name: Heroria Star Book    # !todo check english name
+    Name: Herosria Star Book
     Type: Weapon
     SubType: Book
     Weight: 1500
@@ -211084,7 +211084,7 @@ Body:
       bonus bAspdRate,10;
   - Id: 540065
     AegisName: aegis_540065
-    Name: Heroria Gladiator Book    # !todo check english name
+    Name: Herosria Gladiator Book
     Type: Weapon
     SubType: Book
     Weight: 1500
@@ -211105,7 +211105,7 @@ Body:
       bonus bHit,-15;
   - Id: 540066
     AegisName: aegis_540066
-    Name: Heroic Book of Orders    # !todo check english name
+    Name: Herosria Martial Arts Book
     Type: Weapon
     SubType: Book
     Weight: 1500
@@ -211125,7 +211125,7 @@ Body:
       bonus bHit,30;
   - Id: 540068
     AegisName: aegis_540068
-    Name: Level 1 Book    # !todo check english name
+    Name: 1Lv Book
     Type: Weapon
     SubType: Book
     Attack: 10
@@ -211142,7 +211142,7 @@ Body:
     Refineable: true
   - Id: 540069
     AegisName: aegis_540069
-    Name: Level 2 Book    # !todo check english name
+    Name: 2Lv Book
     Type: Weapon
     SubType: Book
     Attack: 10
@@ -211159,7 +211159,7 @@ Body:
     Refineable: true
   - Id: 540071
     AegisName: aegis_540071
-    Name: Level 3 Book    # !todo check english name
+    Name: 3Lv Book
     Type: Weapon
     SubType: Book
     Attack: 10
@@ -211176,7 +211176,7 @@ Body:
     Refineable: true
   - Id: 540072
     AegisName: aegis_540072
-    Name: Level 4 Book    # !todo check english name
+    Name: 4Lv Book
     Type: Weapon
     SubType: Book
     Attack: 10
@@ -211308,7 +211308,7 @@ Body:
       }
   - Id: 540079
     AegisName: Dimen_EM_M_Book
-    Name: Dimensions Elemental Magic Book    # !todo check english name
+    Name: Dimensions Elemental Magic Book
     Type: Weapon
     SubType: Book
     Weight: 1800
@@ -211363,7 +211363,7 @@ Body:
       }
   - Id: 540080
     AegisName: Dimen_EM_S_Book
-    Name: Dimensions Elemental Spellbook    # !todo check english name
+    Name: Dimensions Elemental Spell Book
     Type: Weapon
     SubType: Book
     Weight: 1800
@@ -211418,7 +211418,7 @@ Body:
       }
   - Id: 540081
     AegisName: Dimen_CD_Bible
-    Name: Dimensions Saint Bible    # !todo check english name
+    Name: Dimensions Saint Bible
     Type: Weapon
     SubType: Book
     Weight: 1800
@@ -211468,7 +211468,7 @@ Body:
       }
   - Id: 540082
     AegisName: Dimen_SKE_M_Book
-    Name: Dimensions Emperor Moonbook    # !todo check english name
+    Name: Dimensions Emperor Moon Book
     Type: Weapon
     SubType: Book
     Weight: 1800
@@ -211517,7 +211517,7 @@ Body:
       }
   - Id: 540083
     AegisName: Dimen_SKE_S_Book
-    Name: Dimensions Emperor Book of the Sun    # !todo check english name
+    Name: Dimensions Emperor Sun Book
     Type: Weapon
     SubType: Book
     Weight: 2200
@@ -211567,7 +211567,7 @@ Body:
       }
   - Id: 540086
     AegisName: SaintBook_Furious
-    Name: Bible of Wrath    # !todo check english name
+    Name: Furious Saint Book
     Type: Weapon
     SubType: Book
     Weight: 1200
@@ -211626,7 +211626,7 @@ Body:
       }
   - Id: 540087
     AegisName: SunBook_Furious
-    Name: Sunshine Book of Wrath    # !todo check english name
+    Name: Furious Sun Book
     Type: Weapon
     SubType: Book
     Weight: 1400
@@ -211684,7 +211684,7 @@ Body:
       }
   - Id: 540088
     AegisName: MoonBook_Furious
-    Name: Furious Moon Word    # !todo check english name
+    Name: Furious Moon Word
     Type: Weapon
     SubType: Book
     Weight: 1200
@@ -215157,7 +215157,7 @@ Body:
       }
   - Id: 550096
     AegisName: aegis_550096
-    Name: Heroria Wizardry Wand    # !todo check english name
+    Name: Herosria Wizardry Wand
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215181,7 +215181,7 @@ Body:
       bonus bMatkRate,5;
   - Id: 550097
     AegisName: aegis_550097
-    Name: Heroria Spell Wand    # !todo check english name
+    Name: Herosria Spell Wand
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215204,7 +215204,7 @@ Body:
       bonus bVariableCastrate,5;
   - Id: 550098
     AegisName: Hs_Pr_Holy_Wand
-    Name: Heroria Holy Wand    # !todo check english name
+    Name: Herosria Holy Wand
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215226,7 +215226,7 @@ Body:
       bonus bMatkRate,-3;
   - Id: 550099
     AegisName: Hs_Pr_Wand
-    Name: Heroria Arc Wand    # !todo check english name
+    Name: Herosria Arc Wand
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215249,7 +215249,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 550100
     AegisName: aegis_550100
-    Name: Heroria Soul Stick    # !todo check english name
+    Name: Herosria Soul Stick
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215271,7 +215271,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 550101
     AegisName: aegis_550101
-    Name: Heroria Link Wand    # !todo check english name
+    Name: Herosria Link Wand
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215293,7 +215293,7 @@ Body:
       bonus bVariableCastrate,5;
   - Id: 550102
     AegisName: aegis_550102
-    Name: Heroria Soul Wand    # !todo check english name
+    Name: Herosria Soul Wand
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215315,7 +215315,7 @@ Body:
       bonus bUseSPrate,5;
   - Id: 550103
     AegisName: aegis_550103
-    Name: Heroria Summoner Foxtail    # !todo check english name
+    Name: Herosria Summoner Foxtail
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215338,7 +215338,7 @@ Body:
       bonus bUseSPrate,5;
   - Id: 550104
     AegisName: aegis_550104
-    Name: Heroria foxtail    # !todo check english name
+    Name: Herosria Foxtail
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215360,7 +215360,7 @@ Body:
       bonus bMatkRate,5;
   - Id: 550105
     AegisName: aegis_550105
-    Name: Heroria foxtail model    # !todo check english name
+    Name: Herosria Foxtail Model
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215381,7 +215381,7 @@ Body:
       bonus bHit,30;
   - Id: 550106
     AegisName: aegis_550106
-    Name: Heroria Basic Rod    # !todo check english name
+    Name: Herosria Basic Rod
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215406,7 +215406,7 @@ Body:
       bonus bVariableCastrate,5;
   - Id: 550107
     AegisName: aegis_550107
-    Name: Heroria Basic Wand    # !todo check english name
+    Name: Herosria Basic Wand
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -215431,7 +215431,7 @@ Body:
       bonus bUseSPrate,5;
   - Id: 550108
     AegisName: aegis_550108
-    Name: Level 1 Staff    # !todo check english name
+    Name: 1Lv One-handed Staff
     Type: Weapon
     SubType: Staff
     Attack: 10
@@ -215454,7 +215454,7 @@ Body:
     Refineable: true
   - Id: 550110
     AegisName: aegis_550110
-    Name: Level 2 Staff    # !todo check english name
+    Name: 2Lv One-handed Staff
     Type: Weapon
     SubType: Staff
     Attack: 10
@@ -215477,7 +215477,7 @@ Body:
     Refineable: true
   - Id: 550111
     AegisName: aegis_550111
-    Name: Level 3 Staff    # !todo check english name
+    Name: 3Lv One-handed Staff
     Type: Weapon
     SubType: Staff
     Attack: 10
@@ -215500,7 +215500,7 @@ Body:
     Refineable: true
   - Id: 550112
     AegisName: aegis_550112
-    Name: Level 4 Staff    # !todo check english name
+    Name: 4Lv One-handed Staff
     Type: Weapon
     SubType: Staff
     Attack: 10
@@ -215808,7 +215808,7 @@ Body:
       }
   - Id: 550130
     AegisName: Dimen_CD_Rod
-    Name: Dimensions St. Road    # !todo check english name
+    Name: Dimensions Saint Rod
     Type: Weapon
     SubType: Staff
     Weight: 2000
@@ -215866,7 +215866,7 @@ Body:
       }
   - Id: 550131
     AegisName: Dimen_SOA_Stick
-    Name: Dimensions Soul Stick    # !todo check english name
+    Name: Dimensions Soul Stick
     Type: Weapon
     SubType: Staff
     Weight: 1800
@@ -215920,7 +215920,7 @@ Body:
       }
   - Id: 550132
     AegisName: Dimen_SOA_Rod
-    Name: Dimensions Soul Road    # !todo check english name
+    Name: Dimensions Soul Rod
     Type: Weapon
     SubType: Staff
     Weight: 1800
@@ -215974,7 +215974,7 @@ Body:
       }
   - Id: 550133
     AegisName: Dimen_HN_Rod
-    Name: Dimensions Hyper Road    # !todo check english name
+    Name: Dimensions Hyper Rod
     Type: Weapon
     SubType: Staff
     Weight: 1800
@@ -216030,7 +216030,7 @@ Body:
       }
   - Id: 550134
     AegisName: Dimen_SH_Foxtail
-    Name: Dimensions Spirit Foxtail    # !todo check english name
+    Name: Dimensions Spirit Foxtail
     Type: Weapon
     SubType: Staff
     Weight: 2100
@@ -216081,7 +216081,7 @@ Body:
       }
   - Id: 550135
     AegisName: Dimen_SH_F_Model
-    Name: Dimensions Spirit Foxtail Model    # !todo check english name
+    Name: Dimensions Spirit Foxtail Model
     Type: Weapon
     SubType: Staff
     Weight: 1800
@@ -216132,7 +216132,7 @@ Body:
       }
   - Id: 550141
     AegisName: SaintWand_Furious
-    Name: Furious Saint Wand    # !todo check english name
+    Name: Furious Saint Wand
     Type: Weapon
     SubType: Staff
     Weight: 1400
@@ -217467,7 +217467,7 @@ Body:
       }
   - Id: 560039
     AegisName: Hs_Mo_Knuckle
-    Name: Heroria Knuckles    # !todo check english name
+    Name: Herosria Knuckle
     Type: Weapon
     SubType: Knuckle
     Weight: 1500
@@ -217487,7 +217487,7 @@ Body:
       bonus bHit,30;
   - Id: 560040
     AegisName: aegis_560040
-    Name: Heroria Crowe    # !todo check english name
+    Name: Herosria Claw
     Type: Weapon
     SubType: Knuckle
     Weight: 1500
@@ -217507,7 +217507,7 @@ Body:
       bonus bCritical,-5;
   - Id: 560043
     AegisName: aegis_560043
-    Name: Level 1 Knuckle    # !todo check english name
+    Name: 1Lv Knuckle
     Type: Weapon
     SubType: Knuckle
     Attack: 10
@@ -217523,7 +217523,7 @@ Body:
     Refineable: true
   - Id: 560044
     AegisName: aegis_560044
-    Name: Level 2 Knuckle    # !todo check english name
+    Name: 2Lv Knuckle
     Type: Weapon
     SubType: Knuckle
     Attack: 10
@@ -217539,7 +217539,7 @@ Body:
     Refineable: true
   - Id: 560045
     AegisName: aegis_560045
-    Name: Level 3 Knuckle    # !todo check english name
+    Name: 3Lv Knuckle
     Type: Weapon
     SubType: Knuckle
     Attack: 10
@@ -217555,7 +217555,7 @@ Body:
     Refineable: true
   - Id: 560046
     AegisName: aegis_560046
-    Name: Level 4 Knuckle    # !todo check english name
+    Name: 4Lv Knuckle
     Type: Weapon
     SubType: Knuckle
     Attack: 10
@@ -217663,7 +217663,7 @@ Body:
       }
   - Id: 560060
     AegisName: Dimen_IQ_Knuckle
-    Name: Dimensions Judgment Knuckle    # !todo check english name
+    Name: Dimensions Judgment Knuckle
     Type: Weapon
     SubType: Knuckle
     Weight: 2300
@@ -217713,7 +217713,7 @@ Body:
       }
   - Id: 560061
     AegisName: Dimen_IQ_Claw
-    Name: Dimensions Judgment Crow    # !todo check english name
+    Name: Dimensions Judgment Claw
     Type: Weapon
     SubType: Knuckle
     Weight: 2500
@@ -218766,7 +218766,7 @@ Body:
       }
   - Id: 570034
     AegisName: aegis_570034
-    Name: Heroria Violin    # !todo check english name
+    Name: Herosria Violin
     Type: Weapon
     SubType: Musical
     Weight: 1500
@@ -218789,7 +218789,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 570035
     AegisName: Hs_Ba_Guitar
-    Name: Heroria guitar    # !todo check english name
+    Name: Herosria Guitar
     Type: Weapon
     SubType: Musical
     Weight: 1500
@@ -218922,7 +218922,7 @@ Body:
       }
   - Id: 570040
     AegisName: aegis_570040
-    Name: Level 1 Instrument    # !todo check english name
+    Name: 1Lv Instrument
     Type: Weapon
     SubType: Musical
     Attack: 10
@@ -218938,7 +218938,7 @@ Body:
     Refineable: true
   - Id: 570041
     AegisName: aegis_570041
-    Name: Level 2 Instrument    # !todo check english name
+    Name: 2Lv Instrument
     Type: Weapon
     SubType: Musical
     Attack: 10
@@ -218954,7 +218954,7 @@ Body:
     Refineable: true
   - Id: 570042
     AegisName: aegis_570042
-    Name: Level 3 Instrument    # !todo check english name
+    Name: 3Lv Instrument
     Type: Weapon
     SubType: Musical
     Attack: 10
@@ -218970,7 +218970,7 @@ Body:
     Refineable: true
   - Id: 570043
     AegisName: aegis_570043
-    Name: Level 4 Instrument    # !todo check english name
+    Name: 4Lv Instrument
     Type: Weapon
     SubType: Musical
     Attack: 10
@@ -219049,7 +219049,7 @@ Body:
       }
   - Id: 570062
     AegisName: Dimen_TR_Vilolin
-    Name: Dimensions Musical Violin    # !todo check english name
+    Name: Dimensions Musical Violin
     Type: Weapon
     SubType: Musical
     Weight: 1800
@@ -219102,7 +219102,7 @@ Body:
       }
   - Id: 570063
     AegisName: Dimen_TR_Harp
-    Name: Dimensions Musical Harp    # !todo check english name
+    Name: Dimensions Musical Harp
     Type: Weapon
     SubType: Musical
     Weight: 1800
@@ -220159,7 +220159,7 @@ Body:
       }
   - Id: 580035
     AegisName: Hs_Dc_Rope
-    Name: Heroria Rope    # !todo check english name
+    Name: Herosria Rope
     Type: Weapon
     SubType: Whip
     Weight: 1500
@@ -220185,7 +220185,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 580036
     AegisName: aegis_580036
-    Name: Heroria Whip    # !todo check english name
+    Name: Herosria Whip
     Type: Weapon
     SubType: Whip
     Weight: 1500
@@ -220321,7 +220321,7 @@ Body:
       }
   - Id: 580041
     AegisName: aegis_580041
-    Name: Level 1 Whip    # !todo check english name
+    Name: 1Lv Whip
     Type: Weapon
     SubType: Whip
     Attack: 10
@@ -220340,7 +220340,7 @@ Body:
     Refineable: true
   - Id: 580042
     AegisName: aegis_580042
-    Name: Level 2 Whip    # !todo check english name
+    Name: 2Lv Whip
     Type: Weapon
     SubType: Whip
     Attack: 10
@@ -220359,7 +220359,7 @@ Body:
     Refineable: true
   - Id: 580043
     AegisName: aegis_580043
-    Name: Level 3 Whip    # !todo check english name
+    Name: 3Lv Whip
     Type: Weapon
     SubType: Whip
     Attack: 10
@@ -220378,7 +220378,7 @@ Body:
     Refineable: true
   - Id: 580044
     AegisName: aegis_580044
-    Name: Level 4 Whip    # !todo check english name
+    Name: 4Lv Whip
     Type: Weapon
     SubType: Whip
     Attack: 10
@@ -220463,7 +220463,7 @@ Body:
       }
   - Id: 580061
     AegisName: Dimen_TR_Ribbon
-    Name: Dimensions Musical Ribbon    # !todo check english name
+    Name: Dimensions Musical Ribbon
     Type: Weapon
     SubType: Whip
     Weight: 1800
@@ -220516,7 +220516,7 @@ Body:
       }
   - Id: 580062
     AegisName: Dimen_TR_Rope
-    Name: Dimensions Musical Rope    # !todo check english name
+    Name: Dimensions Musical Rope
     Type: Weapon
     SubType: Whip
     Weight: 1800
@@ -222060,7 +222060,7 @@ Body:
       }
   - Id: 590050
     AegisName: Hs_Bs_Mace
-    Name: Heroria Smith Mace    # !todo check english name
+    Name: Herosria Smith Mace
     Type: Weapon
     SubType: Mace
     Weight: 1500
@@ -222081,7 +222081,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 590051
     AegisName: aegis_590051
-    Name: Heroria Alchemic Mace    # !todo check english name
+    Name: Herosria Alchemic Mace
     Type: Weapon
     SubType: Mace
     Weight: 1500
@@ -222102,7 +222102,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 590052
     AegisName: aegis_590052
-    Name: Heroria Monk Mace    # !todo check english name
+    Name: Herosria Monk Mace
     Type: Weapon
     SubType: Mace
     Weight: 1500
@@ -222125,7 +222125,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 590056
     AegisName: aegis_590056
-    Name: Blunt Weapon Level 1    # !todo check english name
+    Name: 1Lv One-handed Macee
     Type: Weapon
     SubType: Mace
     Attack: 10
@@ -222150,7 +222150,7 @@ Body:
     Refineable: true
   - Id: 590057
     AegisName: aegis_590057
-    Name: Blunt weapon level 2    # !todo check english name
+    Name: 2Lv One-handed Macee
     Type: Weapon
     SubType: Mace
     Attack: 10
@@ -222175,7 +222175,7 @@ Body:
     Refineable: true
   - Id: 590058
     AegisName: aegis_590058
-    Name: Blunt Weapon Level 3    # !todo check english name
+    Name: 3Lv One-handed Macee
     Type: Weapon
     SubType: Mace
     Attack: 10
@@ -222200,7 +222200,7 @@ Body:
     Refineable: true
   - Id: 590059
     AegisName: aegis_590059
-    Name: Blunt weapon level 4    # !todo check english name
+    Name: 4Lv One-handed Macee
     Type: Weapon
     SubType: Mace
     Attack: 10
@@ -222378,7 +222378,7 @@ Body:
       }
   - Id: 590079
     AegisName: Dimen_MT_Mace
-    Name: Dimensions Mechanical Mace    # !todo check english name
+    Name: Dimensions Mechanical Mace
     Type: Weapon
     SubType: Mace
     Weight: 2500
@@ -222429,7 +222429,7 @@ Body:
       }
   - Id: 590080
     AegisName: Dimen_BO_Hall
-    Name: Dimensions Biological Hall    # !todo check english name
+    Name: Dimensions Biological Scepter
     Type: Weapon
     SubType: Mace
     Weight: 2500
@@ -223332,7 +223332,7 @@ Body:
       }
   - Id: 600032
     AegisName: Hs_Kn_Zweihander
-    Name: Heroria Zweihander    # !todo check english name
+    Name: Herosria Zweihander
     Type: Weapon
     SubType: 2hSword
     Weight: 3000
@@ -223352,7 +223352,7 @@ Body:
       bonus bMdef,-80;
   - Id: 600035
     AegisName: aegis_600035
-    Name: Level 1 Two-Handed Sword    # !todo check english name
+    Name: 1Lv Two-handed Swords
     Type: Weapon
     SubType: 2hSword
     Attack: 10
@@ -223372,7 +223372,7 @@ Body:
     Refineable: true
   - Id: 600036
     AegisName: aegis_600036
-    Name: Level 2 Two-Handed Sword    # !todo check english name
+    Name: 2Lv Two-handed Swords
     Type: Weapon
     SubType: 2hSword
     Attack: 10
@@ -223392,7 +223392,7 @@ Body:
     Refineable: true
   - Id: 600037
     AegisName: aegis_600037
-    Name: Level 3 Two-Handed Sword    # !todo check english name
+    Name: 3Lv Two-handed Swords
     Type: Weapon
     SubType: 2hSword
     Attack: 10
@@ -223412,7 +223412,7 @@ Body:
     Refineable: true
   - Id: 600038
     AegisName: aegis_600038
-    Name: Level 4 Two-Handed Sword    # !todo check english name
+    Name: 4Lv Two-handed Swords
     Type: Weapon
     SubType: 2hSword
     Attack: 10
@@ -223505,7 +223505,7 @@ Body:
       }
   - Id: 600054
     AegisName: Dimen_DK_T_Sword
-    Name: Dimensions Dragon Sword    # !todo check english name
+    Name: Dimensions Dragon Sword
     Type: Weapon
     SubType: 2hSword
     Weight: 3500
@@ -224708,7 +224708,7 @@ Body:
       }
   - Id: 610043
     AegisName: aegis_610043
-    Name: Heroria Katar    # !todo check english name
+    Name: Herosria Katar
     Type: Weapon
     SubType: Katar
     Weight: 3000
@@ -224834,7 +224834,7 @@ Body:
       }
   - Id: 610047
     AegisName: aegis_610047
-    Name: Level 1 Katar    # !todo check english name
+    Name: 1Lv Katar
     Type: Weapon
     SubType: Katar
     Attack: 10
@@ -224849,7 +224849,7 @@ Body:
     Refineable: true
   - Id: 610049
     AegisName: aegis_610049
-    Name: Level 2 Katar    # !todo check english name
+    Name: 2Lv Katar
     Type: Weapon
     SubType: Katar
     Attack: 10
@@ -224864,7 +224864,7 @@ Body:
     Refineable: true
   - Id: 610050
     AegisName: aegis_610050
-    Name: Level 3 Katar    # !todo check english name
+    Name: 3Lv Katar
     Type: Weapon
     SubType: Katar
     Attack: 10
@@ -224879,7 +224879,7 @@ Body:
     Refineable: true
   - Id: 610051
     AegisName: aegis_610051
-    Name: Level 4 Katar    # !todo check english name
+    Name: 4Lv Katar
     Type: Weapon
     SubType: Katar
     Attack: 10
@@ -224985,7 +224985,7 @@ Body:
       }
   - Id: 610064
     AegisName: Dimen_SHC_Katar
-    Name: Dimensions Shadow Katar    # !todo check english name
+    Name: Dimensions Shadow Katar
     Type: Weapon
     SubType: Katar
     Weight: 2200
@@ -225035,7 +225035,7 @@ Body:
       }
   - Id: 610065
     AegisName: Dimen_SHC_Cakram
-    Name: Dimensions Shadow Chakram    # !todo check english name
+    Name: Dimensions Shadow Chakram
     Type: Weapon
     SubType: Katar
     Weight: 2200
@@ -225696,7 +225696,7 @@ Body:
       }
   - Id: 620021
     AegisName: Hs_Bs_Giant_Axe
-    Name: Heroria Giant Axe    # !todo check english name
+    Name: Herosria Giant Axe
     Type: Weapon
     SubType: 2hAxe
     Weight: 3000
@@ -225717,7 +225717,7 @@ Body:
       bonus bHit,50;
   - Id: 620022
     AegisName: Divine_Buster
-    Name: Divine Buster    # !todo check english name
+    Name: Divine Buster
     Type: Weapon
     SubType: 2hAxe
     Weight: 6600
@@ -225771,7 +225771,7 @@ Body:
       }
   - Id: 620023
     AegisName: aegis_620023
-    Name: Two-Handed Axe Level 1    # !todo check english name
+    Name: 1Lv Two-handed Axe
     Type: Weapon
     SubType: 2hAxe
     Attack: 10
@@ -225791,7 +225791,7 @@ Body:
     Refineable: true
   - Id: 620024
     AegisName: aegis_620024
-    Name: Two-Handed Axe Level 2    # !todo check english name
+    Name: 2Lv Two-handed Axe
     Type: Weapon
     SubType: 2hAxe
     Attack: 10
@@ -225811,7 +225811,7 @@ Body:
     Refineable: true
   - Id: 620025
     AegisName: aegis_620025
-    Name: Level 3 Two-Handed Axe    # !todo check english name
+    Name: 3Lv Two-handed Axe
     Type: Weapon
     SubType: 2hAxe
     Attack: 10
@@ -225831,7 +225831,7 @@ Body:
     Refineable: true
   - Id: 620026
     AegisName: aegis_620026
-    Name: Level 4 Two-Handed Axe    # !todo check english name
+    Name: 4Lv Two-handed Axe
     Type: Weapon
     SubType: 2hAxe
     Attack: 10
@@ -225851,7 +225851,7 @@ Body:
     Refineable: true
   - Id: 620037
     AegisName: Dimen_MT_Axe
-    Name: Dimensions Mechanical Axe    # !todo check english name
+    Name: Dimensions Machanical Axe
     Type: Weapon
     SubType: 2hAxe
     Weight: 4500
@@ -226364,7 +226364,7 @@ Body:
       DropEffect: CLIENT
   - Id: 630020
     AegisName: Hs_Kn_Lance
-    Name: Heroria Lance    # !todo check english name
+    Name: Herosria Lance
     Type: Weapon
     SubType: 2hSpear
     Weight: 3000
@@ -226384,7 +226384,7 @@ Body:
       bonus bHit,50;
   - Id: 630021
     AegisName: aegis_630021
-    Name: Level 1 Two-Handed Spear    # !todo check english name
+    Name: 1Lv Two-handed Spear
     Type: Weapon
     SubType: 2hSpear
     Attack: 10
@@ -226404,7 +226404,7 @@ Body:
     Refineable: true
   - Id: 630022
     AegisName: aegis_630022
-    Name: Level 2 Two-Handed Spear    # !todo check english name
+    Name: 2Lv Two-handed Spear
     Type: Weapon
     SubType: 2hSpear
     Attack: 10
@@ -226424,7 +226424,7 @@ Body:
     Refineable: true
   - Id: 630023
     AegisName: aegis_630023
-    Name: Level 3 Two-Handed Spear    # !todo check english name
+    Name: 3Lv Two-handed Spear
     Type: Weapon
     SubType: 2hSpear
     Attack: 10
@@ -226444,7 +226444,7 @@ Body:
     Refineable: true
   - Id: 630024
     AegisName: aegis_630024
-    Name: Level 4 Two-Handed Spear    # !todo check english name
+    Name: 4Lv Two-handed Spear
     Type: Weapon
     SubType: 2hSpear
     Attack: 10
@@ -226612,7 +226612,7 @@ Body:
       }
   - Id: 630041
     AegisName: Dimen_DK_Lance
-    Name: Dimensions Dragon Lance    # !todo check english name
+    Name: Dimensions Dragon Lance
     Type: Weapon
     SubType: 2hSpear
     Weight: 6500
@@ -228149,7 +228149,7 @@ Body:
       }
   - Id: 640038
     AegisName: aegis_640038
-    Name: Heroria Wizardry Staff    # !todo check english name
+    Name: Herosria Wizardry Staff
     Type: Weapon
     SubType: 2hStaff
     Weight: 3000
@@ -228173,7 +228173,7 @@ Body:
       bonus bVariableCastrate,7;
   - Id: 640039
     AegisName: aegis_640039
-    Name: Heroria Magical Staff    # !todo check english name
+    Name: Herosria Magical Staff
     Type: Weapon
     SubType: 2hStaff
     Weight: 3000
@@ -228197,7 +228197,7 @@ Body:
       bonus bVariableCastrate,-15;
   - Id: 640041
     AegisName: aegis_640041
-    Name: Level 1 Two-Handed Staff    # !todo check english name
+    Name: 1Lv Two-handed Staff
     Type: Weapon
     SubType: 2hStaff
     Attack: 10
@@ -228215,7 +228215,7 @@ Body:
     Refineable: true
   - Id: 640042
     AegisName: aegis_640042
-    Name: Level 2 Two-Handed Staff    # !todo check english name
+    Name: 2Lv Two-handed Staff
     Type: Weapon
     SubType: 2hStaff
     Attack: 10
@@ -228233,7 +228233,7 @@ Body:
     Refineable: true
   - Id: 640043
     AegisName: aegis_640043
-    Name: Level 3 Two-Handed Staff    # !todo check english name
+    Name: 3Lv Two-handed Staff
     Type: Weapon
     SubType: 2hStaff
     Attack: 10
@@ -228251,7 +228251,7 @@ Body:
     Refineable: true
   - Id: 640044
     AegisName: aegis_640044
-    Name: Level 4 Two-Handed Staff    # !todo check english name
+    Name: 4Lv Two-handed Staff
     Type: Weapon
     SubType: 2hStaff
     Attack: 10
@@ -228382,7 +228382,7 @@ Body:
       }
   - Id: 640049
     AegisName: Dimen_AG_Staff
-    Name: Dimensions Arc Staff    # !todo check english name
+    Name: Dimensions Arch Staff
     Type: Weapon
     SubType: 2hStaff
     Weight: 2000
@@ -228441,7 +228441,7 @@ Body:
       }
   - Id: 640050
     AegisName: Dimen_AG_Rod
-    Name: Dimensions Arc Road    # !todo check english name
+    Name: Dimensions Arch Rod
     Type: Weapon
     SubType: 2hStaff
     Weight: 2000
@@ -229294,7 +229294,7 @@ Body:
       }
   - Id: 650030
     AegisName: Hs_Nj_Humma
-    Name: Heroria Fuma Shuriken    # !todo check english name
+    Name: Herosria Huuma Shuriken
     Type: Weapon
     SubType: Huuma
     Weight: 3000
@@ -229316,7 +229316,7 @@ Body:
       bonus bHit,50;
   - Id: 650033
     AegisName: Devil_Claw
-    Name: Devil Claw    # !todo check english name
+    Name: Devil Claw
     Type: Weapon
     SubType: Huuma
     Weight: 2000
@@ -229375,7 +229375,7 @@ Body:
       }
   - Id: 650034
     AegisName: Humma_Brilliance
-    Name: Wind Magic Shuriken Radiance    # !todo check english name
+    Name: Huuma Shuriken Brilliance
     Type: Weapon
     SubType: Huuma
     Weight: 2600
@@ -229429,7 +229429,7 @@ Body:
       }
   - Id: 650035
     AegisName: aegis_650035
-    Name: Level 1 Wind Magic Shuriken    # !todo check english name
+    Name: 1Lv Fuuma Shuriken
     Type: Weapon
     SubType: Huuma
     Attack: 10
@@ -229445,7 +229445,7 @@ Body:
     Refineable: true
   - Id: 650036
     AegisName: aegis_650036
-    Name: Level 2 Wind Magic Shuriken    # !todo check english name
+    Name: 2Lv Fuuma Shuriken
     Type: Weapon
     SubType: Huuma
     Attack: 10
@@ -229461,7 +229461,7 @@ Body:
     Refineable: true
   - Id: 650037
     AegisName: aegis_650037
-    Name: Level 3 Wind Magic Shuriken    # !todo check english name
+    Name: 3Lv Fuuma Shuriken
     Type: Weapon
     SubType: Huuma
     Attack: 10
@@ -229477,7 +229477,7 @@ Body:
     Refineable: true
   - Id: 650038
     AegisName: aegis_650038
-    Name: Level 4 Wind Magic Shuriken    # !todo check english name
+    Name: 4Lv Fuuma Shuriken
     Type: Weapon
     SubType: Huuma
     Attack: 10
@@ -229541,7 +229541,7 @@ Body:
       }
   - Id: 650046
     AegisName: Dimen_SS_Humma
-    Name: Dimensions Moonlight Wind Demon Shuriken    # !todo check english name
+    Name: Dimensions Moonlight Huuma Shuriken
     Type: Weapon
     SubType: Huuma
     Weight: 3200
@@ -229592,7 +229592,7 @@ Body:
       }
   - Id: 650047
     AegisName: Dimen_SS_Wheel
-    Name: Dimensions Moonlight Wheel Repair Sword    # !todo check english name
+    Name: Dimensions Moonlight Wheel Shuriken
     Type: Weapon
     SubType: Huuma
     Weight: 2800
@@ -231472,7 +231472,7 @@ Body:
       }
   - Id: 700061
     AegisName: Hs_Rg_Bow
-    Name: Heroria Log Bow    # !todo check english name
+    Name: Herosria Rogue Bow
     Type: Weapon
     SubType: Bow
     Weight: 3000
@@ -231492,7 +231492,7 @@ Body:
       bonus bCritical,-7;
   - Id: 700062
     AegisName: aegis_700062
-    Name: Heroria Hunter Bow    # !todo check english name
+    Name: Herosria Hunter Bow
     Type: Weapon
     SubType: Bow
     Weight: 3000
@@ -231512,7 +231512,7 @@ Body:
       bonus bHit,-25;
   - Id: 700063
     AegisName: aegis_700063
-    Name: Heroria Crossbow    # !todo check english name
+    Name: Herosria Cross Bow
     Type: Weapon
     SubType: Bow
     Weight: 3000
@@ -231532,7 +231532,7 @@ Body:
       bonus bCritical,-7;
   - Id: 700064
     AegisName: aegis_700064
-    Name: Heroria Rhythm Bow    # !todo check english name
+    Name: Herosria Rhythm Bow
     Type: Weapon
     SubType: Bow
     Weight: 3000
@@ -231685,7 +231685,7 @@ Body:
       bonus2 bSkillAtk,"SC_TRIANGLESHOT",BaseLevel;
   - Id: 700070
     AegisName: aegis_700070
-    Name: Level 1 Bow    # !todo check english name
+    Name: 1Lv Bow
     Type: Weapon
     SubType: Bow
     Attack: 10
@@ -231704,7 +231704,7 @@ Body:
     Refineable: true
   - Id: 700071
     AegisName: aegis_700071
-    Name: Level 2 Bow    # !todo check english name
+    Name: 2Lv Bow
     Type: Weapon
     SubType: Bow
     Attack: 10
@@ -231723,7 +231723,7 @@ Body:
     Refineable: true
   - Id: 700072
     AegisName: aegis_700072
-    Name: Level 3 Bow    # !todo check english name
+    Name: 3Lv Bow
     Type: Weapon
     SubType: Bow
     Attack: 10
@@ -231742,7 +231742,7 @@ Body:
     Refineable: true
   - Id: 700073
     AegisName: aegis_700073
-    Name: Level 4 Bow    # !todo check english name
+    Name: 4Lv Bow
     Type: Weapon
     SubType: Bow
     Attack: 10
@@ -231761,7 +231761,7 @@ Body:
     Refineable: true
   - Id: 700074
     AegisName: aegis_700074
-    Name: Level 5 Bow    # !todo check english name
+    Name: 5Lv Bow
     Type: Weapon
     SubType: Bow
     Attack: 10
@@ -231825,7 +231825,7 @@ Body:
       }
   - Id: 700092
     AegisName: Dimen_ABC_Bow
-    Name: Dimensions Abyss Bow    # !todo check english name
+    Name: Dimensions Abyss Bow
     Type: Weapon
     SubType: Bow
     Weight: 2100
@@ -231875,7 +231875,7 @@ Body:
       }
   - Id: 700093
     AegisName: Dimen_WH_C_Bow
-    Name: Dimensions Wind Cross Bow    # !todo check english name
+    Name: Dimensions Wind Crossbow
     Type: Weapon
     SubType: Bow
     Weight: 2100
@@ -231925,7 +231925,7 @@ Body:
       }
   - Id: 700094
     AegisName: Dimen_WH_Bow
-    Name: Dimensions Wind Bow    # !todo check english name
+    Name: Dimensions Wind Bow
     Type: Weapon
     SubType: Bow
     Weight: 2100
@@ -231975,7 +231975,7 @@ Body:
       }
   - Id: 700100
     AegisName: StormBow_Furious
-    Name: Furious Storm Bow    # !todo check english name
+    Name: Furious Storm Bow
     Type: Weapon
     SubType: Bow
     Weight: 1800
@@ -232033,7 +232033,7 @@ Body:
       }
   - Id: 700101
     AegisName: TornadoBow_Furious
-    Name: Wrath Gale Bow    # !todo check english name
+    Name: Furious Tornado Bow
     Type: Weapon
     SubType: Bow
     Weight: 1800
@@ -232647,7 +232647,7 @@ Body:
       }
   - Id: 800017
     AegisName: aegis_800017
-    Name: Heroria Revolver    # !todo check english name
+    Name: Herosria Revolver
     Type: Weapon
     SubType: Revolver
     Weight: 3000
@@ -232774,7 +232774,7 @@ Body:
       }
   - Id: 800029
     AegisName: aegis_800029
-    Name: Level 1 Revolver    # !todo check english name
+    Name: 1Lv Revolver
     Type: Weapon
     SubType: Revolver
     Attack: 10
@@ -232790,7 +232790,7 @@ Body:
     Refineable: true
   - Id: 800030
     AegisName: aegis_800030
-    Name: Level 2 Revolver    # !todo check english name
+    Name: 2Lv Revolver
     Type: Weapon
     SubType: Revolver
     Attack: 10
@@ -232806,7 +232806,7 @@ Body:
     Refineable: true
   - Id: 800031
     AegisName: aegis_800031
-    Name: Level 3 Revolver    # !todo check english name
+    Name: 3Lv Revolver
     Type: Weapon
     SubType: Revolver
     Attack: 10
@@ -232822,7 +232822,7 @@ Body:
     Refineable: true
   - Id: 800032
     AegisName: aegis_800032
-    Name: Level 4 Revolver    # !todo check english name
+    Name: 4Lv Revolver
     Type: Weapon
     SubType: Revolver
     Attack: 10
@@ -233329,7 +233329,7 @@ Body:
       DropEffect: CLIENT
   - Id: 810016
     AegisName: aegis_810016
-    Name: Heroria Rifle    # !todo check english name
+    Name: Herosria Rifle
     Type: Weapon
     SubType: Rifle
     Weight: 3000
@@ -233456,7 +233456,7 @@ Body:
       }
   - Id: 810029
     AegisName: aegis_810029
-    Name: Level 1 Rifle    # !todo check english name
+    Name: 1Lv Rifle
     Type: Weapon
     SubType: Rifle
     Attack: 10
@@ -233472,7 +233472,7 @@ Body:
     Refineable: true
   - Id: 810030
     AegisName: aegis_810030
-    Name: Level 2 Rifle    # !todo check english name
+    Name: 2Lv Rifle
     Type: Weapon
     SubType: Rifle
     Attack: 10
@@ -233488,7 +233488,7 @@ Body:
     Refineable: true
   - Id: 810031
     AegisName: aegis_810031
-    Name: Level 3 Rifle    # !todo check english name
+    Name: 3Lv Rifle
     Type: Weapon
     SubType: Rifle
     Attack: 10
@@ -233504,7 +233504,7 @@ Body:
     Refineable: true
   - Id: 810032
     AegisName: aegis_810032
-    Name: Level 4 Rifle    # !todo check english name
+    Name: 4Lv Rifle
     Type: Weapon
     SubType: Rifle
     Attack: 10
@@ -233520,7 +233520,7 @@ Body:
     Refineable: true
   - Id: 810033
     AegisName: aegis_810033
-    Name: Level 5 Rifle    # !todo check english name
+    Name: 5Lv Rifle
     Type: Weapon
     SubType: Rifle
     Attack: 10
@@ -233581,7 +233581,7 @@ Body:
       }
   - Id: 810040
     AegisName: Dimen_NW_Rifle
-    Name: Dimensions Knight Rifle    # !todo check english name
+    Name: Dimensions Night Rifle
     Type: Weapon
     SubType: Rifle
     Weight: 2300
@@ -233970,7 +233970,7 @@ Body:
       bonus bSplashRange,1;
   - Id: 820012
     AegisName: aegis_820012
-    Name: Heroria Shotgun    # !todo check english name
+    Name: Herosria Shotgun
     Type: Weapon
     SubType: Shotgun
     Weight: 3000
@@ -234100,7 +234100,7 @@ Body:
       }
   - Id: 820023
     AegisName: aegis_820023
-    Name: Level 1 Shotgun    # !todo check english name
+    Name: 1Lv Shotgun
     Type: Weapon
     SubType: Shotgun
     Attack: 10
@@ -234118,7 +234118,7 @@ Body:
       bonus bSplashRange,1;
   - Id: 820024
     AegisName: aegis_820024
-    Name: Level 2 Shotgun    # !todo check english name
+    Name: 2Lv Shotgun
     Type: Weapon
     SubType: Shotgun
     Attack: 10
@@ -234136,7 +234136,7 @@ Body:
       bonus bSplashRange,1;
   - Id: 820025
     AegisName: aegis_820025
-    Name: Level 3 Shotgun    # !todo check english name
+    Name: 3Lv Shotgun
     Type: Weapon
     SubType: Shotgun
     Attack: 10
@@ -234154,7 +234154,7 @@ Body:
       bonus bSplashRange,1;
   - Id: 820026
     AegisName: aegis_820026
-    Name: Level 4 Shotgun    # !todo check english name
+    Name: 4Lv Shotgun
     Type: Weapon
     SubType: Shotgun
     Attack: 10
@@ -234786,7 +234786,7 @@ Body:
       DropEffect: CLIENT
   - Id: 830016
     AegisName: aegis_830016
-    Name: Heroria Gatlinggun    # !todo check english name
+    Name: Herosria Gatling Gun
     Type: Weapon
     SubType: Gatling
     Weight: 3000
@@ -234913,7 +234913,7 @@ Body:
       }
   - Id: 830028
     AegisName: aegis_830028
-    Name: Level 1 Gatling Gun    # !todo check english name
+    Name: 1Lv Gatling Gun
     Type: Weapon
     SubType: Gatling
     Attack: 10
@@ -234929,7 +234929,7 @@ Body:
     Refineable: true
   - Id: 830029
     AegisName: aegis_830029
-    Name: Level 2 Gatling Gun    # !todo check english name
+    Name: 2Lv Gatling Gun
     Type: Weapon
     SubType: Gatling
     Attack: 10
@@ -234945,7 +234945,7 @@ Body:
     Refineable: true
   - Id: 830030
     AegisName: aegis_830030
-    Name: Level 3 Gatling Gun    # !todo check english name
+    Name: 3Lv Gatling Gun
     Type: Weapon
     SubType: Gatling
     Attack: 10
@@ -234961,7 +234961,7 @@ Body:
     Refineable: true
   - Id: 830031
     AegisName: aegis_830031
-    Name: Level 4 Gatling Gun    # !todo check english name
+    Name: 4Lv Gatling Gun
     Type: Weapon
     SubType: Gatling
     Attack: 10
@@ -235412,7 +235412,7 @@ Body:
       DropEffect: CLIENT
   - Id: 840011
     AegisName: aegis_840011
-    Name: Heroria Launcher    # !todo check english name
+    Name: Herosria Launcher
     Type: Weapon
     SubType: Grenade
     Weight: 3000
@@ -235539,7 +235539,7 @@ Body:
       }
   - Id: 840023
     AegisName: aegis_840023
-    Name: Level 1 Grenade Launcher    # !todo check english name
+    Name: 1Lv Grenade Launcher
     Type: Weapon
     SubType: Grenade
     Attack: 10
@@ -235555,7 +235555,7 @@ Body:
     Refineable: true
   - Id: 840024
     AegisName: aegis_840024
-    Name: Level 2 Grenade Launcher    # !todo check english name
+    Name: 2Lv Grenade Launcher
     Type: Weapon
     SubType: Grenade
     Attack: 10
@@ -235571,7 +235571,7 @@ Body:
     Refineable: true
   - Id: 840025
     AegisName: aegis_840025
-    Name: Level 3 Grenade Launcher    # !todo check english name
+    Name: 3Lv Grenade Launcher
     Type: Weapon
     SubType: Grenade
     Attack: 10
@@ -235587,7 +235587,7 @@ Body:
     Refineable: true
   - Id: 840026
     AegisName: aegis_840026
-    Name: Level 4 Grenade Launcher    # !todo check english name
+    Name: 4Lv Grenade Launcher
     Type: Weapon
     SubType: Grenade
     Attack: 10
@@ -235664,7 +235664,7 @@ Body:
       }
   - Id: 840032
     AegisName: Dimen_NW_Launcher
-    Name: Dimensions Night Launcher    # !todo check english name
+    Name: Dimensions Night Launcher
     Type: Weapon
     SubType: Grenade
     Weight: 2800
