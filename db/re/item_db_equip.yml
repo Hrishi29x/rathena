@@ -166459,7 +166459,7 @@ Body:
     ArmorLevel: 1
     View: 2366
   - Id: 400432
-    AegisName: aegis_400432
+    AegisName: C_Heart_Chiffon_Rabbit
     Name: Costume Heart Chiffon Rabbit
     Type: Armor
     Locations:
@@ -169453,7 +169453,7 @@ Body:
          }
       }
   - Id: 400585
-    AegisName: aegis_400585
+    AegisName: C_SnowmanHat
     Name: Costume Snowman Hat
     Type: Armor
     Locations:
@@ -172343,7 +172343,7 @@ Body:
     ArmorLevel: 1
     View: 575
   - Id: 410231
-    AegisName: aegis_410231
+    AegisName: C_Teaparty_Wonderland
     Name: Costume Tea Party in Wonderland
     Type: Armor
     Locations:
@@ -172888,7 +172888,7 @@ Body:
     ArmorLevel: 1
     View: 1463
   - Id: 410295
-    AegisName: aegis_410295
+    AegisName: C_WinterNightBells
     Name: Costume Winter Night Bells
     Type: Armor
     Locations:
@@ -174754,7 +174754,7 @@ Body:
     ArmorLevel: 1
     View: 2365
   - Id: 420208
-    AegisName: aegis_420208
+    AegisName: C_Chocolat_Rabbit_Hair
     Name: Costume Chocolate Rabbit Hair
     Type: Armor
     Locations:
@@ -193524,19 +193524,37 @@ Body:
       if (.@r>=13)
          bonus2 bIgnoreDefClassRate,Class_Boss,10;
   - Id: 480243
-    AegisName: aegis_480243
+    AegisName: C_JP_EV16
     Name: Costume Cinnamon Backpack
     Type: Armor
     Locations:
       Costume_Garment: true
     ArmorLevel: 1
+    View: 152
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 480244
-    AegisName: aegis_480244
+    AegisName: C_JP_EV17
     Name: Costume Crowned Cinnamon Backpack
     Type: Armor
     Locations:
       Costume_Garment: true
     ArmorLevel: 1
+    View: 153
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 480245
     AegisName: aegis_480245
     Name: Crowned Cinnamon Backpack
@@ -195654,7 +195672,7 @@ Body:
          }
       }
   - Id: 480405
-    AegisName: aegis_480405
+    AegisName: C_SantaTeddyBear
     Name: Costume Santa Teddy Bear Doll Bag
     Type: Armor
     Locations:
