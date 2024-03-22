@@ -172992,6 +172992,14 @@ Body:
     Locations:
       Costume_Head_Mid: true
     ArmorLevel: 1
+  - Id: 410315
+    AegisName: aegis_410315
+    Name: Costume Sacred Faith Ornament    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2518
   - Id: 420000
     AegisName: Isabella_Carrot
     Name: Isabella Carrot
@@ -175316,6 +175324,14 @@ Body:
     Locations:
       Costume_Head_Low: true
     ArmorLevel: 1
+  - Id: 420307
+    AegisName: aegis_420307
+    Name: Costume Twin Wave Roll Hair    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2490
   - Id: 430001
     AegisName: C_Helm_Of_Ra
     Name: Costume Hat of the Sun God
@@ -195168,6 +195184,14 @@ Body:
          skill "TF_DOUBLE",10;
          skill "MO_TRIPLEATTACK",10;
       }
+  - Id: 480344
+    AegisName: aegis_480344
+    Name: Costume Thornvine Crystal Scythe    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 189
   - Id: 480345
     AegisName: Season_Hood_Spring
     Name: "Manteau of Mystical Beast: Spring"
