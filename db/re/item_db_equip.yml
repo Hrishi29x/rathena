@@ -22174,6 +22174,14 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 100
     Refineable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus bMatkRate,5;
       .@r = getrefine();
@@ -22440,6 +22448,14 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 99
     Refineable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus bUnbreakableWeapon;
       .@r = getrefine();
@@ -33760,6 +33776,7 @@ Body:
     Locations:
       Both_Accessory: true
     ArmorLevel: 1
+    EquipLevelMin: 20
     Script: |
       bonus bAllStats,5;
   - Id: 2673
@@ -38440,6 +38457,7 @@ Body:
     Locations:
       Both_Accessory: true
     ArmorLevel: 1
+    EquipLevelMin: 100
     Trade:
       NoDrop: true
       NoTrade: true
@@ -42064,6 +42082,7 @@ Body:
     Locations:
       Head_Top: true
     ArmorLevel: 1
+    EquipLevelMin: 38
     View: 204
     Trade:
       NoDrop: true
@@ -42334,6 +42353,7 @@ Body:
     Type: Armor
     Weight: 200
     Defense: 5
+    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -43142,7 +43162,6 @@ Body:
     Buy: 800
     Weight: 100
     Defense: 1
-    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -43158,7 +43177,6 @@ Body:
     Buy: 800
     Weight: 100
     Defense: 1
-    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -43173,7 +43191,6 @@ Body:
     Buy: 800
     Weight: 100
     Defense: 1
-    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -43188,7 +43205,6 @@ Body:
     Buy: 800
     Weight: 100
     Defense: 1
-    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -43203,7 +43219,6 @@ Body:
     Buy: 800
     Weight: 100
     Defense: 1
-    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -43218,7 +43233,6 @@ Body:
     Buy: 800
     Weight: 100
     Defense: 1
-    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -43233,7 +43247,6 @@ Body:
     Buy: 800
     Weight: 100
     Defense: 1
-    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -48900,6 +48913,7 @@ Body:
     Type: Armor
     Weight: 100
     Defense: 6
+    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -50135,6 +50149,7 @@ Body:
     Buy: 20
     Weight: 1000
     Defense: 4
+    Slots: 1
     Locations:
       Head_Mid: true
       Head_Top: true
@@ -52169,6 +52184,7 @@ Body:
     Buy: 20
     Weight: 300
     Defense: 3
+    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -52353,6 +52369,7 @@ Body:
     Buy: 20
     Weight: 300
     Defense: 1
+    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -52385,6 +52402,7 @@ Body:
     Buy: 20
     Weight: 10
     Defense: 1
+    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -53774,6 +53792,7 @@ Body:
     Buy: 20
     Weight: 800
     Defense: 3
+    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -54057,6 +54076,7 @@ Body:
     Buy: 20
     Weight: 100
     Defense: 3
+    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -54073,6 +54093,7 @@ Body:
     Buy: 20
     Weight: 100
     Defense: 3
+    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -54944,6 +54965,7 @@ Body:
     Buy: 20
     Weight: 300
     Defense: 6
+    Slots: 1
     Locations:
       Head_Top: true
     ArmorLevel: 1
@@ -61683,7 +61705,7 @@ Body:
       Rebellion: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 1
+    WeaponLevel: 2
     EquipLevelMin: 26
     Trade:
       NoDrop: true
@@ -61707,7 +61729,7 @@ Body:
       Rebellion: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 1
+    WeaponLevel: 2
     EquipLevelMin: 40
     Trade:
       NoDrop: true
@@ -62121,7 +62143,7 @@ Body:
     Buy: 20
     Attack: 60
     Range: 7
-    Slots: 2
+    Slots: 1
     Jobs:
       Gunslinger: true
       Rebellion: true
@@ -67103,6 +67125,14 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 100
     Refineable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       .@r = getrefine();
       bonus bVariableCastrate,-10;
@@ -67266,6 +67296,14 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 99
     Refineable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       .@r = getrefine();
       bonus bBaseAtk,10*(.@r/2);
@@ -72251,6 +72289,14 @@ Body:
       Armor: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus bAllStats,1;
       bonus bMaxHP,400;
@@ -78757,7 +78803,7 @@ Body:
       Fourth: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 3
+    WeaponLevel: 4
     EquipLevelMin: 130
     Refineable: true
     Script: |
@@ -84575,6 +84621,7 @@ Body:
     Locations:
       Head_Top: true
     ArmorLevel: 1
+    EquipLevelMin: 70
     Refineable: true
     View: 759
     Trade:
@@ -89958,6 +90005,13 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1039
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus bAllStats,1;
       bonus bUnbreakableHelm;
@@ -92195,6 +92249,7 @@ Body:
     Locations:
       Head_Mid: true
     ArmorLevel: 1
+    EquipLevelMin: 10
     View: 92
   - Id: 19093
     AegisName: Spinning_Eyes_
@@ -95554,6 +95609,14 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 100
     View: 102
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus bAllStats,1;
       bonus bMaxHP,200;
@@ -98053,6 +98116,7 @@ Body:
     AegisName: T_Spinx_Helm
     Name: T Spinx Helm
     Type: Armor
+    Slots: 1
     Locations:
       Costume_Head_Top: true
     ArmorLevel: 1
@@ -99492,6 +99556,7 @@ Body:
     Locations:
       Costume_Head_Top: true
     ArmorLevel: 1
+    EquipLevelMin: 20
     View: 15
   - Id: 19626
     AegisName: C_Chullos
@@ -101948,8 +102013,6 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 1074
-    Trade:
-      NoDrop: true
     EquipScript: |
       sc_start SC_DECORATION_OF_MUSIC,INFINITE_TICK,0;
     UnEquipScript: |
@@ -103132,13 +103195,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1189
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
   - Id: 19997
     AegisName: C_Bomb_Hat
     Name: Costume Bomb Hat
@@ -111592,6 +111648,8 @@ Body:
     EquipLevelMin: 99
     Refineable: true
     View: 3
+    Trade:
+      NoDrop: true
     Script: |
       bonus bBaseAtk,readparam(bStr)/20;
       bonus bMatk,readparam(bInt)/20;
@@ -112627,6 +112685,14 @@ Body:
       Garment: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus2 bSubEle,Ele_Neutral,20;
       bonus bVariableCastrate,-5;
@@ -118936,6 +119002,14 @@ Body:
       Shoes: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus bMaxHP,300;
       bonus bMaxSP,50;
@@ -134750,7 +134824,7 @@ Body:
       Fourth: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 3
+    WeaponLevel: 4
     EquipLevelMin: 175
     Refineable: true
     Flags:
@@ -138660,7 +138734,7 @@ Body:
       Rebellion: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 4
+    WeaponLevel: 3
     EquipLevelMin: 110
     Refineable: true
     Script: |
@@ -138679,7 +138753,7 @@ Body:
       Rebellion: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 4
+    WeaponLevel: 3
     EquipLevelMin: 141
     Refineable: true
     Script: |
@@ -138699,7 +138773,7 @@ Body:
       Rebellion: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 4
+    WeaponLevel: 3
     EquipLevelMin: 141
     Refineable: true
     Script: |
@@ -142992,6 +143066,14 @@ Body:
       Left_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus bAspdRate,10;
       bonus bVariableCastrate,-10;
@@ -144043,7 +144125,7 @@ Body:
       StarGladiator: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 3
+    WeaponLevel: 4
     EquipLevelMin: 175
     Refineable: true
     Script: |
@@ -155054,6 +155136,14 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1942
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
   - Id: 31841
     AegisName: C_BJ_HeadsetB
     Name: Costume OnAir BJ Headset
@@ -155063,6 +155153,14 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1943
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
   - Id: 31842
     AegisName: C_Striking_hat
     Name: Costume Striking Hat
@@ -179969,7 +180067,7 @@ Body:
     Slots: 1
     Locations:
       Armor: true
-    ArmorLevel: 1
+    ArmorLevel: 2
     Refineable: true
   - Id: 450155
     AegisName: JP_Armor06_L
@@ -183703,7 +183801,7 @@ Body:
     Slots: 1
     Locations:
       Left_Hand: true
-    ArmorLevel: 1
+    ArmorLevel: 2
     Refineable: true
     View: 1
   - Id: 460013
@@ -191328,6 +191426,7 @@ Body:
     Locations:
       Garment: true
     ArmorLevel: 1
+    EquipLevelMin: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -193565,6 +193664,14 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Refineable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       .@r = getrefine();
       bonus2 bSubEle,Ele_Neutral,20;
@@ -195696,6 +195803,14 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus bAspdRate,10;
       bonus bVariableCastrate,-10;
@@ -195710,6 +195825,14 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus bAspdRate,10;
       bonus bVariableCastrate,-10;
@@ -195728,6 +195851,14 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus bAspdRate,10;
       bonus bVariableCastrate,-10;
@@ -195746,6 +195877,14 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     Script: |
       bonus bAspdRate,10;
       bonus bVariableCastrate,-10;
@@ -213344,7 +213483,6 @@ Body:
     Attack: 100
     MagicAttack: 180
     Range: 1
-    Slots: 1
     Jobs:
       SuperNovice: true
     Locations:
@@ -228911,7 +229049,7 @@ Body:
       KagerouOboro: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 1
+    WeaponLevel: 4
     EquipLevelMin: 100
     Trade:
       NoDrop: true
