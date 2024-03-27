@@ -68785,6 +68785,14 @@ Body:
       bonus2 bSubRace,RC_Player_Human,5;
       bonus2 bSubRace,RC_Player_Doram,5;
       bonus2 bResEff,Eff_Freeze,2500;
+  - Id: 15065
+    AegisName: AmeshaSpenta
+    Name: Amesha Spenta
+    Type: Armor
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    Refineable: true
   - Id: 15066
     AegisName: Engraved_Armor
     Name: Engraved Plate Armor
@@ -96796,6 +96804,20 @@ Body:
             bonus bNoCastCancel;
          }
       }
+  - Id: 19429
+    AegisName: Zarathustra
+    Name: Zarathustra
+    Type: Armor
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
   - Id: 19433
     AegisName: ResonateTaego_TW
     Name: Ancient Resonance
@@ -116161,6 +116183,15 @@ Body:
       NoAuction: true
     Script: |
       bonus2 bExpAddRace,RC_All,10;
+  - Id: 22013
+    AegisName: test_5
+    Name: Rand Test
+    Type: Armor
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    Refineable: true
+    View: 1466
   - Id: 22014
     AegisName: Enhanced_Variant_Shoes
     Name: Enhanced Variant Shoes
