@@ -185843,13 +185843,10 @@ Body:
     Script: |
       .@r = getrefine();
       .@val = getskilllv("GN_CARTBOOST");
-      .@a = (.@r>= 7 ? 20 : (.@r>= 5 ? 10 : 3));
-      .@b = (.@r>= 7 ? 100 : (.@r>= 5 ? 50 : 0));
       bonus bUnbreakableShoes;
       bonus bMdef,10;
-      bonus bMaxHPrate,.@a;
-      bonus bMaxSPrate,.@a;
-      bonus2 bVariableCastrate,"GN_CARTCANNON",-.@b;
+      bonus bMaxHPrate,3;
+      bonus bMaxSPrate,3;
       bonus bHit,20*.@val;
       bonus bAspdRate,4*.@val;
       bonus bAtkRate,4*getskilllv("GN_FIRE_EXPANSION");
@@ -185861,14 +185858,12 @@ Body:
          bonus bMaxSPrate,7;
          bonus2 bVariableCastrate,"GN_CARTCANNON",-50;
          bonus2 bSkillAtk,"GN_CARTCANNON",BaseLevel/2;
-         bonus bAllStats,BaseLevel/2;
       }
       if (.@r>=7) {
          bonus bMaxHPrate,10;
          bonus bMaxSPrate,10;
          bonus2 bVariableCastrate,"GN_CARTCANNON",-50;
          bonus2 bSkillAtk,"GN_CARTCANNON",BaseLevel/2;
-         bonus bAllStats,BaseLevel/2;
       }
   - Id: 470062
     AegisName: Lethargy_P_Shoes
