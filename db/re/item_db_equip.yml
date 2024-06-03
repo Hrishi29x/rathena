@@ -62106,9 +62106,8 @@ Body:
     Script: |
       .@r = getrefine();
       bonus bBaseAtk,(.@r<=15?pow(.@r,2):225);
-      if (BaseLevel>=70) {
-         bonus bBaseAtk,(BaseLevel/10)*5;
-      }
+      if (BaseLevel>70)
+         bonus bBaseAtk,(((BaseLevel-70)/10)*5);
   - Id: 13128
     AegisName: Sinister_Revolver
     Name: Vicious Mind Revolver
