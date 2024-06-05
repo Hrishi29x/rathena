@@ -93103,7 +93103,6 @@ Body:
     Name: Red Baby Dragon
     Type: Armor
     Weight: 700
-    Range: 1
     Slots: 1
     Locations:
       Head_Top: true
@@ -95837,7 +95836,6 @@ Body:
     Name: Red Baby Dragon
     Type: Armor
     Weight: 700
-    Range: 1
     Slots: 1
     Locations:
       Head_Top: true
@@ -110713,7 +110711,6 @@ Body:
     Type: Armor
     Weight: 700
     Defense: 20
-    Range: 1
     Slots: 1
     Locations:
       Garment: true
@@ -185413,7 +185410,6 @@ Body:
     AegisName: E_Auto_Armor_B
     Name: Automatic Armor B-type (Bound)
     Type: Armor
-    MagicAttack: 125
     Defense: 135
     Slots: 1
     Locations:
@@ -185430,7 +185426,7 @@ Body:
       NoAuction: true
     Script: |
       .@r = getrefine();
-      bonus bMatk,10*(.@r/2);
+      bonus bMatk,125+10*(.@r/2);
       if (.@r>=7) {
          bonus bVariableCastrate,-15;
       }
@@ -186266,7 +186262,6 @@ Body:
     Name: Glacier Robe
     Type: Armor
     Weight: 1200
-    MagicAttack: 120
     Defense: 120
     Slots: 1
     Locations:
@@ -186278,7 +186273,7 @@ Body:
     Script: |
       .@g = getenchantgrade();
       .@r = getrefine();
-      bonus bMatk,15*(.@r/2);
+      bonus bMatk,120+15*(.@r/2);
       bonus bDef,15*(.@r/2);
       if (.@r>=7) {
          bonus2 bMagicAtkEle,Ele_All,5;
@@ -186481,7 +186476,6 @@ Body:
     Name: Dim Glacier Robe
     Type: Armor
     Weight: 1200
-    MagicAttack: 140
     Defense: 145
     Slots: 1
     Locations:
@@ -186495,6 +186489,7 @@ Body:
     Script: |
       .@g = getenchantgrade();
       .@r = getrefine();
+      bonus bMatk,140;
       bonus bSpl,(.@r/2);
       bonus bCon,(.@r/2);
       if (.@r>=7) {
@@ -186689,7 +186684,6 @@ Body:
     Name: Soul Purifying Rune Robe
     Type: Armor
     Weight: 500
-    MagicAttack: 100
     Slots: 1
     Locations:
       Armor: true
@@ -186708,7 +186702,7 @@ Body:
       .@g = getenchantgrade();
       .@r = getrefine();
       bonus bUseSPrate,10;
-      bonus bMatk,15*(.@r/2);
+      bonus bMatk,100+15*(.@r/2);
       bonus bDef,30*(.@r/2);
       if (.@r>=7) {
          bonus bSMatk,2;
@@ -186927,7 +186921,6 @@ Body:
     AegisName: Soul_P_R_Robe2
     Name: Engraved Soul Purifying Rune Robe
     Type: Armor
-    MagicAttack: 140
     Defense: 75
     Slots: 1
     Locations:
@@ -186950,7 +186943,7 @@ Body:
       bonus bUseSPrate,10;
       bonus bSpl,3;
       bonus bCon,3;
-      bonus bMatk,15*(.@r/2);
+      bonus bMatk,140+15*(.@r/2);
       bonus bDef,30*(.@r/2);
       if (.@r>=7) {
          bonus bSMatk,2;
@@ -187969,7 +187962,6 @@ Body:
     Name: Gaebolg Robe
     Type: Armor
     Weight: 1200
-    MagicAttack: 130
     Defense: 130
     Slots: 1
     Locations:
@@ -187981,7 +187973,7 @@ Body:
     Script: |
       .@g = getenchantgrade();
       .@r = getrefine();
-      bonus bMatk,15*(.@r/2);
+      bonus bMatk,130+15*(.@r/2);
       bonus bDef,15*(.@r/2);
       if (.@r>=7) {
          bonus2 bMagicAtkEle,Ele_All,3;
