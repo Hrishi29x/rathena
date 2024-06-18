@@ -24550,8 +24550,7 @@ Body:
       bonus bVit,20;
       bonus2 bSubRace,RC_All,30;
       bonus bUnbreakableShield;
-      /*todo instead of autobonus2 bonus4 bAutoSpellWhenHit,"ALL_RAY_OF_PROTECTION",1,50,0;*/
-      autobonus2 "{ sc_end SC_STUN; sc_end SC_SLEEP; sc_end SC_CURSE; sc_end SC_STONE; sc_end SC_POISON; sc_end SC_BLIND; sc_end SC_SILENCE; sc_end SC_BLEEDING; sc_end SC_CONFUSION; sc_end SC_FREEZE; bonus2 bResEff,Eff_Stun,10000; bonus2 bResEff,Eff_Sleep,10000; bonus2 bResEff,Eff_Curse,10000; bonus2 bResEff,Eff_Stone,10000; bonus2 bResEff,Eff_Poison,10000; bonus2 bResEff,Eff_Blind,10000; bonus2 bResEff,Eff_Silence,10000; bonus2 bResEff,Eff_Bleeding,10000; bonus2 bResEff,Eff_Confusion,10000; bonus2 bResEff,Eff_Freeze,10000; }",50,60000,BF_SHORT;
+      bonus4 bAutoSpellWhenHit,"ALL_RAY_OF_PROTECTION",1,50,0;
   - Id: 2183
     AegisName: Impr_Angel's_Safeguard
     Name: Advanced Angelic Guard
@@ -178372,7 +178371,6 @@ Body:
     Locations:
       Costume_Head_Mid: true
     ArmorLevel: 1
-    View: 2420
     Script: |
       hateffect HAT_EF_C_FLUTTERING_HAZE,true;
     UnEquipScript: |
@@ -205557,7 +205555,7 @@ Body:
       bonus bLongAtkRate,5;
       bonus bMaxHPrate,3*getskilllv("RK_DRAGONHOWLING");
   - Id: 490220
-    AegisName: aegis_490220
+    AegisName: Hero_Token_HN
     Name: Heroic Token (Hyper Novice)
     Type: Armor
     Weight: 200
