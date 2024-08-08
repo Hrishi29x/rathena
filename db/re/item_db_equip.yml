@@ -187652,7 +187652,7 @@ Body:
       bonus2 bSkillAtk,"GC_CROSSIMPACT",20*(.@r/3);
       bonus2 bSkillAtk,"GC_ROLLINGCUTTER",20*(.@r/3);
       bonus2 bSkillAtk,"SC_TRIANGLESHOT",20*(.@r/3);
-      bonus2 bSkillAtk,"SC_STARTMARK",20*(.@r/3);
+      bonus2 bSkillAtk,"SC_FATALMENACE",20*(.@r/3);
       if (.@r>=9) {
          bonus bLongAtkRate,10;
          bonus bShortAtkRate,10;
