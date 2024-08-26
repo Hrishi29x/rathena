@@ -112246,8 +112246,7 @@ Body:
     Defense: 30
     Slots: 1
     Classes:
-      All_Third: true
-      Fourth: true
+      All: true
     Locations:
       Garment: true
     ArmorLevel: 1
@@ -112276,8 +112275,7 @@ Body:
     Defense: 30
     Slots: 1
     Classes:
-      All_Third: true
-      Fourth: true
+      All: true
     Locations:
       Garment: true
     ArmorLevel: 1
@@ -112306,8 +112304,7 @@ Body:
     Defense: 30
     Slots: 1
     Classes:
-      All_Third: true
-      Fourth: true
+      All: true
     Locations:
       Garment: true
     ArmorLevel: 1
