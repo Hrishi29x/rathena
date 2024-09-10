@@ -139532,7 +139532,7 @@ Body:
     AegisName: Ein_BHAXE
     Name: Saw Axe
     Type: Weapon
-    SubType: 1hAxe
+    SubType: 2hAxe
     Weight: 5000
     Attack: 350
     Range: 1
