@@ -169197,6 +169197,8 @@ Body:
     Defense: 12
     Slots: 1
     Jobs:
+      Crusader: true
+      Knight: true
       Swordman: true
     Classes:
       All_Upper: true
@@ -169217,6 +169219,8 @@ Body:
     Defense: 12
     Slots: 1
     Jobs:
+      Crusader: true
+      Knight: true
       Swordman: true
     Classes:
       All_Upper: true
