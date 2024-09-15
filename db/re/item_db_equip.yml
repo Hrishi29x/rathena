@@ -83053,7 +83053,7 @@ Body:
       Hunter: true
       Rogue: true
     Locations:
-      Right_Hand: true
+      Both_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 70
     Refineable: true
