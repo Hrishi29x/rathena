@@ -202634,6 +202634,17 @@ Body:
              }
          }
       }
+  - Id: 480470
+    AegisName: C_Summer_Beach
+    Name: Costume Summer Beach    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    Script: |
+      hateffect HAT_EF_VACATION,true;
+    UnEquipScript: |
+      hateffect HAT_EF_VACATION,false;
   - Id: 490004
     AegisName: Atker_Ring
     Name: Attacker Booster Ring
