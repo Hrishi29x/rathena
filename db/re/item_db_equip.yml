@@ -158151,7 +158151,7 @@ Body:
     AegisName: Evt_Undine_Spear_K
     Name: Sealed Aquatic Spear
     Type: Weapon
-    SubType: Staff
+    SubType: 1hSpear
     Attack: 180
     Range: 3
     Slots: 2
