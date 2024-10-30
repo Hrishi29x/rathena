@@ -97184,7 +97184,7 @@ Body:
          bonus2 bSkillAtk,"SO_DIAMONDDUST",25;
       }
       if (.@r>=10)
-         bonus bIgnoreMdefRace,RC_All;
+         bonus2 bIgnoreMdefRaceRate,RC_All,100;
   - Id: 19427
     AegisName: RabbitFamilyBalloon
     Name: Lunatic Family Balloon
@@ -97540,7 +97540,7 @@ Body:
          if (.@r>=9) {
             .@dmg += 25;
             if (.@r>=10) {
-               bonus bIgnoreMDefRace,RC_All;
+               bonus2 bIgnoreMdefRaceRate,RC_All,100;
             }
          }
       }
@@ -145360,7 +145360,7 @@ Body:
       bonus bHealPower,10;
       bonus bAddItemHealRate,10;
       .@r = (getrefine()*1000);
-      autobonus2 "{ bonus bIgnoreMdefRace,RC_All; }",50,1000+.@r,BF_WEAPON,"{ specialeffect2 EF_FLOWERCAST; }";
+      autobonus2 "{ bonus2 bIgnoreMdefRaceRate,RC_All,100; }",50,1000+.@r,BF_WEAPON,"{ specialeffect2 EF_FLOWERCAST; }";
       bonus bUnbreakableWeapon;
       bonus bAtkEle,Ele_Holy;
   - Id: 28604
