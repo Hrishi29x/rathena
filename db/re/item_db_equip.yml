@@ -21661,7 +21661,7 @@ Body:
       bonus2 bSkillUseSP,"WL_READING_SB",24;
       bonus2 bIgnoreMdefClassRate,Class_All,8*(.@r/3);
       bonus2 bSkillVariableCast,"WL_READING_SB",-1000*(getskilllv("WL_FREEZE_SP"));
-      autobonus3 "{ bonus bMatkRate,24*(getskilllv(\"HW_MAGICPOWER\"); }",1000,1000,"WL_RELEASE";
+      autobonus3 "{ bonus bMatkRate,24*(getskilllv(\"HW_MAGICPOWER\")); }",1000,1000,"WL_RELEASE";
       if (getskilllv("WL_RELEASE") == 2) {
          bonus2 bSkillVariableCast,"WL_SUMMONFB",-1000;
          bonus2 bSkillVariableCast,"WL_SUMMONWB",-1000;
@@ -99766,8 +99766,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 891
-    Script: |
-      bonus2 bAddMonsterDropItem,6614,50;
   - Id: 19582
     AegisName: C_Cowboy_Hat
     Name: Costume Cowboy Hat
@@ -139315,9 +139313,9 @@ Body:
     Refineable: true
     Script: |
       .@r = getrefine();
-      bonus2 bSkillAtk,GC_CROSSIMPACT,3*.@r;
-      bonus2 bSkillAtk,GC_CROSSRIPPERSLASHER,2*.@r;
-      bonus2 bSkillAtk,GC_ROLLINGCUTTER,.@r;
+      bonus2 bSkillAtk,"GC_CROSSIMPACT",3*.@r;
+      bonus2 bSkillAtk,"GC_CROSSRIPPERSLASHER",2*.@r;
+      bonus2 bSkillAtk,"GC_ROLLINGCUTTER",.@r;
       if (.@r>=7)
          bonus bAspdRate,5;
       if (.@r>=9)
@@ -146698,15 +146696,15 @@ Body:
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"MG_FIREBOLT",5;
-      bonus2 bSkillAtk,"MG_COLDBOLTBOLT",5;
+      bonus2 bSkillAtk,"MG_COLDBOLT",5;
       bonus2 bSkillAtk,"MG_LIGHTNINGBOLT",5;
       if (.@r>=7) {
          bonus2 bSkillAtk,"MG_FIREBOLT",5;
-         bonus2 bSkillAtk,"MG_COLDBOLTBOLT",5;
+         bonus2 bSkillAtk,"MG_COLDBOLT",5;
          bonus2 bSkillAtk,"MG_LIGHTNINGBOLT",5;
          if (.@r>=9) {
              bonus2 bSkillAtk,"MG_FIREBOLT",10;
-             bonus2 bSkillAtk,"MG_COLDBOLTBOLT",10;
+             bonus2 bSkillAtk,"MG_COLDBOLT",10;
              bonus2 bSkillAtk,"MG_LIGHTNINGBOLT",10;
          }
       }
@@ -147355,7 +147353,7 @@ Body:
     EquipLevelMin: 130
     Refineable: true
     Script: |
-      bonus2 bSkillAtk,GC_CROSSIMPACT,10;
+      bonus2 bSkillAtk,"GC_CROSSIMPACT",10;
   - Id: 28713
     AegisName: Kings_Bless
     Name: Glory King Sword
@@ -202336,7 +202334,7 @@ Body:
       bonus2 bSubRace,RC_Angel,2*(.@r/2);
       bonus2 bSubRace,RC_Demon,2*(.@r/2);
       bonus bBaseAtk,7*(.@r/3);
-      bonus bMatk,(6*(readparam(bInt/25))+(10*(.@r/3)));
+      bonus bMatk,6*(readparam(bInt)/25)+10*(.@r/3);
       bonus bAspdRate,3*(readparam(bAgi)/25);
       bonus bMaxHP,350*(readparam(bVit)/25);
       bonus bVariableCastrate,-3*(readparam(bDex)/25);
@@ -210157,7 +210155,7 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 100
     Script: |
-      .@a = (getskilllv("GN_CART_TORNADO")+getskilllv("GN_REMODELING_CART")+getskilllv(GN_CARTBOOST))/4;
+      .@a = (getskilllv("GN_CART_TORNADO")+getskilllv("GN_REMODELING_CART")+getskilllv("GN_CARTBOOST"))/4;
       bonus bDelayrate,-5;
       bonus bLongAtkRate,5+.@a;
       bonus bShortAtkRate,5+.@a;
@@ -212575,7 +212573,7 @@ Body:
       bonus2 bSubRace,RC_Player_Human,3;
       bonus2 bSubRace,RC_Player_Doram,3;
       skill "RA_UNLIMIT",5;
-      bonus2 bSkillAtk,WM_SEVERE_RAINSTORM,BaseLevel/2;
+      bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",BaseLevel/2;
     UnEquipScript: |
       sc_end SC_UNLIMIT;
   - Id: 490428
@@ -213597,7 +213595,7 @@ Body:
       bonus2 bSubRace,RC_Player_Human,3;
       bonus2 bSubRace,RC_Player_Doram,3;
       bonus2 bSkillAtk,"SJ_FLASHKICK",BaseLevel/5;
-      bonus2 bSkillAtk,"SJ_FALLINGSTA",BaseLevel/5;
+      bonus2 bSkillAtk,"SJ_FALLINGSTAR",BaseLevel/5;
       /*Todo : SkillAtk SKE_TWINKLING_GALAXY, SKE_STAR_BURST, SKE_STAR_CANNON, 1% Per 10 BaseLevel (Skill Not List in DB)*/
   - Id: 490502
     AegisName: Pray_Dusk_Bell_ArcM
