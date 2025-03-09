@@ -29756,8 +29756,7 @@ Body:
     Script: |
       bonus bFlee,5;
       bonus bAgi,1;
-      /* skill "ALL_CATCRY",1;
-      */
+      skill "ALL_CATCRY",1;
   - Id: 2439
     AegisName: Refresh_Shoes
     Name: Refresh Shoes
@@ -93449,7 +93448,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      /* skill "ALL_CATCRY",1; */
+      skill "ALL_CATCRY",1;
       .@r = getrefine();
       bonus2 bHPDrainRate,40,5+.@r/3;
       bonus2 bSPDrainRate,10,2+.@r/5;
@@ -93509,7 +93508,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      /* skill "ALL_CATCRY",1; */
+      skill "ALL_CATCRY",1;
       .@r = getrefine();
       bonus bAllStats,3;
       bonus2 bAddEff,Eff_Stun,500+(.@r*100);
@@ -119198,6 +119197,7 @@ Body:
     Refineable: true
     Script: |
       skill "ALL_CATCRY",1;
+      autobonus3 "{ }",1000,7000,"ALL_CATCRY","{ active_transform 1505,7000; }";
   - Id: 22068
     AegisName: Santa's_Shoes
     Name: Louise's Red Boots
