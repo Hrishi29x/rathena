@@ -57908,7 +57908,7 @@ Body:
          bonus2 bSkillUseSP,"WM_REVERBERATION",18;
       }
       if (.@r>=10)
-         bonus2 bSkillCooldown,"WM_REVERBERATION",-2000;
+         bonus2 bSkillCooldown,"WM_METALICSOUND",-2000;
   - Id: 5965
     AegisName: Riot_Chip_J
     Name: Riot Chip
