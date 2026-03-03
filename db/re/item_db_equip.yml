@@ -179604,6 +179604,22 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2359
+  - Id: 401015
+    AegisName: aegis_401015
+    Name: Costume Inquisitor Veil    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2447
+  - Id: 401016
+    AegisName: aegis_401016
+    Name: Costume Mage Hat (Brown)    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 284
   - Id: 401046
     AegisName: C_Warm_PoongCha
     Name: Costume Warm PoongCha    # !todo check english name
@@ -184716,6 +184732,14 @@ Body:
       hateffect HAT_EF_C_SPOT_FLOWER,true;
     UnEquipScript: |
       hateffect HAT_EF_C_SPOT_FLOWER,false;
+  - Id: 410489
+    AegisName: aegis_410489
+    Name: Costume Opera Mask (Middle)
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 68
   - Id: 410491
     AegisName: C_Violet_Starlight
     Name: Costume Violet Starlight
@@ -188684,6 +188708,38 @@ Body:
       hateffect HAT_EF_C_NIGHTMARE_CHAIN,true;
     UnEquipScript: |
       hateffect HAT_EF_C_NIGHTMARE_CHAIN,false;
+  - Id: 420593
+    AegisName: C_Halloween_Candy_Hair
+    Name: Costume Halloween Candy Hair
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2743
+  - Id: 420594
+    AegisName: C_HalloCandy_Hair_N
+    Name: Costume Halloween Candy Hair (No Decoration)
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2744
+  - Id: 420595
+    AegisName: C_Medjed_Cloth
+    Name: Costume Medjed Cloth
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2745
+  - Id: 420596
+    AegisName: C_Blink_Eyes_Halloween
+    Name: Costume Blink Eyes Halloween
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2746
   - Id: 420642
     AegisName: C_OpenAir_Headset_Red
     Name: Costume Open Air Headset (Red)
@@ -218062,6 +218118,14 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     View: 286
+  - Id: 480648
+    AegisName: C_Nifl_Bloom_RD
+    Name: Costume Broom of Crimson    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 288
   - Id: 480664
     AegisName: C_Cursed_Serpent
     Name: Costume Cursed Serpent
