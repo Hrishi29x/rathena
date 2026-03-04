@@ -90799,7 +90799,6 @@ Body:
       Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 1
-    Refineable: true
     View: 446
     Script: |
       bonus bAllStats,2;
