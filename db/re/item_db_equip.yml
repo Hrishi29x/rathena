@@ -96388,7 +96388,8 @@ Body:
     Locations:
       Head_Low: true
     ArmorLevel: 1
-    Refineable: true
+#   Bugfixes: can be refined according to official data
+#   Refineable: true
     Script: |
       bonus2 bAddItemHealRate,11573,100;
       bonus2 bAddItemHealRate,547,100;
