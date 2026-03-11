@@ -178441,6 +178441,26 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2504
+  - Id: 400931
+    AegisName: aegis_400931
+    Name: Costume Silver Globe Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 943
+  - Id: 400932
+    AegisName: C_Stardust_Hairband_BU
+    Name: Costume Blue Stardust Hairband
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2709
   - Id: 400951
     AegisName: C_2508_Salt_Hat
     Name: Costume Night Market Special Salt    # !todo check english name
@@ -184727,6 +184747,30 @@ Body:
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
+  - Id: 410447
+    AegisName: C_Handiness_Telescope
+    Name: Costume Telescope (Blue)    # !todo check english name
+    Type: Armor
+    Jobs:
+    Locations:
+      Costume_Head_Mid: true
+    Trade:
+      NoDrop: true
+    ArmorLevel: 1
+    View: 2375
+  - Id: 410448
+    AegisName: C_Blink_Eyes_Cosmic
+    Name: Costume Cosmic Blink Eyes
+    Type: Armor
+    Jobs:
+    Locations:
+      Costume_Head_Mid: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2708
   - Id: 410456
     AegisName: C_WH_Cat_Eyes
     Name: Costume White Cat's Eye    # !todo check english name
@@ -188791,6 +188835,30 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
     View: 2698
+  - Id: 420524
+    AegisName: C_Twin_Milkyway_N
+    Name: Costume Twin Milkyway (Undecorated)
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2706
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+  - Id: 420525
+    AegisName: C_Twin_Milkyway
+    Name: Costume Twin Milkyway
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2707
   - Id: 420516
     AegisName: C_Forest_Friends
     Name: Costume Forest Friends
@@ -218258,6 +218326,18 @@ Body:
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
+  - Id: 480603
+    AegisName: C_Starrysky_Fountainpen
+    Name: Costume Starry Sky Pen
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 270
   - Id: 480611
     AegisName: C_Immortal_H_Spear
     Name: "Costume: Immortal Monarch's Spear"    # !todo check english name
