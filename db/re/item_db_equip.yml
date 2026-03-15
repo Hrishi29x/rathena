@@ -97457,9 +97457,12 @@ Body:
     Weight: 100
     Locations:
       Head_Low: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoAuction: true
     ArmorLevel: 1
     EquipLevelMin: 100
-    Refineable: true
     View: 1034
     Script: |
       bonus bAllStats,1;
