@@ -111881,10 +111881,13 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     EquipLevelMin: 1
-    Refineable: true
     View: 5
     Trade:
       NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
   - Id: 20728
     AegisName: Water_Dragon_Coat
     Name: Water Dragon Coat
