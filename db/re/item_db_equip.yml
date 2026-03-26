@@ -115121,6 +115121,11 @@ Body:
     Defense: 12
     Locations:
       Garment: true
+    Trade:
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     ArmorLevel: 1
     EquipLevelMin: 100
     Refineable: true
@@ -115144,8 +115149,8 @@ Body:
       }
       if (getskilllv("RA_CAMOUFLAGE") == 5) {
          bonus bDelayrate,-10;
+         bonus2 bSkillCooldown,"RA_ARROWSTORM",-200;
       }
-      bonus2 bSkillCooldown,"RA_ARROWSTORM",-200;
       bonus2 bSkillAtk,"RA_ARROWSTORM",getskilllv("RA_AIMEDBOLT");
     UnEquipScript: |
       sc_end SC_UNLIMIT;
