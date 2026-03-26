@@ -180447,6 +180447,129 @@ Body:
       NoAuction: true
     ArmorLevel: 1
     View: 2805
+  - Id: 401239
+    AegisName: Hs_Sun_God
+    Name: Herosria Hat of Sun God
+    Type: Armor
+    Weight: 3000
+    Defense: 120
+    Locations:
+      Head_Top: true
+    Trade:
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    View: 138
+    Script: |
+      bonus bMdef,8;
+      bonus bNearAtkDef,5;
+      bonus bLongAtkDef,5;
+      bonus2 bMagicSubDefEle,Ele_All,5;
+      bonus bShortAtkRate,-10;
+      bonus bLongAtkRate,-10;
+      bonus2 bMagicAtkEle,Ele_All,-10;
+      bonus2 bSubRace,RC_Player_Human,10;
+      bonus2 bSubRace,RC_Player_Doram,10;
+      bonus2 bAddRace,RC_Player_Human,-10;
+      bonus2 bAddRace,RC_Player_Doram,-10;
+      bonus2 bMagicAddRace,RC_Player_Human,-10;
+      bonus2 bMagicAddRace,RC_Player_Doram,-10;
+  - Id: 401240
+    AegisName: Hs_Loard_Circlet
+    Name: Herosria Grand Circlet
+    Type: Armor
+    Weight: 2000
+    Defense: 90
+    Locations:
+      Head_Top: true
+    Trade:
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    View: 93
+    Script: |
+      bonus bMdef,2;
+      bonus bShortAtkRate,5;
+      bonus2 bMagicAtkEle,Ele_All,-10;
+      bonus2 bAddRace,RC_Player_Human,10;
+      bonus2 bAddRace,RC_Player_Doram,10;
+      bonus2 bSubRace,RC_Player_Human,-10;
+      bonus2 bSubRace,RC_Player_Doram,-10;
+  - Id: 401241
+    AegisName: Hs_Crown
+    Name: Herosria Crown
+    Type: Armor
+    Weight: 1000
+    Defense: 20
+    Locations:
+      Head_Top: true
+    Trade:
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    View: 45
+    Script: |
+      bonus bMdef,10;
+      bonus2 bMagicAtkEle,Ele_All,5;
+      bonus bShortAtkRate,-10;
+      bonus bLongAtkRate,-10;
+      bonus2 bMagicAddRace,RC_Player_Human,10;
+      bonus2 bMagicAddRace,RC_Player_Doram,10;
+      bonus2 bSubRace,RC_Player_Human,-5;
+      bonus2 bSubRace,RC_Player_Doram,-5;
+  - Id: 401242
+    AegisName: Hs_Magestic_Goat
+    Name: Herosria Majestic Goat
+    Type: Armor
+    Weight: 1000
+    Defense: 60
+    Locations:
+      Head_Top: true
+    Trade:
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    View: 41
+    Script: |
+      bonus bMdef,7;
+      bonus bHealPower,5;
+      bonus bUseSPrate,10;
+      bonus bDelayrate,-5;
+      bonus2 bAddRace,RC_Player_Human,-10;
+      bonus2 bAddRace,RC_Player_Doram,-10;
+      bonus2 bMagicAddRace,RC_Player_Human,-10;
+      bonus2 bMagicAddRace,RC_Player_Doram,-10;
+  - Id: 401243
+    AegisName: Hs_Corsair
+    Name: Herosria Corsair
+    Type: Armor
+    Weight: 1400
+    Defense: 40
+    Locations:
+      Head_Top: true
+    Trade:
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    View: 105
+    Script: |
+      bonus bMdef,5;
+      bonus bLongAtkRate,5;
+      bonus2 bMagicAtkEle,Ele_All,-10;
+      bonus2 bAddRace,RC_Player_Human,10;
+      bonus2 bAddRace,RC_Player_Doram,10;
+      bonus2 bSubRace,RC_Player_Human,-5;
+      bonus2 bSubRace,RC_Player_Doram,-5;
   - Id: 401246
     AegisName: aegis_401246
     Name: Costume Fafnir Helm
