@@ -78060,6 +78060,22 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 887
+  - Id: 15854
+    AegisName: C_Phigasia_Scarf_EXE
+    Name: Costume Phigasia Scarf
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2079
+    Script: |
+      hateffect HAT_EF_C_Phigasia_Scarf_EXE,true;
+    UnEquipScript: |
+      hateffect HAT_EF_C_Phigasia_Scarf_EXE,false;
   - Id: 15855
     AegisName: Ermac_Veil_EXE
     Name: Ermac's Veil (OSM)
@@ -178432,6 +178448,21 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2673
+  - Id: 400801
+    AegisName: C_FumiHausu_Doll
+    Name: Costume Fumi Hausu Doll
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2676
   - Id: 400803
     AegisName: C_Muka_Sombrero
     Name: Costume Muka Sombrero
@@ -180127,6 +180158,27 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2556
+  - Id: 401113
+    AegisName: C_Rune_Helm_Ice
+    Name: Costume Snow Rune Helm
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    Trade:
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2203
+  - Id: 401114
+    AegisName: C_Asgard_Circlet_TH
+    Name: Costume Asgard Wing Hairband
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2100
   - Id: 401115
     AegisName: Sky_Rune_Crown_MS
     Name: Sky Rune Crown (Meister)    # !todo check english name
@@ -180452,6 +180504,18 @@ Body:
       NoAuction: true
     ArmorLevel: 1
     View: 2805
+  - Id: 401213
+    AegisName: C_Jaow_Pirun
+    Name: Costume Jaow Pirun Sra Yok
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2810
+    Script: |
+      hateffect HAT_EF_C_JAOW_PIRUN,true;
+    UnEquipScript: |
+      hateffect HAT_EF_C_JAOW_PIRUN,false;
   - Id: 401239
     AegisName: Hs_Sun_God
     Name: Herosria Hat of Sun God
@@ -184912,6 +184976,22 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2594
+  - Id: 410368
+    AegisName: C_Perm_Frost_Oblivion
+    Name: Costume Permafrost Oblivion
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    Trage:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2595
+    Script: |
+      hateffect HAT_EF_PERM_FROST_OBLIVION,true;
+    UnEquipScript: |
+      hateffect HAT_EF_PERM_FROST_OBLIVION,false;
   - Id: 410370
     AegisName: C_Happy_Pierrot_Mask_V
     Name: Costume Happy Clown Mask (Middle)
@@ -184995,6 +185075,21 @@ Body:
       NoAuction: true
     ArmorLevel: 1
     View: 1303
+  - Id: 410397
+    AegisName: C_Doughkun
+    Name: Costume DoughKun
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2677
   - Id: 410399
     AegisName: C_Capybara
     Name: Costume Capybara
