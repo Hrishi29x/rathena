@@ -229397,6 +229397,30 @@ Body:
       bonus2 bSkillAtk,"SS_KAGENOMAI",BaseLevel/10;
       bonus2 bSkillAtk,"SS_KAGEGISSEN",BaseLevel/10;
       bonus2 bSkillAtk,"SS_KAGEAKUMU",BaseLevel/10;
+  - Id: 490801
+    AegisName: ROS2025_Ring_TH
+    Name: Ragnarok Stars 2025 Ring
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Script: |
+      bonus bMaxHPrate,15;
+      bonus bMaxSPrate,10;
+      bonus bHPrecovRate,20;
+      bonus bSPrecovRate,20;
+      bonus2 bExpAddRace,RC_All,5;
   - Id: 500000
     AegisName: IDTest_weapon
     Name: IDTest weapon
