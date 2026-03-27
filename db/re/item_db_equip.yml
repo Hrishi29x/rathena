@@ -176911,6 +176911,21 @@ Body:
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
+  - Id: 400671
+    AegisName: C_Broken_Egg
+    Name: Costume Fried Egg
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2542
   - Id: 400672
     AegisName: Marin_Pattern_Hat
     Name: Marin Pattern Hat
@@ -185294,6 +185309,22 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2748
+  - Id: 410508
+    AegisName: C_Midgard_Integrity
+    Name: Costume Celestial Integrity
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2750
+    Script: |
+      hateffect FOOTPRINT_EF_FEATHER,true;
+    UnEquipScript: |
+      hateffect FOOTPRINT_EF_FEATHER,false;
   - Id: 410556
     AegisName: C_Emperor_Penguin
     Name: Costume Emperor Penguin
@@ -185310,6 +185341,18 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2795
+  - Id: 410576
+    AegisName: C_Eye_of_Necromancer
+    Name: Costume Eye of Necromancer
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2809
+    Script: |
+      hateffect HAT_EF_C_EYE_OF_NECROMANCER,true;
+    UnEquipScript: |
+      hateffect HAT_EF_C_EYE_OF_NECROMANCER,false;
   - Id: 410582
     AegisName: C_Nursing_Poring
     Name: Costume Nursing Poring    # !todo check english name
@@ -188592,6 +188635,17 @@ Body:
       bonus2 bSubRace,RC_Player_Human,3;
       bonus2 bAddSize,Size_All,BaseLevel/10;
       bonus2 bMagicAddSize,Size_All,BaseLevel/10;
+  - Id: 420357
+    AegisName: C_Baby_Seal
+    Name: Costume Baby Seal
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+    ArmorLevel: 1
+    View: 2570
   - Id: 420358
     AegisName: C_Experiment_Mind
     Name: Costume Experiment Mind
@@ -189513,6 +189567,29 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2746
+  - Id: 420602
+    AegisName: C_Red_Bat
+    Name: Costume Red Bat
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2439
+  - Id: 420618
+    AegisName: C_SS_Recognition
+    Name: Costume Solid State Recognition
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2751
   - Id: 420642
     AegisName: C_OpenAir_Headset_Red
     Name: Costume Open Air Headset (Red)
@@ -214734,6 +214811,21 @@ Body:
       hateffect HAT_EF_SERPENT_SHADOW,true;
     UnEquipScript: |
       hateffect HAT_EF_SERPENT_SHADOW,false;
+  - Id: 480287
+    AegisName: C_Skia_Doll
+    Name: Costume Skia Doll
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 170
   - Id: 480288
     AegisName: C_Dark_Lord_Cloak
     Name: Costume Dark Lord Cloak
