@@ -86991,8 +86991,9 @@ Body:
       Head_Low: true
       Head_Mid: true
     ArmorLevel: 1
-    Refineable: true
     View: 802
+    Script: |
+      bonus3 bAutoSpellWhenHit,"MC_LOUD",1,5;
   - Id: 18650
     AegisName: RWC_Shouting_Mouth
     Name: RWC Shouting Mouth
