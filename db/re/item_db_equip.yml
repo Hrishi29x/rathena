@@ -89765,8 +89765,17 @@ Body:
     Defense: 1
     Locations:
       Head_Mid: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
     ArmorLevel: 1
-    Refineable: true
+#   Bugfixes: can be refined according to aegis data
+#   Refineable: true
     View: 925
     Script: |
       bonus bAgi,1;
