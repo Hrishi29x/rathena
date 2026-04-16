@@ -133619,6 +133619,11 @@ Body:
     Type: ShadowGear
     Locations:
       Shadow_Right_Accessory: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -133635,11 +133640,13 @@ Body:
     AegisName: S_FullPene_Pendant
     Name: Full Penetration Shadow Pendant
     Type: ShadowGear
-    Jobs:
-      All: true
-      Novice: false
     Locations:
       Shadow_Left_Accessory: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -133658,6 +133665,11 @@ Body:
     Type: ShadowGear
     Locations:
       Shadow_Armor: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
     Refineable: true
     Script: |
       .@r = getrefine();
@@ -133674,11 +133686,13 @@ Body:
     AegisName: S_FullPene_Shoes
     Name: Full Penetration Shadow Shoes
     Type: ShadowGear
-    Jobs:
-      All: true
-      Novice: false
     Locations:
       Shadow_Shoes: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
     Refineable: true
     Script: |
       .@r = getrefine();
