@@ -152,3 +152,6 @@ Thumbs.db
 
 # generated files
 generated
+
+# Local server credentials
+conf/inter_athena.conf
